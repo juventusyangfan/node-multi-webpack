@@ -1,0 +1,274 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>商品仓库</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <select name="parent_category_id" cjy-search>
+                <option value="0">请选择分类</option>
+                <option value="44">灯具</option>
+                <option value="158">地板</option>
+            </select>
+            <select name="category_id">
+                <option value="0">请选择品名</option>
+                <option value="2">申请加入</option>
+                <option value="1">邀请加入</option>
+            </select>
+            <select name="brand_id">
+                <option value="0">请选择品牌</option>
+                <option value="2">申请加入</option>
+                <option value="1">邀请加入</option>
+            </select>
+            <select name="warehouse_id">
+                <option value="0">请选择仓库</option>
+                <option value="2">申请加入</option>
+                <option value="1">邀请加入</option>
+            </select>
+            <select name="status">
+                <option value="0">请选择商品状态</option>
+                <option value="2">申请加入</option>
+                <option value="1">邀请加入</option>
+            </select>
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div class="back_main_list">
+            <div class="material_list">
+                <div class="material_list_header">
+                    <input type="checkbox" title="全选">
+                    <a href="javascript:;" class="btn_shelf">上架</a>
+                    <a href="javascript:;" class="btn_obtained">下架</a>
+                    <a href="javascript:;" class="btn_delete">删除</a>
+                </div>
+                <table>
+                    <colgroup>
+                        <col width="60">
+                        <col width="280">
+                        <col width="140">
+                        <col width="200">
+                        <col width="140">
+                        <col width="320">
+                        <col width="160">
+                        <col width="100">
+                        <col width="240">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>标题</th>
+                            <th class="alignL paddingL20">品名/品牌</th>
+                            <th class="alignL paddingL20">属性</th>
+                            <th>仓库</th>
+                            <th><span class="inlineBlock" style="width:50%;">价格区间<span class="textBlack3">（不含运费）</span></span><span class="inlineBlock" style="width:50%;">库存总量</span></th>
+                            <th>最后操作时间</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="product_tbody" id="productList">
+                        <tr v-if="loading">
+                            <td colspan="9">
+                                <div class="page_loading"></div>
+                            </td>
+                        </tr>
+                        <template v-if="list.length>0">
+                            <tr v-for="(item,index) in list">
+                                <input type="hidden" name="product_id" :value="item.id">
+                                <td><input type="checkbox" title=""></td>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img :src="imgPath+item.main_img">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">{{item.name}}</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="alignL">
+                                    <div class="order_table_attr">
+                                        <p>{{item.category_name}}</p>
+                                        <p>{{item.brand_name}}</p>
+                                    </div>
+                                </td>
+                                <td class="alignL">
+                                    <div class="order_table_attr">
+                                        <span><template v-for="(spec,index) in item.first_goods_spec">{{index>0?' / ':''}}{{spec.value[1]}}</template></span>
+                                        <a href="javascript:;" class="block fontSize12 textOrange show_attr">共{{item.goods_list.length}}个属性组合></a>
+                                        <div class="show_container">
+                                            <span class="show_con_arrow"></span>
+                                            <div class="show_con_table">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th v-for="(spec,key,index) in item.first_goods_spec">{{spec.name}}</th>
+                                                            <th>购买数量<p class="textBlack3">（计量单位）</p>
+                                                            </th>
+                                                            <th>单价<p class="textBlack3">（元/计量单位）</p>
+                                                            </th>
+                                                            <th>库存总量<p class="textBlack3">（计量单位）</p>
+                                                            </th>
+                                                            <th>库存预警数</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <template v-for="cell in item.goods_list">
+                                                            <tr v-if="cell.step_price.length==0">
+                                                                <td v-for="child in cell.spec">{{child.value[1]}}</td>
+                                                                <td class="numTd">起订量1个及以上</td>
+                                                                <td class="priceTd">{{cell.price}}元/个</td>
+                                                                <td class="totalTd">{{cell.store_nums}}个</td>
+                                                                <td class="warningTd">{{cell.warning_nums}}个</td>
+                                                            </tr>
+                                                            <template v-else>
+                                                                <tr>
+                                                                    <td :rowspan="cell.step_price.length" v-for="child in cell.spec">{{child.value[1]}}</td>
+                                                                    <template v-for="(eq,index) in cell.step_price">
+                                                                        <td class="numTd" v-if="index==0">起订量{{eq.num}}个及以上</td>
+                                                                        <td class="priceTd" v-if="index==0">{{eq.price}}元/个</td>
+                                                                    </template>
+                                                                    <td :rowspan="cell.step_price.length" class="totalTd">{{cell.store_nums}}个</td>
+                                                                    <td :rowspan="cell.step_price.length" class="warningTd">{{cell.warning_nums}}个</td>
+                                                                </tr>
+                                                                <tr v-for="(eq,index) in cell.step_price" v-if="index>0">
+                                                                    <td class="numTd">起订量{{eq.num}}个及以上</td>
+                                                                    <td class="priceTd">{{eq.price}}元/个</td>
+                                                                </tr>
+                                                            </template>
+                                                        </template>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>{{item.warehouse_name}}</td>
+                                <td class="price_num">
+                                    <div class="priceCell"><span class="textRed">{{item.price}}</span> 元/个</div>
+                                    <div class="numCell">{{item.store_nums}}个</div>
+                                    <div class="edit_box clearfix" v-if="item.status==0">
+                                        <a href="javascript:;" class="edit_icon iconfont icon-bianji"></a>
+                                        <div class="edit_container">
+                                            <span class="edit_con_arrow"></span>
+                                            <div class="edit_con_table">
+                                                <form>
+                                                <input type="hidden" name="product_id" :value="item.id">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th v-for="(spec,key,index) in item.first_goods_spec">{{spec.name}}</th>
+                                                            <th>购买数量<p class="textBlack3">（计量单位）</p>
+                                                            </th>
+                                                            <th>单价<p class="textBlack3">（元/计量单位）</p>
+                                                            </th>
+                                                            <th>库存总量<p class="textBlack3">（计量单位）</p>
+                                                            </th>
+                                                            <th>库存预警数</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <template v-for="(cell,row) in item.goods_list">
+                                                            <tr v-if="cell.step_price.length==0" :row="row+1">
+                                                                <input type="hidden" name="goods_info[id][]" :value="cell.id">
+                                                                <td v-for="child in cell.spec">{{child.value[1]}}</td>
+                                                                <td class="numTd"><span class="textBlack3">起订量</span><input type="text" class="cjy-input-" :name="'goods_info[step][nums]['+row+'][]'" :value="1">及以上</td>
+                                                                <td class="priceTd"><input type="text" class="cjy-input-" :name="'goods_info[step][price]['+row+'][]'" :value="cell.price"></td>
+                                                                <td class="totalTd"><input type="text" class="cjy-input-" name="goods_info[store_nums][]" :value="cell.store_nums"></td>
+                                                                <td class="warningTd"><input type="text" class="cjy-input-" name="goods_info[warning_nums][]" :value="cell.warning_nums"></td>
+                                                            </tr>
+                                                            <template v-else>
+                                                                <tr :row="row+1">
+                                                                    <input type="hidden" name="goods_info[id][]" :value="cell.id">
+                                                                    <td :rowspan="cell.step_price.length" v-for="child in cell.spec">{{child.value[1]}}</td>
+                                                                    <template v-for="(eq,index) in cell.step_price">
+                                                                        <td class="numTd" v-if="index==0"><span class="textBlack3">起订量</span><input type="text" class="cjy-input-" :name="'goods_info[step][nums]['+row+'][]'" :value="eq.num">及以上</td>
+                                                                        <td class="priceTd" v-if="index==0"><input type="text" class="cjy-input-" :name="'goods_info[step][price]['+row+'][]'" :value="eq.price"></td>
+                                                                    </template>
+                                                                    <td :rowspan="cell.step_price.length" class="totalTd"><input type="text" class="cjy-input-" name="goods_info[store_nums][]" :value="cell.store_nums"></td>
+                                                                    <td :rowspan="cell.step_price.length" class="warningTd"><input type="text" class="cjy-input-" name="goods_info[warning_nums][]" :value="cell.warning_nums"></td>
+                                                                </tr>
+                                                                <tr v-for="(eq,index) in cell.step_price" v-if="index>0" :row="row+1">
+                                                                    <td class="numTd"><span class="textBlack3">起订量</span><input type="text" class="cjy-input-" :name="'goods_info[step][nums]['+row+'][]'" :value="eq.num">及以上</td>
+                                                                    <td class="priceTd"><input type="text" class="cjy-input-" :name="'goods_info[step][price]['+row+'][]'" :value="eq.price"></td>
+                                                                </tr>
+                                                            </template>
+                                                        </template>
+                                                    </tbody>
+                                                </table>
+                                                </form>
+                                                <div class="edit_con_btns">
+                                                    <a href="javascript:;" class="edit_btn_canfirm" @click="saveList(index)">保存</a>
+                                                    <a href="javascript:;" class="edit_btn_cancel">取消</a>
+                                                </div>
+                                                <div class="change_box clearfix">
+                                                    <a href="javascript:;" class="change_add iconfont icon-jiahao1"></a>
+                                                    <a href="javascript:;" class="change_del iconfont icon-huishouxiang"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>{{item.update_time}}</td>
+                                <td>{{item.status==0?'未上架':'已上架'}}</td>
+                                <td style="vertical-align: middle;">
+                                    <div class="table_text" v-if="item.status==0">
+                                        <a href="javascript:;" class="table_btn btn_shelf_s">上架</a>
+                                        <p><a target="_blank" :href="'/Seller/Goods/detail?product_id='+item.id">查看</a>-<a target="_blank" :href="'/Seller/Goods/editGoods?id='+item.id">编辑</a>-<a href="javascript:;" class="btn_delete_s">删除</a></p>
+                                    </div>
+                                    <div class="table_text" v-else-if="item.status==1">
+                                        <a href="javascript:;" class="table_btn btn_obtained_s">下架</a>
+                                        <p><a target="_blank" :href="'/Seller/Goods/detail?product_id='+item.id">查看</a></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </template>
+                        <tr v-else>
+                            <td colspan="9" v-if="!loading">
+                                <div class="page_list_noneBg"></div>
+                                <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="checkbox" title=""></td>
+                            <td>
+                                <div class="order_table_detail">
+                                    <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                    <div class="order_table_name">
+                                        <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="alignL">
+                                <div class="order_table_attr">
+                                    <p>安全帽</p>
+                                    <p>普达（PUDA）</p>
+                                </div>
+                            </td>
+                            <td class="alignL">
+                                <div class="order_table_attr">
+                                    <span>属性值1 / 属性值2 / 属性值3</span>
+                                    <a href="#" class="block fontSize12 textOrange show_attr">共5个属性组合></a>
+                                </div>
+                            </td>
+                            <td>三阳路仓库</td>
+                            <td name="priceTd"><span class="textRed">11.00</span> 元/个</td>
+                            <td name="numTd">1000个</td>
+                            <td>09-16 16:31</td>
+                            <td class="textGreen">已上架</td>
+                            <td style="vertical-align: middle;">
+                                <div class="table_text">
+                                    <a href="javascript:;" class="table_btn btn_obtained_s">下架</a>
+                                    <p><a href="javascript:;">查看</a></p>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getProduct" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

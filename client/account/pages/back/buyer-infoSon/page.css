@@ -1,0 +1,226 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_list{
+    padding: 20px 0;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+
+/* 添加子账号 */
+.son_account{
+    padding: 0 30px;
+}
+.son_account .son_account_title{
+    position: relative;
+}
+.son_account_title h2{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fc6940;
+    position: relative;
+    z-index: 1;
+}
+.son_account_title .son_account_line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+.son_account_form{
+    margin-top: 20px;
+}
+.son_account_item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.son_account_item label{
+    float: left;
+    display: block;
+    width: 100px;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+.son_account_item .cjy-radio{
+    margin-right: 80px;
+}
+.son_account_block{
+    line-height: 40px;
+}
+.son_account_contatiner{
+    padding: 0 30px;
+}
+.son_account_block .tips_wrap{
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    padding: 10px 10px 10px 0;
+    text-indent: 10px;
+    border: 1px solid #f7e3a4;
+    background-color: #fcfae3;
+}
+.son_account_block .icon-i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-indent: 0;
+    line-height: 20px;
+    background-color: #50b2f6;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.blackBg{
+    background-color: #eee!important;
+}
+
+
+/*分管项目*/
+.multiple-title{
+    position: relative;
+    display: inline-block;
+    width: 288px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+.multiple-title i{
+    position: absolute;
+    right: 10px;
+}
+.multiple-content{
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 100px;
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+.js_selected .multiple-title,.js_selected .multiple-content{
+    display: inline-block;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-top: none;
+    background-color: #F7F7F7;
+}
+.material-list{
+    height: 320px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+.material-list::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+/* 设置滚动条的滑轨 */
+.material-list::-webkit-scrollbar-track{
+    background-color: #F7F7F7;
+}
+/* 滑块 */
+.material-list::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 5px;
+}
+/* 滑轨两头的监听按钮 */
+.material-list::-webkit-scrollbar-button{
+    background-color: #888;
+    display: none;
+}
+.material-list{
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.material-list li{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.material-list li{
+    width: 320px;
+}
+.material-list li.act,.material-list li:hover{
+    background-color: #D2EBFF;
+}
+.material-list li i,.area-list li i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #E0E4EC;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.material-list li.act i{
+    background-color: #46C88D;
+}
+.multiple-content .material-btns{
+    height: 60px;
+    line-height: 60px;
+    background-color: #F7F7F7;
+}
+.multiple-content .material-confirm{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+}
+.project_box{
+    min-height: 1px;
+    margin-left: 100px;
+}
+.project_box li{
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.project_box span.ellipsis{
+    width: 240px;
+    margin-right: 20px;
+    float: left;
+}

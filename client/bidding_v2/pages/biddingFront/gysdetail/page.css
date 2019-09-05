@@ -1,0 +1,159 @@
+.gys_wrap{
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+}
+.banner_wrap{
+    width: 100%;
+    height: 115px;
+    padding-top: 20px;
+    background: url(imgs/bg.png) center;
+    background-size: cover;
+}
+.banner_crumbs{
+    width: 1400px;
+    margin: 0 auto;
+    color: #fff;
+}
+.gys_header{
+    position: relative;
+    width: 100%;
+    height: 215px;
+    padding-top: 90px;
+    background-color: #fff;
+    text-align: center;
+}
+.gys_header .gys_logo_wrap{
+    position: absolute;
+    display: inline-block;
+    width: 158px;
+    height: 158px;
+    top: -79px;
+    left: 50%;
+    margin-left: -79px;
+    background: url(imgs/logoBg.png) no-repeat;
+}
+.gys_header .gys_logo_wrap img{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin-top: 19px;
+    border-radius: 120px;
+    background-color: #fff;
+    object-fit: scale-down;
+}
+.gys_header .gys_bid_num{
+    margin-top: 30px;
+    text-align: center;
+}
+.gys_header .gys_bid_num .gys_num_cell{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background-color: #969BD2;
+    border-radius: 30px;
+    color: #fff;
+}
+.gys_header .gys_menu{
+    margin-top: 56px;
+    text-align: center;
+}
+.gys_menu .gys_menu_cell{
+    position: relative;
+    font-size: 16px;
+}
+.gys_menu .gys_menu_cell .line{
+    position: absolute;
+    display: none;
+    width: 26px;
+    height: 2px;
+    left: 50%;
+    margin-left: -13px;
+    bottom: -16px;
+    background-color: #DC2F00;
+}
+.gys_menu .active{
+    font-weight: 700;
+    color: #DC2F00;
+}
+.gys_menu .active .line{
+    display: inline-block;
+}
+
+
+.gys_container{
+    width: 1180px;
+    margin: 30px auto;
+    padding: 30px 110px;
+    background-color: #fff;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: leftbit;
+    animation-name: leftbit;
+}
+.gys_detail_title {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+    padding-left: 20px;
+    background-color: #FFFBFA;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.gys_detail_title .gys_title_circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: -1px;
+    margin-right: 6px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+.gys_info_con{
+    padding: 20px 190px;
+}
+.gys_container .bottomBorder{
+    border-bottom: solid 1px #e5e5e5;
+}
+.gys_info_cell,.gys_info_block{
+    /* height: 40px; */
+    line-height: 40px;
+    padding-left: 40px;
+    font-weight: 700;
+    float: left;
+}
+.gys_info_cell{
+    width: 360px;
+}
+.gys_info_block{
+    width: 760px;
+}
+.gys_product{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    margin-right: 8px;
+    padding: 0 16px;
+    font-weight: 400;
+    color: #DC2F00;
+    text-align: center;
+}
+
+.material_list {
+    margin-bottom: 20px;
+}
+/* 页码 */
+.page_container{
+    margin: 30px auto 80px auto;
+}
+.page_container_nav a{
+    border-radius: 34px;
+}
+.page_container_nav .page_cur{
+    background-color: #DC2F00;
+    border: 1px solid #DC2F00;
+}

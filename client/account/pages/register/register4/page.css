@@ -1,0 +1,48 @@
+.register_waiting{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+.reg_wait_img{
+    display: inline-block;
+    width: 178px;
+    height: 120px;
+    margin: 0 auto;
+    background: url("../../../public-resource/imgs/register/regNormal.png") no-repeat;
+}
+.reg_wait_title{
+    margin: 30px 0 20px 0;
+    font-size: 24px;
+    color: #fc6940;
+    text-align: center;
+}
+.reg_wait_con{
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.reg_wait_reason{
+    width: 648px;
+    line-height: 2;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    font-size: 16px;
+    text-align: left;
+}
+.reg_wait_tips{
+    line-height: 2;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+
+.register_btns a.btn_confirm{
+    width: 130px;
+    margin: 30px;
+    float: right;
+}

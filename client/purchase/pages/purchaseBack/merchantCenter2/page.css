@@ -1,0 +1,671 @@
+.order_process{
+    position: relative;
+    margin-top: 24px;
+    margin-left: 200px;
+    margin-right: 450px;
+}
+.order_process .process_bar_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    min-width: 680px;
+    display: flex;
+}
+.process_bar_box .process_bar{
+    width: 33.33%;
+    border-top: 2px solid #ccc;
+}
+.process_bar_box .has_bar{
+    border-top: 2px solid #fc9440;
+}
+.order_process .process_wrap{
+    min-width: 680px;
+    display: flex;
+    justify-content: space-around;
+}
+.process_wrap .process_box{
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+}
+.process_circle span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #fff;
+}
+.has_process .process_circle span{
+    background-color: #fc9440;
+}
+.process_box p{
+    width: 60px;
+    margin-top: 10px;
+    margin-left: -11px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+div.has_process p{
+    color: #90b51f;
+}
+.fillin_box{
+    padding: 0 100px;
+    margin-right: 250px;
+}
+.fillin_box .title_box{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.title_box h3{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    line-height: 60px;
+}
+.title_box span{
+    float: right;
+    font-size: 12px;
+    color: #333;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.title_box i{
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    margin-left: 10px;
+    transform: rotate(0deg);
+    transition: transform .3s ease-in;
+}
+.title_box span:hover i{
+    transform: rotate(360deg);
+}
+/* 基本信息 */
+.fillin_box .fillin_wrap{
+    margin-top: 30px;
+}
+.basic_box .basic_item,.trade_box .trade_item{
+    margin-bottom: 20px;
+}
+.basic_item dt,.detail_item dt,.trade_item dt{
+    float: left;
+    min-width: 80px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    margin-top: 12px;
+}
+.basic_item dt span,.detail_item dt span,.trade_item dt span{
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: -3px;
+    color: #fd4545;
+}
+.basic_item .basic_dd{
+    float: left;
+    font-size: 14px;
+    color: #333;
+    min-width: 730px;
+}
+.basic_dd p{
+    display: inline-block;
+}
+.basic_dd .basic_edit,.basic_dd .new_warehouse{
+    display: inline-block;
+    width: 72px;
+    height: 40px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-left: 16px;
+}
+.basic_dd .basic_edit:hover,.basic_dd .new_warehouse:hover{
+    background-color: #f7f7f7;
+}
+.basic_dd .basic_search{
+    display: inline-block;
+    position: relative;
+}
+.basic_search .fuzzy_wrap{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-sizing: border-box;
+    display: none;
+}
+.fuzzy_wrap li{
+    height: 38px;
+    font-size: 12px;
+    color: #666;
+    line-height: 38px;
+    text-indent: 10px;
+}
+.fuzzy_wrap li:hover{
+    color: #333;
+    background-color: #fafafa;
+}
+.basic_dd .basic_tips{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.basic_tips p{
+    font-size: 14px;
+    color: #999;
+}
+.basic_tips i,.descript_area i,.trade_dd i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #50b2f6;
+    border-radius: 100%; 
+    margin-right: 4px;
+    vertical-align: 2px;
+}
+.basic_dd .new_warehouse{
+    width: 100px;
+    vertical-align: -2px;
+}
+.basic_dd select,.trade_dd select{
+    width: 298px;
+}
+.basic_dd .cjy-select{
+    margin-right: -6px;
+}
+/* 交易信息 */
+.trade_dd .setting_attr{
+    width: 126px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #00b27e;
+    border: 1px solid #019a6d;
+}
+.trade_dd .setting_attr:hover{
+    background-color: #00a776;   
+}
+.trade_dd p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+.trade_dd .trade_price{
+    font-size: 22px;
+    color: #df1c1c;
+    height: 30px;
+    line-height: 36px;
+}
+/* 商品详情 */
+.detail_item .detail_dd,.upload_area .goods_box,.upfile_box,.trade_item .trade_dd{
+    float: left;
+}
+.goods_box .goods_photo{
+    display: inline-block;
+    width: 129px;
+    position: relative;
+    margin-right: 20px;
+}
+.goods_photo i{
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #fd4545;
+    border-radius: 100%;
+}
+.goods_photo img{
+    width: 127px;
+    height: 127px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.goods_photo figcaption{
+    font-size: 12px;
+    color: #333;
+    margin-top: 14px;
+    text-align: center;
+}
+.upfile_box .upfile_btn{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background: url('imgs/upload_photo.png') no-repeat;
+    cursor: pointer;
+}
+.upfile_box #uploadFile{
+    display: none;
+}
+.detail_dd .descript_area{
+    margin: 20px 0;
+}
+.descript_area p{
+    font-size: 14px;
+    color: #999;
+    line-height: 1.5;
+}
+.descript_area span{
+    color: #df1c1c;
+}
+.descript_area .text_indent{
+    text-indent: 22px;
+}
+
+.detail_item .detail_dd .upload_btn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #00b27e;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.detail_item .detail_dd .upload_btn:hover{
+    background-color: #00a776;
+}
+.detail_item .detail_dd .file_con{
+    width: 620px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+    border: solid 1px #e5e5e5;
+}
+.detail_dd .file_con li{
+    height: 28px;
+    line-height: 28px;
+}
+.detail_dd .file_con li i.icon-fujian{
+    margin-right: 6px;
+    color: #999;
+    vertical-align: -1px;
+}
+.detail_dd .file_con li a.file_del{
+    margin-left: 20px;
+    color: #9e6b49;
+}
+/* 发布按钮 */
+.fillin_box .fillin_btn{
+    font-size: 0px;
+    text-align: right;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.fillin_btn a{
+    display: inline-block;
+    width: 190px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+}
+.fillin_btn .fillin_save{
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.fillin_btn .fillin_save:hover{
+    background-color: #f7f7f7;
+}
+.fillin_btn .fillin_pub:hover{
+    background-color: #f3623a;
+    border: 1px solid #f3623a;
+}
+/* 属性表格 */
+.attr_table table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+.attr_table th{
+    font-size: 14px;
+    color: #333;
+    height: 80px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ececec;
+}
+.attr_table th span{
+    display: block;
+    text-align: center;
+}
+.attr_table .color999{
+    color: #999;
+}
+.attr_table .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #7392b5;
+    border-radius: 100%;
+    margin-left: 6px;
+    vertical-align: 1px;
+}
+.attr_table td{
+    font-size: 14px;
+    color: #666;
+    height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+.attr_table input{
+    width: 78px;
+}
+.attr_table .del_tr{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+.attr_table tr:hover{
+    background-color: #fdfdfd;
+}
+.attr_table .multi_td{
+    border-bottom: none;
+}
+.multi_tr .multi_td{
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+.multi_td .multi_box{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+    position: relative;
+}
+.multi_box .multi_inner{
+    position: relative;
+}
+.multi_inner .multi_left,.multi_inner .multi_right{
+    float: left;
+    margin-top: 20px;
+}
+.multi_inner .multi_left{
+    width: 60%;
+    text-align: center;
+}
+.multi_box .multi_right{
+    width: 40%;
+    text-align: center;
+}
+.multi_td .multi_oprate{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border: 1px dashed #00b27e;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+.multi_oprate i{
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    background-color: #00b27e;
+    cursor: pointer;
+}
+.multi_oprate .add_multi{
+    top: -1px;
+    left: 100%;
+}
+.multi_oprate .del_multi{
+    bottom: -1px;
+    left: 100%;
+}
+.multi_box:hover .multi_oprate{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 设置商品属性弹框 */
+.set_attr_con{
+    width: 738px;
+    height: 478px;
+    margin: 0 30px;
+    border: solid 1px #e5e5e5;
+    overflow: hidden;
+}
+.set_attr_con .attr_con_left{
+    width: 182px;
+    height: 478px;
+    border-right: solid 1px #e5e5e5;
+    background-color: #FAFAFA;
+    float: left;
+}
+.set_attr_con .attr_con_right{
+    width: 515px;
+    height: 478px;
+    padding: 0 20px;
+    float: right;
+}
+.attr_con_left .attr_name{
+    display: inline-block;
+    width: 142px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #666;
+}
+.attr_con_left li.active .attr_name,.attr_con_left li .attr_name:hover{
+    background-color: #D2EBFF;
+}
+.attr_con_left .attr_name .attr_num{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 10px;
+    padding: 0 6px;
+    border-radius: 18px;
+    background-color: #DF1C1C;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.attr_con_left .attr_name .icon-youjiantou{
+    display: none;
+    font-size: 12px;
+    color: #666;
+    float: right;
+}
+.attr_con_left li.active .attr_name .icon-youjiantou{
+    display: inline-block;
+}
+
+.attr_con_right .attr_selAll{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.attr_con_right .checkIcon i,.attr_con_right .checkedIcon i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    border-radius: 18px;
+    background-color: #E0E4EC;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.attr_con_right .checkIcon i{
+    background-color: #E0E4EC;
+}
+.attr_con_right .checkedIcon i{
+    background-color: #31C37C;
+}
+.attr_con_right .attr_val_add{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 15px;
+    padding: 0 20px;
+    border: solid 1px #FC6940;
+    border-radius: 4px;
+    color: #FC6940;
+    text-align: center;
+    float: right;
+}
+.attr_con_right .attr_selCon{
+    height: 200px;
+    padding-top: 20px;
+    border-bottom: solid 1px #e5e5e5;
+    overflow: auto;
+}
+.attr_selCon .attr_sel_cell{
+    width: 33%;
+    margin-bottom: 20px;
+    float: left;
+}
+.attr_addCon{
+    height: 180px;
+    padding-top: 20px;
+    overflow: auto;
+}
+.attr_addCon .attr_add_cell{
+    width: 33%;
+    margin-bottom: 20px;
+    float: left;
+}
+.attr_addCon .attr_add_cell input{
+    width: 64px;
+    margin-right: 6px;
+}
+
+/* 新增仓库 */
+.new-warehouse-box .warehouse-item{
+    margin-bottom: 20px;
+}
+.warehouse-item .warehouse-label{
+    float: left;
+    display: block;
+    width: 114px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.warehouse-label span{
+    color: #ca3c3c;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+.warehouse-item .warehouse-input{
+    float: left;
+    position: relative;
+}
+.warehouse-input input[type=text]{
+    width: 340px;
+}
+.warehouse-input .search-ware{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fc6940;
+    cursor: pointer;
+}
+.warehouse-input #baiduMap{
+    width: 660px;
+    height: 470px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.warehouse-input .default_address{
+    font-size: 14px;
+    color: #333;
+}
+.default_address .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 18px;
+    background-color: #7392b5;
+    margin-left: 6px;
+}
+.tangram-suggestion-main{
+    z-index: 1000;
+}
+
+
+/* uppy图片上传 */
+.upload_area .uploadImg{
+    position: relative;
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    border: dashed 1px #ccc;
+    font-size: 70px;
+    color: #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+.uploadImg .uppy-FileInput-container{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 0;
+    top: 0;
+}
+.uploadImg .uppy-FileInput-btn{
+    width: 128px;
+    height: 128px;
+    opacity: 0;
+}

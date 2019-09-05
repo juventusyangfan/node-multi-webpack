@@ -1,0 +1,253 @@
+<div class="com_top_menu clearfix">
+    <div class="top_menu_left">
+        <a class="website_logo" href="javascript:;"></a>
+    </div>
+    <div class="top_menu_right">
+        <% for(var i = 0;i < topItems.length;i++) { %>
+        <a class="" href="javascript:;"><i class="iconfont <%= topItems[i].icon %>"></i><p><%= topItems[i].name %></p></a>
+        <% } %>
+    </div>
+</div>
+<% if(showMenu == 'true'){ %>
+<ul class="top_bar_warp">
+    <li><a href="javascript:;" class="js_baseInfo">基本信息<i class="iconfont icon-xiajiantou"></i></a></li>
+    <li><a href="javascript:;" class="js_group">评标小组<i class="iconfont icon-xiajiantou"></i></a></li>
+    <li class="noneSetting"><a href="javascript:;" class="js_rules">评分细则<i class="iconfont icon-xiajiantou"></i><i class="iconSetting">未设置</i></a></li>
+    <li><a href="javascript:;" class="js_liaotianshi">聊天室<i class="iconfont icon-xiajiantou"></i></a><i class="cjy-icon-num">99+</i></li>
+</ul>
+<!-- 基本信息 -->
+<div class="room_layout">
+    <div class="room_infoCon">
+        <div class="room_infoBlock"><label>招标名称</label><span class="tdGreenD">丹江口市武当山高铁小镇工程项目钢筋采购钢筋采购钢筋采购钢筋采购钢筋采购</span></div>
+        <div class="room_infoBlock"><label>采购编号</label><span>HBLQJTCLZB20180141</span></div>
+        <div class="room_infoBlock"><label>采购主体</label><span>武汉市市政建设集团有限公司</span></div>
+        <div class="room_infoBlock"><label>回标信息</label><span>9 家单位已投标/报价</span></div>
+        <div class="room_infoBlock"><label>评标方案</label><span>在线评标</span></div>
+        <div class="room_infoBlock"><label>包件个数</label><span>3</span></div>
+    </div>
+</div>
+<!-- 基本信息 -->
+
+<!-- 评标小组 -->
+<div class="room_layout">
+    <div class="room_groupCon">
+        <div class="package_con">
+            <ul>
+                <li class="act">
+                    <a href="javascript:;" class="package_cell">包件1（BJBH-001）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件2（BJBH-002）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件3（BJBH-003）</a>
+                </li>
+            </ul>
+        </div>
+        <div class="setting_table_con">
+            <div class="material_list clearfix">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="80">
+                        <col width="100">
+                        <col width="200">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>专家姓名</th>
+                            <th>联系方式</th>
+                            <th>备注信息</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr>
+                            <td>1</td>
+                            <td>张三</td>
+                            <td>13512554444</td>
+                            <td>项目负责人</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>张三</td>
+                            <td>13512554444</td>
+                            <td>工业与民用建筑、各类基础工程、建筑给排水工业与民用建筑、各类基础工程、建筑给排水</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>张三</td>
+                            <td>13512554444</td>
+                            <td>物资采购与管理</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>张三</td>
+                            <td>13512554444</td>
+                            <td>物资采购与管理</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 评标小组 -->
+
+<!-- 评标规则 -->
+<div class="room_layout">
+    <div class="room_rulesCon">
+        <div class="package_con">
+            <ul>
+                <li class="act">
+                    <a href="javascript:;" class="package_cell">包件1（BJBH-001）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件2（BJBH-002）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件3（BJBH-003）</a>
+                </li>
+            </ul>
+        </div>
+        <div class="setting_table_con">
+            <div class="setting_list_title">
+                <p>这里是模板的名称</p>
+                <span class="setting_list_type">综合评标法</span>
+            </div>
+            <div class="material_list clearfix">
+                <table>
+                    <colgroup>
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="200">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>评分因素</th>
+                            <th>评分指标</th>
+                            <th>权重参考（%,100分）</th>
+                            <th>评审要点及计分标准</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr>
+                            <td rowspan="3">经济因素</td>
+                            <td>投标报价</td>
+                            <td>30</td>
+                            <td>项目负责人</td>
+                        </tr>
+                        <tr>
+                            <td>企业注册资金</td>
+                            <td>30</td>
+                            <td>物资采购与管理</td>
+                        </tr>
+                        <tr>
+                            <td>近期业绩</td>
+                            <td>30</td>
+                            <td>物资采购与管理</td>
+                        </tr>
+                        <tr>
+                            <td>技术因素</td>
+                            <td>供应商评价得分</td>
+                            <td>30</td>
+                            <td>工业与民用建筑、各类基础工程、建筑给排水工业与民用建筑、各类基础工程、建筑给排水</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">评分说明：这里是评分说明……</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 评标规则 -->
+
+<!-- 聊天室 -->
+<div class="room_layout">
+    <div class="room_box">
+        <input type="hidden" name="user_id" value="153198287808012950046">
+        <input type="hidden" name="user_name" value="高小盈">
+        <input type="hidden" name="user_phone" value="15007137362">
+        <div class="room_box_head">
+            <i class="iconKBR_big"></i>高小盈（15007137362）
+        </div>
+        <div class="room_box_body">
+            <div class="room_box_left">
+                <div class="room_box_con">
+                    <p class="room_box_time">2018-12-01 12:30:20</p>
+                    <p class="room_box_msg"><span>韩炜峰、周祖军、韩炜峰等 进入在线评标室</span></p>
+                    <div class="room_box_other clearfix">
+                        <div class="room_box_itemInfo"><i class="iconPBR_big"></i>韩炜峰（15007137362）</div>
+                        <div class="room_box_itemCon">大家好！我是技术专家韩炜峰。</div>
+                    </div>
+                    <div class="room_box_other clearfix">
+                        <div class="room_box_itemInfo"><i class="iconJBR_big"></i>张三（15007137362）</div>
+                        <div class="room_box_itemCon">大家好！我是主持 人张三。</div>
+                    </div>
+                    <div class="room_box_mine clearfix">
+                        <div class="room_box_itemInfo">高小盈（15007137362）<i class="iconKBR_big"></i></div>
+                        <div class="room_box_itemCon">大家好！我是开标人。可以生成一张加密的网络图片,用户需要扫一扫图片上的二维码,支付之后能看到原图,也可以跳转到一个指定的网页。数码工程机、晒图机、柯美彩机...
+                        </div>
+                    </div>
+                    <div class="room_box_other clearfix">
+                        <div class="room_box_itemInfo"><i class="iconPBR_big"></i>李四（15007137362）</div>
+                        <div class="room_box_itemCon">大家好！我是技术专家李四。</div>
+                    </div>
+                </div>
+                <div class="room_box_pub">
+                    <textarea class="room_box_text" placeholder="此处输入您的发言内容"></textarea>
+                    <div class="room_box_btns">
+                        <a href="javascript:;" class="room_box_close">关闭</a>
+                        <a href="javascript:;" class="room_box_enter">发送</a>
+                    </div>
+                </div>
+            </div>
+            <div class="room_box_right">
+                <div class="room_box_bulletin">
+                    <ul>
+                        <li>
+                            <h1>【系统通知】</h1>
+                            <p>投标截止！（2018-12-01 12:30:20）</p>
+                        </li>
+                        <li>
+                            <h1>【系统通知】</h1>
+                            <p>投标截止！（2018-12-01 12:30:20）</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="room_box_member">
+                    <div class="box_member_title">
+                        <span>评标室成员</span>
+                    </div>
+                    <dl class="box_member_list">
+                        <dt>经办人（1/1）<i class="iconJBR_small"></i></dt>
+                        <dd>
+                            <ul>
+                                <li>张三（15007137362）</li>
+                            </ul>
+                        </dd>
+                        <dt>开标人（1/1）<i class="iconKBR_small"></i></dt>
+                        <dd>
+                            <ul>
+                                <li>高小盈（15007137362）</li>
+                            </ul>
+                        </dd>
+                        <dt>评标人（1/1）<i class="iconPBR_small"></i></dt>
+                        <dd>
+                            <ul>
+                                <li>韩炜峰（15007137362）</li>
+                                <li>王菲（15007137362）</li>
+                                <li class="member_hide">刘小二（15007137362）</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 聊天室 -->
+<% } %>

@@ -1,0 +1,63 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">我的供应商</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <div class="marginT20">
+                <input name="company_name" type="text" placeholder="搜索采购商名称" class="cjy-input-">
+                <a href="javascript:;" class="btn_confirm">搜索</a>
+                <a href="javascript:;" class="btn_clear">清除</a>
+            </div>
+        </div>
+
+        <div class="back_main_list" id="supplier">
+            <div class="back_list_top">
+                <span class="floatR">共<span>{{count}}</span>条记录</span>
+            </div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="250">
+                        <col width="150">
+                        <col width="150">
+                        <col width="100">
+                        <col width="100">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>采购商名称</th>
+                        <th>友商对我分类</th>
+                        <th>成为友商时间</th>
+                        <th>联系人</th>
+                        <th>联系方式</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="5">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{item.buyer_name}}</td>
+                        <td><span v-for="cell in item.all_type">{{cell}};</span></td>
+                        <td>{{item.create_time}}</td>
+                        <td>{{item.real_name}}</td>
+                        <td>{{item.user_mobile}}</td>
+                        <input type="hidden" name="supplier_file" :value="item.supplier_file">
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="5"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 10px;font-size: 24px;color: #999;text-align: center;">暂无友商数据，快去申请吧〜</p><a href="javascript:;" class="back_list_btn" style="margin-bottom:80px;">申请友商</a></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,222 @@
+.other_top_con{
+    height: 116px;
+}
+.bid_head_con{
+    padding-bottom: 50px;
+}
+.bid_head_con .bid_head_title,.bid_head_con .bid_head_tips,.bid_head_con .bid_head_cells{
+    margin: 14px auto;
+    text-align: center;
+    float: none!important;
+}
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list th{
+    height: 60px;
+}
+.material_list td {
+    min-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    background-color: #F8F8F8;
+    font-weight: 700;
+}
+.material_list td > p{
+    line-height: 2;
+}
+.material_list .bid_table_num{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    border: solid 1px #F5AF9D;
+    border-radius: 18px;
+    color: #DC2F00;
+    text-align: center;
+    vertical-align: 6px;
+}
+.material_list .bid_table_name,.material_list .bid_done_name{
+    display: inline-block;
+    width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}
+.material_list .bid_table_name{
+    width: 240px;
+}
+.material_list .bid_done_name{
+    width: 240px;
+    vertical-align: -10px;
+}
+.material_list .bid_table_pay{
+    margin-left: 20px;
+    color: #DC2F00;
+    vertical-align: 5px;
+}
+.material_list .bid_table_edit{
+    display: block;
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-left: 28px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #ff3600;
+    text-align: center;
+}
+.material_list .bid_table_choose{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ff3600;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+.material_list .bid_table_choose:hover{
+    background-color: #ec3200;
+}
+.material_list textarea{
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.bid_detail_prompt{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: #FCFAE3;
+    border: solid 1px #F7E3A4;
+    color: #666;
+}
+.bid_detail_prompt > i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background-color: #50B2F6;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+}
+.bid_detail_title{
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+    padding-left: 20px;
+    background-color: #FFFBFA;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.bid_detail_title .detail_title_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: -1px;
+    margin-right: 6px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+
+.bid_detail_other{
+    padding: 0 240px;
+}
+
+.bid_detail_block{
+    margin-top: 30px;
+}
+.bid_detail_block label{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: right;
+}
+.bid_detail_block .bid_detail_cell{
+    float: left;
+}
+.bid_detail_block .bid_detail_cell select{
+    width: 160px;
+}
+.bid_detail_block .bid_detail_cell i.icon-i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background-color: #50B2F6;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+.bid_detail_block .bid_detail_cell .cjy-radio,.bid_detail_block .bid_detail_cell .cjy-radio span{
+    height: 40px;
+    line-height: 40px;
+}
+.bid_detail_block .bid_detail_cell .cjy-radio{
+    margin-right: 30px;
+}
+
+.bid_detail_publish{
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ff3600;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+.bid_detail_publish:hover{
+    background-color: #ec3200;
+    color: #fff;
+}
+.bid_detail_cancel{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    color: #666;
+    text-align: center;
+}
+.bid_detail_cancel:hover{
+    border: solid 1px #ff3600;
+    color: #ff3600;
+}

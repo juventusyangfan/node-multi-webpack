@@ -1,0 +1,40 @@
+.back_main_content{
+    padding: 50px 30px;
+}
+.back_main_item label span{
+    color: #fc6940;
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+.back_main_item .upload_img{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: #00b27e;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.back_main_block .noticeCon{
+    margin-left: 10px;
+}
+.back_main_item .adv_img{
+    width: 122px;
+    height: 122px;
+    text-align: center;
+    line-height: 120px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.adv_img img{
+    display: inline-block;
+    max-width: 120px;
+    border: 1px solid #ccc;
+    background: #e5e5e5;
+    cursor: pointer;
+    object-fit: scale-down;
+}

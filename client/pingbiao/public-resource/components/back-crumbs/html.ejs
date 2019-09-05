@@ -1,0 +1,7 @@
+<div class="back_crumbs_con">
+    <span>当前位置：</span>
+    <% for(var i = 0;i < crumbsItem.links.length;i++){ %>
+    <a href="#"><%= crumbsItem.links[i] %></a>
+    <% } %>
+    <span>&nbsp;>&nbsp;<%= crumbsItem.textItem %></span>
+</div>

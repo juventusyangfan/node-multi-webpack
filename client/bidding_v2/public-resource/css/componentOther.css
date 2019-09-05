@@ -1,0 +1,290 @@
+.other_top_con{
+    position: relative;
+    width: 100%;
+    background-image: url(../imgs/top/buyerDetailBg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.other_top_con .other_top_crumbs{
+    width: 1400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.other_top_con .other_top_crumbs a{
+    color: #fff;
+    opacity: 1;
+}
+.other_top_con .other_top_crumbs span,.other_top_con .other_top_crumbs i{
+    color: #fff;
+    opacity: 0.8;
+}
+.other_top_con .other_top_crumbs i{
+    vertical-align: -1px;
+}
+.other_top_con .other_top_title{
+    position: absolute;
+    width: 366px;
+    height: 56px;
+    line-height: 56px;
+    margin-left: -183px;
+    left: 50%;
+    bottom: -8px;
+    background: url(../imgs/top/buyerDetailTitle.png) no-repeat;
+    font-size: 18px;
+    font-weight: 700;
+    color: #DB2700;
+    text-align: center;
+}
+.other_top_date .date_last{
+    margin-top: 12px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.other_top_date .date_info{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+    text-align: center;
+}
+
+
+
+.bid_head_container{
+    width: 100%;
+    background-color: #fff;
+}
+.bid_head_con{
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.bid_head_con .bid_head_title{
+    width: 990px;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    float: left;
+}
+.bid_head_con .bid_head_tips{
+    width: 990px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #999;
+    float: left;
+}
+.bid_head_con .bid_head_tips span{
+    margin-right: 20px;
+}
+.bid_head_con .bid_head_cells{
+    width: 990px;
+    margin-top: 20px;
+    float: left;
+}
+.bid_head_con .bid_head_cells span{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    margin-right: 8px;
+    padding: 0 16px;
+    color: #DC2F00;
+    text-align: center;
+}
+.bid_head_con .bid_head_handle{
+    width: 240px;
+    float: right;
+}
+.bid_head_handle .bid_handle_btn{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    color: #666;
+    text-align: center;
+    float: right;
+}
+.bid_head_handle .bid_handle_btn i{
+    font-size: 18px;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+.bid_head_handle .bid_handle_btn:hover{
+    border: solid 1px #FF3600;
+    color: #FF3600;
+}
+.bid_bubble_warp{
+    position: absolute;
+    display: none;
+    top: 36px;
+    left: -20px;
+}
+.bid_head_handle .bid_handle_btn:hover .bid_bubble_warp{
+    display: inline-block;
+}
+.bid_bubble{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 20px;
+    background-color: #fff;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #666;
+    text-align: center;
+}
+.bid_bubble::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #FF3600;
+    left: 50%;
+    top: -16px; 
+    margin-left: -8px; 
+}
+.bid_bubble::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+    left: 50%;
+    top: -15px; 
+    margin-left: -8px; 
+}
+
+.bid_head_con .bid_head_steps{
+    width: 100%;
+    float: left;
+}
+.bid_head_con .bid_head_steps li{
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px #E9E9E9;
+    color: #999;
+    text-align: center;
+    float: left;
+}
+.bid_head_steps .bid_steps_circle{
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -7px;
+    background-color: #BFBFBF;
+    border: solid 2px #fff;
+    border-radius: 8px;
+}
+.bid_head_con .bid_head_steps li.stepDone{
+    color: #333;
+    border-bottom: solid 2px #22BC3C;
+}
+.bid_head_steps li.stepDone .bid_steps_circle{
+    background-color: #fff;
+    border: solid 2px #22BC3C;
+}
+.bid_head_con .bid_head_steps li.stepDoing{
+    font-weight: 700;
+    color: #22BC3C;
+    border-bottom: solid 2px #22BC3C;
+}
+.bid_head_con .bid_head_steps li.stepDoing p,.bid_head_con .bid_head_steps li.stepDoing a{
+    color: #22BC3C;
+}
+.bid_head_steps li.stepDoing .bid_steps_circle{
+    background-color: #22BC3C;
+    border: solid 2px #fff;
+}
+
+.bid_body_container{
+    width: 100%;
+    padding: 30px 0 80px 0;
+    background-color: #F4F4F4;
+}
+.bid_body_con{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.bid_body_con .bid_body_title{
+    padding-left: 30px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.bid_body_con .bid_body_title span{
+    display: inline-block;
+    height: 52px;
+    line-height: 52px;
+    border-bottom: solid 2px #FF3600;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+.bid_body_con .bid_body_detail{
+    padding: 20px 30px 40px 30px;
+}
+.bid_body_con .bid_detail_nav{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+    border-bottom: 1px solid #F5AF9D;
+}
+.bid_detail_nav li {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    color: #333;
+    float: left;
+}
+.bid_detail_nav li a {
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+}
+.bid_detail_nav li.act {
+    border: 1px solid #F5AF9D;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #fff;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.bid_detail_nav li:hover a,.bid_detail_nav li.act a{
+    color: #DC2F00;
+}
+
+.bid_form_block i.icon-wenhao {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-left: 6px;
+    background-color: #7392B5;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}

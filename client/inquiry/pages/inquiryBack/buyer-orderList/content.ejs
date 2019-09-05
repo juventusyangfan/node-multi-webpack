@@ -1,0 +1,157 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>我的订单</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input type="text" class="cjy-input-" name="product_name" placeholder="商品名称">
+            <input type="text" class="cjy-input-" name="order_number" placeholder="订单号">
+            <input type="text" class="cjy-input-" name="inquiry_company_name" placeholder="商家名称">
+            <select name="order_status" value="9">
+                <option value="9">订单状态</option>
+                <option value="1">待付款</option>
+                <option value="2">待发货</option>
+                <option value="3">待收货</option>
+                <option value="4">交易成功</option>
+                <option value="5">评价完成</option>
+                <option value="0">交易关闭</option>
+                <option value="-1">退款中</option>
+                <option value="-2">已退款</option>
+            </select>
+            <input type="text" class="cjy-calendar-input" name="start_time" placeholder="下单开始时间" calendar readonly>
+            <span class="search_line">-</span>
+            <input type="text" class="cjy-calendar-input" name="end_time" placeholder="结束时间" calendar readonly>
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div id="orderList">
+            <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li :class="status==9?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(9)">全部订单<span class="back_nav_num" v-if="parseInt(statusNumList.all_count)>0">{{statusNumList.all_count}}</span></a>
+                    </li>
+                    <li :class="status==1?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(1)">等待付款<span class="back_nav_num" v-if="parseInt(statusNumList.wait_pay_count)>0">{{statusNumList.wait_pay_count}}</span></a>
+                    </li>
+                    <li :class="status==2?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(2)">等待发货<span class="back_nav_num" v-if="parseInt(statusNumList.wait_send_count)>0">{{statusNumList.wait_send_count}}</span></a>
+                    </li>
+                    <li :class="status==3?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(3)">等待收货<span class="back_nav_num" v-if="parseInt(statusNumList.wait_receive_count)>0">{{statusNumList.wait_receive_count}}</span></a>
+                    </li>
+                </ul>
+                <span class="floatR textBlack1">共{{count}}条符合条件的数据</span>
+            </div>
+            <div class="back_main_list">
+                <div class="material_list">
+                    <table>
+                        <colgroup>
+                            <col width="400">
+                            <col width="120">
+                            <col width="180">
+                            <col width="120">
+                            <col width="200">
+                            <col width="200">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>商品信息</th>
+                                <th>单价</th>
+                                <th>采购量</th>
+                                <th>实付款</th>
+                                <th>交易状态</th>
+                                <th>交易操作</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-if="loading">
+                                <td colspan="6">
+                                    <div class="page_loading"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <template v-if="list.length>0">
+                        <tbody v-for="item in list">
+                            <tr>
+                                <td colspan="6">
+                                    <div class="body_head">
+                                        <label class="textBlack3">订单号：</label>
+                                        <span class="textBlack1">{{item.order_number}}</span>
+                                        <label class="textBlack3 marginL40">下单时间：{{item.create_time}}</label>
+                                        <span class="width180 marginL40 textBlack1 ellipsis" style="vertical-align: -4px;">
+                                            <i class="iconfont icon-yonghu marginR6"></i>{{item.quote_company_name}}
+                                        </span>
+                                        <a class="btn_del" v-if="item.order_status==7"><i class="iconfont icon-huishouxiang"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr v-for="(cell,index) in item.product_data">
+                                <td>
+                                    <div class="order_table_detail">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">{{cell.category_name}}</span>
+                                            <p class="marginT10 textBlack3">品牌：{{cell.brand_name}}</p>
+                                            <p class="marginT10 textBlack3">规格型号{{cell.spec}}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>￥{{cell.unit_price}}/{{cell.unit}}</td>
+                                <td>{{cell.purchased_amount}}{{cell.unit}}</td>
+                                <td :rowspan="item.product_data.length" style="vertical-align: middle;" v-if="index==0">
+                                    <div class="table_text">
+                                        <p>￥{{parseFloat(cell.unit_price)*parseFloat(cell.purchased_amount)}}</p>
+                                    </div>
+                                </td>
+                                <td :rowspan="item.product_data.length" style="vertical-align: middle;" v-if="index==0">
+                                    <div class="table_text">
+                                        <p class="textRed">{{item.status_title}}</p>
+                                        <a :href="'/purchaser/order/show?order_id='+item.id">订单详情</a>
+                                    </div>
+                                </td>
+                                <td :rowspan="item.product_data.length" style="vertical-align: middle;" v-if="index==0">
+                                    <div class="table_text" v-if="item.status==1">
+                                        <div class="tagBox">
+                                            <span class="tagArrow"></span>
+                                            <div class="tagCon">
+                                                <p>请在<span class="textRed">{{item.timeStr}}</span>内确认订单，超时订单自动关闭</p>
+                                            </div>
+                                        </div>
+                                        <a :href="'/purchaser/order/easypay?id='+item.id" target="_blank" class="go_pay">付款</a>
+                                        <a href="javascript:;" @click="changeOrder(item.id,'0')">取消订单</a>
+                                    </div>
+                                    <div class="table_text" v-if="item.status==2||item.status==3">
+                                        <a href="javascript:;" class="confirm_go" @click="changeOrder(item.id,'4')">确认收货</a>
+                                        <a href="javascript:;" v-if="item.status==2&&item.refund_times<3" @click="changeOrder(item.id,'-1')">申请退款</a>
+                                    </div>
+                                    <div class="table_text" v-if="item.status==4">
+                                        <a href="javascript:;" class="confirm_go" @click="commentDialog(item.id)">评论</a>
+                                        <a href="javascript:;">投诉商家</a>
+                                    </div>
+                                    <div class="table_text" v-if="item.status==0">
+                                        <a href="javascript:;">投诉商家</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </template>
+                        <tbody v-else>
+                            <tr>
+                                <td colspan="6" v-if="!loading">
+                                    <div class="page_list_noneBg"></div>
+                                    <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+                <div id="pages" class="page_container_wrap">
+                    <vue-page @get-list="getOrder" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,169 @@
+.back_main_item label {
+    width: 170px;
+}
+.back_main_item .back_main_block {
+    margin-left: 166px;
+}
+.back_main_block .fujian_tips{
+    width: 550px;
+    line-height: 28px;
+    vertical-align: -28px;
+}
+
+.back_main_item .itemBtn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.back_main_item .itemBtn:hover {
+    background-color: #00A776;
+    color: #fff;
+}
+
+.back_main_btns {
+    height: 80px;
+}
+
+.back_main_btns .btn_confirm {
+    width: 270px;
+}
+
+.back_main_btns .btn_cancel {
+    width: 270px;
+}
+
+.edui-container label {
+    width: auto;
+    float: left;
+    display: inline-block;
+    padding: 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+
+/* 邀请招标 - 挑选供应商 */
+.txgys-box{
+    padding: 0 30px;
+}
+.txgys-form select{
+    width: 160px;
+}
+.txgys-form .cjy-input-{
+    vertical-align: -1px;
+}
+.txgys-form button{
+    min-width: 102px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+}
+.txgys-form button:hover{
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+.txgys-form p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+}
+.txgys-table table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    margin-top: 20px;
+}
+.txgys-table th{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 58px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.txgys-table td{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    height: 58px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.w300{
+    width: 300px;
+}
+.txgys-table p{
+    width: 300px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+#pages{
+    margin-top: 30px;
+}
+
+/*附件上传*/
+.affixCon{
+    display: none;
+    margin-top: 10px;
+    padding: 0 10px 10px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+}
+.affixCon .affix_item{
+    margin-top: 10px;
+}
+.affix_item span{
+    display: inline-block;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.affix_item i{
+    vertical-align: 2px;
+}
+.affix_item i.icon-huishouxiang{
+    cursor: pointer;
+}
+
+.js_none{
+    display: none;
+}
+
+/* 广联达信息样式框 */
+.gldInfo_con{
+    padding: 0 30px;
+}
+.gldInfo_con .gldInfo_item label{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.gldInfo_con .gldInfo_item .gldInfo_block{
+    width: 600px;
+    padding: 12px 0;
+    float: left;
+}
+.gldInfo_con .gldInfo_item i.icon-fujian{
+    margin-left: 10px;
+    margin-right: 2px;
+}

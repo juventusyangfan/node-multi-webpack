@@ -1,0 +1,485 @@
+<div class="register_main">
+    <div class="reg_step_con clearfix">
+        <div class="reg_step_item stp1">
+            <i></i>
+            <span>填写注册人信息</span>
+        </div>
+        <div class="reg_step_item stp2_act">
+            <i></i>
+            <span>填写企业信息</span>
+        </div>
+        <div class="reg_step_item stp3">
+            <i></i>
+            <span>等待审核</span>
+        </div>
+        <div class="reg_step_item stp4">
+            <i></i>
+            <span>审核完成</span>
+        </div>
+    </div>
+    <div class="register_con_notice clearfix">
+        <div class="clearfix"><span class="noticeBg floatL"><i class="iconfont icon-i"></i></span><p class="floatL">请认真填写并核对企业信息，内容不全或有误将不能通过审核环节，并影响企业的正常入驻。</p></div>
+    </div>
+    <div class="register_con_title">
+        <span>新建企业项目</span>
+    </div>
+    <form action="/register/addCompanyPost">
+    <div class="register_container">
+        <div class="reg_form_item">
+            <label>公司名称：</label>
+            <div class="register_block">
+                <input type="text" name="company_name" maxlength="10" class="cjy-input-">
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>公司logo：</label>
+            <div class="register_block">
+                <span class="js_upload" id="logo"></span>
+                <!-- <a href="javascript:;" class="register_btn" style="position: relative;">点击上传<input type="file" id="logo" name="uploadFile" style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>支持jpg / jepg / png</span>
+                <div id="process-files-logo"></div>
+                <div class="register_img clearfix">
+                    <div class="img_default">
+                        <img src="<%= noPic %>">
+                    </div>
+                </div>
+                <input type="hidden" name="logo" value="83e9e19136ecf37fd878462ed9640150.png">
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>公司规模：</label>
+            <div class="register_block">
+                <select name="size">
+                    <option value="">请选择员工人数</option>
+                    <option value="1">50人以下</option>
+                    <option value="2">50-150人</option>
+                    <option value="3">151-500人</option>
+                    <option value="4">501-1000人</option>
+                    <option value="5">1000以上</option>
+                </select>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>公司名称：</label>
+            <div class="register_block">
+                <input type="text" name="funds" class="cjy-input-" style="margin-right: 10px;">万元
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>企业类型：</label>
+            <div class="register_block">
+                <select name="company_type">
+                    <option value="">请选择企业类型</option>
+                    <option value="1">国有企业</option>
+                    <option value="2">集体企业</option>
+                    <option value="3">股份合作企业</option>
+                    <option value="4">联营企业</option>
+                    <option value="5">有限责任公司</option>
+                    <option value="6">股份有限公司</option>
+                    <option value="7">私营企业</option>
+                    <option value="8">其他企业</option>
+                    <option value="9">港、澳、台商投资企业</option>
+                    <option value="10">合资经营企业（港或澳、台资）</option>
+                    <option value="11">合作经营企业（港或澳、台资）</option>
+                    <option value="12">港、澳、台商独资经营企业</option>
+                    <option value="13">港、澳、台商投资股份有限公司</option>
+                    <option value="14">外商投资企业</option>
+                    <option value="15">中外合资经营企业</option>
+                    <option value="16">中外合作经营企业</option>
+                    <option value="17">外商独资股份有限公司</option>
+                </select>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>纳税人类型：</label>
+            <div class="register_block">
+                <select name="taxpayer_type">
+                    <option value="">请选择纳税人类型</option>
+                    <option value="1">一般纳税人</option>
+                    <option value="2">小规模纳税人</option>
+                </select>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>年营业额：</label>
+            <div class="register_block">
+                <select name="business_volume">
+                    <option value="">请选择年营业额</option>
+                    <option value="1">100万以下</option>
+                    <option value="2">100万-500万</option>
+                    <option value="3">500万-1000万</option>
+                    <option value="4">1000万-5000万</option>
+                    <option value="5">5000万-1亿</option>
+                    <option value="6">1亿-10亿</option>
+                    <option value="7">10亿以上</option>
+                </select>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>供应物资分类：</label>
+            <div class="register_block js_material">
+                <!-- <div class="multiple-title">
+                    <span>请选择物资分类</span>
+                    <i class="iconfont icon-xiajiantou"></i>
+                </div>
+                <div class="multiple-content">
+                    <ul class="material-list floatL js_cateOne"></ul>
+                    <ul class="material-list floatL js_cateTwo"></ul>
+                    <ul class="material-list floatL js_cateThree"></ul>
+                    <div class="clear"></div>
+                    <div class="material-btns"><a class="material-confirm" href="javascript:;">确定</a></div>
+                </div> -->
+
+                
+                <a href="javascript:;" class="register_btn cata_dlg">点击选择</a>
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>完善供应物资信息可以让采购商更加容易找到企业</span>
+
+
+                <div class="register_box clearfix">
+                </div>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>经营区域：</label>
+            <div class="register_block">
+                <div class="multiple-title">
+                    <span>请选择经营区域</span>
+                    <i class="iconfont icon-xiajiantou"></i>
+                </div>
+                <span class="noticeCon">完善经营区域信息可以让采购商更加容易找到企业</span>
+                <div class="multiple-content">
+                    <ul class="area-list floatL js_province"></ul>
+                    <ul class="area-list floatL js_city"></ul>
+                    <div class="clear"></div>
+                    <div class="area-btns"><a class="area-confirm" href="javascript:;">确定</a></div>
+                </div>
+                <div class="register_box clearfix" style="display: block;">
+                    <span class="register_box_cell" target_id="76" parent_id="37">秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i></span>
+                    <span class="register_box_cell" target_id="220">山西省<input type="hidden" name="scope_operation[]" value="220"><i class="iconfont icon-cha1"></i></span>
+                    <span class="register_box_cell" target_id="351">内蒙古自治区<input type="hidden" name="scope_operation[]" value="351"><i class="iconfont icon-cha1"></i></span>
+                    <span class="register_box_cell" target_id="466">辽宁省<input type="hidden" name="scope_operation[]" value="466"><i class="iconfont icon-cha1"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>公司联系方式：</label>
+            <div class="register_block">
+                <input type="text" name="company_phone" class="cjy-input-">
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>公司地址：</label>
+            <div class="register_block">
+                <div cjy-area province="1709" city="1710" area="1712"></div>
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label>详细地址：</label>
+            <div class="register_block">
+                <input type="text" name="detail_address" class="cjy-input-">
+            </div>
+        </div>
+    </div>
+    <div class="register_con_title">
+        <span>法人信息，统一社会信用代码，公司授权书</span>
+    </div>
+    <div class="register_container">
+        <div class="reg_form_item">
+            <label><span class="textRed">*</span>统一社会信用代码：</label>
+            <div class="register_block">
+                <input name="credit_code" value="1613485931639038"
+                       type="text"
+                       class="cjy-input-">
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label><span class="textRed">*</span>开户许可证：</label>
+            <div class="register_block">
+                <span class="js_upload" id="bank_permit_src"></span>
+                <!-- <a href="javascript:;" class="register_btn" style="position: relative;">点击上传<input
+                            accept="image/*" id="bank_permit_src" name="uploadFile" type="file"
+                            style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>支持jpg / jepg / png</span>
+                <div id="process-files-bank_permit_src"></div>
+                <div class="register_img clearfix">
+                    <div class="img_default">
+                        <img src="https://file.dev.materialw.com/group1/M00/00/11/CgUFDly1l1iAfJerABDddrNVjh849.jpeg">
+                    </div>
+                    <div class="img_demo">
+                        <span>示例</span>
+                        <img src="https://static.dev.materialw.com/file/开户银行许可证.jpg">
+                    </div>
+                </div>
+                <input type="hidden" name="bank_permit_src"
+                       value="group1/M00/00/11/CgUFDly1l1iAfJerABDddrNVjh849.jpeg">
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label><span class="textRed">*</span>营业执照：</label>
+            <div class="register_block">
+                <span class="js_upload" id="business_licence_src"></span>
+                <!-- <a href="javascript:;" class="register_btn" style="position: relative;">点击上传<input
+                            accept="image/*" id="business_licence_src" name="uploadFile" type="file"
+                            style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>支持jpg / jepg / png</span>
+                <div id="process-files-business_licence_src"></div>
+                <div class="register_img clearfix">
+                    <div class="img_default">
+                        <img src="https://file.dev.materialw.com/group1/M00/00/00/CgUFDltVa6KAf5ITAACLLZ1bvQ886.jpeg">
+                    </div>
+                    <div class="img_demo">
+                        <span>示例</span>
+                        <img src="https://static.dev.materialw.com/file/营业执照.jpg">
+                    </div>
+                </div>
+                <input type="hidden" name="business_licence_src"
+                       value="group1/M00/00/00/CgUFDltVa6KAf5ITAACLLZ1bvQ886.jpeg">
+            </div>
+        </div>
+        <div class="reg_form_item">
+            <label><span class="textRed">*</span>公司授权书：</label>
+            <div class="register_block">
+                <span id="authorization_src"></span>
+                <!-- <a href="javascript:;" class="register_btn" style="position: relative;">点击上传<input
+                            id="authorization_src" name="uploadFile" type="file" accept="image/*"
+                            style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                <a href="https://static.dev.materialw.com/file/企业管理员授权委托书.doc"
+                   class="register_btn_normal">下载授权书模板</a>
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>授权书是公司授权的凭证，如果是法人注册，请直接上传加盖公章的法人身份证（正反面）信息，代替授权委托书即可。支持jpg / jepg / png</span>
+                <div id="process-files-authorization_src"></div>
+                <div class="register_img clearfix">
+                                                                                                                                    <div class="img_cell">
+                                <img src="https://file.dev.materialw.com/group1/M00/00/03/CgUFDlt2g6OAAWK4AEtWBJtiYeo424.png"><i
+                                        class="iconfont icon-cha1"></i>
+                                <input type="hidden" name="authorization_src[]"
+                                       value="group1/M00/00/03/CgUFDlt2g6OAAWK4AEtWBJtiYeo424.png">
+                            </div>
+                        
+                                                    <div class="img_demo">
+                        <span>示例</span>
+                        <img src="https://static.dev.materialw.com/file/授权委托书.jpg">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="reg_form_item">
+            <label>资质文件：</label>
+            <div class="register_block">
+                <span id="qualifications_src"></span>
+                <!-- <a href="javascript:;" class="register_btn" style="position: relative;">点击上传<input
+                            id="qualifications_src" name="uploadFile" type="file" accept="image/*"
+                            style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>如企业经营业务范围包含劳务分包、专业分包、设备租赁等内容，请补充上传相应资质文件，如：安全生产许可证等，最多上传10份材料</span>
+                <div id="process-files-qualifications_src"></div>
+                <div class="register_img clearfix">
+                                                                                                <div class="img_cell">
+                                <img src="https://file.dev.materialw.com/group1/M00/00/02/CgUFDltznCmAfdAhAACmh2caqcc65.jpeg"><i
+                                        class="iconfont icon-cha1"></i>
+                                <input type="hidden" name="qualifications_src[]"
+                                       value="group1/M00/00/02/CgUFDltznCmAfdAhAACmh2caqcc65.jpeg">
+                            </div>
+                        
+                                                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    </form>
+    <div class="register_btns">
+        <a href="javascript:;" class="btn_confirm">完成</a>
+        <a href="javascript:;" class="btn_cancel">上一步</a>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="cjy-bg" style="height: 2947px;"></div>
+<div class="cjy-poplayer" style="top: 411px; left: 411.5px;">
+    <div class="cjy-layer-wrap" style="width: 1080px;">
+        <div class="cjy-layer-head">
+            <h1>选择物资分类</h1><i class="cjy-close iconfont icon-cha1"></i>
+        </div>
+        <div class="cjy-layer-inner">
+            <div class="cjy-layer-body">
+                <div class="classify_dlg">
+                    <div class="classify_head">
+                        <input type="text" class="classify_search_input" placeholder="请输入物资设备/劳务/专业名称进行查找">
+                        <a href="javascript:;" class="classify_search_btn iconfont icon-sousuo"></a>
+                        <a href="javascript:;" class="classify_search_clear">清除</a>
+                    </div>
+                    <div class="classify_body">
+                        <div class="classify_nav">
+                            <ul class="clearfix">
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li class="act"><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                                <li><a href="javascript:;" class="classify_cell">五金工具<i class="iconfont icon-youjiantou floatR"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="classify_nav"><span class="classify_none">请选择一级分类</span></div>
+                        <div class="classify_nav"><span class="classify_none">请选择二级分类</span></div>
+                    </div>
+                    <div class="classify_search">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li class="act">
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li class="act">
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="classify_item">
+                                    <i class="iconfont icon-gou"></i>黑色金属及制品<i class="iconfont icon-youjiantou"></i>钢筋<i class="iconfont icon-youjiantou"></i>螺纹钢
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="classify_result clearfix">
+                        <label>您当前选择的分类：</label>
+                        <div class="classify_result_box clearfix">
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                            <span class="classify_result_cell" target_id="76" parent_id="37">
+                                秦皇岛市<input type="hidden" name="scope_operation[]" value="76"><i class="iconfont icon-cha1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cjy-layer-foot"><button class="cjy-cancel-btn">取消</button><button class="cjy-confirm-btn">确定</button></div>
+    </div>
+</div> -->

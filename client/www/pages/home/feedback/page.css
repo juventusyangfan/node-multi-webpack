@@ -1,0 +1,70 @@
+.feedback_warp{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.feedback_bg{
+    height: 200px;
+    background: url('imgs/feedback_bg.jpg') 50% no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.feedback_con{
+    width: 1180px;
+    margin: 30px auto 80px auto;
+}
+.feedback_tip{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 60px;
+    border: 1px solid #f7e3a4;
+    background-color: #FCFAE3;
+}
+.feedback_tip i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px;
+    border-radius: 24px;
+    background-color: #50B2F6;
+    color: #fff;
+    text-align: center;
+}
+.feedback_item{
+    margin-bottom: 20px;
+}
+.feedback_item label{
+    float: left;
+    display: block;
+    width: 280px;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+.feedback_item .feedback_block{
+    margin-left: 280px;
+}
+.feedback_item textarea{
+    width: 670px;
+    height: 300px;
+}
+.feedback_btns {
+    height: 40px;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #F7F7F7;
+}
+.btn_confirm {
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    color: #fff;
+}
+.btn_confirm:hover {
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}

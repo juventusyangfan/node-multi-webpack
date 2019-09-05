@@ -1,0 +1,136 @@
+/* 筛选查询 */
+.result_form .result_form_item{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.result_form_item label {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #999;
+}
+.result_form_item .cjy-input-{
+    width: 150px;
+}
+.result_form_item select{
+    width: 170px;
+}
+.result_form_sub .result_btn{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    color: #fff;
+}
+/* 内容列表 */
+.back_main_title .add_product{
+    float: right;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.result_form_sub .result_btn:hover,.back_main_title .add_product:hover{
+    background-color: #f3623a;
+}
+.back_main_content #pages{
+    margin-top: 20px;
+}
+.customer_table .condition_area{
+    margin-bottom: 20px;
+}
+.condition_area .del_selected{
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 7px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.condition_area .del_selected:hover {
+    background-color: #f7f7f7;
+}
+.condition_area select{
+    width: 80px;
+}
+.customer_table table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-left:none;
+}
+.customer_table .w30{
+    width: 30px;
+}
+.customer_table .w60{
+    width: 60px;
+}
+.customer_table .w80{
+    width: 80px;
+}
+.customer_table .w120{
+    width: 120px;
+}
+.customer_table .w140{
+    width: 140px;
+}
+.customer_table .w200{
+    width: 200px;
+}
+.customer_table th{
+    background-color: #f8f8f8;
+}
+.customer_table td, .customer_table th{
+    height: 60px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+.customer_table p,.customer_table .view_bank{
+    width: 200px;
+}
+.customer_table .view_bank{
+    color: #333;
+}
+.customer_table .view_noallow,.customer_table .no_edit{
+    color: #999;
+    cursor: not-allowed;
+}
+.customer_table .view_noallow:hover,.customer_table .no_edit:hover{
+    color: #999;
+}
+.customer_table .view_bank:hover{
+    color: #fc6940;
+}
+.customer_table .tr_noallow{
+    background-color: #eee;
+    cursor: not-allowed;
+}
+.tr_noallow .no_txt{
+    color: #ccc;
+}
+/* .customer_table tbody tr{
+    cursor: pointer;
+}
+.customer_table tbody tr:hover{
+    background-color: #eee;
+} */

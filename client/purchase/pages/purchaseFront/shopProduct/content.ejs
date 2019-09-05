@@ -1,0 +1,165 @@
+<div class="sList_warp" id="productList">
+    <div class="sList_banner">
+        <div class="sList_banner_con">
+            <div class="shop_logo">
+                <img src="<%= logo %>">
+            </div>
+            <div class="shop_name">
+                <p class="fontSize24 textBlack1">昆山金誉盛钢金属材料有限公司 </p>
+                <p class="fontSize12 marginT10">主营：五金工具，钉子，地板钉，手套，安全帽，安全帽，安全帽，安全帽，安全帽，安全帽，安全帽，安全帽...</p>
+            </div>
+            <div class="shop_tel">
+                <div class="telBg"></div>
+                <div class="telCon"><i class="iconfont icon-dianhua"></i>13498760987 / 杨洋</div>
+            </div>
+        </div>
+    </div>
+    <div class="sList_nav">
+        <div class="sList_nav_con">
+            <a href="#" class="sList_nav_cell active">主营产品</a>
+            <a href="#" class="sList_nav_cell">公司简介</a>
+        </div>
+    </div>
+    <div class="pList_header">
+        <div class="pList_result" v-if="fid!=0||pid!=0||cid!=0||specattrSelArr.length>0||brandid!=0">
+            <template v-if="fid!=0||pid!=0||cid!=0">
+                <div class="pList_result_cell">
+                    {{fname?fname:'请选择'}}<i class="iconfont icon-xiajiantou"></i>
+                    <span class="pList_cell_bg"></span>
+                    <span class="pList_cell_show">
+                        <a v-for="item in fArr" :title="item.name" @click="changeFid(item.code,item.name)">{{item.name}}</a>
+                    </span>
+                </div>
+            </template>
+            <template v-if="pid!=0||cid!=0">
+                <i class="iconfont icon-youjiantou"></i>
+                <div class="pList_result_cell">
+                    {{pname?pname:'请选择'}}<i class="iconfont icon-xiajiantou"></i>
+                    <span class="pList_cell_bg"></span>
+                    <span class="pList_cell_show">
+                        <a v-for="item in pArr" :title="item.name" @click="changePid(item.code,item.name)">{{item.name}}</a>
+                    </span>
+                </div>
+            </template>
+            <template v-if="cid!=0">
+                <i class="iconfont icon-youjiantou"></i>
+                <div class="pList_result_cell">
+                    {{cname==''?'请选择':cname}}<i class="iconfont icon-xiajiantou"></i>
+                    <span class="pList_cell_bg"></span>
+                    <span class="pList_cell_show">
+                        <a v-for="item in cArr" :title="item.name" @click="changeCid(item.code,item.name)">{{item.name}}</a>
+                    </span>
+                </div>
+            </template>
+            <i class="iconfont icon-youjiantou" v-if="specattrSelArr.length>0||brandid!=0"></i>
+            <a href="javascript:;" class="pList_result_item" v-if="brandid!=0" @click="delBrand()">品牌：<span>{{brandname}}</span><i class="iconfont icon-cha1"></i></a>
+            <a href="javascript:;" class="pList_result_item" v-for="item in specattrSelArr" @click="delAttr(item.typeId,item.id)">{{item.typeName}}：<span>{{item.name}}</span><i class="iconfont icon-cha1"></i></a>
+            <a href="javascript:;" @click="clearAll">清空筛选</a>
+        </div>
+        <div class="pList_sel_con">
+            <div class="pList_sel_line clearfix" v-if="fArr.length>0&&fid==0&&pid==0&&cid==0">
+                <label>一级分类</label>
+                <div class="pList_sel_list">
+                    <div class="pList_sel_inner">
+                        <a v-for="item in fArr" @click="changeFid(item.code,item.name)">{{item.name}}</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="pList_sel_btn">更多<i class="iconfont icon-xiajiantou"></i></a>
+            </div>
+            <div class="pList_sel_line clearfix" v-if="pArr.length>0&&pid==0&&cid==0">
+                <label>二级分类</label>
+                <div class="pList_sel_list">
+                    <div class="pList_sel_inner">
+                        <a v-for="item in pArr" @click="changePid(item.code,item.name)">{{item.name}}</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="pList_sel_btn">更多<i class="iconfont icon-xiajiantou"></i></a>
+            </div>
+            <div class="pList_sel_line clearfix" v-if="cArr.length>0&&cid==0">
+                <label>三级分类</label>
+                <div class="pList_sel_list">
+                    <div class="pList_sel_inner">
+                        <a v-for="item in cArr" @click="changeCid(item.code,item.name)">{{item.name}}</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="pList_sel_btn">更多<i class="iconfont icon-xiajiantou"></i></a>
+            </div>
+            <div class="pList_sel_line clearfix" v-if="brandArr.length>0">
+                <label>品牌</label>
+                <div class="pList_sel_list">
+                    <div class="pList_sel_inner">
+                        <a v-for="item in brandArr" @click="changeBrand(item.id,item.name)">{{item.name}}</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="pList_sel_btn">更多<i class="iconfont icon-xiajiantou"></i></a>
+            </div>
+            <div class="pList_sel_line clearfix" v-for="cell in specattrArr">
+                <label>{{cell.name}}</label>
+                <div class="pList_sel_list">
+                    <div class="pList_sel_inner">
+                        <a v-for="item in cell.values" @click="changeAttr(cell.id,cell.name,item.id,item.name)">{{item.name}}</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="pList_sel_btn">更多<i class="iconfont icon-xiajiantou"></i></a>
+            </div>
+        </div>
+        <div class="pList_sort_con">
+            <ul>
+                <li :class="sort==0?'active':''" @click="changeSort(0)"><a href="javascript:;">默认排序</a></li>
+                <li :class="sort==1||sort==2?'active':''" @click="changeSort(1)"><a href="javascript:;">价格</a><i :class="['iconArr',sort!=2?'arrUp':'arrDown']"></i></li>
+                <li :class="sort==3?'active':''" @click="changeSort(3)"><a href="javascript:;">销量最高</a></li>
+            </ul>
+            <!-- <select name="city_code" noRender>
+                <option value="0">不限城市</option>
+                <option v-for="item in cityArr" :value="item.id">{{item.name}}</option>
+            </select>
+            <select name="area_code" noRender>
+                <option value="0">不限区</option>
+                <option v-for="item in areaArr" :value="item.id">{{item.name}}</option>
+            </select> -->
+            <div class="pList_count_con">
+                <span class="textBlack3">共<span class="textOrange">{{count}}</span>个商品</span>
+                <a href="javascript:;" class="iconfont icon-zuojiantou" @click="changePage('down')"></a>
+                <span class="textOrange marginL10">{{current}}</span>/{{Math.ceil(count / 25)}}
+                <a href="javascript:;" class="iconfont icon-youjiantou" @click="changePage('up')"></a>
+            </div>
+        </div>
+    </div>
+    <div class="pList_body">
+        <div style="text-align: center" v-if="loading">
+            <div class="page_loading"></div>
+        </div>
+        <ul v-if="list.length>0">
+            <li class="pList_body_cell clearfix" v-for="item in list">
+                <div class="cell_img">
+                    <a :href="'/goods/detail.html?product_id='+item.id" target="_blank"><img :src="imgPath+item.main_img"></a>
+                </div>
+                <div class="cell_name">
+                    <a :href="'/goods/detail.html?product_id='+item.id" target="_blank" class="block textBlack1">{{item.category_name}}<span class="textBlack3">（{{item.brand}}）</span></a>
+                    <a :href="'/goods/detail.html?product_id='+item.id" target="_blank" class="block fontSize12 textBlack3 marginT10">{{item.name}}</a>
+                </div>
+                <div class="cell_des">
+                    <p class="block fontSize12 textBlack1 ellipsis" v-if="item.spec_list.length>0"><template v-for="(cell,key,index) in item.spec_list[0]">{{index>0?' / ':''}}{{cell.value[1]}}</template></p>
+                    <p class="block fontSize12 textBlack1 ellipsis" v-if="item.spec_list.length>1"><template v-for="(cell,key,index) in item.spec_list[1]">{{index>0?' / ':''}}{{cell.value[1]}}</template></p>
+                    <a :href="'/goods/detail.html?product_id='+item.id" target="_blank" class="block fontSize12 textOrange marginT10">共{{item.spec_list.length}}个属性组合></a>
+                </div>
+                <div class="cell_money">
+                    <span class="fontSize16 textRed">￥{{item.price}}/{{item.unit}}</span> 起
+                </div>
+                <div class="cell_warehouse">
+                    <span class="inlineBlock textBlack1  ellipsis" :title="item.warehouse_name" style="width: 130px;line-height: 12px;">仓库：{{item.warehouse_name}}</span>（{{item.city}}）
+                </div>
+                <a :href="'/goods/detail.html?product_id='+item.id" target="_blank" class="cell_btn">查看详情</a>
+            </li>
+        </ul>
+        <div style="text-align: center" v-else>
+            <template v-if="!loading">
+                <div class="page_list_noneBg"></div>
+                <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+            </template>
+        </div>
+        <div id="pages">
+            <vue-page @get-list="getProInfo" :count="count" :limit="25" :cPage="current" v-if="list.length>0"></vue-page>
+        </div>
+    </div>
+</div>

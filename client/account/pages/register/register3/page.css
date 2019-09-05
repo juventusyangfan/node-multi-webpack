@@ -1,0 +1,218 @@
+/* .register_waiting{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+.seller_title{
+    width: 874px;
+    height: 170px;
+    margin: 0 auto;
+    background: url("imgs/vipBg.png") no-repeat top;
+    text-align: center;
+}
+.seller_title a{
+    display: inline-block;
+    margin-top: 150px;
+    font-size: 16px;
+    color: #999;
+}
+.seller_title a:hover{
+    color: #fc6940;
+}
+.reg_vip_con{
+    width: 842px;
+    margin: 60px auto;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.reg_vip_con .reg_vip_title{
+    width: 842px;
+    height: 143px;
+    background: url("imgs/titleBg.png") no-repeat;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.reg_vip_con .reg_vip_title a{
+    display: block;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #bd9df0;
+}
+.reg_vip_con .reg_vip_title a:hover{
+    color: #fc6940;
+}
+.reg_vip_con .reg_vip_body{
+    padding: 30px;
+}
+.reg_vip_body .vip_tips_title{
+    padding: 0 30px;
+    border-bottom: 1px solid #eee;
+}
+.reg_vip_body .vip_tips_title span{
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 2px solid #fc6940;
+    font-size: 16px;
+}
+.reg_vip_body .vip_tips_con{
+    padding: 20px 30px;
+}
+.reg_vip_body .vip_tips_con p{
+    line-height: 36px;
+    font-size: 16px;
+    color: #999;
+}
+.vip_tips_foot{
+    position: relative;
+    border-top: dashed 1px #e5e5e5;
+    text-align: center;
+}
+.vip_tips_foot a.vip_apply{
+    display: inline-block;
+    width: 302px;
+    height: 65px;
+    line-height: 65px;
+    margin: 30px 0;
+    border-radius: 65px;
+    border-bottom: 5px solid #E3562E;
+    background-color: #fc6940;
+    font-size: 18px;
+    color: #fff;
+}
+.vip_tips_foot a.vip_apply:hover{
+    background: #E3562E;
+    color: #fff;
+}
+.vip_tips_foot a.vip_none{
+    display: inline-block;
+    width: 302px;
+    height: 65px;
+    line-height: 65px;
+    margin: 30px 0;
+    border-radius: 65px;
+    border-bottom: 5px solid #E8E8E8;
+    background-color: #F0F0F0;
+    font-size: 18px;
+    color: #ccc;
+    cursor: not-allowed;
+}
+.radio_bg{
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: -16px;
+    border-radius: 32px;
+    background-color: #F2F2F2;
+}
+.radio_left{
+    left: -16px;
+}
+.radio_right{
+    right: -16px;
+}
+
+
+.reg_wait_img{
+    display: inline-block;
+    width: 178px;
+    height: 120px;
+    margin: 0 auto;
+    background: url("../../../public-resource/imgs/register/regNormal.png") no-repeat;
+}
+.reg_wait_title{
+    margin: 30px 0;
+    font-size: 24px;
+    color: #fc6940;
+    text-align: center;
+}
+.reg_wait_con{
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.register_btns a.btn_confirm{
+    width: 100px;
+    margin: 30px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    color: #333;
+    float: right;
+} */
+
+.register_waiting{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+.reg_wait_img{
+    display: inline-block;
+    width: 178px;
+    height: 120px;
+    margin: 0 auto;
+    background: url("../../../public-resource/imgs/register/regNormal.png") no-repeat;
+}
+.reg_wait_reason{
+    width: 648px;
+    line-height: 2;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px dashed #ccc;
+    font-size: 16px;
+    text-align: left;
+}
+.reg_wait_title{
+    margin: 30px 0;
+    font-size: 24px;
+    color: var(--orange);
+    text-align: center;
+}
+.reg_wait_con{
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.reg_wait_tips{
+    width: 700px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #fff;
+    border: dashed 2px #eee;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+.reg_wait_tips .reg_download_btn{
+    display: block;
+    width: 356px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto 40px auto;
+    background-color: #00B27E;
+    border: solid 1px #02855D;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+.reg_wait_tips .reg_download_btn:hover{
+    background-color: #02855D;
+}
+.reg_wait_tips p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+.register_btns a.btn_confirm{
+    width: 100px;
+    margin: 30px;
+    float: right;
+}

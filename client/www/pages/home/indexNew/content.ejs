@@ -1,0 +1,1086 @@
+<script type="text/javascript">
+    var  indexProductData = '{"cate_info":[{"id":"21","cate_name":"\u94a2\u7ede\u7ebf","product_info":[{"id":"13","cate_id":"21","spec":"469247234","value_info":[{"product_id":"13","index_time":"07-13","index_value":"4500"},{"product_id":"13","index_time":"06-12","index_value":"3200"}]}]},{"id":"2","cate_name":"\u87ba\u7eb9\u94a2","product_info":[{"id":"4","cate_id":"2","spec":"HR100","value_info":[{"product_id":"4","index_time":"05-03","index_value":"1325"},{"product_id":"4","index_time":"05-02","index_value":"1100"}]}]},{"id":"1","cate_name":"\u8d1d\u96f7\u7247","product_info":[{"id":"8","cate_id":"1","spec":"HRB500","value_info":[{"product_id":"8","index_time":"12-09","index_value":"1612"},{"product_id":"8","index_time":"11-09","index_value":"1811"},{"product_id":"8","index_time":"10-09","index_value":"1510"},{"product_id":"8","index_time":"09-09","index_value":"1509"},{"product_id":"8","index_time":"08-09","index_value":"1808"},{"product_id":"8","index_time":"07-09","index_value":"1607"},{"product_id":"8","index_time":"06-09","index_value":"1406"},{"product_id":"8","index_time":"05-09","index_value":"1805"},{"product_id":"8","index_time":"04-09","index_value":"1504"},{"product_id":"8","index_time":"03-09","index_value":"1603"},{"product_id":"8","index_time":"01-09","index_value":"1855"},{"product_id":"8","index_time":"02-09","index_value":"1322"}]},{"id":"2","cate_id":"1","spec":"100*80","value_info":[{"product_id":"2","index_time":"12-09","index_value":"1912"},{"product_id":"2","index_time":"11-09","index_value":"1811"},{"product_id":"2","index_time":"10-09","index_value":"1940"},{"product_id":"2","index_time":"09-09","index_value":"1489"},{"product_id":"2","index_time":"08-09","index_value":"1568"},{"product_id":"2","index_time":"07-09","index_value":"1547"},{"product_id":"2","index_time":"06-09","index_value":"1946"},{"product_id":"2","index_time":"05-09","index_value":"1875"},{"product_id":"2","index_time":"04-09","index_value":"1614"},{"product_id":"2","index_time":"03-09","index_value":"1563"},{"product_id":"2","index_time":"02-09","index_value":"1542"},{"product_id":"2","index_time":"01-09","index_value":"1351"}]}]}]}';
+    var  supplierMapInfo = '[{"province":"\u5317\u4eac","province_code":"1","num":"17"},{"province":"\u5929\u6d25","province_code":"19","num":"9"},{"province":"\u6cb3\u5317\u7701","province_code":"37","num":"53"},{"province":"\u5c71\u897f\u7701","province_code":"220","num":"3"},{"province":"\u8fbd\u5b81\u7701","province_code":"466","num":"3"},{"province":"\u5409\u6797\u7701","province_code":"585","num":"2"},{"province":"\u4e0a\u6d77","province_code":"801","num":"17"},{"province":"\u6c5f\u82cf\u7701","province_code":"820","num":"45"},{"province":"\u6d59\u6c5f\u7701","province_code":"933","num":"16"},{"province":"\u5b89\u5fbd\u7701","province_code":"1046","num":"12"},{"province":"\u798f\u5efa\u7701","province_code":"1168","num":"12"},{"province":"\u6c5f\u897f\u7701","province_code":"1263","num":"8"},{"province":"\u5c71\u4e1c\u7701","province_code":"1375","num":"15"},{"province":"\u6cb3\u5357\u7701","province_code":"1532","num":"58"},{"province":"\u6e56\u5317\u7701","province_code":"1709","num":"1305"},{"province":"\u6e56\u5357\u7701","province_code":"1827","num":"12"},{"province":"\u5e7f\u4e1c\u7701","province_code":"1964","num":"25"},{"province":"\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a","province_code":"2162","num":"6"},{"province":"\u91cd\u5e86","province_code":"2323","num":"5"},{"province":"\u56db\u5ddd\u7701","province_code":"2367","num":"11"},{"province":"\u8d35\u5dde\u7701","province_code":"2572","num":"1"},{"province":"\u897f\u85cf\u81ea\u6cbb\u533a","province_code":"2816","num":"1"},{"province":"\u9655\u897f\u7701","province_code":"2898","num":"6"},{"province":"\u7518\u8083\u7701","province_code":"3022","num":"1"}]';
+</script>
+<div class="banner_wrap js_slides" id="banner">
+    <div class="banner_menu">
+        <div class="banner_menu_con">
+            <ul class="banner_menu_list floatL clearfix">
+                <li class="act"><a href="#">生材网</a></li>
+                <li><a href="#">招投标平台</a></li>
+                <li><a href="#">供应链金场</a></li>
+                <li><a href="#">快捷竞价</a></li>
+                <li><a href="#">直采商城</a></li>
+            </ul>
+            <span class="indicator"></span>
+            <a href="javascript:;" class="banner_btn btnGreenBg">免费注册</a>
+            <a href="javascript:;" class="banner_btn btnRedBg">会员登录</a>
+            <span class="banner_company"><img src="<%= logoDemo %>">湖北省楚建易网络科技有限公司  /  柳柳</span>
+        </div>
+    </div>
+    <div class="banner_bg js_slidesContainer">
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <a href="javascript:;" class="banner_item" style="background-image: url(<%= banner1 %>)">
+            </a>
+        </div>
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <a href="javascript:;" class="banner_item" style="background-image: url(<%= banner1 %>)">
+            </a>
+        </div>
+    </div>
+    <div class="carousel_btn">
+        <span class="left_btn js_left">
+            <i class="iconfont icon-zuojiantou-xi"></i>
+        </span>
+        <span class="right_btn js_right">
+            <i class="iconfont icon-youjiantou-xi"></i>
+        </span>
+    </div>
+    <div class="carousel_dot js_pagination">
+        <a href="javascript:;" class="carousel_dot_span"></a>
+        <a href="javascript:;" class="carousel_dot_span"></a>
+    </div>
+    <div class="banner_box_left">
+        <div class="box_top"></div>
+        <div class="box_head">
+            <ul class="clearfix">
+                <li>
+                    <a href="javascript:;" class="box_head_item" data-name="tenderStatus"><i class="iconfont icon-dengdai"></i><span>招标状态</span></a>
+                    <div class="box_head_line"></div>
+                </li>
+                <li class="act">
+                    <a href="javascript:;" class="box_head_item" data-name="tenderClass"><i class="iconfont icon-chanpin"></i><span>招标类型</span></a>
+                    <div class="box_head_line"></div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="box_head_item" data-name="collectType"><i class="iconfont icon-zhaobiao"></i><span>招标方式</span></a>
+                    <div class="box_head_line"></div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="box_head_item" data-name="tenderStatus"><i class="iconfont icon-dengdai"></i><span>招标状态</span></a>
+                    <div class="box_head_line"></div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="box_head_item" data-name="tenderClass"><i class="iconfont icon-chanpin"></i><span>招标类型</span></a>
+                    <div class="box_head_line"></div>
+                </li>
+                <li>
+                    <a href="javascript:;" class="box_head_item" data-name="collectType"><i class="iconfont icon-zhaobiao"></i><span>招标方式</span></a>
+                    <div class="box_head_line"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="box_body">
+            <ul class="box_con_list clearfix" style="display: none;" name="tenderStatus">
+                <li>
+                    <i class="box_circle"></i><a>报名中</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>投标中</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>已截标</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>已定标</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>已废标</a>
+                </li>
+            </ul>
+            <ul class="box_con_list clearfix" name="tenderClass">
+                <li>
+                    <i class="box_circle"></i><a>物资/设备采购</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>物资/设备租赁</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>劳务分包</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>专业分包</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>施工总承包</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>设计/咨询/服务</a>
+                </li>
+            </ul>
+            <ul class="box_con_list clearfix" style="display: none;" name="collectType">
+                <li>
+                    <i class="box_circle"></i><a>公开招标</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>邀请招标</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>邀请询比价</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>公开询比价</a>
+                </li>
+                <li>
+                    <i class="box_circle"></i><a>竞争性谈判</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box_left"></div>
+        <div class="box_right"></div>
+    </div>
+    <div class="banner_box_right">
+        <div class="box_head">
+            <span class="fontSize16 bolder">区域价格指数</span>
+            <a href="javascript:;" class="box_index_item act" data-name="sn">水泥<span class="index_item_line"></span></a>
+            <a href="javascript:;" class="box_index_item" data-name="gjx">螺纹钢<span class="index_item_line"></span></a>
+        </div>
+        <div class="box_body">
+            <div id="chartWarp" class="chartWarp"></div>
+            <span class="chart_tips"><span style="vertical-align: -2px;">*</span> 武汉区域，仅供参考</span>
+        </div>
+        <div class="box_left"></div>
+        <div class="box_right"></div>
+    </div>
+</div>
+<div class="headline_wrap">
+    <div class="headlien_container clearfix">
+        <div class="headlien_left">
+            <div class="entering_con">
+                <div class="entering_title"><i class="entering_circle"></i><span>最新入驻</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+                <div class="entering_item">
+                    <i class="entering_circle"></i>
+                    <p>恭喜浙江工业有道建筑装饰工程有限公司成为生材网VIP！</p>
+                    <div><span class="entering_role">供应商</span><span class="fontSize12 textBlack3">05-11 09:20</span></div>
+                </div>
+                <div class="entering_item">
+                    <i class="entering_circle"></i>
+                    <p>恭喜浙江工业有道建筑装饰工程有限公司成为生材网VIP！</p>
+                    <div><span class="entering_role">供应商&采购商</span><span class="fontSize12 textBlack3">05-11 09:20</span></div>
+                </div>
+                <div class="entering_item">
+                    <i class="entering_circle"></i>
+                    <p>恭喜浙江工业有道建筑装饰工程有限公司成为生材网VIP！</p>
+                    <div><span class="entering_role">供应商</span><span class="fontSize12 textBlack3">05-11 09:20</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="headlien_center">
+            <div class="win_title"><span>招标/中标快讯</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+            <div class="win_cell clearfix">
+                <div class="win_cell_left"><span>05-11</span></div>
+                <div class="win_cell_right">
+                    <a class="win_link">武汉市汉阳市政建设集团机械租赁（挖掘机、洒水车、叉车、装载机，压路机，吊车）的公开询比价上线了！超过两行的截断截断...</a>
+                    <span class="win_role">招标</span>
+                </div>
+            </div>
+            <div class="win_cell clearfix">
+                <div class="win_cell_left"><span>05-10</span></div>
+                <div class="win_cell_right">
+                    <a class="win_link">武汉市政建设集团承建的湖溪河综合治理工程（一标段）初期雨水处理厂设备采购及安装邀请招标上线了！</a>
+                    <span class="win_role">中标</span>
+                </div>
+            </div>
+            <div class="win_cell clearfix">
+                <div class="win_cell_left"><span>05-09</span></div>
+                <div class="win_cell_right" style="padding-bottom: 0;">
+                    <a class="win_link">由武汉市政建设集团承建的武汉市后湖水环境综合治理工程（一期）钢筋采购及安装采购上线了！</a>
+                    <span class="win_role">招标</span>
+                </div>
+            </div>
+        </div>
+        <div class="headlien_right">
+            <div class="news_title"><span></span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+            <div class="news_top">
+                <span class="news_top_date">05-22</span>
+                <span class="news_top_icon">"</span>
+                <a href="#" class="news_top_title">不到两个月新增10亿元 生材网累计成交额突破20亿元</a>
+                <p class="news_top_content">楚天都市报讯（记者吕锐）27日，建筑行业共享采购平台生材网https://www.materialw.com累计成交额突破20...</p>
+            </div>
+            <div class="news_item"><i class="news_circle"></i><a href="#">再也不用担心因报名供应商家数不足而流再也不用担心因报名供应商家数不足而流</a></div>
+            <div class="news_item"><i class="news_circle"></i><a href="#">再也不用担心因报名供应商家数不足而流再也不用担心因报名供应商家数不足而流</a></div>
+        </div>
+    </div>
+    <div class="headline_column"><img src="<%= ad1 %>"></div>
+    <div class="titleBidding"></div>
+</div>
+<div class="bidding_wrap">
+    <div class="bidding_container clearfix">    
+        <div class="bidding_left">
+            <div class="bidding_l_title">各地招标</div>
+            <ul class="bidding_area_line">
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>华东</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaLink">上海</a>
+                        <a href="#" class="areaText">江苏</a>
+                        <a href="#" class="areaLink">浙江</a>
+                        <a href="#" class="areaText">安徽</a>
+                        <a href="#" class="areaLink">江西</a>
+                        <a href="#" class="areaText">山东</a>
+                        <a href="#" class="areaLink">福建</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>华北</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaLink">北京</a>
+                        <a href="#" class="areaText">天津</a>
+                        <a href="#" class="areaText">山西</a>
+                        <a href="#" class="areaLink">河北</a>
+                        <a href="#" class="areaText">内蒙古</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>华中</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaText">河南</a>
+                        <a href="#" class="areaLink">湖北</a>
+                        <a href="#" class="areaLink">湖南</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>华南</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaLink">广东</a>
+                        <a href="#" class="areaLink">广西</a>
+                        <a href="#" class="areaText">海南</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>西南</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaText">重庆</a>
+                        <a href="#" class="areaText">四川</a>
+                        <a href="#" class="areaLink">贵州</a>
+                        <a href="#" class="areaText">云南</a>
+                        <a href="#" class="areaText">西藏</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>西北</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaText">陕西</a>
+                        <a href="#" class="areaLink">甘肃</a>
+                        <a href="#" class="areaLink">青海</a>
+                        <a href="#" class="areaText">宁夏</a>
+                        <a href="#" class="areaLink">新疆</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="bidding_area_icon"><span>东北</span></div>
+                    <div class="bidding_area_con">
+                        <a href="#" class="areaLink">黑龙江</a>
+                        <a href="#" class="areaLink">吉林</a>
+                        <a href="#" class="areaLink">辽宁</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="bidding_model_head">
+                <h1>招投标模板荟萃</h1>
+                <p>提供各类标书模板下载，仅供参考</p>
+            </div>
+            <ul class="bidding_model_list clearfix">
+                <li><a><i class="iconfont icon-wuzicaigou1"></i><p>物资设备采购<br>模板</p></a></li>
+                <li><a><i class="iconfont icon-wuzizulin"></i><p>物资设备租赁<br>模板</p></a></li>
+                <li><a><i class="iconfont icon-laowufenbao"></i><p>劳务分包<br>模板</p></a></li>
+                <li><a><i class="iconfont icon-zhuanyefenbao"></i><p>专业分包<br>模板</p></a></li>
+                <li><a><i class="iconfont icon-shigongzongchengbao"></i><p>施工总承包<br>模板</p></a></li>
+                <li><a><i class="iconfont icon-shejizixunfuwu"></i><p>设计/咨询/服务<br>模板</p></a></li>
+            </ul>
+        </div>
+        <div class="bidding_right clearfix">
+            <div class="bidding_right_cell">
+                <div class="right_cell_head"><i class="iconfont icon-wuzicaigou"></i><span>物资/设备采购</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+                <ul class="right_cell_list">
+                    <li class="clearfix">
+                        <img class="default" src="<%= logoDefault %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bidding_right_cell">
+                <div class="right_cell_head"><i class="iconfont icon-fenlei-jixie"></i><span>物资/设备租赁</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+                <ul class="right_cell_list">
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bidding_right_cell marginT20">
+                <div class="right_cell_head"><i class="iconfont icon-fenlei-laowufenbao"></i><span>劳务分包</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+                <ul class="right_cell_list">
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bidding_right_cell marginT20">
+                <div class="right_cell_head"><i class="iconfont icon-fenlei-zhuanyefenbao"></i><span>专业分包</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+                <ul class="right_cell_list">
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <img src="<%= logoEq1 %>">
+                        <div class="cell_list_con">
+                            <div class="textBlack3 marginT6">武汉市市政路桥有限公司 <span class="fontSize12">05-16发布</span></div>
+                            <a href="">烽胜路（滨河街~白沙五路）芝麻黑石材采购询比烽胜路（滨河街~白沙五路）芝麻黑石材采购询比价价</a>
+                            <div class="cell_list_tips">
+                                <span class="light">报名中</span>
+                                <span>公开招标</span>
+                                <span>湖北省</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bidding_infoWrap marginT20 clearfix">
+        <div class="bidding_map">
+            <div class="bidding_map_title">入驻供应商分布</div>
+            <div class="china_map" id="china_map"></div>
+            <div class="point_area">
+                <div class="point point-1 point_circle"></div>
+                <div class="point point-2 point_circle"></div>
+                <div class="point point-3 point_circle"></div>
+            </div>
+        </div>
+        <div class="bidding_announce">
+            <div class="bidding_announce_head"><i class="iconfont icon-zhongbiaogongshi"></i><span>中标公示</span><a href="#" class="showMore">更多<i class="iconfont icon-youjiantou"></i></a></div>
+            <ul class="bidding_announce_list">
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>1黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>2黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>3黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>4黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>5黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>6黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>7黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>8黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>9黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>10黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>11黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+                <li>
+                    <a href="#" class="bidding_announce_title"><i></i>12黄陂区军运会保障工程—木兰大道美丽乡村带建设项目（EPC）（合丰集、白塘村）</a>
+                    <div class="bidding_announce_info"><span class="announce_info_title">中标单位</span><span class="textBlack3">武汉****有限公司，湖北*****公司，武汉****...等3家公司</span><span class="announce_info_date">05-16公示</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="bidding_ranking">
+            <div class="bidding_ranking_head"><i class="iconfont icon-zhongbiaobang"></i><span>供应商中标榜</span><span class="ranking_tips">4月榜单</span></div>
+            <div class="bidding_ranking_first">
+                <div class="ranking_first_bg"></div>
+                <h1>武汉市汉阳市政建设集团有限公司</h1>
+                <p>3,245,224 <span class="fontSize14">万</span></p>
+                <span>中标总额</span>
+            </div>
+            <div class="bidding_ranking_cell">
+                <span class="ranking_cell_tips">top 2</span>
+                <h1>武汉市汉阳市政建设集团有限公司</h1>
+                <p>**********万 中标总额</p>
+            </div>
+            <div class="bidding_ranking_cell">
+                <span class="ranking_cell_tips">top 3</span>
+                <h1>武汉市汉阳市政建设集团有限公司</h1>
+                <p>**********万 中标总额</p>
+            </div>
+        </div>
+    </div>
+    <div class="bidding_column"><img src="<%= ad2 %>"></div>
+</div>
+<div class="chain_wrap jc_warp">
+    <div class="chain_container clearfix">
+        <div class="titleChain"></div>
+        <!-- <div class="chain_horizontal jc_bank_con clearfix">
+            <ul>
+                <li class="jc_bank_cell active">
+                    <div class="bank_f">
+                        <span class="bank_img">
+                            <img src="<%= jsyhIcon %>">
+                        </span>
+                        <span class="bank_name">建设银行</span>
+                    </div>
+                    <div class="bank_b">
+                        <div class="chain_cell_wrap">
+                            <div class="chain_cell_bank">
+                                <span class="chain_bankName">建<span class="chain_bankName_line"></span>设<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                                <span class="chain_bankIcon"><i class="iconfont icon-youjiantou"></i></span>
+                            </div>
+                            <div class="chain_cell_con">
+                                <div class="chain_cell_tips">
+                                    <span class="name">金融服务</span>
+                                    <span class="line"></span>
+                                </div>
+                                <a href="#" class="chain_cell_title" target="_blank">电子商业汇票</a>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                            </div>
+                            <span class="chain_cell_check"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="jc_bank_cell">
+                    <div class="bank_f">
+                        <span class="bank_img">
+                            <img src="<%= zsyhIcon %>">
+                        </span>
+                        <span class="bank_name">招商银行</span>
+                    </div>
+                    <div class="bank_b">
+                        <div class="chain_cell_wrap">
+                            <div class="chain_cell_bank">
+                                <span class="chain_bankName">招<span class="chain_bankName_line"></span>商<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                                <span class="chain_bankIcon"><i class="iconfont icon-youjiantou"></i></span>
+                            </div>
+                            <div class="chain_cell_con">
+                                <div class="chain_cell_tips">
+                                    <span class="name">金融服务</span>
+                                    <span class="line"></span>
+                                </div>
+                                <a href="#" class="chain_cell_title" target="_blank">电子商业汇票</a>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                            </div>
+                            <span class="chain_cell_check"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="jc_bank_cell">
+                    <div class="bank_f">
+                        <span class="bank_img">
+                            <img src="<%= jtyhIcon %>">
+                        </span>
+                        <span class="bank_name">交通银行</span>
+                    </div>
+                    <div class="bank_b">
+                        <div class="chain_cell_wrap">
+                            <div class="chain_cell_bank">
+                                <span class="chain_bankName">交<span class="chain_bankName_line"></span>通<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                                <span class="chain_bankIcon"><i class="iconfont icon-youjiantou"></i></span>
+                            </div>
+                            <div class="chain_cell_con">
+                                <div class="chain_cell_tips">
+                                    <span class="name">金融服务</span>
+                                    <span class="line"></span>
+                                </div>
+                                <a href="#" class="chain_cell_title" target="_blank">电子商业汇票</a>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                            </div>
+                            <span class="chain_cell_check"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="jc_bank_cell">
+                    <div class="bank_f">
+                        <span class="bank_img">
+                            <img src="<%= bhyhIcon %>">
+                        </span>
+                        <span class="bank_name">渤海银行</span>
+                    </div>
+                    <div class="bank_b">
+                        <div class="chain_cell_wrap">
+                            <div class="chain_cell_bank">
+                                <span class="chain_bankName">渤<span class="chain_bankName_line"></span>海<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                                <span class="chain_bankIcon"><i class="iconfont icon-youjiantou"></i></span>
+                            </div>
+                            <div class="chain_cell_con">
+                                <div class="chain_cell_tips">
+                                    <span class="name">金融服务</span>
+                                    <span class="line"></span>
+                                </div>
+                                <a href="#" class="chain_cell_title" target="_blank">电子商业汇票</a>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                            </div>
+                            <span class="chain_cell_check"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="jc_bank_cell">
+                    <div class="bank_f">
+                        <span class="bank_img">
+                            <img src="<%= zxyhIcon %>">
+                        </span>
+                        <span class="bank_name">中信银行</span>
+                    </div>
+                    <div class="bank_b">
+                        <div class="chain_cell_wrap">
+                            <div class="chain_cell_bank">
+                                <span class="chain_bankName">中<span class="chain_bankName_line"></span>信<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                                <span class="chain_bankIcon"><i class="iconfont icon-youjiantou"></i></span>
+                            </div>
+                            <div class="chain_cell_con">
+                                <div class="chain_cell_tips">
+                                    <span class="name">金融服务</span>
+                                    <span class="line"></span>
+                                </div>
+                                <a href="#" class="chain_cell_title" target="_blank">电子商业汇票</a>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                            </div>
+                            <span class="chain_cell_check"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="jc_bank_cell">
+                    <div class="bank_f">
+                        <span class="bank_img">
+                            <img src="<%= gjyhIcon %>">
+                        </span>
+                        <span class="bank_name">工建国际租赁</span>
+                    </div>
+                    <div class="bank_b">
+                        <div class="chain_cell_wrap">
+                            <div class="chain_cell_bank">
+                                <span class="chain_bankName">工<span class="chain_bankName_line"></span>建<span class="chain_bankName_line"></span>国<span class="chain_bankName_line"></span>际<span class="chain_bankName_line"></span>租<span class="chain_bankName_line"></span>赁</span>
+                                <span class="chain_bankIcon"><i class="iconfont icon-youjiantou"></i></span>
+                            </div>
+                            <div class="chain_cell_con">
+                                <div class="chain_cell_tips">
+                                    <span class="name">金融服务</span>
+                                    <span class="line"></span>
+                                </div>
+                                <a href="#" class="chain_cell_title" target="_blank">电子商业汇票</a>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                                <div class="chain_cell_item">
+                                    <p class="chain_cell_text">
+                                        电子商业汇票是中信银行依托公司网银、现金管理等信息系统为客户提供的电子化票据创新产品。电子商业汇票是企业客户（出票人）以数据电文形式制作的，委托付款人在指定日期无条件支付确定的金额给...</p>
+                                    <div class="chain_cell_info">
+                                        <span class="chain_info_item">1-12月还款期</span>
+                                        <span class="chain_info_item">1-500万贷款金额</span>
+                                        <span class="chain_info_item">5.00—8.00%贷款年利率</span>
+                                    </div>
+                                    <a href="#" target="_blank" class="chain_cell_btn">立即融资申请</a>
+                                </div>
+                            </div>
+                            <span class="chain_cell_check"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+        
+        <div class="chain_cell_big">
+            <div class="chain_cell_bank bank_bg_red">
+                <span class="chain_bankName">平<span class="chain_bankName_line"></span>安<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                <span class="chain_bankIcon"><img src="<%= payhIcon %>"></span>
+            </div>
+            <div class="chain_cell_con">
+                <div class="chain_cell_tips">
+                    <span class="name">金融服务</span>
+                    <span class="line"></span>
+                </div>
+                <a href="#" class="chain_cell_title">税金贷<span style="font-size: 14px;">（企业）</span></a>
+                <p class="chain_cell_text" style="height: 42px;">面向诚信纳税的中小企业，以企业纳税数据为授信依据的法人互联网信用贷款。</p>
+                <div class="chain_cell_info">
+                    <div><i class="iconfont icon-mian"></i><span class="chain_info_item">免：免抵押、免担保、纯信用</span></div>
+                    <div><i class="iconfont icon-gao"></i><span class="chain_info_item">高：最高额度100万</span></div>
+                    <div><i class="iconfont icon-kuai"></i><span class="chain_info_item">快：最快当天放款</span></div>
+                    <div><i class="iconfont icon-ling1"></i><span class="chain_info_item">灵：还款方式灵活，可选净息还款或1-3年期等额还款</span></div>
+                </div>
+            </div>
+            <div class="chain_cell_product">
+                <div class="chain_product_item">
+                    <span class="chain_product_line"></span>
+                    <span class="product_item_name" style="width: 110px;">申请条件 & 流程</span>
+                    <div class="chain_check_tips" style="margin-top: 18px;"><i class="iconfont icon-xuanzhong"></i>主操作人为法人企业法定代表人或第一大自然人股东</div>
+                    <div class="chain_check_tips"><i class="iconfont icon-xuanzhong"></i>企业有连续两年以上缴税记录</div>
+                    <div class="chain_check_tips"><i class="iconfont icon-xuanzhong"></i>企业及申请人无不良信用记录及欠缴记录</div>
+                    <div class="chain_product_code">
+                        <span class="code_show"></span>
+                        <span>扫码申请<i class="rightArr"></i></span>
+                        <img src="<%= codeImg %>">
+                    </div>
+                    <div class="chain_product_step">
+                        <div class="chain_step_bg"></div>
+                        <ul class="clearfix">
+                            <li style="width: 219px;">初审额度核定</li>
+                            <li style="width: 131px;">银行人员上门</li>
+                            <li style="width: 208px;">终审额度核定</li>
+                            <li style="width: 111px;">签约放款</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="chain_cell_check"></span>
+        </div>
+        <div class="chain_horizontal_line"></div>
+        <div class="chain_cell_big">
+            <div class="chain_cell_bank">
+                <span class="chain_bankName">建<span class="chain_bankName_line"></span>设<span class="chain_bankName_line"></span>银<span class="chain_bankName_line"></span>行</span>
+                <span class="chain_bankIcon"><img src="<%= jsyhIcon %>"></span>
+            </div>
+            <div class="chain_cell_con">
+                <div class="chain_cell_tips">
+                    <span class="name">支付服务</span>
+                    <span class="line"></span>
+                </div>
+                <a href="#" class="chain_cell_title">融易付<span style="color: #ff3600;font-size: 14px;">（即将开放）</span></a>
+                <p class="chain_cell_text">中国建设银行旗下的融易付，是以建行善融商务会员为核心，基于实名制会员和独立支付体系构建的综合型支付服务产品，主要应用于企业直接支付、担保支付等多种交易场景。通过生材网与建行的深入合作，实现了全平台的融易付支付服务覆盖。</p>
+                <div class="chain_cell_info">
+                    <span class="chain_info_item">安全</span>
+                    <span class="chain_info_item">便捷</span>
+                    <span class="chain_info_item">高效</span>
+                </div>
+                <a href="#" class="chain_cell_btn">了解更多</a>
+            </div>
+            <div class="chain_cell_product">
+                <div class="chain_product_item">
+                    <span class="chain_product_line"></span>
+                    <span class="product_item_name">应用场景</span>
+                    <div class="chain_product_tips">
+                        <i class="iconfont icon-sanfangzhifu"></i>
+                        <h1 class="product_tips_title">在线购买标书</h1>
+                        <p class="product_tips_con">供应商可直接在线支付标书费，快速下载招标/询价文件。</p>
+                    </div>
+                    <div class="chain_product_tips">
+                        <i class="iconfont icon-baozhengjinjianguan"></i>
+                        <h1 class="product_tips_title">在线支付投标保证金</h1>
+                        <p class="product_tips_con">供应商在线担保支付投标保证金。资金沉淀在银行的专用监管账户中，独立监管，安全放心。</p>
+                    </div>
+                    <div class="chain_product_tips" style="width: 710px;">
+                        <i class="iconfont icon-zijingongxushuangfang"></i>
+                        <h1 class="product_tips_title">在线收退投标保证金</h1>
+                        <p class="product_tips_con">采购商使用虚拟的监管账户对保证金进行收款及监管，保证金不到采购商实体账户，省去了繁冗的财务审批流程。招标结束后，可实现保证金的</p>
+                    </div>
+                </div>
+            </div>
+            <span class="chain_cell_check"></span>
+        </div>
+    </div>
+</div>
+<a href="#" class="chain_more">更多金融产品<i class="iconfont icon-youjiantou"></i></a>
+<div class="mall_wrap">
+    <div class="titleMall"></div>
+    <div class="mall_container clearfix">
+        <div class="mall_cell_wrap">
+            <div class="inquiry_head">
+                <h1>快速询价报价</h1>
+                <p>是一种采购商免费发布采购需求形成询价单，供应商根据询价单快捷报价，进一步促成交易的快捷采购方式。适用于金额少，标准化高，需求急的物资采购。</p>
+            </div>
+            <div class="cell_body">
+                <ul class="inquiry_tips_list clearfix">
+                    <li class="inquiry_tips_item">
+                        <i class="iconfont icon-mianfeixunjia"></i>
+                        <p>免费询价</p>
+                    </li>
+                    <li class="inquiry_tips_item">
+                        <i class="iconfont icon-baojiaxiaofei"></i>
+                        <p>快捷报价</p>
+                    </li>
+                    <li class="inquiry_tips_item">
+                        <i class="iconfont icon-dayin"></i>
+                        <p>痕迹打印</p>
+                    </li>
+                    <li class="inquiry_tips_item">
+                        <i class="iconfont icon-jiaoyi"></i>
+                        <p>订单交易管理</p>
+                    </li>
+                    <li class="inquiry_tips_item">
+                        <i class="iconfont icon-sanfangzhifu"></i>
+                        <p>三方担保支付</p>
+                    </li>
+                </ul>
+                <a href="#" class="inquiry_cell_btn">前往快捷竞价<i class="iconfont icon-youjiantou"></i></a>
+            </div>
+        </div>
+        <div class="mall_cell_wrap marginL20">
+            <div class="mall_head">
+                <h1>一站式直采商城</h1>
+                <p>供应商可免费入驻、免费发布商品，同时提升知名度，增加交易量。采购商可快速找到所需购买商品，更加全面直观了解商品信息，也可作为采购寻源的一种途径。</p>
+            </div>
+            <div class="cell_body">
+                <ul class="mall_tips_list clearfix">
+                    <li class="mall_tips_item">
+                        <i class="iconfont icon-kuaijieruzhu"></i>
+                        <p>商家店铺快捷入驻</p>
+                    </li>
+                    <li class="mall_tips_item">
+                        <i class="iconfont icon-sanfangzhifu"></i>
+                        <p>三方担保支付</p>
+                    </li>
+                    <li class="mall_tips_item">
+                        <i class="iconfont icon-zhucailingcai"></i>
+                        <p>工程项目主材/辅材零采</p>
+                    </li>
+                    <li class="mall_tips_item">
+                        <i class="iconfont icon-bangongyongpin"></i>
+                        <p>办公/后勤物资直采</p>
+                    </li>
+                </ul>
+                <a href="#" class="mall_cell_btn">前往快捷竞价<i class="iconfont icon-youjiantou"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="friend_wrap">
+    <div class="titleFriend"></div>
+    <div class="friend_container">
+        <div class="friend_title_con clearfix">
+            <span class="friedn_title_item">采购商代表<span class="friedn_title_line"></span></span>
+            <span class="friedn_title_item">供应商代表<span class="friedn_title_line"></span></span>
+            <span class="friedn_title_item">金场服务商代表<span class="friedn_title_line"></span></span>
+        </div>
+        <div class="friedn_list clearfix">
+            <ul class="friedn_list_con">
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo2 %>">
+                    <p>中铁物资</p>
+                </li>
+                <li>
+                    <img src="<%= logo3 %>">
+                    <p>华天建设</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+            </ul>
+            <ul class="friedn_list_con" style="background-color: #FCFCFC;">
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo2 %>">
+                    <p>中铁物资</p>
+                </li>
+                <li>
+                    <img src="<%= logo3 %>">
+                    <p>华天建设</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+            </ul>
+            <ul class="friedn_list_con">
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo2 %>">
+                    <p>中铁物资</p>
+                </li>
+                <li>
+                    <img src="<%= logo3 %>">
+                    <p>华天建设</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+                <li>
+                    <img src="<%= logo1 %>">
+                    <p>湖北国际经合</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

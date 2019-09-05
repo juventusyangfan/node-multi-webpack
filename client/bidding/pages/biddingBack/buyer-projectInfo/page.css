@@ -1,0 +1,108 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_info_code{
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    color: #00B27E;
+    word-break: break-all;
+}
+.back_info_code span{
+    margin-left: 30px;
+}
+.back_info_code span:first-child{
+    margin-left: 0;
+}
+.back_info_con{
+    padding: 30px;
+}
+.back_info_title{
+    font-size: 24px;
+    text-align: center;
+}
+.back_info_tips{
+    margin: 20px 0 30px 0;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+.back_info_tips span{
+    margin-left: 30px;
+}
+.back_info_tips span:first-child{
+    margin-left: 0;
+}
+.back_info_detail{
+    line-height: 1.5;
+    font-size: 16px;
+    color: #666;
+}
+.detail_list{
+    padding: 30px 0;
+    border-top: 1px solid #ececec;
+}
+.detail_list .detail_list_item{
+    width: 50%;
+    height: 49px;
+    float: left;
+}
+.detail_list .detail_list_item span,.detail_list .detail_list_item strong{
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.detail_list .detail_list_item span{
+    width: 170px;
+    text-align: right;
+    vertical-align: top;
+}
+.detail_list .detail_list_item strong{
+    max-width: 500px;
+    color: #333;
+}
+
+.back_list_nav{
+    margin-bottom: 20px;
+}
+.back_list_nav span{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+.back_list_nav span i{
+    margin-left: 4px;
+    vertical-align: -1px;
+}
+.back_list_nav span:first-child{
+    margin-left: 0;
+}
+.back_list_nav span.active,.back_list_nav span.floatR{
+    color: #333;
+}
+.back_main_content .material_list{
+    margin-bottom: 30px;
+}
+.w258{
+    width: 200px;
+    vertical-align: top;
+}

@@ -1,0 +1,21 @@
+.register_block a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.register_block a:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.register_btns a.btn_confirm{
+    width: 100px;
+    margin: 30px;
+    float: right;
+}

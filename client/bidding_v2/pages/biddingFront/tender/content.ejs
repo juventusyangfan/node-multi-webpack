@@ -1,0 +1,200 @@
+<div class="banner_wrap js_slides">
+    <div class="banner_bg js_slidesContainer">
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <a href="javascript:;" class="banner_item" style="background-image: url(<%= banner1 %>)">
+            </a>
+        </div>
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <a href="javascript:;" class="banner_item" style="background-image: url(<%= banner1 %>)">
+            </a>
+        </div>
+    </div>
+    <div class="carousel_btn">
+        <span class="left_btn js_left">
+            <i class="iconfont icon-zuojiantou-xi"></i>
+        </span>
+        <span class="right_btn js_right">
+            <i class="iconfont icon-youjiantou-xi"></i>
+        </span>
+    </div>
+    <div class="carousel_dot js_pagination">
+        <a href="javascript:;" class="carousel_dot_span"></a>
+        <a href="javascript:;" class="carousel_dot_span"></a>
+    </div>
+</div>
+<div class="tender_header">
+    <div class="tender_inner">
+        <div class="tender_type_wrap">
+            <ul>
+                <li class="w96 active"><a href="javascript:;">全部</a></li>
+                <li class="w120"><a href="javascript:;">物资/设备采购</a></li>
+                <li class="w120"><a href="javascript:;">物资/设备租赁</a></li>
+                <li class="w96"><a href="javascript:;">劳务分包</a></li>
+                <li class="w96"><a href="javascript:;">专业分包</a></li>
+                <li class="w120"><a href="javascript:;">施工总承包</a></li>
+                <li class="w120"><a href="javascript:;">设计/咨询服务</a></li>
+                <li class="w96"><a href="javascript:;">其他</a></li>
+            </ul>
+            <span class="tender_type_title">
+                <i class="iconfont icon-chanpin"></i>
+                <span class="block textBlack1 fontBold">采购类型</span>
+            </span>
+        </div>
+        <div class="tender_type_wrap">
+            <ul>
+                <li><a href="javascript:;">全部</a></li>
+                <li class="w120"><a href="javascript:;">报名中</a></li>
+                <li class="w120 active"><a href="javascript:;">投标/报价中</a></li>
+                <li class="w84"><a href="javascript:;">已截标</a></li>
+                <li><a href="javascript:;">结果公示中</a></li>
+                <li class="w120"><a href="javascript:;">招标/询价结束</a></li>
+            </ul>
+            <span class="tender_type_title">
+                <i class="iconfont icon-dengdai"></i>
+                <span class="block textBlack1 fontBold">采购状态</span>
+            </span>
+        </div>
+        <div class="tender_type_wrap">
+            <ul>
+                <li><a href="javascript:;">全部</a></li>
+                <li><a href="javascript:;">公开招标</a></li>
+                <li><a href="javascript:;">邀请招标</a></li>
+                <li><a href="javascript:;">邀请询比价</a></li>
+                <li><a href="javascript:;">公开询比价</a></li>
+                <li class="active"><a href="javascript:;">竞争性谈判</a></li>
+            </ul>
+            <span class="tender_type_title">
+                <i class="iconfont icon-zhaobiao"></i>
+                <span class="block textBlack1 fontBold">采购方式</span>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="tender_main" id="exclusive">
+    <div class="tender_select clearfix">
+        <ul class="floatL clearfix" name="sort">
+            <li class="active"><a href="#">默认排序</a><span class="line"></span></li>
+            <li><a href="#">发布时间</a></li>
+            <li><a href="#">截标时间</a></li>
+        </ul>
+        <a href="javascript:;" class="tender_clear_btn"><i class="iconfont icon-qingchu"></i></a>
+        <div class="tender_search">
+            <span class="tender_search_sel">
+                <span>采购名称</span><i class="iconfont icon-xiajiantou"></i>
+                <dl>
+                    <dd>采购名称</dd>
+                    <dd>采购单位</dd>
+                </dl>
+            </span>
+            <input type="text" class="tender_search_input" placeholder="请输入关键字进行搜索" value="">
+            <a href="javascript:;" class="tender_search_btn iconfont icon-sousuo"></a>
+        </div>
+    </div>
+    <div class="tender_main_content">
+        <div class="material_list clearfix">
+            <table>
+                <colgroup>
+                    <col width="20%">
+                    <col width="8%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="10%">
+                </colgroup>
+                <thead>
+                    <th>采购名称</th>
+                    <th>交付地区</th>
+                    <th>所属项目</th>
+                    <th>采购单位</th>
+                    <th>状态</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="table_tenderName">中铁四局集团有限公司黄黄铁路HHZQ-3标项目经理部第二批自购物资 (钢材、钢绞线...公开招标公告</a>
+                            <span class="table_bidTips"><i class="iconfont icon-zhaobiao"></i>公开招标</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-chanpin"></i>物资设备采购</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-rili"></i>2019-07-02 发布</span>
+                        </td>
+                        <td>
+                            武汉/黄冈/恩施土家族自治区
+                        </td>
+                        <td>湖北省工业建筑集团有限公司浠水县车站路...</td>
+                        <td>湖北工建基础设施建设有限公司</td>
+                        <td>
+                            <span class="table_status statusRed">报名中</span>
+                            <p class="table_dateTips"><i class="iconfont icon-dengdai"></i>报名剩余<span class="textRed">10天6小时</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="table_tenderName">中铁四局集团有限公司黄黄铁路HHZQ-3标项目经理部第二批自购物资 (钢材、钢绞线...公开招标公告</a>
+                            <span class="table_bidTips"><i class="iconfont icon-zhaobiao"></i>公开招标</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-chanpin"></i>物资设备采购</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-rili"></i>2019-07-02 发布</span>
+                        </td>
+                        <td>
+                            武汉
+                        </td>
+                        <td>湖北省工业建筑集团有限公司浠水县车站路...</td>
+                        <td>湖北工建基础设施建设有限公司</td>
+                        <td>
+                            <span class="table_status statusBlue">投标/报价中</span>
+                            <p class="table_dateTips"><i class="iconfont icon-dengdai"></i>投标/报价中剩余<span class="textRed">10天6小时</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="table_tenderName">中铁四局集团有限公司黄黄铁路HHZQ-3标项目经理部第二批自购物资 (钢材、钢绞线...公开招标公告</a>
+                            <span class="table_bidTips"><i class="iconfont icon-zhaobiao"></i>公开招标</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-chanpin"></i>物资设备采购</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-rili"></i>2019-07-02 发布</span>
+                        </td>
+                        <td>
+                            武汉
+                        </td>
+                        <td>湖北省工业建筑集团有限公司浠水县车站路...</td>
+                        <td>湖北工建基础设施建设有限公司</td>
+                        <td>
+                            <span class="table_status statusGray">已截标</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="table_tenderName">中铁四局集团有限公司黄黄铁路HHZQ-3标项目经理部第二批自购物资 (钢材、钢绞线...公开招标公告</a>
+                            <span class="table_bidTips"><i class="iconfont icon-zhaobiao"></i>公开招标</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-chanpin"></i>物资设备采购</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-rili"></i>2019-07-02 发布</span>
+                        </td>
+                        <td>
+                            武汉
+                        </td>
+                        <td>湖北省工业建筑集团有限公司浠水县车站路...</td>
+                        <td>湖北工建基础设施建设有限公司</td>
+                        <td>
+                            <span class="table_status statusGreen">结果公示中</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="table_tenderName">中铁四局集团有限公司黄黄铁路HHZQ-3标项目经理部第二批自购物资 (钢材、钢绞线...公开招标公告</a>
+                            <span class="table_bidTips"><i class="iconfont icon-zhaobiao"></i>公开招标</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-chanpin"></i>物资设备采购</span> 
+                            <span class="table_bidTips"><i class="iconfont icon-rili"></i>2019-07-02 发布</span>
+                        </td>
+                        <td>
+                            武汉
+                        </td>
+                        <td>— —</td>
+                        <td>湖北工建基础设施建设有限公司</td>
+                        <td>
+                            <span class="table_status statusGray">招标/询价结束</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="pages">
+        <vue-page @get-list="getExclusive" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+    </div>
+</div>

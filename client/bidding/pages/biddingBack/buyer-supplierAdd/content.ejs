@@ -1,0 +1,278 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>邀请/添加供应商</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <label>检索供应商库：</label>
+            <input type="text" placeholder="" name="company_name" class="cjy-input-" value="经济技术">
+            <a href="javascript:;" class="btn_confirm">确认</a>
+        </div>
+        <input type="hidden" name="role_type" value="2">
+        <input type="hidden" name="join_way" value="2">
+        <div class="page_list" id="supplier">
+            <div v-if="loading">
+                <div class="page_loading"></div>
+            </div>
+            <template v-if="list.length>0">
+                <div class="back_list_con hover_add">
+                    <div v-for="(item,index) in list" class="back_add_item clearfix">
+                        <div class="back_add_cell">
+                            <label class="textBlack3">公司名称：</label>
+                            <label class="textOrange">{{item.company_name}}</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">企业类型：</label>
+                            <label>{{item.company_type}}</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">员工人数：</label>
+                            <label>{{item.size}}</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">般纳税人类型：</label>
+                            <label>{{item.taxpayer_type}}</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">注册资金：</label>
+                            <label>{{item.funds}}万元</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">公司联系电话：</label>
+                            <label>{{item.company_phone}}</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">公司地址：</label>
+                            <label>{{item.province}}{{item.city}}{{item.area}}</label>
+                        </div>
+                        <div class="back_add_cell">
+                            <label class="textBlack3">详细地址：</label>
+                            <label>{{item.detail_address}}</label>
+                        </div>
+                        <a href="javascript:;" class="back_item_add">
+                            <i class="iconfont icon-jiahao1"></i>
+                            <span>添加</span>
+                        </a>
+                        <a href="javascript:;" class="back_item_done">
+                            <i class="iconfont icon-gou"></i>
+                            <span v-if="item.role_type == 1">已添加</span>
+                            <span v-else>已添加</span>
+                        </a>
+                        <input type="hidden" name="company_id" :value="item.company_id">
+                        <input type="hidden" name="company_name" :value="item.company_name">
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div class="back_list_con hover_done">
+            <div class="back_add_item clearfix">
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司名称：</label>
+                    <label class="textOrange">湖北国际经济技术合作有限公司</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">企业类型：</label>
+                    <label>国有企业</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">员工人数：</label>
+                    <label>0-50</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">是否一般纳税人：</label>
+                    <label>是</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">注册资金：</label>
+                    <label>1000万元</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司联系电话：</label>
+                    <label>027-5675105</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司地址：</label>
+                    <label>湖北省武汉市江岸区</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">详细地址：</label>
+                    <label>三阳路256路</label>
+                </div>
+                <a href="#" class="back_item_add">
+                    <i class="iconfont icon-jiahao1"></i>
+                    <span>申请</span>
+                </a>
+                <a href="#" class="back_item_upload">
+                    <i class="iconfont icon-fujian"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_review">
+                    <i class="iconfont icon-shenhe"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_done">
+                    <i class="iconfont icon-gou"></i>
+                    <span>已通过</span>
+                </a>
+            </div>
+        </div>
+        <div class="back_list_con hover_add">
+            <div class="back_add_item clearfix">
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司名称：</label>
+                    <label class="textOrange">湖北国际经济技术合作有限公司</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">企业类型：</label>
+                    <label>国有企业</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">员工人数：</label>
+                    <label>0-50</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">是否一般纳税人：</label>
+                    <label>是</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">注册资金：</label>
+                    <label>1000万元</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司联系电话：</label>
+                    <label>027-5675105</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司地址：</label>
+                    <label>湖北省武汉市江岸区</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">详细地址：</label>
+                    <label>三阳路256路</label>
+                </div>
+                <a href="#" class="back_item_add">
+                    <i class="iconfont icon-jiahao1"></i>
+                    <span>申请</span>
+                </a>
+                <a href="#" class="back_item_upload">
+                    <i class="iconfont icon-fujian"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_review">
+                    <i class="iconfont icon-shenhe"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_done">
+                    <i class="iconfont icon-gou"></i>
+                    <span>已通过</span>
+                </a>
+            </div>
+        </div>
+        <div class="back_list_con hover_upload">
+            <div class="back_add_item clearfix">
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司名称：</label>
+                    <label class="textOrange">湖北国际经济技术合作有限公司</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">企业类型：</label>
+                    <label>国有企业</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">员工人数：</label>
+                    <label>0-50</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">是否一般纳税人：</label>
+                    <label>是</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">注册资金：</label>
+                    <label>1000万元</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司联系电话：</label>
+                    <label>027-5675105</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司地址：</label>
+                    <label>湖北省武汉市江岸区</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">详细地址：</label>
+                    <label>三阳路256路</label>
+                </div>
+                <a href="#" class="back_item_add">
+                    <i class="iconfont icon-jiahao1"></i>
+                    <span>申请</span>
+                </a>
+                <a href="#" class="back_item_upload">
+                    <i class="iconfont icon-fujian"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_review">
+                    <i class="iconfont icon-shenhe"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_done">
+                    <i class="iconfont icon-gou"></i>
+                    <span>已通过</span>
+                </a>
+            </div>
+        </div>
+        <div class="back_list_con hover_review">
+            <div class="back_add_item clearfix">
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司名称：</label>
+                    <label class="textOrange">湖北国际经济技术合作有限公司</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">企业类型：</label>
+                    <label>国有企业</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">员工人数：</label>
+                    <label>0-50</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">是否一般纳税人：</label>
+                    <label>是</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">注册资金：</label>
+                    <label>1000万元</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司联系电话：</label>
+                    <label>027-5675105</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">公司地址：</label>
+                    <label>湖北省武汉市江岸区</label>
+                </div>
+                <div class="back_add_cell">
+                    <label class="textBlack3">详细地址：</label>
+                    <label>三阳路256路</label>
+                </div>
+                <a href="#" class="back_item_add">
+                    <i class="iconfont icon-jiahao1"></i>
+                    <span>申请</span>
+                </a>
+                <a href="#" class="back_item_upload">
+                    <i class="iconfont icon-fujian"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_review">
+                    <i class="iconfont icon-shenhe"></i>
+                    <span>待审核</span>
+                </a>
+                <a href="#" class="back_item_done">
+                    <i class="iconfont icon-gou"></i>
+                    <span>已通过</span>
+                </a>
+            </div>
+        </div>
+        <div class="page_list"></div>
+        <div class="page_container_wrap" size="5" total="10"></div>
+    </div>
+</div>

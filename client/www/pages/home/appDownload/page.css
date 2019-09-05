@@ -1,0 +1,167 @@
+.app_warp {
+    width: 100%;
+    height: 680px;
+    background: url("imgs/down_bg.png") center;
+    background-size: cover;
+}
+
+.app_title_bg {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.app_title_con {
+    width: 1180px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.app_title_con .app_logo {
+    display: inline-block;
+    width: 214px;
+    height: 30px;
+    margin-top: 15px;
+    background: url("imgs/logo.png") no-repeat;
+}
+
+.app_title_con .floatR {
+    line-height: 60px;
+}
+
+.app_title_con .floatR a {
+    margin-left: 40px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.app_title_con .floatR a.act {
+    border-bottom: 4px solid #fff;
+}
+
+.app_title_con .floatR a:hover {
+    color: #fc6940;
+}
+
+.app_download_con {
+    position: relative;
+    width: 1180px;
+    height: 620px;
+    margin: 0 auto;
+}
+
+.app_download_con .phone_bg {
+    position: absolute;
+    width: 631px;
+    height: 579px;
+    bottom: 0;
+    left: -164px;
+    background: url("imgs/phone.png") no-repeat;
+}
+.app_download_con .tips_con,.app_download_con .code_con{
+    width: 620px;
+    margin-left: 560px;
+}
+.app_download_con .code_con{
+    margin-top: 70px;
+}
+.app_download_con .logo_bg{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 120px;
+    margin-left: 6px;
+    background: url("imgs/logo_bg.png") no-repeat;
+    float: left;
+}
+.app_download_con .logo_tips,.app_download_con .logo_des{
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+}
+.app_download_con .logo_tips{
+    margin-top: 130px;
+    font-size: 30px;
+    color: #fc6940;
+}
+.app_download_con .logo_des{
+    margin-top: 16px;
+    font-size: 18px;
+    color: #fff;
+}
+.app_download_con .code_bg{
+    display: inline-block;
+    width: 186px;
+    height: 186px;
+    background: url("imgs/code_bg.png") no-repeat;
+    float: left;
+}
+.code_bg img{
+    width: 160px;
+    height: 160px;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+.code_bg p{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #CFB6A9;
+    text-align: center;
+}
+.app_download_con .ios_item,.app_download_con .android_item{
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 186px;
+    margin-left: 30px;
+    border-radius: 6px;
+    background: #fff;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+}
+.app_download_con .ios_item i,.app_download_con .android_item i{
+    margin-top: 30px;
+    font-size: 50px;
+}
+.app_download_con .ios_item i{
+    color: #00B27E;
+}
+.app_download_con .android_item i{
+    color: #FC6940;
+}
+.app_download_con .ios_show,.app_download_con .android_show{
+    position: absolute;
+    display: inline-block;
+    width: 160px;
+    height: 186px;
+    top: 186px;
+    left: 0;
+    border-radius: 6px;
+    background-color: #FC6940;
+    text-align: center;
+    transition: top .3s;
+}
+.app_download_con .ios_item:hover .ios_show,.app_download_con .android_item:hover .android_show{
+    top: 0;
+}
+.app_download_con .ios_show i,.app_download_con .android_show i{
+    margin-top: 20px;
+    font-size: 40px;
+    color: #fff;
+}
+.app_download_con .ios_show span,.app_download_con .android_show span{
+    color: #fff;
+}
+.app_download_con .ios_show a,.app_download_con .android_show a{
+    display: inline-block;
+    width: 125px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 36px;
+    color: #fff;
+    text-align: center;
+}

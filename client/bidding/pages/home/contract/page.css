@@ -1,0 +1,65 @@
+/* 联系我们 */
+.contract_bg_wrap{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #ff794a;
+}
+.contract_bg_wrap .contract_bg{
+    width: 1920px;
+    height: 200px;
+    background: url(./imgs/contract_bg.jpg) center no-repeat;
+    margin: 0 auto;
+}
+.contract_main{
+    width: 1180px;
+    margin: 60px auto 80px;
+}
+.contract_main .contract_left{
+    float: left;
+    width: 545px;
+}
+.contract_left .contrac_top{
+    position: relative;
+}
+.contrac_top h3{
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    text-indent: 30px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.contrac_top .contrac_line{
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+    display: block;
+    height: 2px;
+    width: 64px;
+    background-color: #fc6940;
+}
+.contract_left .contrac_content{
+    margin-bottom: 56px;
+}
+.contrac_content h4{
+    font-weight: 700;
+}
+.contrac_content h4,.contrac_content p{
+    font-size: 16px;
+    color: #333;
+    text-indent: 30px;
+    margin-bottom: 16px;
+}
+.contract_main .contract_right{
+    float: right;
+    width: 574px;
+}
+/* 右侧地图 */
+#cjyMap{
+    width: 574px;
+    height: 760px;
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+}

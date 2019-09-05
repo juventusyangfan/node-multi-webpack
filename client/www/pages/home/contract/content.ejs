@@ -1,0 +1,86 @@
+<script>
+    function initialize() {
+        // 百度地图API功能
+        var map = new BMap.Map("cjyMap");
+        var point = new BMap.Point(114.30752, 30.60629);
+        map.centerAndZoom(point, 15);
+        var marker = new BMap.Marker(point); // 创建标注
+        map.addOverlay(marker); // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+        map.enableScrollWheelZoom(true); //启用滚轮放大缩小
+        var navigationControl = new BMap.NavigationControl({
+            // 靠左上角位置
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            // LARGE类型
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            // 启用显示定位
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+
+
+        // var geolocation = new BMap.Geolocation();
+        // geolocation.getCurrentPosition(function (r) {
+        //     if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+        //         alert('您的位置：' + r.point.lng + ',' + r.point.lat);
+
+        //         window.open("http://api.map.baidu.com/direction?origin=江汉区&destination=latlng:34.264642646862,108.95108518068|name:仓库&mode=driving&origin_region=武汉&destination_region=西安&output=html&src=webapp.baidu.openAPIdemo")
+        //     }
+        //     else {
+        //         alert('failed' + this.getStatus());
+        //     }
+        // }, {enableHighAccuracy: true})
+    }
+
+    function loadScript() {
+        var script = document.createElement("script");
+        script.src = "https://api.map.baidu.com/api?v=2.0&ak=niKOWVf1YxTrwpcHsbQfsG20&callback=initialize";//此为v2.0版本的引用方式
+        document.body.appendChild(script);
+    }
+
+    window.onload = loadScript;
+</script>
+<div class="contract_bg_wrap">
+    <div class="contract_bg"></div>
+</div>
+<div class="contract_main clearfix">
+    <div class="contract_left">
+        <div class="contrac_top">
+            <h3>联系我们</h3>
+            <span class="contrac_line"></span>
+        </div>
+        <div class="contrac_content">
+            <h4>湖北省楚建易网络科技有限公司</h4>
+            <p>地址：湖北省武汉市江岸区解放大道1208号新长江国际广场A座21层</p>
+            <p>咨询电话：400-1688-888</p>
+            <p>电子邮件：service@materialw.com</p>
+        </div>
+        <div class="contrac_top">
+            <h3>市场合作</h3>
+            <span class="contrac_line"></span>
+        </div>
+        <div class="contrac_content">
+            <p>市场部联系人：柯经理</p>
+            <p>联系电话：400-1688-88</p>
+        </div>
+        <div class="contrac_top">
+            <h3>客户服务</h3>
+            <span class="contrac_line"></span>
+        </div>
+        <div class="contrac_content">
+            <p>运营部联系人：黄经理</p>
+            <p>联系电话：400-1688-888</p>
+        </div>
+        <div class="contrac_top">
+            <h3>知识产权保护投诉</h3>
+            <span class="contrac_line"></span>
+        </div>
+        <div class="contrac_content">
+            <p>风控部联系人：白经理</p>
+            <p>联系电话：027-82810705</p>
+        </div>
+    </div>
+    <div class="contract_right">
+        <div id="cjyMap"></div>
+    </div>
+</div>

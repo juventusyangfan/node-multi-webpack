@@ -1,0 +1,81 @@
+<div class="filter_wrap">
+    <div class="filter_inner clearfix">
+        <div class="region_select clearfix" cjy-area province="" city="" area=""></div>
+        <ul class="filter_ul clearfix">
+            <!-- <li class="select_area active">
+                <div class="filter_item">所有地区<span class="filter_line"></span></div>
+                <i class="iconfont icon-xiajiantou"></i>
+            </li> -->
+            <li class="select_people">
+                <div class="filter_item">人气<span class="filter_line"></span></div>
+            </li>
+        </ul>
+        <p class="all_shop_num">共<span>1204</span>个店铺</p>
+    </div>
+</div>
+<div class="findshop_wrap">
+    <div class="findshop_list" id="shopList">
+        <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+        <template v-if="list.length>0">
+            <ul class="findshop_inner">
+                <li class="findshop_item clearfix" v-for="item in list">
+                    <div class="findshop_left clearfix">
+                        <div class="findshop_photo">
+                            <img :src="imgPath+item.logo">
+                        </div>
+                        <div class="findshop_descript">
+                            <div class="findshop_title">
+                                <h3 class="ellipsis" :title="item.title">{{item.company_name}}</h3><i class="iconfont icon-vip" v-if="item.member_status==1"></i>
+                                <a :href="'/company/index.html?company_id='+item.company_id">进入店铺</a>
+                            </div>
+                            <div class="findshop_info">
+                                <dl class="infolist_dl">
+                                    <dt>主营产品：</dt>
+                                    <dd class="ellipsis" :title="item.seller_product">{{item.seller_product}}</dd>
+                                </dl>
+                                <dl class="infolist_dl">
+                                    <dt>年营业额：</dt>
+                                    <dd class="ellipsis">{{item.business_volume}}</dd>
+                                </dl>
+                                <dl class="infolist_dl">
+                                    <dt>所在地：</dt>
+                                    <dd class="ellipsis" :title="item.address">{{item.address}}</dd>
+                                </dl>
+                                <dl class="infolist_dl">
+                                    <dt>公司规模：</dt>
+                                    <dd class="ellipsis">{{item.size}}</dd>
+                                </dl>
+                                <dl class="infolist_dl">
+                                    <dt>联系方式：</dt>
+                                    <dd class="ellipsis">{{item.company_phone}}</dd>
+                                </dl>
+                                <dl class="infolist_dl">
+                                    <dt>注册资金：</dt>
+                                    <dd class="ellipsis">{{item.funds}}万元</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="findshop_right clearfix">
+                        <dl class="imglist_item" v-for="cell in item.product_info">
+                            <dt class="imglist_photo">
+                                <a :href="'/goods/detail.html?product_id='+cell.id">
+                                    <img :src="imgPath+cell.main_img+'?w=157&h=157'">
+                                    <p>{{cell.name}}</p>
+                                </a>
+                            </dt>
+                            <dd class="imglist_txt">
+                                <span class="imglist_price">￥{{cell.price}}</span>
+                                <span class="imglist_num">成交{{cell.sale_nums+cell.unit}}</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </template>
+        <div style="text-align: center" v-else><template v-if="!loading"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></template></div>
+        <div class="pages_shop">
+            <vue-page @get-list="getShopList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.back_main_content{
+    padding: 50px 30px;
+}
+.back_main_item label span{
+    color: #fc6940;
+    vertical-align: -3px;
+    margin-right: 4px;
+}
+.back_main_btns .noallow_btn{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}

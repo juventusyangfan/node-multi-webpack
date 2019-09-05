@@ -1,0 +1,257 @@
+/**基础样式**/
+body {
+    min-width: 1400px;
+    font-size:14px;
+    line-height:1.2;
+    padding:0;
+    margin:0;
+    font-family:'Microsoft YaHei','simsun';
+    color: #666666;
+}
+
+a{
+    color: #333333;
+    text-decoration: none;
+    transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    -webkit-transition: background-color .1s;
+    -o-transition: background-color .1s;
+}
+a:hover{
+    color: #FF3600;
+    transition: color .1s;
+    -moz-transition: color .1s;
+    -webkit-transition: color .1s;
+    -o-transition: color .1s;
+}
+
+input,select,textarea,table {
+    font-size:12px;
+    font-family:'Microsoft YaHei','simsun';
+}
+
+table {
+    margin:0 auto;
+}
+
+.floatL {
+    float:left;
+}
+
+.floatR {
+    float:right;
+}
+.clear {
+    clear:both;
+    height:0;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+}
+.clearBorder{
+    border: none!important;
+}
+
+.clearFloat {
+    clear:both;
+    overflow:hidden;
+}
+/* 用于浮动元素的父元素 */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*兼容IE6、7*/
+.clearfix {
+    *zoom:1;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+/**width**/
+.width100{
+    width: 100px;
+}
+.width150{
+    width: 150px;
+}
+.width180{
+    width: 180px;
+}
+.width200{
+    width: 200px!important;
+}
+.width390{
+    width: 390px!important;
+}
+.width1200{
+    width: 1200px;
+}
+/**margin-left**/
+.marginT4{
+    margin-top: 4px;
+}
+.marginT10{
+    margin-top: 10px;
+}
+.marginT14{
+    margin-top: 14px;
+}
+.marginT16{
+    margin-top: 16px;
+}
+.marginT18{
+    margin-top: 18px;
+}
+.marginT20{
+    margin-top: 20px!important;
+}
+.marginT30{
+    margin-top: 30px;
+}
+.marginT60{
+    margin-top: 60px;
+}
+/**margin-left**/
+.marginL4{
+    margin-left: 4px!important;
+}
+.marginL10{
+    margin-left: 10px!important;
+}
+.marginL12{
+    margin-left: 12px!important;
+}
+.marginL20{
+    margin-left: 20px;
+}
+.marginL30{
+    margin-left: 30px;
+}
+.marginL40{
+    margin-left: 40px;
+}
+/**margin-right**/
+.marginR4{
+    margin-right: 4px!important;
+}
+.marginR10{
+    margin-right: 10px!important;
+}
+.marginR20{
+    margin-right: 20px;
+}
+.marginR24{
+    margin-right: 24px;
+}
+.marginR60{
+    margin-right: 60px;
+}
+.marginR100{
+    margin-right: 100px;
+}
+/**margin-bottom**/
+.marginB6{
+    margin-bottom: 6px;
+}
+.marginB10{
+    margin-bottom: 10px;
+}
+.marginB20{
+    margin-bottom: 20px;
+}
+.marginB30{
+    margin-bottom: 30px;
+}
+.fontBold{
+    font-weight: bolder;
+}
+.fontNormal{
+    font-weight: 400!important;
+}
+/**font-size**/
+.fontSize12{
+    font-size: 12px!important;
+}
+.fontSize14{
+    font-size: 14px!important;
+}
+.fontSize16{
+    font-size: 16px!important;
+}
+.fontSize24{
+    font-size: 24px!important;
+}
+.fontSize30{
+    font-size: 30px!important;
+}
+/**字体颜色**/
+.textOrange{
+    color: #FF3600!important;
+}
+.textRed{
+    color: #DC2F00!important;
+}
+.textBlue{
+    color: #0084ff!important;
+}
+.textGreen{
+    color: #31c37c!important;
+}
+.textYellow{
+    color: #ffa200!important;
+}
+.textWhite{
+    color: #fff;
+}
+.textBlack1{
+    color: #333!important;
+}
+.textBlack2{
+    color: #666!important;
+}
+.textBlack3{
+    color: #999!important;
+}
+/**字体排版**/
+.textC{
+    text-align: center;
+}
+.textR{
+    text-align: right;
+}
+.textL{
+    text-align: left;
+}
+/**背景颜色**/
+.backgroundColor1{
+    background-color: #DCEEFC;
+}
+/**验证必填**/
+.TZW{
+    vertical-align: -2px;
+    margin: 5px;
+    color: #ff5959;
+}
+/**手型**/
+.curPointer{
+    cursor: pointer;
+}
+/**限制显示省略号**/
+.ellipsis{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}

@@ -1,0 +1,436 @@
+/* banner */
+.banner_wrap {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner_wrap .banner_bg {
+    height: 360px;
+    margin: 0 auto;
+}
+
+.slides_cell {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.banner_bg .banner_item {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 360px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel_dot {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    z-index: 1;
+}
+
+.carousel_dot .carousel_dot_span {
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.carousel_dot a.active {
+    opacity: 1;
+}
+
+.banner_wrap .carousel_btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 360px;
+}
+
+.banner_wrap:hover .carousel_btn {
+    display: block;
+}
+
+.carousel_btn span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: -50px;
+    background-color: #000;
+    opacity: 0.3;
+    cursor: pointer;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.carousel_btn span:hover {
+    opacity: 0.6;
+}
+
+.carousel_btn .left_btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.carousel_btn .right_btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.carousel_btn i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.carousel_btn span:hover i {
+    color: #FC6840;
+}
+
+.left_btn i {
+    margin-left: -6px;
+}
+
+.right_btn i {
+    margin-right: -6px;
+}
+
+/* 顶部样式 */
+.tender_header{
+    max-width: 1920px;
+    height: 146px;
+    background-color: #F7F7F7;
+    border-bottom: solid 1px #e5e5e5;
+}
+.tender_inner{
+    width: 1400px;
+    margin: 0 auto;
+}
+.tender_inner .tender_type_wrap{
+    position: relative;
+    width: 432px;
+    height: 64px;
+    margin-top: 50px;
+    padding: 0 17px;
+    border-left: solid 1px #ddd;
+    float: left;
+}
+.tender_inner .tender_type_wrap:first-child{
+    border-left: none;
+}
+.tender_inner .tender_type_wrap li{
+    width: 108px;
+    height: 32px;
+    line-height: 32px;
+    float: left;
+}
+.tender_inner .tender_type_wrap li a{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 14px;
+    border-radius: 26px;
+    color: #333;
+}
+.tender_inner .tender_type_wrap li a:hover{
+    color: #DC2F00;
+}
+.tender_inner .tender_type_wrap li.active a{
+    background-color: #DC2F00;
+    color: #fff;
+}
+.tender_inner .tender_type_wrap .tender_type_title{
+    position: absolute;
+    display: inline-block;
+    width: 148px;
+    height: 80px;
+    top: -90px;
+    left: 50%;
+    margin-left: -74px;
+    background: url(imgs/ttBg.png) no-repeat;
+    text-align: center;
+    z-index: 10;
+}
+.tender_inner .tender_type_wrap .tender_type_title i{
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    font-size: 24px;
+}
+
+.tender_main{
+    width: 1400px;
+    margin: 0 auto; 
+    padding: 30px 0 80px 0; 
+}
+.tender_select{
+    padding: 0 30px;
+    border-bottom: solid 1px #eee;
+}
+.tender_select li{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    float: left;
+}
+.tender_select li .line{
+    position: absolute;
+    display: none;
+    width: 26px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -13px;
+    background-color: #DC2F00;
+}
+.tender_select li.active a{
+    color: #DC2F00;
+}
+.tender_select li.active .line{
+    display: block;
+}
+
+.tender_search{
+    width: 510px;
+    height: 38px;
+    background-color: #F4F4F4;
+    border: 1px solid #F4F4F4;
+    border-radius: 38px;
+    float: right;
+}
+.tender_search .tender_search_sel{
+    position: relative;
+    width: 82px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #999;
+    cursor: pointer;
+    float: left;
+}
+.tender_search .tender_search_sel i {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: -2px;
+    transition: transform .3s;
+    float: right;
+}
+.tender_search .tender_search_sel:hover i {
+    transform: rotate(180deg);
+}
+.tender_search .tender_search_sel dl {
+    position: absolute;
+    display: none;
+    top: 39px;
+    left: 10px;
+    width: 101px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.tender_search .tender_search_sel dd {
+    width: 83px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.tender_search .tender_search_sel dd:hover {
+    background-color: #d2ebff;
+}
+.tender_search .tender_search_input {
+    width: 324px;
+    height: 22px;
+    line-height: 22px;
+    margin-top: 9px;
+    padding: 0 10px;
+    background-color: #F4F4F4;
+    border: none;
+    font-size: 14px;
+    float: left;
+}
+.tender_search .tender_search_btn {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    color: #999;
+    text-align: center;
+    float: left;
+}
+
+.tender_clear_btn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    background-color: #f4f4f4;
+    border-radius: 40px;
+    text-align: center;
+    float: right;
+}
+.tender_clear_btn i{
+    font-size: 24px;
+    color: #ccc;
+}
+
+.showAnimate{
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: leftbit;
+    animation-name: leftbit;
+}
+
+/* table */
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #333;
+    vertical-align: top;
+}
+.material_list th{
+    height: 40px;
+    background-color: #F7F7F7;
+    color: #888;
+}
+.material_list .table_tenderName{
+    display: block;
+    height: 42px;
+    margin-bottom: 4px;
+    color: #333;
+    overflow: hidden;
+}
+.material_list .table_tenderName:visited{
+    color: #999;
+}
+.material_list .table_tenderName:hover{
+    color: #DC2F00;
+    text-decoration: underline;
+}
+.material_list .table_bidTips {
+    margin-right: 20px;
+    color: #888;
+}
+.material_list .table_bidTips i {
+    margin-right: 4px;
+    font-size: 18px;
+    color: #999;
+    vertical-align: -2px;
+}
+.material_list .table_status{
+    display: inline-block;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px;
+    border-radius: 28px;
+    text-align: center;
+}
+.material_list .table_dateTips{
+    margin-top: 14px;
+    height: 18px;
+    line-height: 18px;
+    color: #333;
+}
+.material_list .table_dateTips i{
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 18px;
+    vertical-align: -2px;
+}
+
+.material_list .statusRed{
+    border-color: #F58F99;
+    color: #E40D22;
+}
+.material_list .statusBlue{
+    border-color: #87CBFF;
+    color: #007FE1;
+}
+.material_list .statusGreen{
+    border-color: #AFE1AF;
+    color: #00B600;
+}
+.material_list .statusGray{
+    border-color: #e5e5e5;
+    color: #888;
+}
+
+
+
+/* 页码 */
+.page_container{
+    margin: 30px auto 0 auto;
+}
+.page_container_nav a{
+    border-radius: 34px;
+}
+.page_container_nav .page_cur{
+    background-color: #DC2F00;
+    border: 1px solid #DC2F00;
+}
+
+
+
+.w84{
+    width: 84px!important;
+}
+.w96{
+    width: 96px!important;
+}
+.w120{
+    width: 120px!important;
+}

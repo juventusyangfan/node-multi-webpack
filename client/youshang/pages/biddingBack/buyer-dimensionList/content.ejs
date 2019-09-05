@@ -1,0 +1,51 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">不良记录</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_list" style="border-top:none;" id="supplier">
+            <div class="back_list_top">
+                <a href="javascript:;" class="back_list_btn floatR">+ 不良记录</a>
+                <span class="floatR">共<span>{{count}}</span>条记录</span>
+            </div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="200">
+                        <col width="50">
+                        <col width="100">
+                        <col width="100">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>记录主题</th>
+                        <th>记录附件</th>
+                        <th>记录时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="4">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{item.title}}</td>
+                        <td>{{item.credit_log_count}}</td>
+                        <td>{{item.create_time}}</td>
+                        <td><a href="javascript:;" class="textBlue">查看</a></td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="4"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 10px;font-size: 24px;color: #999;text-align: center;">暂无不良记录〜</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

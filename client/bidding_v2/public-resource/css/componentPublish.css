@@ -1,0 +1,226 @@
+/* 顶部header部分 */
+.publish_top_menu{
+    width: 1400px;
+    height: 110px;
+    margin: 0 auto;
+}
+.publish_top_menu .top_menu_left{
+    float: left;
+    margin-top: 18px;
+}
+.publish_top_menu .top_menu_right{
+    float: right;
+    line-height: 110px;
+}
+.publish_top_con{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-image: url(../imgs/top/buyerDetailBg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.publish_top_con .publish_top_crumbs{
+    width: 1400px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.publish_top_con .publish_top_crumbs a{
+    color: #fff;
+    opacity: 1;
+}
+.publish_top_con .publish_top_crumbs span,.publish_top_con .publish_top_crumbs i{
+    color: #fff;
+    opacity: 0.8;
+}
+.other_top_con .other_top_crumbs i{
+    vertical-align: -1px;
+}
+.publish_step_wrap{
+    width: 1260px;
+    margin: 40px auto;
+    padding: 0 70px;
+}
+.publish_step_wrap li{
+    position: relative;
+    width: 180px;
+    text-align: center;
+    float: left;
+}
+.publish_step_wrap li a{
+    cursor: default;
+}
+.publish_step_wrap li.step_done a{
+    cursor: pointer;
+}
+.publish_step_wrap li.step_done .publish_step_icon,.publish_step_wrap li.step_doing .publish_step_icon,.publish_step_wrap li.step_none .publish_step_icon{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 38px;
+    font-size: 18px;
+    text-align: center;
+}
+.publish_step_wrap li.step_done .publish_step_icon{
+    background-color: #FFCE00;
+    border: solid 1px #FFCE00;
+    color: #CF3309;
+}
+.publish_step_wrap li.step_doing .publish_step_icon{
+    background-color: #fff;
+    border: solid 1px #fff;
+    color: #CF3309;
+}
+.publish_step_wrap li.step_none .publish_step_icon{
+    background-color: #DC0000;
+    border: dashed 1px #fff;
+    color: #fff;
+}
+.publish_step_wrap li .line_left,.publish_step_wrap li .line_right{
+    position: absolute;
+    width: 66px;
+    top: 19px;
+}
+.publish_step_wrap li .line_left{
+    left: 0;
+}
+.publish_step_wrap li .line_right{
+    right: 0;
+}
+.publish_step_wrap li.step_done .line_left,.publish_step_wrap li.step_done .line_right,.publish_step_wrap li.step_doing .line_left{
+    border-bottom: solid 2px #fff;
+}
+.publish_step_wrap li.step_doing .line_right,.publish_step_wrap li.step_none .line_left,.publish_step_wrap li.step_none .line_right{
+    border-bottom: dashed 1px #fff;
+}
+.publish_step_wrap li:first-child .line_left,.publish_step_wrap li:last-child .line_right{
+    border: none;
+}
+
+
+/* 发布招标主体 */
+.publish_wrap{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 160px;
+    background-color: #F7F7F7;
+}
+.publish_container{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background-color: #fff;
+}
+.publish_head {
+    position: relative;
+    padding-bottom: 60px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #fff;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.publish_head span {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #333;
+    vertical-align: 4px;
+}
+.publish_head .publish_edit{
+    position: absolute;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 15px;
+    right: 0;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #FF3600;
+}
+.publish_head .publish_edit i{
+    margin-right: 4px;
+}
+.publish_block{
+    margin-bottom: 20px;
+}
+.publish_block .publish_block_half{
+    width: 640px;
+    float: left;
+}
+.publish_block label{
+    display: inline-block;
+    width: 80px;
+    line-height: 40px;
+    text-align: right;
+    float: left;
+}
+.publish_block .publish_block_item{
+    float: left;
+}
+.publish_block .publish_block_text{
+    float: left;
+    line-height: 40px;
+}
+.publish_block .publish_block_half input.cjy-input-{
+    width: 420px;
+}
+
+.publish_block .cjy-radio,.publish_block .cjy-checkbox{
+    margin-top: 6px;
+    margin-right: 70px;
+}
+.publish_block select{
+    width: 280px;
+}
+
+.publish_btn_wrap{
+    margin: 40px 0;
+}
+.publish_btn_wrap a{
+    display: inline-block;
+    min-width: 70px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+.publish_btn_wrap a i{
+    margin-right: 10px;
+}
+.publish_btn_wrap a.btn_draft,.publish_btn_wrap a.btn_back{
+    border: solid 1px #ccc;
+}
+.publish_btn_wrap a.btn_next{
+    background-color: #FF3600;
+    border: solid 1px #FF3600;
+    color: #fff;
+}
+.publish_btn_wrap a.btn_next:hover {
+    background-color: #ec3200;
+}
+
+
+.publish_msg_con{
+    line-height: 30px;
+    color: #999;
+}
+.publish_msg_con .icon-i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 6px;
+    background-color: #13B3FC;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}

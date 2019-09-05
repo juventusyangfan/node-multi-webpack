@@ -1,0 +1,180 @@
+.inquiry_warp{
+    padding: 0 30px 80px 30px;
+}
+.inquiry_head{
+    position: relative;
+    padding: 20px 0;
+    border-bottom: solid 1px #e5e5e5;
+}
+.inquiry_head .inquiry_title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #FC6940;
+}
+.inquiry_line{
+    margin-bottom: 14px;
+}
+.inquiry_line label{
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+    float: left;
+}
+.inquiry_line .block_line{
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 50px;
+    float: left;
+}
+.inquiry_btns a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+    padding: 0 15px;
+    background-color: #9E6B49;
+    border-radius: 30px;
+    color: #fff;
+}
+.inquiry_btns a i{
+    font-size: 16px;
+    margin-right: 6px;
+}
+.inquiry_head .inquiry_statusIng,.inquiry_head .inquiry_statusDone{
+    position: absolute;
+    width: 113px;
+    height: 102px;
+    top: 0;
+    left: 1000px;
+}
+.inquiry_head .inquiry_statusIng{
+    background: url(imgs/quoteIng.png) no-repeat;
+}
+.inquiry_head .inquiry_statusDone{
+    background: url(imgs/quoteDone.png) no-repeat;
+}
+
+
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody{
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody:hover{
+    border-top: solid 1px #ccc;
+}
+.material_list tr{
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody:hover tr{
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+}
+.material_list tbody:hover tr:last-child{
+    border-bottom: solid 1px #ccc;
+    box-shadow: 0 5px 10px -5px #ccc;
+}
+.material_list tbody tr:first-child{
+    background-color: #FDFDFD;    
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    border-left: solid 1px #eee;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+.material_list th{
+    height: 50px;
+}
+.material_list td{
+    padding: 20px;
+    color: #999;
+    vertical-align: top;
+}
+.material_list th:first-child,.material_list td:first-child{
+    border-left: none;
+}
+.material_list th{
+    background-color: #FAFAFA;
+}
+.material_list .inquiry_company{
+    display: inline-block;
+    max-width: 360px;;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #FC6940;
+}
+.material_list .inquiry_tips{
+    margin-left: 40px;
+}
+.material_list .inquiry_tips > span{
+    margin-right: 10px;
+}
+.material_list .icon_done{
+    position: absolute;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 6px;
+    top: 10px;
+    right: 10px;
+    background: #fd4545;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    float: right;
+}
+.material_list th i.iconArr{
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    margin-left: 4px;
+    background: url(imgs/arrAll.png) no-repeat;
+    vertical-align: -2px;
+    transition: transform .3s;
+}
+.material_list th i.arrUp{
+    background: url(imgs/arr.png) no-repeat;
+}
+.material_list th i.arrDown{
+    background: url(imgs/arr.png) no-repeat;
+    transform: rotate(180deg);
+}
+
+/* .back_main_btns{
+    display: none;
+} */
+.back_main_btns .btn_tips{
+    height: 40px;
+    line-height: 40px;
+    margin-right: 30px;
+}
+
+/* 创建订单 */
+.inquiry-box .inquiry-label{
+    float: left;
+    display: block;
+    width: 94px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.inquiry-box .inquiry-input{
+    float: left;
+}
+.inquiry-input textarea{
+    width: 360px;
+    height: 80px;
+    padding: 12px 10px;
+    border: solid 1px #ccc;
+}

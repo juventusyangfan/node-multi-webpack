@@ -1,0 +1,125 @@
+<div class="publish_banner">
+    <div class="publish_crumbs">
+        <i class="iconfont icon-ditu"></i>
+        当前位置：<a href="#">快捷询价</a>><a href="#">询价单详情</a>><a href="#">立即报价</a>
+    </div>
+</div>
+<div class="publish_warp">
+    <div class="publish_container">
+        <div class="publish_step_con">
+            <ul>
+                <li><a href="javascript:;" data-href="step1" class="active">报价信息<span class="line"></span><span class="circle"></span></a></li>
+                <li><a href="javascript:;" data-href="step2" class="">交易信息<span class="line"></span><span class="circle"></span></a></li>
+                <li><a href="javascript:;" data-href="step3" class="">发布报价<span class="line"></span><span class="circle"></span></a></li>
+            </ul>
+        </div>
+        <div class="shadow_left"></div>
+        <div class="shadow_right"></div>
+        <div class="publish_nav" id="step1">
+            <div class="publish_title">报价信息<span class="pay_info_tips"><i class="iconfont icon-deng"></i>采购商报价要求：到站价（单价包含运输费、装载费、卸货费等）</span></div>
+            <div class="publish_con">
+                <table class="publish_table">
+                    <colgroup>
+                        <col width="50">
+                        <col width="200">
+                        <col width="50">
+                        <col width="150">
+                        <col width="100">
+                        <col width="100">
+                        <col width="150">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>物资名称</th>
+                            <th>采购量</th>
+                            <th><span class="textRed">*</span>单价（含税）</th>
+                            <th><span class="textRed">*</span>税率</th>
+                            <th>小计（元）</th>
+                            <th>采购商备注信息</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>PH标准液（盛世康普   48.8±2.1μm  ）</td>
+                            <td>20瓶</td>
+                            <td><input type="text" class="cjy-input-" name="free_unit_price[]" placeholder="请输入" style="width:50px;">元/瓶</td>
+                            <td><input type="text" class="cjy-input-" style="width:50px;"></td>
+                            <td>￥1200.00</td>
+                            <td>生产日期新一些</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>PH标准液（盛世康普   48.8±2.1μm  ）</td>
+                            <td>20瓶</td>
+                            <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:50px;">元/瓶</td>
+                            <td><input type="text" class="cjy-input-" style="width:50px;"></td>
+                            <td>未报价</td>
+                            <td>——</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="text-align:right;">运费总价</td>
+                            <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:50px;">元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td colspan="3" style="text-align:right;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="publish_total">总计：￥<span class="fontSize24 textRed">60.00</span></div>
+            </div>
+        </div>
+        <div class="publish_nav" id="step2">
+            <div class="publish_title">采购要求</div>
+            <div class="publish_con">
+                <div class="publish_line">
+                    <label>交易方式：</label>
+                    <div class="publish_block">
+                        <span class="publish_text"><i class="moneyIcon">￥</i>账期支付<span class="textRed">（要求180天内完成支付）</span></span><i class="iconfont icon-wenhao"></i>
+                    </div>
+                </div>
+                <div class="publish_line">
+                    <label><span class="textRed">*</span>最晚到货日期：</label>
+                    <div class="publish_block">
+                        <input type="text" class="cjy-calendar-input" name="" placeholder="最晚到货日期" calendar readonly>
+                        <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>买家要求<span class="textRed">最晚到货日期 2018-12-27 0：47</span></span>
+                    </div>
+                </div>
+                <div class="publish_line">
+                    <label><span class="textRed">*</span>税务发票类型：</label>
+                    <div class="publish_block">
+                        <span class="publish_text">增值税专用发票</span>
+                    </div>
+                </div>
+                <div class="publish_line">
+                    <label>补充说明：</label>
+                    <div class="publish_block">
+                        <textarea class="cjy-textarea" maxlen="300" rows="3" style="width: 600px;"></textarea>
+                    </div>
+                </div>
+                <div class="publish_line">
+                    <label>附件：</label>
+                    <div class="publish_block">
+                        <span class="js_upload"></span>
+                        <!-- <a href="javascript:;" class="upload_btn" style="position: relative;">上传文件<input type="file" id="uploadFile" name="uploadFile"  style="position: absolute;width: 100%;height: 100%;padding: 0;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                        <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>最多上传8个附件，支持格式：doc .docx .pdf .xls.xlsx.jpg.gif.png.jpeg.bmp.txt</span>
+                        <div id="process-files"></div>
+                    </div>
+                </div>
+                <div class="publish_line">
+                    <label></label>
+                    <div class="publish_block">
+                        <ul class="file_con">
+                            <li><i class="iconfont icon-fujian"></i><a href="#">这里放名称，点击可预览</a><a class="file_del">删除</a></li>
+                            <li><i class="iconfont icon-fujian"></i><a href="#">这里放名称，点击可预览</a><a class="file_del">删除</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="publish_nav" id="step3">
+            <div class="publish_btns">
+                <a href="javascript:;" class="publish_done">发布报价</a>
+            </div>
+        </div>
+    </div>
+</div>

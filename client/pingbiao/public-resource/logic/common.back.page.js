@@ -1,0 +1,5 @@
+require('cssDir/componentBack.css');
+
+$(()=> {
+
+});

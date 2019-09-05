@@ -1,0 +1,74 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>草稿箱</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_list_nav">
+            <span class="floatR">共计：11个</span>
+        </div>
+        <div class="back_list_con" id="tenderList">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="5%">
+                        <col width="25%">
+                        <col width="15%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="18%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>采购名称</th>
+                            <th>所属项目</th>
+                            <th>信息发布</th>
+                            <th>报名截止时间 </th>
+                            <th>投标截止时间 </th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr v-if="loading">
+                            <td colspan="7" styele="text">
+                                <div class="page_loading"></div>
+                            </td>
+                        </tr>
+                        <tr v-for="(item,index) in list" :supplier-id="item.winSupplierId" :tender-id="item.tender_id">
+                            <td>{{index+1}}</td>
+                            <td>
+                                <p class="tenderName" v-html="item.tenderName"></p>
+                                <div><span class="tenderTipsCell">{{item.collectType}}</span><span
+                                        class="tenderTipsCell">{{item.tenderClass}}</div><span
+                                        class="tenderTipsCell">{{item.bidType}}</span></div>
+                            </td>
+                            <td>
+                                <p style="width:90%;">{{item.itemName}}</p>
+                            </td>
+                            <td>{{item.createTime}}<div>{{item.userName}}&nbsp;&nbsp;<span class="textBlack3">经办</span>
+                                </div>
+                            </td>
+                            <td>{{item.enrollEndTime}}</td>
+                            <td>{{item.bidEndTime}}</td>
+
+                            <td v-html="item.actHTML"></td>
+                        </tr>
+                        <tr v-if="list.length<=0">
+                            <td colspan="7">
+                                <div class="page_list_noneBg"></div>
+                                <p class="page_list_noneCon"
+                                    style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">
+                                    没有找到相关内容</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getTenderList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

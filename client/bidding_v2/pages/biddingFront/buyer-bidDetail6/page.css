@@ -1,0 +1,98 @@
+.other_top_con{
+    height: 116px;
+}
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    height: 60px;
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list td {
+    height: 46px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    background-color: #F8F8F8;
+    font-weight: 700;
+}
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 3px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+.material_list .table_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #FF3600;
+    text-align: center;
+}
+.bid_detail_form{
+    margin-top: 20px;
+}
+.bid_detail_form .bid_form_cell{
+    display: inline-block;
+    width: 260px;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 20px;
+}
+.bid_detail_form .bid_form_btn,.bid_detail_form .bid_form_link{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 15px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    text-align: center;
+}
+.bid_detail_form .bid_form_btn{
+    background-color: #FF3600;
+    color: #fff;
+}
+.bid_detail_form .bid_form_link{
+    background-color: #fff;
+    color: #FF3600;
+}
+.bid_detail_form .bid_form_btn:hover{
+    background-color: #ec3200;
+    border: solid 1px #ec3200;
+}

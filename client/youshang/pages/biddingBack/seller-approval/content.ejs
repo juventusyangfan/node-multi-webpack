@@ -1,0 +1,91 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>邀请供应商</span>
+        <span class="active">审批列表</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <div>
+                <select name="status">
+                    <option value="">友商状态</option>
+                    <option value="1">已邀请</option>
+                    <option value="2">待审核</option>
+                    <option value="3">拒接邀请</option>
+                    <option value="4">审核通过</option>
+                    <option value="5">审核不通过</option>
+                </select>
+                <select name="join_way">
+                    <option value="">加入方式</option>
+                    <option value="1">邀请加入</option>
+                    <option value="2">申请加入</option>
+                </select>
+                <a href="javascript:;" class="btn_clear">清除</a>
+            </div>
+            <div class="marginT20">
+                <input name="company_name" type="text" placeholder="输入关键字：采购商名称" class="cjy-input-">
+                <a href="javascript:;" class="btn_confirm">搜索</a>
+                <a href="javascript:;" class="btn_clear">清除</a>
+            </div>
+        </div>
+
+        <div class="back_main_list" id="supplier">
+            <div class="back_list_top">
+                <ul class="back_list_sort">
+                    <li class="act">申请/邀请时间<i class="iconfont icon-xiajiantou1"></i></li>
+                </ul>
+                <span class="floatR">共<span>{{count}}</span>条记录</span>
+            </div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="100">
+                        <col width="100">
+                        <col width="200">
+                        <col width="100">
+                        <col width="120">
+                        <col width="120">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>友商状态</th>
+                        <th>申请类别</th>
+                        <th>采购商名称</th>
+                        <th>加入方式</th>
+                        <th>申请/邀请时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="7">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{index+1}}</td>
+                        <td :class="{textBlack3:item.status=='1',textBlue:item.status=='2',textRed:item.status=='3'||item.status=='5',textGreen:item.status=='4'}">{{item.status_name}}</td>
+                        <td>{{item.youshang_type_title}}</td>
+                        <td>{{item.supplier_name}}</td>
+                        <td>{{item.join_way=="1"?"邀请加入":"申请加入"}}</td>
+                        <td>{{item.create_time}}</td>
+                        <td>
+                            <a href="javascript:;" class="textBlue" v-if="item.status=='1'&&item.join_way=='1'">回复</a>
+                            <a href="javascript:;" class="" v-else>查看</a>
+                        </td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="7"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 10px;font-size: 24px;color: #999;text-align: center;">暂无审批列表〜</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <input type="hidden" name="role_type" value="1">
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

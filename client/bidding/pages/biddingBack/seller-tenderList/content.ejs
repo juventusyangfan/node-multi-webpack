@@ -1,0 +1,69 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>标书订单管理</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <select name="partakeType">
+                <option value="">参与状态</option>
+                <option value="1">已报名</option>
+                <option value="2">未报名</option>
+            </select>
+            <select name="isWinTender">
+                <option value="">中标状态</option>
+                <option value="1">已中标</option>
+                <option value="2">未中标</option>
+                <option value="2">未定标</option>
+            </select>
+            <select name="tenderType">
+                <option value="">招标方式</option>
+                <option value="1">公开招标</option>
+                <option value="2">邀请招标</option>
+            </select>
+            <input type="text" name="time" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+        </div>
+        <div class="back_main_search">
+            <input type="text" name="keyword" placeholder="输入关键字：招标名称/招标编号" class="cjy-input-" value="">
+            <a href="javascript:;" class="btn_confirm">确认</a>
+        </div>
+        <div class="back_list_info clearfix">
+            <span class="floatR">共20条数据</span>
+        </div>
+        <div class="back_list_con">
+            <!--<div class="back_tender_Item hover_review">-->
+                <!--<div class="back_item_head">-->
+                    <!--<span>参与状态：已投标</span>-->
+                    <!--<span class="marginL40">截止日期：2018-06-29 12:00:00</span>-->
+                    <!--<span class="floatR"><i class="iconfont icon-quanxian-chengyuan"></i>邀请招标</span>-->
+                <!--</div>-->
+                <!--<div class="back_item_body">-->
+                    <!--<div><span class="back_body_title">中国铁建怀邵衡铁路、瑞昌市立交桥、轨枕制造、光谷高科... </span><span class="back_tips_disabled">已中标</span>-->
+                    <!--</div>-->
+                    <!--<div class="fontSize14 marginT18">-->
+                        <!--<span class="textBlack3">评标方式：线下评标</span>-->
+                        <!--<span class="textBlack3 marginL40">标书支付凭证：<a href="JavaScript:;" name="upload" class="textBlue">上传</a> / 未通过</span>-->
+                        <!--<span class="textBlack3 marginL40">投标保证金支付凭证：</span><a href="JavaScript:;" name="upload" class="textBlue">上传</a> / 未通过</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="back_tender_Item hover_review">-->
+                <!--<div class="back_item_head">-->
+                    <!--<span>参与状态：已投标</span>-->
+                    <!--<span class="marginL40">截止日期：2018-06-29 12:00:00</span>-->
+                    <!--<span class="floatR"><i class="iconfont icon-quanxian-chengyuan"></i>邀请招标</span>-->
+                <!--</div>-->
+                <!--<div class="back_item_body">-->
+                    <!--<div><span class="back_body_title">中国铁建怀邵衡铁路、瑞昌市立交桥、轨枕制造、光谷高科... </span><span class="back_tips_waiting">未定标</span>-->
+                    <!--</div>-->
+                    <!--<div class="fontSize14 marginT18">-->
+                        <!--<span class="textBlack3">评标方式：线下评标</span>-->
+                        <!--<span class="textBlack3 marginL40">标书支付凭证：<a href="#" class="textBlue">查看</a> / 待审核</span>-->
+                        <!--<span class="textBlack3 marginL40">投标保证金支付凭证：</span><a href="#" class="textBlue">上传</a> / -</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="page_list"></div>
+        </div>
+        <div class="page_container_wrap" size="10" total="10"></div>
+    </div>
+</div>

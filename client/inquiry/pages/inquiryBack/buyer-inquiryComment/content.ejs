@@ -1,0 +1,47 @@
+<div class="back_main">
+    <div class="back_main_crumbs">
+        <i class="iconfont icon-ditu"></i>
+        <a href="#">订单管理</a>
+        <span>></span>
+        <span>商品评价</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_comment_warp">
+            <div class="back_comment_con">
+                <div class="pDetail_show_comment" id="commentList">
+                    <div class="comment_campany"><i class="iconfont icon-dianpu"></i>{{companyName}}</div>
+                    <div class="comment_top">
+                        <span class="textBlack1">供应商满意度：{{averageLevel}} / 5.0</span>
+                        <span :class="'bigStarBg bStar'+intLevel+'-'+floatLevel"></span>
+                    </div>
+                    <div style="text-align: center" v-if="loading">
+                        <div class="page_loading"></div>
+                    </div>
+                    <ul class="comment_con" v-if="list.length>0">
+                        <li class="comment_cell clearfix" v-for="item in list">
+                            <label><i class="caiIcon"></i>{{item.company_name}}</label>
+                            <div class="comment_detail">
+                                <span :class="'smallStarBg sStar'+item.satisfaction_level+'-0'"></span>
+                                <span class="time">{{item.create_time}}</span>
+                                <div class="comment">{{item.describe}}</div>
+                                <div class="imgs">
+                                    <a href="javascript:;" v-for="cell in item.describe_url"><img class="imgCell" :src="imgPath+cell"></a>
+                                </div>
+                                <div class="showBimg">
+                                    <img src="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div style="text-align: center" v-else>
+                        <div class="page_list_noneBg"></div>
+                        <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                    </div>
+                    <div id="pages">
+                        <vue-page @get-list="getComment" :count="count" :limit="10" :cPage="current" v-if="list.length>0"></vue-page>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

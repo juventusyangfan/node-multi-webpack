@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常见问题</title>
+    <link rel="stylesheet" href="http://static.materialw.com/bidding/static/static/commons/commons/styles.css"/>
+    <style type="text/css">
+        .body-width {
+            min-width: 100%;
+        }
+
+        .help-detail {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        .help-qs-item {
+            margin-bottom: 40px;
+        }
+
+        .help-qs-title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .help-qs-title i {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            border-radius: 9px;
+            background-color: #50B2F6;
+            color: #fff;
+            text-align: center;
+        }
+
+        .help-qs-detail {
+            margin: 18px 0 20px 26px;
+            line-height: 1.5;
+        }
+
+        .help-fl-item {
+            margin-bottom: 30px;
+        }
+
+        .help-detail p {
+            line-height: 2;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body class="body-width">
+<input type="text" id="len">
+<div class="help-detail">
+    <div class="help-qs-item">
+        <div class="help-qs-title"><i class="iconfont icon-i"></i>【附件无法上传】 附件上传多次，都上传失败？</div>
+        <div class="help-qs-detail">可能是浏览器不兼容的问题，建议使用IE、谷歌或者火狐浏览器。</div>
+    </div>
+    <div class="help-qs-item">
+        <div class="help-qs-title"><i class="iconfont icon-i"></i>【无法提交】信息编辑完毕点击提交，点不动怎么办？</div>
+        <div class="help-qs-detail">查看页面是否有必填项没有填写完整或格式填写错误。</div>
+    </div>
+    <div class="help-qs-item">
+        <div class="help-qs-title"><i class="iconfont icon-i"></i>【注册后无法报名投标】申报资料审核通过后，无法参加相应项目采购活动的报名怎么办？
+        </div>
+        <div class="help-qs-detail">用户需要缴纳会籍费成为生材网VIP会员，申请成为VIP会员将享有生材网独家集采信息的在线查看和参与报价权利。</div>
+    </div>
+    <div class="help-qs-item">
+        <div class="help-qs-title"><i class="iconfont icon-i"></i>【会籍费标准】会籍费缴纳标准是多少？</div>
+        <div class="help-qs-detail">①
+            用户注册“采购商”角色的VIP会员，注册首年内发起并完成有效的招标/竞争性谈判/询比价等采购活动超过6笔或标的物估价累计超过500万元的，会籍费全免；不足上述标准的，次年会籍费按12000元/年收取；
+        </div>
+        <div class="help-qs-detail">② 用户注册“供应商”或“采购商/供应商”角色的VIP会员，会籍费按12000元/年收取。</div>
+        <div class="help-qs-detail">在集采平台中，除会籍费外，生材网不再收取其它费用。</div>
+    </div>
+    <div class="help-qs-item">
+        <div class="help-qs-title"><i class="iconfont icon-i"></i>【提示】企业营业执照和企业管理员授权委托书上传，需要分别加盖公章。
+        </div>
+    </div>
+</div>
+<script>
+    function lenNumber(obj, len) {
+        len = len ? len : 0;
+        if (len == 0) {
+            obj.value = obj.value.replace(/[^0-9]/g, '');
+        }
+        else {
+            obj.value = obj.value.replace(/[^0-9.]/g, '');
+            if (obj.value != "") {
+                obj.value = /^\d+(\.?)\d{0,1}$/.test(obj.value) ?
+                    obj.value : obj.value.split('.')[1].length == 1 ?
+                        obj.value : obj.value = obj.value.split('.')[0] + '.' + obj.value.split('.')[1].substr(0, len);
+            }
+        }
+    }
+
+    document.getElementById("len").oninput = function () {
+        var obj = this, len = 2;
+        len = len ? len : 0;
+        if (len == 0) {
+            obj.value = obj.value.replace(/[^0-9]/g, '');
+        }
+        else {
+            obj.value = obj.value.replace(/[^0-9.]/g, '');
+            if (obj.value != "") {
+                obj.value = /^\d+\.?\d{0,1}$/.test(obj.value) ?
+                    obj.value : obj.value.split('.')[1].length == 1 ?
+                        obj.value : obj.value = obj.value.split('.')[0] == "" ? "" : obj.value = obj.value.split('.')[0] + '.' + obj.value.split('.')[1].substr(0, len);
+            }
+        }
+    }
+</script>
+</body>
+</html>

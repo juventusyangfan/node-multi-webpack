@@ -1,0 +1,206 @@
+body{
+    min-width: 1450px;
+}
+.back_main_crumbs{
+    height: 66px;
+    line-height: 66px;
+    padding: 0 30px;
+    background-color: #FAFAFA;
+}
+.back_main_crumbs span{
+    margin-left: 10px;
+    color: #999;
+}
+.back_comment_warp{
+    background-color: #fff;
+}
+.back_comment_con{
+    width: 1180px;
+    margin: 0 auto;    
+}
+.pDetail_show_comment .comment_campany{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.pDetail_show_comment .comment_campany i{
+    margin-right: 6px;
+    font-size: 20px;
+}
+.pDetail_show_comment .comment_top{
+    height: 86px;
+    line-height: 86px;
+    border-bottom: solid 1px #e5e5e5;
+    background: url(imgs/commentBg.png) no-repeat;
+    background-position: bottom right;
+}
+.pDetail_show_comment .comment_con{
+    margin-bottom: 30px;
+}
+.pDetail_show_comment .comment_cell{
+    position: relative;
+    padding: 20px 0;
+    border-bottom: solid 1px #e5e5e5;
+}
+.pDetail_show_comment .comment_cell label{
+    display: inline-block;
+    width: 154px;
+    margin-right: 30px;
+    float: left;
+}
+.pDetail_show_comment .comment_cell .comment_detail{
+    margin-left: 184px;
+}
+.pDetail_show_comment .comment_cell .comment_count{
+    position: absolute;
+    width: 136px;
+    margin-top: -19px;
+    top: 50%;
+    right: 0;
+    text-align: center;
+}
+.caiIcon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: -4px;
+    background: url(imgs/caiIcon.png) no-repeat;
+}
+
+
+.comment_top .bigStarBg{
+    margin-left: 26px;
+    vertical-align: -8px;
+}
+.bigStarBg{
+    display: inline-block;
+    width: 130px;
+    height: 25px;
+}
+.bStar0-0{
+    background: url(imgs/starBigBg2.png) no-repeat;
+    background-position: -130px 0;
+}
+.bStar0-5{
+    background: url(imgs/starBigBg1.png) no-repeat;
+    background-position: -126px 0;
+}
+.bStar1-0{
+    background: url(imgs/starBigBg2.png) no-repeat;
+    background-position: -104px 0;
+}
+.bStar1-5{
+    background: url(imgs/starBigBg1.png) no-repeat;
+    background-position: -104px 0;
+}
+.bStar2-0{
+    background: url(imgs/starBigBg2.png) no-repeat;
+    background-position: -78px 0;
+}
+.bStar2-5{
+    background: url(imgs/starBigBg1.png) no-repeat;
+    background-position: -78px 0;
+}
+.bStar3-0{
+    background: url(imgs/starBigBg2.png) no-repeat;
+    background-position: -52px 0;
+}
+.bStar3-5{
+    background: url(imgs/starBigBg1.png) no-repeat;
+    background-position: -52px 0;
+}
+.bStar4-0{
+    background: url(imgs/starBigBg2.png) no-repeat;
+    background-position: -26px 0;
+}
+.bStar4-5{
+    background: url(imgs/starBigBg1.png) no-repeat;
+    background-position: -26px 0;
+}
+.bStar5-0{
+    background: url(imgs/starBigBg2.png) no-repeat;
+    background-position: 0 0;
+}
+
+.smallStarBg{
+    display: inline-block;
+    width: 105px;
+    height: 21px;
+}
+.sStar0-0{
+    background: url(imgs/starSmallBg.png) no-repeat;
+    background-position: -105px 0;
+}
+.sStar1-0{
+    background: url(imgs/starSmallBg.png) no-repeat;
+    background-position: -84px 0;
+}
+.sStar2-0{
+    background: url(imgs/starSmallBg.png) no-repeat;
+    background-position: -63px 0;
+}
+.sStar3-0{
+    background: url(imgs/starSmallBg.png) no-repeat;
+    background-position: -42px 0;
+}
+.sStar4-0{
+    background: url(imgs/starSmallBg.png) no-repeat;
+    background-position: -21px 0;
+}
+.sStar5-0{
+    background: url(imgs/starSmallBg.png) no-repeat;
+    background-position: 0 0;
+}
+
+.comment_detail .comment{
+    margin: 8px 0;
+    line-height: 1.5;
+    color: #333;
+}
+.comment_detail .tips span{
+    margin-right: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.comment_detail .imgs a{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.comment_detail .imgCell{
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    border: solid 1px #e5e5e5;
+    object-fit: scale-down;
+}
+.comment_detail a.active{
+    margin-bottom: 10px;
+}
+.comment_detail a.active .imgCell{
+    width: 40px;
+    height: 40px;
+    border: solid 2px #FC6940;
+}
+.comment_detail .showBimg{
+    display: none;
+    width: 181px;
+    height: 181px;
+    margin-bottom: 20px;
+}
+.comment_detail .showBimg img{
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border: solid 1px #e5e5e5;
+    object-fit: scale-down;
+}
+.comment_detail .time{
+    display: inline-block;
+    margin-left: 100px;
+    float: right;
+}

@@ -1,0 +1,84 @@
+<input type="hidden" name="tenderId" value="137151">
+<input type="hidden" name="packageId" value="0">
+<script>
+    var expertGroup = {"1":"\u5de5\u7a0b\u7ecf\u6d4e","2":"\u7269\u8d44\u7ba1\u7406","3":"\u623f\u5efa","4":"\u5e02\u653f","5":"\u94c1\u9053\u5de5\u7a0b","6":"\u56db\u7535","7":"\u8d22\u52a1\u7c7b"};
+</script>
+<div class="setting_warp">
+    <div class="crumbs_con"><i class="iconfont icon-ditu"></i><span class="textBlack1">在线评标室</span> > 设置评标方案</div>
+    <div class="setting_container">
+        <div class="package_con">
+            <span class="noPackage"></span>
+            <ul>
+                <li class="act">
+                    <a href="javascript:;" class="package_cell">包件1（BJBH-001）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件2（BJBH-002）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件3（BJBH-003）</a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="setting_add">新增评标专家</a>
+        </div>
+        <div class="setting_table_con" id="zjList">
+            <div class="setting_type_cell" v-for="(item,index) in list">
+                <template v-if="item.team.length>0">
+                <div class="type_title_con">
+                    <span class="type_title_txt"><i class="iconfont icon-radio"></i>{{item.major_title}}</span>
+                    <ul class="type_list_ul">
+                        <li class="act"><a>{{item.select_type_title}}</a><span class="type_line"></span></li>
+                    </ul>
+                </div>
+                <div class="type_tis_con">
+                    <span class="textBlack2">选取专家日期：{{item.time}}</span>
+                    <a href="javascript:;" class="setting_type_edit" @click="exportEdit(index)">修改专家选取条件</a>
+                    <span class="type_tis_text">专家数量：<span class="fontBold">{{item.team.length}}个</span><span class="marginL20 marginR20">/</span>专家来源：<span class="fontBold">{{item.expert_source}}</span><span class="marginL20 marginR20">/</span>所在地区：<span class="fontBold" :title="item.areaAll">{{item.areaStr}}</span></span>
+                </div>
+                <div class="material_list clearfix">
+                    <table>
+                        <colgroup>
+                            <col width="6%">
+                            <col width="10%">
+                            <col width="14%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="25%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>专家姓名</th>
+                                <th>所在地区</th>
+                                <th>专家来源</th>
+                                <th>联系方式</th>
+                                <th>备注信息</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody is="transition-group" name="list">
+                            <tr v-for="(cell,idx) in item.team" v-bind:key="cell.expert_id">
+                                <td>{{idx+1}}</td>
+                                <td>{{cell.name}}</td>
+                                <td>{{cell.area}}</td>
+                                <td>{{cell.source}}</td>
+                                <td>{{cell.phone}}</td>
+                                <td><span class="width300 ellipsis">{{cell.remark}}</span></td>
+                                <td v-if="item.select_type=='1'&&cell.affirm==0"><a href="javascript:;" class="tdRed marginR20" @click="expertAffirm(index,cell.expert_id,cell.name)">确认</a>-<a href="javascript:;" class="marginL20 marginR20" @click="changeOne(index,cell.expert_id)">换一个</a>-<a href="javascript:;" class="tdPurple marginL20" @click="delone(item.batch_id,cell.expert_id,cell.name)">移除</a></td>
+                                <td v-if="item.select_type=='1'&&cell.affirm==1"><span class="tdGreen">已确定</span></td>
+                                <td v-if="item.select_type=='2'"><a href="javascript:;" class="tdPurple" @click="delone(item.batch_id,cell.expert_id,cell.name)">移除</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+                </template>
+            </div>
+            <div class="setting_btns">
+                <a href="javascript:;" class="setting_btn_export">导出</a>
+                <a href="javascript:;" class="setting_btn_confirm">评标小组设置完成</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span><a href="">收付款管理</a></span>
+        <span class="active">保证金退款记录</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input type="text" name="keyWord" placeholder="招标名称/供应商名称" class="cjy-input-" value="">
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div class="back_list_nav">
+            <span class="floatR">共计：11个</span>
+        </div>
+        <div class="back_list_con" id="tenderList">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="5%">
+                        <col width="8%">
+                        <col width="25%">
+                        <col width="5%">
+                        <col width="6%">
+                        <col width="6%">
+                        <col width="6%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>供应商名称</th>
+                            <th>联系人</th>
+                            <th>联系方式</th>
+                            <th>招标名称 </th>
+                            <th>中标状态 </th>
+                            <th>保证金金额</th>
+                            <th>支付方式</th>
+                            <th>状态</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr>
+                            <td>湖北交投物流集团有限公司</td>
+                            <td>张三</td>
+                            <td>13512254444</td>
+                            <td>黄陂区军运会保障工程-木兰大道美丽乡村带建设项目（EPC）总承包项目部仙河店混凝土采购询价</td>
+                            <td><span class="textBlack3">未中标</span></td>
+                            <td>50000元</td>
+                            <td>融易付</td>
+                            <td>已退款</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getTenderList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

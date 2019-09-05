@@ -1,0 +1,223 @@
+.back_wrapper{
+    padding: 0;
+}
+.login_wrap{
+    width: 100%;
+    height: 527px;
+    overflow: hidden;
+    position: relative;
+}
+.login_wrap .login_bg{
+    height: 527px;
+    background: url(imgs/loginBg.png) center no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+}
+.login_con{
+    position: relative;
+    width: 1180px;
+    height: 527px;
+    margin: 0 auto;
+}
+.login_box{
+    padding: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    border-radius: 4px;
+}
+.login_box .login_item{
+    position: relative;
+}
+.position_relative{
+    position: relative;
+}
+.login_item .login_line{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+.login_item strong{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    font-weight: normal;
+    padding-bottom: 16px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+.login_item .active{
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+.login_item input{
+    width: 286px;
+    height: 26px;
+    padding: 6px 10px 6px 44px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.login_item .user_icon{
+    display: inline-block;
+    font-size: 20px;
+    color: #ccc;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+.login_item .pwd_icon{
+    display: inline-block;
+    font-size: 20px;
+    color: #ccc;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+}
+.login_box .err_area{
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.err_tips span{
+    font-size: 14px;
+    color: #999;
+}
+.err_tips .err_icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    background-color: #fd4545;
+    border-radius: 100%;
+    margin-right: 4px;
+    vertical-align: 2px;
+}
+.login_box .display-block{
+    display: block;
+}
+.login_item .err_border{
+    border-color: #ff4d4d;
+    box-shadow: 0 0 5px 1px #ffb8b8;
+}
+.login_item button{
+    width: 342px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #fc6940;
+    margin-bottom: 20px;
+    border: none;
+}
+.login_item button:hover{
+    background-color: #f3623a;
+}
+.login_item a{
+    font-size: 14px;
+    color: #333;
+}
+.login_item .forget_pwd:hover{
+    color: #fc6940;
+    text-decoration: underline;
+}
+.login_item .sign_up{
+    float: right;
+    color: #0084ff;
+}
+.login_item .sign_up:hover{
+    text-decoration: underline;
+}
+
+
+/* 物资分类升级 */
+.cataUp-box{
+    display: block;
+    width: 650px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+}
+.cataUp-box .cataUp-bg{
+    width: 100%;
+    height: 176px;
+    background: url(imgs/cata_banner.png) no-repeat;
+}
+.cataUp-box .cataUp-inner{
+    padding: 40px 0;
+    background-color: #fff;
+}
+.cataUp-box .cataUp-inner p,.cataUp-box .cataUp-inner a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #999;
+}
+.cataUp-box .cataUp-inner p{
+    width: 400px;
+    line-height: 2;
+    font-size: 18px;
+    color: #333;
+}
+.cataUp-box .cataUp-inner .cataUp-go{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto 20px auto;
+    background-color: #fc6940;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+}
+.cataUp-box .cataUp-inner a:hover{
+    color: #fc6940;
+}
+.cataUp-box .cataUp-inner .cataUp-go:hover{
+    background-color: #f3623a;
+    color: #fff;
+}
+.cataUp-box .cjy-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #999;
+}
+
+.inDialog p{
+    line-height: 2;
+}
+
+/* 协议按钮 */
+.confirmAgreement{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 18px;
+    color: #fff;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+    text-align: center;
+}
+.confirmAgreement:hover{
+    color: #fff;
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+.confirmDisabled,.confirmDisabled:hover{
+    color: #fff!important;
+    background-color: #ccc!important;
+    border: 1px solid #ccc!important;
+    cursor: not-allowed!important;
+}

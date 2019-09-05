@@ -1,0 +1,73 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">我的项目</span>
+        <span><a href="#">公司项目</a></span>
+        <a href="javascript:;" class="back_title_btn floatR">+ 新建项目</a>
+    </div>
+    <div class="back_main_content" id="project">
+        <div class="back_main_search">
+            <select><option value="">项目类型</option></select>
+            <select><option value="">项目状态</option></select>
+            <input type="text" name="keyWord" placeholder="输入关键字，如：项目名称/项目管理员" class="cjy-input-">
+            <a href="javascript:;" class="btn_confirm">搜索</a>
+            <a href="javascript:;" class="btn_cancel marginL10">清除</a>
+        </div>
+        <div id="project">
+            <div class="back_list_top"><span class="floatR">共<span>2</span>条记录</span></div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="250">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="120">
+
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>项目名称</th>
+                        <th>项目编号</th>
+                        <th>项目类型</th>
+                        <th>项目所在地</th>
+                        <th>项目规模</th>
+                        <th>项目状态</th>
+                        <th>项目工期</th>
+                        <th>操作</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="7">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{item.supplier_name}}</td>
+                        <input type="hidden" name="company_id" :value="item.company_id">
+                        <input type="hidden" name="id" :value="item.id">
+                        <td>{{item.relation_status_name}}</td>
+                        <td>{{item.supplier_level_name}}</td>
+                        <td>{{item.real_name}}</td>
+                        <td>{{item.user_mobile}}</td>
+                        <td>{{item.create_time}}</td>
+                        <td>{{item.create_time}}</td>
+                        <td><a href="javascript:;" class="marginR10 textBlue">发起招标</a>-<a href="javascript:;" class="marginL10">查看详情</a></td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="7"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 80px;font-size: 24px;color: #999;text-align: center;">暂无供应商加入您的企业库，快去申请吧〜</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getProject" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

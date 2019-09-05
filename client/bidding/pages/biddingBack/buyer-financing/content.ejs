@@ -1,0 +1,71 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>企业供应商</span>
+    </div>
+    <div class="back_main_content" id="financing">
+        <div class="back_main_search">
+            <select name="status">
+                <option value="">融资进度</option>
+                <option value="1">已提交</option>
+                <option value="2">受理中</option>
+                <option value="3">审批通过</option>
+                <option value="4">审批拒绝</option>
+                <option value="5">已放款</option>
+            </select>
+            <input name="company_name" type="text" placeholder="融资项目信息" class="cjy-input-">
+            <a href="javascript:;" class="btn_confirm">搜索</a>
+            <a href="javascript:;" class="btn_clear">清除</a>
+        </div>
+        <div class="back_main_notice clearfix">
+            <div class="clearfix"><span class="noticeBg floatL"><i class="iconfont icon-i"></i></span><p class="floatL">融资过程中根据实际情况需要与金融服务商及湖北省楚建易网络科技有限公司签订“生材网融资服务”相关协议，请留意来电！</p></div>
+            
+        </div>
+        <div class="back_list_nav clearfix">
+            <span class="floatR">共计：{{count}}个</span>
+        </div>
+        <div class="back_main_list">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="60">
+                        <col width="200">
+                        <col width="80">
+                        <col width="50">
+                        <col width="50">
+                        <col width="50">
+                        <col width="100">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>融资进度</th>
+                        <th>融资金额</th>
+                        <th>融资项目</th>
+                        <th>金融服务商</th>
+                        <th>融资期限</th>
+                        <th>期望年利率</th>
+                        <th>期望放款时间</th>
+                        <th>预留的联系方式</th>
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="8">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <tr v-if="list.length>0" v-for="(item,index) in list">
+
+                    </tr>
+                    <tr v-else><td colspan="8"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <input type="hidden" name="role_type" value="1">
+            <div id="pages">
+                <vue-page @get-list="getFinancing" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

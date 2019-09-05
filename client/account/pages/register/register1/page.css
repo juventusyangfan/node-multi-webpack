@@ -1,0 +1,143 @@
+.set_code,.wait_code{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.set_code{
+    background-color: #00B27E;
+}
+.wait_code{
+    background-color: #BFBFBF;
+}
+.set_code:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.wait_code:hover{
+    color: #fff;
+}
+.register_con_title{
+    padding: 0 30px;
+    border-bottom: 1px solid #ccc;
+}
+.register_con_title span{
+    display: inline-block;
+    height: 66px;
+    line-height: 76px;
+    border-bottom: 2px solid #fc6940;
+    font-size: 16px;
+    font-weight: 700;
+}
+.register_type_choose{
+    width: 506px;
+    margin: 60px auto;
+}
+.select_idType li{
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 160px;
+    margin-left: 40px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.select_idType li:first-child{
+    margin-left: 0;
+}
+.select_idType li p{
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+}
+.select_idType li .idImg{
+    position: absolute;
+    display: inline-block;
+    width: 71px;
+    height: 51px;
+    left: 35px;
+    bottom: 30px;
+}
+.select_idType li .idType1{
+    background: url("../../../public-resource/imgs/register/idType1.png") no-repeat bottom;
+}
+.select_idType li.act .idType1,.select_idType li:hover .idType1{
+    background: url("../../../public-resource/imgs/register/idType1_hov.png") no-repeat bottom;
+}
+.select_idType li .idType2{
+    background: url("../../../public-resource/imgs/register/idType2.png") no-repeat bottom;
+}
+.select_idType li.act .idType2,.select_idType li:hover .idType2{
+    background: url("../../../public-resource/imgs/register/idType2_hov.png") no-repeat bottom;
+}
+.select_idType li .idType3{
+    background: url("../../../public-resource/imgs/register/idType3.png") no-repeat bottom;
+}
+.select_idType li.act .idType3,.select_idType li:hover .idType3{
+    background: url("../../../public-resource/imgs/register/idType3_hov.png") no-repeat bottom;
+}
+.select_idType li i{
+    position: absolute;
+    display: none;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    bottom: 6px;
+    right: 6px;
+    border-radius: 24px;
+    background-color: #00B27E;
+    color: #fff;
+    text-align: center;
+}
+.select_idType li.act i{
+    display: inline-block;
+}
+.register_block a.textBlue{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    vertical-align: 2px;
+}
+.register_btns a.btn_confirm{
+    width: 330px;
+    margin: 30px;
+    float: right;
+}
+
+.inDialog p{
+    line-height: 2;
+}
+
+/* 协议按钮 */
+.confirmAgreement{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 18px;
+    color: #fff;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+    text-align: center;
+}
+.confirmAgreement:hover{
+    color: #fff;
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+.confirmDisabled,.confirmDisabled:hover{
+    color: #fff!important;
+    background-color: #ccc!important;
+    border: 1px solid #ccc!important;
+    cursor: not-allowed!important;
+}

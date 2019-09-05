@@ -1,0 +1,105 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_list{
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+.material_list .page_list td{
+    line-height: inherit;
+    padding: 10px 0;
+}
+.page_list .tips_default{
+    display: block;
+    width: 58px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 auto 10px auto;
+    border: solid 1px #00B27E;
+    font-size: 12px;
+    color: #00B27E;
+    text-align: center;
+}
+
+/* 新增仓库 */
+.new-warehouse-box .warehouse-item{
+    margin-bottom: 20px;
+}
+.warehouse-item .warehouse-label{
+    float: left;
+    display: block;
+    width: 114px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.warehouse-label span{
+    color: #ca3c3c;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+.warehouse-item .warehouse-input{
+    float: left;
+    position: relative;
+}
+.warehouse-input input[type=text]{
+    width: 340px;
+}
+.warehouse-input .search-ware{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fc6940;
+    cursor: pointer;
+}
+.warehouse-input #baiduMap{
+    width: 660px;
+    height: 470px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.warehouse-input .default_address{
+    font-size: 14px;
+    color: #333;
+}
+.default_address .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 18px;
+    background-color: #7392b5;
+    margin-left: 6px;
+}
+.tangram-suggestion-main{
+    z-index: 1000;
+}

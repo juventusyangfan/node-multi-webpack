@@ -1,0 +1,126 @@
+.module_item_wrap{
+    width: 100%;
+}
+.module_item_wrap .module_item{
+    width: 1180px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.module_item_wrap .module_item h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 设置商品属性弹框 */
+.set_attr_con{
+    width: 738px;
+    height: 478px;
+    margin: 0 30px;
+    border: solid 1px #e5e5e5;
+}
+.set_attr_con .attr_con_left{
+    width: 182px;
+    height: 478px;
+    border-right: solid 1px #e5e5e5;
+    background-color: #FAFAFA;
+    float: left;
+}
+.set_attr_con .attr_con_right{
+    width: 515px;
+    height: 478px;
+    padding: 0 20px;
+    float: right;
+}
+.attr_con_left .attr_name{
+    display: inline-block;
+    width: 142px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    color: #666;
+}
+.attr_con_left li.active .attr_name,.attr_con_left li .attr_name:hover{
+    background-color: #D2EBFF;
+}
+.attr_con_left .attr_name .attr_num{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 10px;
+    padding: 0 6px;
+    border-radius: 18px;
+    background-color: #DF1C1C;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.attr_con_left .attr_name .icon-youjiantou{
+    display: none;
+    font-size: 12px;
+    color: #666;
+    float: right;
+}
+.attr_con_left li.active .attr_name .icon-youjiantou{
+    display: inline-block;
+}
+
+.attr_con_right .attr_selAll{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.attr_con_right .checkIcon i,.attr_con_right .checkedIcon i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    border-radius: 18px;
+    background-color: #E0E4EC;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.attr_con_right .checkIcon i{
+    background-color: #E0E4EC;
+}
+.attr_con_right .checkedIcon i{
+    background-color: #31C37C;
+}
+.attr_con_right .attr_val_add{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 15px;
+    padding: 0 20px;
+    border: solid 1px #FC6940;
+    border-radius: 4px;
+    color: #FC6940;
+    text-align: center;
+    float: right;
+}
+.attr_con_right .attr_selCon{
+    height: 200px;
+    padding-top: 20px;
+    border-bottom: solid 1px #e5e5e5;
+    overflow: auto;
+}
+.attr_selCon .attr_sel_cell{
+    width: 33%;
+    margin-bottom: 20px;
+    float: left;
+}
+.attr_addCon{
+    height: 180px;
+    padding-top: 20px;
+    overflow: auto;
+}
+.attr_addCon .attr_add_cell{
+    width: 33%;
+    margin-bottom: 20px;
+    float: left;
+}
+.attr_addCon .attr_add_cell input{
+    width: 64px;
+    margin-right: 6px;
+}

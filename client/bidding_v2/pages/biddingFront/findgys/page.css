@@ -1,0 +1,404 @@
+.findgys_header{
+    position: relative;
+    width: 100%;
+    height: 314px;
+    background: url(imgs/bg.png) center;
+    background-size: cover;
+    border-bottom: solid 2px #DD1E32;
+    z-index: 100;
+}
+.findgys_search_type{
+    padding-top: 70px;
+    text-align: center;
+}
+.findgys_search_type .findgys_search_nav{
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 14px;
+    background-color: #0C337E;
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+}
+.findgys_search_type .line{
+    position: absolute;
+    display: none;
+    width: 26px;
+    height: 2px;
+    background-color: #DD1E32;
+    left: 50%;
+    margin-left: -13px;
+    bottom: -14px;
+}
+.findgys_search_type .findgys_search_nav:hover,.findgys_search_type .active{
+    background-color: #DD1E32;
+}
+.findgys_search_type .active .line{
+    display: inline-block;
+}
+.findgys_search_box{
+    position: relative;
+    margin-top: 14px;
+}
+.findgys_search_con{
+    width: 760px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #E7EAF3;
+    border-radius: 40px;
+}
+.findgys_search_input{
+    width: 700px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    background-color: #E7EAF3;
+    border: none;
+    font-size: 14px;
+    float: left;
+}
+.findgys_search_con .icon-sousuo{
+    display: inline-block;
+    font-size: 22px;
+    color: #999;
+    float: right;
+}
+.findgys_search_clear{
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0;
+    left: 50%;
+    margin-left: 410px;
+    background-color: #E7EAF3;
+    border-radius: 40px;
+    font-size: 22px;
+    color: #bbb;
+    text-align: center;
+}
+.findgys_menu_con{
+    width: 1400px;
+    margin: 0 auto;
+}
+.findgys_menu_con .findgys_menu_cell{
+    display: inline-block;
+    width: 216px;
+    height: 90px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    float: left;
+    transition: all .2s;
+    cursor: pointer;
+}
+.findgys_menu_con .findgys_menu_cell:first-child{
+    margin-left: 0;
+}
+.findgys_menu_con .findgys_menu_cell i{
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 4px;
+    font-size: 26px;
+}
+.findgys_menu_con .findgys_menu_cell i.icon-xiajiantou{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 6px;
+    transition: transform .2s;
+}
+.findgys_menu_con .open{
+    margin-top: 70px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.findgys_menu_con .open i.icon-xiajiantou{
+    transform: rotate(180deg);
+}
+.findgys_menu_con .active{
+    margin-top: 70px;
+    background-color: #DD1E32;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #fff;;
+}
+.findgys_menu_tree {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 314px;
+    left: 0;
+    right: 0;
+    background-color: #F9FBFF;
+    border-bottom: #e5e5e5;
+    box-shadow: 0 2px 2px #e5e5e5;
+    cursor: default;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.findgys_menu_con .open .findgys_menu_tree{
+    display: block;
+}
+.findgys_menu_tree .menu_tree_con{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+}
+.findgys_menu_tree .menu_tree_lvlFirst{
+    flex: 254px;
+    max-height: 380px;
+    padding: 10px 0;
+    background-color: #EEF2FB;
+    font-size: 14px;
+    color: #333;
+    float: left;
+    overflow-y: auto;
+}
+.findgys_menu_tree .menu_tree_lvlFirst a{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 30px;
+}
+.findgys_menu_tree .menu_tree_lvlFirst i,.menu_tree_lvlOther .tree_lvlOther_title i{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    float: right;
+}
+.findgys_menu_tree .menu_tree_lvlFirst li.act a{
+    background-color: #DD1E32;
+    color: #fff;
+}
+.findgys_menu_tree .menu_tree_lvlOther{
+    flex: 1146px;
+    max-height: 380px;
+    overflow-y: auto;
+    float: left;
+}
+.menu_tree_lvlOther .tree_lvlOther_title{
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    padding: 10px 30px;
+    float: left;
+}
+.menu_tree_lvlOther .tree_lvlOther_title span.ellipsis{
+    width: 110px;
+    font-size: 14px;
+    text-align: right;
+}
+.menu_tree_lvlOther .tree_lvlOther_con{
+    width: 935px;
+    padding: 15px 0;
+    border-bottom: solid 1px #e5e5e5;
+    font-size: 14px;
+    float: left;
+}
+.menu_tree_lvlOther .tree_lvlOther_con a{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 20px;
+}
+
+
+
+.findgys_crumbs_wrap{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background-color: #E7EAF3;
+}
+.findgys_crumbs{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.findgys_select_wrap{
+    width: 1340px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 40px 30px 0 30px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.findgys_select{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    color: #333;
+    float: left;
+}
+.findgys_select i{
+    margin-left: 6px;
+    font-size: 12px;
+}
+.findgys_select dl{
+    display: none;
+    width: 135px;
+    max-height: 322px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    position: absolute;
+    padding: 10px 0;
+    left: -16px;
+    top: 20px;
+    z-index: 10;
+    overflow-y: auto;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.findgys_select dl dd {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 14px;
+    color: #333;
+}
+.findgys_select dl .active,.findgys_select dl dd:hover {
+    color: #FF3600;
+}
+.findgys_select:hover dl{
+    display: inline-block;
+}
+.findgys_sort{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.findgys_sort .line{
+    position: absolute;
+    display: none;
+    width: 26px;
+    height: 2px;
+    left: 50%;
+    margin-left: -13px;
+    bottom: -24px;
+    background-color: #DC2F00;
+}
+.findgys_select_wrap .active{
+    color: #DC2F00;
+}
+.findgys_select_wrap .active .line{
+    display: inline-block;
+}
+
+.findgys_list{
+    width: 1401px;
+    margin: 20px auto;
+}
+.findgys_list .findgys_cell{
+    width: 640px;
+    height: 260px;
+    padding: 20px 30px;
+    border-bottom: solid 1px #e5e5e5;
+    float: left;
+}
+.findgys_list .findgys_cell:nth-child(2n+1){
+    border-right: solid 1px #e5e5e5;
+}
+.findgys_list .findgys_name{
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+.findgys_list .findgys_name a:hover{
+    color: #DC2F00;
+    text-decoration: underline;
+}
+.findgys_list .findgys_name i{
+    font-size: 26px;
+    font-weight: 400;
+    color: #666;
+    vertical-align: -2px;
+}
+.findgys_list .findgys_info{
+    padding: 0 30px;
+}
+.findgys_list .findgys_info_cell{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 12px;
+    float: left;
+}
+.findgys_list .scope_list{
+    max-width: 450px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+}
+.findgys_list .findgys_ellipsis{
+    color: #DC2F00;
+    font-size: 24px;
+}
+.findgys_list .half{
+    width: 290px;
+}
+.findgys_list .findgys_product{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    margin-right: 8px;
+    padding: 0 16px;
+    color: #DC2F00;
+    text-align: center;
+}
+.findgys_list .findgys_num{
+    width: 580px;
+    height: 40px;
+    margin-top: 26px;
+    padding: 15px 30px;
+    background-color: #F5F8FF;
+    border-radius: 70px;
+}
+.findgys_list .findgys_num_cell{
+    width: 290px;
+    float: left;
+}
+.findgys_list .findgys_num_cell i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 14px;
+    background-color: #969BD2;
+    border-radius: 40px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+
+/* 页码 */
+.page_container{
+    margin: 30px auto 80px auto;
+}
+.page_container_nav a{
+    border-radius: 34px;
+}
+.page_container_nav .page_cur{
+    background-color: #DC2F00;
+    border: 1px solid #DC2F00;
+}

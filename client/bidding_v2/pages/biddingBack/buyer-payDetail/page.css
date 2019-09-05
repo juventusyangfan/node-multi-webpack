@@ -1,0 +1,261 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #FF3600;
+    border: 1px solid #FF3600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #ec3200;
+    border: 1px solid #ec3200;
+    color: #fff;
+}
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+.back_list_info{
+    height: 54px;
+    line-height: 54px;
+    border-top: 1px solid #eee;
+}
+
+.back_main_search .cjy-calendar i{
+    right: 20px;
+}
+
+.back_list_nav{
+    margin-bottom: 20px;
+}
+.back_list_nav span{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.back_list_nav span[name=sort]{
+    cursor: pointer;
+}
+.back_list_nav span i{
+    margin-left: 4px;
+    vertical-align: -1px;
+}
+.back_list_nav span:first-child{
+    margin-left: 0;
+}
+.back_list_nav span.active,.back_list_nav span.floatR{
+    color: #333;
+}
+
+.back_main_nav{
+    padding: 20px 30px 0 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #FF3600;
+}
+.back_main_nav ul{
+    float: left;
+}
+.back_main_nav ul li{
+    float: left;
+}
+.back_main_nav li .back_nav_cell,.back_main_nav li .back_nav_more{
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 16px;
+    padding: 0 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    float: left;
+}
+.back_main_nav li .back_nav_cell{
+    background-color: #FFF5F3;
+    color: #D86849;
+}
+.back_main_nav li .back_nav_more{
+    background-color: #F7F7F7;
+    color: #999;
+    font-weight: 700;
+}
+.back_main_nav li .back_nav_more i{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.back_main_nav li .back_nav_num{
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 6px;
+    top: -8px;
+    right: -8px;
+    border-radius: 18px;
+    background-color: #DC2F00;
+    font-size: 12px;
+    color: #fff;
+}
+.back_main_nav li.active .back_nav_cell,.back_main_nav li.active .back_nav_more{
+    background-color: #FF3600;
+    color: #fff;
+}
+.back_main_nav li .moreList{
+    position: absolute;
+    display: none;
+    width: 160px;
+    padding: 10px 0;
+    left: 0;
+    top: 38px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    z-index: 1;
+}
+.back_main_nav li.showMore_li{
+    position: relative;
+}
+.back_main_nav li.showMore_li:hover .moreList{
+    display: inline-block;;
+}
+.back_main_nav li .moreCell{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 14px;
+}  
+.back_main_nav li .moreCell .back_nav_num{
+    position: relative;
+    top: 7px;
+    vertical-align: 6px;
+}
+.back_main_nav li.showMore_li .icon-xiajiantou{
+    display: inline-block;
+    transition: transform .3s;
+}
+.back_main_nav li.showMore_li:hover .icon-xiajiantou {
+    transform: rotate(180deg);
+}
+
+
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #FCFCFC;
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.material_list th{
+    height: 60px;
+    font-weight: 700;
+}
+.material_list td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list .tenderName{
+    width: 90%;
+    max-height: 42px;
+    margin-bottom: 9px;
+    color: #000;
+    overflow: hidden;
+}
+.material_list .tenderTipsCell{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 16px;
+    padding: 0 12px;
+    background-color: #FFFBFA;
+    border-radius: 30px;
+    color: #DA7D63;
+}
+.material_list .table_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    padding: 0 14px;
+    border: solid 1px #FF3600;
+    border-radius: 4px;
+    color: #FF3600;
+    text-align: center;
+}
+.back_list_con .page_container_wrap{
+    margin: 40px auto;
+}
+/* .material_list th:first-child,.material_list td:first-child{
+    border-left: none;
+} */
+.material_list th{
+    background-color: #F8F8F8;
+}
+
+.bid_detail_prompt {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    padding: 0 10px;
+    background-color: #FCFAE3;
+    border: solid 1px #F7E3A4;
+    color: #666;
+}
+.bid_detail_prompt > i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background-color: #50B2F6;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.payment_wrap{
+    padding: 0 20px;
+}
+.payment_block{
+    height: 40px;
+    line-height: 40px;
+}
+.payment_block label{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.payment_item{
+    width: 500px;
+    font-weight: 700;
+    color: #333;
+    float: left;
+}
+.payment_item .cjy-radio{
+    margin-right: 30px;
+}
+.payment_item textarea{
+    width: 400px;
+    padding: 10px;
+    border: solid 1px #ccc;
+}

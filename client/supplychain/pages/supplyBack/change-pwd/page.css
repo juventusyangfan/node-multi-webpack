@@ -1,0 +1,8 @@
+.back_main_content{
+    padding: 50px 30px;
+}
+.back_main_item label span{
+    color: #fc6940;
+    vertical-align: -3px;
+    margin-right: 4px;
+}

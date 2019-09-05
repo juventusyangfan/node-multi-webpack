@@ -1,0 +1,103 @@
+.other_top_con{
+    height: 176px;
+}
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: leftbit;
+    animation-name: leftbit;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    height: 60px;
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list td {
+    height: 66px;
+    padding-top: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    background-color: #F8F8F8;
+    font-weight: 700;
+}
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 3px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+.material_list .table_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #FF3600;
+    text-align: center;
+}
+
+
+.payment_wrap{
+    padding: 0 20px;
+}
+.payment_block{
+    height: 40px;
+    line-height: 40px;
+}
+.payment_block label{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.payment_item{
+    width: 500px;
+    font-weight: 700;
+    color: #333;
+    float: left;
+}
+.payment_item .cjy-radio{
+    margin-right: 30px;
+}
+.payment_item textarea{
+    width: 400px;
+    padding: 10px;
+    border: solid 1px #ccc;
+}

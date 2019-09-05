@@ -1,0 +1,204 @@
+/* 商家入驻 */
+.applyentry_wrap{
+    width: 100%;
+    background-color: #fff;
+}
+.applyentry_wrap .applyentry_bg{
+    width: 100%;
+    height: 212px;
+    background: url('imgs/entry_bg.png') center no-repeat;
+    background-size: cover;
+}
+.applyentry_wrap .applyentry_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+/* 时间轴 */
+.applyentry_inner .order_process{
+    position: relative;
+    left: 0;
+    top: -22px;
+}
+.order_process .process_bar_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+.process_bar_box .process_bar{
+    width: 25%;
+    border-top: 2px solid #ccc;
+}
+.process_bar_box .has_bar{
+    border-top: 2px solid #f3564f;
+}
+.order_process .process_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.process_wrap .process_box{
+    width: 90px;
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+}
+.process_circle span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #fff;
+}
+.process_box .process_circle{
+    text-align: center;
+}
+.has_process .process_circle span{
+    background-color: #f3564f;
+}
+.process_box p{
+    width: 90px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+div.has_process p{
+    color: #F3564F;
+}
+/* 上传资质文件 */
+.applyentry_body{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 70px 0 80px 0;
+}
+.applyentry_title{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.applyentry_con{
+    width: 940px;
+    float: left;
+}
+.applyentry_con .applyentry_cell{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border: solid 1px #ccc;
+    float: left;
+}
+.applyentry_con .applyentry_cell:nth-child(6n+1){
+    margin-left: 0;
+}
+.applyentry_con .applyentry_cell img{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+.applyentry_con .applyentry_cell a.icon-cha1{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    top: -8px;
+    right: -8px;
+    background-color: #FD4545;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.applyentry_cell .uploadImg{
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    font-size: 70px;
+    color: #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+.applyentry_tips{
+    width: 100%;
+    color: #999;
+    float: left;
+}
+.applyentry_tips i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background-color: #50B2F6;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.applyentry_btns{
+    width: 100%;
+    margin-top: 70px;
+    float: left;
+}
+.applyentry_btns a{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+}
+.applyentry_btns a.applyentry_btn_up{
+    margin-right: 10px;
+    border: solid 1px #ccc;
+}
+.applyentry_btns a.applyentry_btn_go{
+    background-color: #FC6940;
+    border: solid 1px #FC6940;
+    color: #fff;
+}
+.applyentry_btns a.applyentry_btn_go:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+
+/* 资质文件弹框 */
+.material_list{
+    padding: 0 20px;
+}
+.material_list th,.material_list td{
+    height: 50px;
+    line-height: 50px;
+}
+
+/* uppy图片上传 */
+.uploadImg .uppy-FileInput-container{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 0;
+    top: 0;
+}
+.uploadImg .uppy-FileInput-btn{
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+}

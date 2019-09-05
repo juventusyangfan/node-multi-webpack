@@ -1,0 +1,238 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>发布招标</span>
+    </div>
+    <form>
+        <div class="back_main_content">
+            <input type="hidden" name="collectType" value="normal">
+            <div class="back_main_item">
+                <label>招标项目名称：</label>
+                <div class="back_main_block">
+                    <input type="text" name="tenderName" class="cjy-input-" value="常州奇华顿项目钢材招标">
+                    <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>项目名称，2-50个字</span>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>企业招标编号：</label>
+                <div class="back_main_block">
+                    <input type="text" name="tenderCode" class="cjy-input-">
+                    <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>企业自定义的项目编号，2-20个字母、数字、“-”</span>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>所属项目：</label>
+                <div class="back_main_block">
+                    <input type="text" name="itemId" class="cjy-input-" style="width: 168px;">
+                    <a href="javascript:;" class="itemBtn js_check">确定</a>
+                    <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>输入完整的企业项目编号/平台项目编号</span>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label></label>
+                <div class="back_main_block">
+                    <input type="hidden" name="item_id" value="">
+                    <span class="textBlack3">请核对项目名称：</span><span class="textOrange" name="itemName">XXX华丽高速项目</span>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>采购预算：</label>
+                <div class="back_main_block">
+                    <select name="budget" value="0" style="display: none;">
+                        <option value="0">请选择</option>
+                        <option value="1">意向价</option>
+                        <option value="2">拦标价</option>
+                    </select>
+                    <input type="text" name="budgetMoney" class="cjy-input-" placeholder="预算金额" style="width: 168px;margin-right: 10px;">元
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label><span class="textRed">*</span>采购预算区间：</label>
+                <div class="back_main_block">
+                    <select name="budgetInterval" value="0">
+                        <option value="0">请选择</option>
+                        <option value="1">小于100万（含）</option>
+                        <option value="2">100万~1000万（含）</option>
+                        <option value="3">大于1000万</option>
+                      </select>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>招标类型：</label>
+                <div class="back_main_block">
+                    <select name="tenderClass" value="0" style="display: none;">
+                        <option value="0">请选择招标类型</option>
+                        <option value="1">物资采购</option>
+                        <option value="2">劳务分包</option>
+                        <option value="3">专业分包</option>
+                        <option value="4">设备租赁</option>
+                    </select>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>招标方式：</label>
+                <div class="back_main_block">
+                    <select name="tenderType" value="0" style="display: none;">
+                        <option value="0">请选择招标方式</option>
+                        <option value="1">公开招标</option>
+                        <option value="2">邀请招标</option>
+                    </select>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>邀请供应商：</label>
+                <div class="back_main_block">
+                    <a href="javascript:;" class="itemBtn js_search">选择供应商</a>
+                    <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>仅邀请的供应商可以报名、并参与投标</span>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <div class="material_list">
+                    <table>
+                        <colgroup>
+                            <col width="50">
+                            <col width="300">
+                            <col width="100">
+                            <col width="100">
+                            <col width="100">
+                            <col width="150">
+                            <col width="50">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>供应商</th>
+                            <th>企业评级</th>
+                            <th>参与投标次数</th>
+                            <th>参与投标次数</th>
+                            <th>供应商联系方式</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>需要购买标书：</label>
+                <div class="back_main_block">
+                    <select name="payTenderBook" value="0" style="display: none;">
+                        <option value="0">请选择</option>
+                        <option value="1">是</option>
+                        <option value="-1">否</option>
+                    </select>
+                    <input type="text" name="tenderBookMoney" class="cjy-input-" placeholder="标书价格" style="width: 168px;margin-right: 10px;">元
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>需要支付投标保证金：</label>
+                <div class="back_main_block">
+                    <select name="payMargin" value="0" style="display: none;">
+                        <option value="0">请选择</option>
+                        <option value="1">是</option>
+                        <option value="-1">否</option>
+                    </select>
+                    <input type="text" name="marginMoney" class="cjy-input-" placeholder="保证金金额" style="width: 168px;margin-right: 10px;">元
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>报名截止时间：</label>
+                <div class="back_main_block">
+                    <input type="text" name="enrollEndTime" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>招标文件发售时间：：</label>
+                <div class="back_main_block">
+                    <input type="text" name="tenderBookSaleTime" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>招标文件发售截止时间：</label>
+                <div class="back_main_block">
+                    <input type="text" name="tenderBookSaleEndTime" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>澄清提问截止时间：</label>
+                <div class="back_main_block">
+                    <input type="text" name="issueEndTime" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>澄清补遗截止时间：</label>
+                <div class="back_main_block">
+                    <input type="text" name="issueAppendEndTime" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>投标截止时间：</label>
+                <div class="back_main_block">
+                    <input type="text" name="bidEndTime" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>投标方式：</label>
+                <div class="back_main_block">
+                    <select name="bidType" value="0" style="display: none;">
+                        <option value="0">请设置投标方式</option>
+                        <option value="1">在线投标（投标方上传投标文件，平台加密）</option>
+                        <option value="2">线下投标（投标方打印文件，密封函递交）</option>
+                    </select>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>开标方式：</label>
+                <div class="back_main_block">
+                    <select name="openBidType" value="0" style="display: none;">
+                        <option value="0">请设置开标方式</option>
+                        <option value="1">在线开标</option>
+                        <option value="2">线下开标</option>
+                    </select>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>推荐评标方式：</label>
+                <div class="back_main_block" style="height: 60px;line-height: 44px;">
+                    <input type="checkbox" title="机器人评标">
+                    <span class="msgCon">
+                    <span class="helpBg"><i class="iconfont icon-wenhao"></i></span>
+                    <div class="tagBox">
+                       <span class="tagArrow"></span>
+                       <div class="tagCon">
+                           <p>在线开标后，系统将从投标单位中挑选报价最低者，作为最终中标单位；</p>
+                           <p>若实际投标单位不足3家，将自动判定为“已流标”</p>
+                       </div>
+                    </div>
+                </span>
+                    <span class="msgCon" style="display: block;line-height: normal;margin-left: 0;"><span class="noticeBg"><i class="iconfont icon-i"></i></span>您的招标方式为“邀请招标”，且邀请的供应商均为企业自有的供应商库中的成员， 现推荐您使用机器人评标功能</span>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>公告正文：</label>
+                <div class="back_main_block" style="padding-top: 10px">
+                    <div id="myEditor" style="width:100%;height:360px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>公告附件：</label>
+                <div class="back_main_block">
+                    <span class="js_upload"></span>
+                    <!-- <a href="javascript:;" class="itemBtn js_upload" style="position: relative;"><span>上传附件</span><input type="file" id="uploadFile" name="uploadFile" style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                    <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>可上传多个附件</span>
+                    <div id="process-files"></div>
+                    <div class="affixCon"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="back_main_btns clearfix">
+        <!--<a class="btn_confirm floatL" href="javascript:;">发布公告，并开启报名通道</a>-->
+        <a class="btn_confirm floatL" href="javascript:;">继续完善招标详细信息</a>
+        <a class="btn_cancel floatR" draft="1" href="javascript:;">保存到草稿</a>
+        <span class="msgCon floatL" style="display: block;line-height: normal;margin-left: 0;margin-top: 20px;"><span class="noticeBg"><i class="iconfont icon-i"></i></span>可稍后在【企业全部采集信息】中继续编辑更多招标详情信息</span>
+    </div>
+</div>

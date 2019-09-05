@@ -1,0 +1,205 @@
+.other_top_con{
+    height: 176px;
+}
+.bid_head_con{
+    padding-bottom: 50px;
+}
+.bid_head_con .bid_head_title,.bid_head_con .bid_head_tips,.bid_head_con .bid_head_cells{
+    margin: 14px auto;
+    text-align: center;
+    float: none!important;
+}
+
+.bid_body_con .bid_multi_title{
+    padding-left: 30px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.bid_body_con .bid_multi_title span{
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: #666;
+}
+.bid_body_con .bid_multi_title span.act{
+    height: 52px;
+    line-height: 52px;
+    border-bottom: solid 2px #FF3600;
+    font-weight: 700;
+    color: #333;
+}
+
+.bid_head_btns{
+    text-align: right;
+}
+.bid_head_btns a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    border: solid 1px #ff3600;
+    border-radius: 6px;
+    text-align: center;
+}
+.bid_head_btns a.bid_change_btn{
+    background-color: #ff3600;
+    color: #fff;
+}
+.bid_head_btns a.bid_change_btn:hover{
+    background-color: #ec3200;
+    color: #fff;
+}
+.bid_head_btns a.bid_change_link{
+    margin-left: 10px;
+    color: #ff3600;
+}
+.bid_foot_btns{
+    margin-top: 30px;
+    text-align: center;
+}
+.bid_foot_btns a{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 6px;
+    text-align: center;
+}
+.bid_foot_btns a.bid_change_save{
+    background-color: #FF3600;
+    border: solid 1px #FF3600;
+    color: #fff;
+}
+.bid_foot_btns a.bid_change_save:hover{
+    background-color: #ec3200;
+    border: solid 1px #ec3200;
+    color: #fff;
+}
+.bid_foot_btns a.bid_change_cancel{
+    margin-left: 10px;
+    border: solid 1px #ccc;
+}
+.bid_foot_btns a.bid_change_cancel:hover{
+    border: solid 1px #FF3600;
+    color: #FF3600;
+}
+
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list th{
+    height: 60px;
+}
+.material_list td {
+    min-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    background-color: #F8F8F8;
+    font-weight: 700;
+}
+.material_list .cjy-calendar i{
+    top: 0;
+}
+
+.bid_company_add{
+    display: block;
+    width: 1338px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 30px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #FF3600;
+    text-align: center;
+}
+
+
+/* 邀请供应商弹框 */
+.invite_dialog{
+    padding: 0 20px;
+}
+.invite_dialog .invite_nav{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+    border-bottom: 1px solid #F5AF9D;
+}
+.invite_nav li {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    color: #333;
+    float: left;
+}
+.invite_nav li a {
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+}
+.invite_nav li.act {
+    border: 1px solid #F5AF9D;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #fff;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.invite_nav li:hover a,.invite_nav li.act a{
+    color: #DC2F00;
+}
+.invite_dialog .invite_search{
+    padding: 20px;
+}
+.invite_dialog .invite_search select{
+    width: 160px;
+}
+.invite_dialog .invite_search > a {
+    display: inline-block;
+    min-width: 70px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+.invite_dialog a.invite_btn_search {
+    margin-left: 60px;
+    background-color: #FF3600;
+    border: solid 1px #FF3600;
+    color: #fff;
+}
+.invite_dialog a.invite_btn_search:hover {
+    background-color: #ec3200;
+}
+.invite_dialog a.invite_btn_clear {
+    margin-left: 20px;
+    border: solid 1px #ccc;
+}
+
+.cjy-layer-foot{
+    margin-top: 20px;
+}

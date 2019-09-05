@@ -1,0 +1,199 @@
+.buyer_bread{
+    height: 68px;
+    background-color: #fafafa;
+}
+.buyer_bread .buyer_bread_p{
+    font-size: 14px;
+    color: #333;
+    line-height: 68px;
+    text-indent: 28px;
+}
+.buyer_bread_p .order_code{
+    color: #999;
+}
+.buyer_bread_p .icon-ditu{
+    margin-right: 6px;
+}
+.order_detail{
+    padding: 0 40px;
+    margin-right: 250px;
+}
+.order_item .order_top{
+    margin-top: 30px;
+}
+.order_detail .order_item{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.order_detail .order_item:last-child{
+    border-bottom: none;
+}
+.order_top h3{
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;        
+}
+.order_left,.order_right{
+    float: left;
+    width: 50%;
+}
+.order_left dl,.order_right dl{
+    font-size: 0;
+    margin-top: 18px;
+}
+.order_left dt,.order_right dt{
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    width: 60px;
+}
+.order_item dd{
+    display: inline-block;
+    width: 80%;
+    font-size: 12px;
+    color: #333;
+    margin-left: 20px;
+    vertical-align: -2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
+.trade_wrap table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+.trade_wrap th{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 50px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ececec;
+}
+.trade_wrap .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #7392b5;
+    border-radius: 100%;
+    margin-left: 6px;
+    vertical-align: 1px;
+}
+.trade_wrap td{
+    font-size: 14px;
+    color: #666;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+.trade_wrap .color999{
+    color: #999;
+}
+.multi_tr .multi_left{
+    border-left: 1px solid #ececec;
+}
+.multi_tr .multi_right{
+    border-right: 1px solid #ececec;
+}
+.trade_goods .trade_dl{
+    margin: 20px 0;
+}
+.trade_dl dt{
+    float: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+}
+.trade_dl dd{
+    float: left;
+    font-size: 12px;
+    color: #999;
+    line-height: 16px;
+    margin-left: 10px;
+}
+.trade_dl b{
+    display: inline-block;
+    width: 44px;
+    height: 16px;
+    font-size: 12px;
+    color: #00b27e;
+    text-align: center;
+    line-height: 16px;
+    font-weight: normal;
+    border: 1px solid #00b27e;
+}
+.trade_dl b.done{
+    color: #fd4545;
+    border: 1px solid #fd4545;
+}
+.trade_wrap .trade_cell{
+    margin-bottom: 20px;
+}
+.trade_cell .trade_title{
+    display: inline-block;
+    width: 60px;
+    font-size: 12px;
+    color: #999;
+}
+.trade_cell .margintop{
+    margin-top: 4px;
+}
+.trade_cell .trade_money{
+    display: inline-block;
+    font-size: 22px;
+    color: #df1c1c;
+    vertical-align: -4px;
+}
+.trade_cell .trade_txt{
+    display: inline-block;
+    width: 800px;
+    vertical-align: top;
+}
+.trade_txt p{
+    font-size: 12px;
+    color: #666;
+    text-align: justify;
+    line-height: 2;
+}
+.trade_cell .goods_box{
+    display: inline-block;
+    vertical-align: top;
+}
+.goods_box .goods_photo{
+    display: inline-block;
+    width: 129px;
+    margin-right: 20px;
+}
+.goods_photo img{
+    width: 127px;
+    height: 127px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.goods_photo figcaption{
+    font-size: 12px;
+    color: #333;
+    margin-top: 14px;
+    text-align: center;
+}
+.order_item .cell_top{
+    margin-top: 20px;
+}
+.trade_descript{
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    padding: 40px 60px;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    white-space:pre-wrap;
+    word-break:break-all;
+}

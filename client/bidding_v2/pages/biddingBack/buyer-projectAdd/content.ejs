@@ -1,0 +1,132 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">新建企业项目</span>
+    </div>
+    <div class="back_main_content clearfix">
+        <input type="hidden" name="type" value="add">
+        <div class="back_main_item clearfix">
+            <div class="back_half">
+                <label><span class="textRed">*</span>项目名称：</label>
+                <div class="back_main_block">
+                    <input type="text" name="name" placeholder="项目/工程名称，2-100个字" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_half">
+                <label><span class="textRed">*</span>项目类型：</label>
+                <div class="back_main_block">
+                    <select>
+                        <option value="">请选择项目类型</option>
+                        <option value="建筑工程">建筑工程</option>
+                        <option value="公路工程">公路工程</option>
+                        <option value="铁路工程">铁路工程</option>
+                        <option value="港口与航道工程">港口与航道工程</option>
+                        <option value="水利水电工程">水利水电工程</option>
+                        <option value="电力工程">电力工程</option>
+                        <option value="矿山工程">矿山工程</option>
+                        <option value="冶金工程">冶金工程</option>
+                        <option value="石油化工工程">石油化工工程</option>
+                        <option value="市政公用工程">市政公用工程</option>
+                        <option value="通信工程">通信工程</option>
+                        <option value="机电工程">机电工程</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="back_main_item clearfix">
+            <div class="back_half">
+                <label>项目部备注：</label>
+                <div class="back_main_block">
+                    <input type="text" name="bCode" placeholder="项目/项目部备注信息，2-50字" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_half">
+                <label>项目规模：</label>
+                <div class="back_main_block">
+                    <input type="text" name="bCode" placeholder="项目投资额/建筑面积等" class="cjy-input-">
+                </div>
+            </div>
+        </div>
+        <div class="back_main_item clearfix">
+            <div class="back_half">
+                <label><span class="textRed">*</span>项目所在地：</label>
+                <div class="back_main_block">
+                    <span cjy-area></span>
+                </div>
+            </div>
+            <div class="back_half">
+                <label><span class="textRed">*</span>详细地址：</label>
+                <div class="back_main_block">
+                    <input type="text" name="bCode" placeholder="项目部详细地址" class="cjy-input-">
+                </div>
+            </div>
+        </div>
+        <div class="back_main_item clearfix">
+            <div class="back_half">
+                <label><span class="textRed">*</span>项目状态：</label>
+                <div class="back_main_block">
+                    <select>
+                        <option value="1">在建中</option>
+                        <option value="2">待进行</option>
+                        <option value="3">已完结</option>
+                    </select>
+                </div>
+            </div>
+            <div class="back_half">
+                <label><span style="display: inline-block;margin-top: -10px;text-align: left;">项目起止时间：</span></label>
+                <div class="back_main_block">
+                    <input type="text" name="time" calendar placeholder="开始时间" class="cjy-calendar-input" readonly>至
+                    <input type="text" name="time" calendar placeholder="结束时间" class="cjy-calendar-input" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="back_main_item clearfix">
+            <div class="back_half">
+                <label>资金来源：</label>
+                <div class="back_main_block">
+                    <input type="text" name="bCode" placeholder="资金来源，如：国家财政资金/银行借款/自筹等" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_half">
+                <label>业主付款方式：</label>
+                <div class="back_main_block">
+                    <input type="text" name="bCode" placeholder="业主付款方式" class="cjy-input-">
+                </div>
+            </div>
+        </div>
+        <div class="back_main_item clearfix">
+            <label>质量标准：</label>
+            <div class="back_main_block">
+                <input type="text" name="bCode" placeholder="质量标准" class="cjy-input-" style="width: 970px;">
+                <p class="marginT10">点击查看<a class="textBlue">“质量标准”</a>填写参考</p>
+            </div>
+        </div>
+
+        <div class="back_main_item">
+            <label><span class="textRed">*</span>项目简介：</label>
+            <div class="back_main_block">
+                    <div id="myEditor" style="width:990px;height:360px;"></div>
+            </div>
+        </div>
+
+        <div class="back_main_item">
+            <label>项目图片：</label>
+            <div class="back_main_block">
+                <span id="projectImg_src"></span>
+                <span class="noticeCon"><span class="noticeBg"><i
+                            class="iconfont icon-i"></i></span>最多可上传8张图片，为保证显示效果，请尽量上传尺寸为nn*mm的图片</span>
+                <div id="process-files-projectImg_src"></div>
+                <div class="project_img clearfix">
+                    <div class="img_cell">
+                        <img src="https://file.dev.materialw.com/group1/M00/00/02/CgUFDltznCmAfdAhAACmh2caqcc65.jpeg"><i
+                                class="iconfont icon-cha1"></i>
+                        <input type="hidden" name="qualifications_src[]"
+                               value="group1/M00/00/02/CgUFDltznCmAfdAhAACmh2caqcc65.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back_main_btns clearfix">
+        <a class="btn_confirm floatR" href="javascript:;">确定</a>
+    </div>
+</div>

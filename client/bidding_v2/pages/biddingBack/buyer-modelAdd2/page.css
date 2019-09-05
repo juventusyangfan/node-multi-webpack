@@ -1,0 +1,79 @@
+.back_status_warp{
+    height: 116px;
+    padding: 0 30px;
+    background-color: #F8F8F8;
+}
+.back_status_warp ul{
+    display: block;
+    margin: 0 auto;
+}
+.back_status_warp .back_status_cell{
+    width: 33.33%;
+    margin-top: 24px;
+    text-align: center;
+    float: left;
+} 
+.back_status_warp  .iconLine{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.back_status_warp .status_done .iconLine{
+    border-bottom: solid 2px #FC9440;
+}
+.back_status_warp .status_none .iconLine{
+    border-bottom: dashed 2px #CCCCCC;
+}
+.back_status_warp .iconCon{
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 22px;
+    margin-left: -11px;
+    top: -10px;
+}
+.back_status_warp .status_done .iconCon{
+    background: url(imgs/statusDone.png) no-repeat;
+}
+.back_status_warp .status_none .iconCon{
+    background: url(imgs/statusNone.png) no-repeat;
+}
+.back_status_warp .statusName{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+.back_status_warp .status_done .statusName{
+    color: #FC9440;
+}
+
+
+.back_info_item{
+    margin-bottom: 20px;
+}
+.back_info_item label{
+    float: left;
+    display: block;
+    max-width: 750px;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+.back_info_item label.back_info_title{
+    width: 240px;
+    text-align: right;
+    color: #999;
+}
+.back_info_item .back_main_block{
+    margin-left: 240px;
+}
+.back_info_item .back_main_block input.cjy-input-{
+    width: 40px;
+}
+.back_info_item .back_main_block select{
+    width: 160px;
+}
+.back_info_item .cjy-select{
+    vertical-align: 2px;
+}

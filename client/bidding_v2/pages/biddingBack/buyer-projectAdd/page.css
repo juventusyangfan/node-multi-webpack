@@ -1,0 +1,60 @@
+.back_main_content{
+    padding: 30px 0;
+}
+.back_main_item label{
+    width: 150px;
+}
+.back_half{
+    width: 40%;
+    float: left;
+}
+.back_half .cjy-input-{
+    width: 310px;
+}
+.back_half select{
+    width: 330px;
+}
+.back_half .cjy-calendar-input{
+    width: 135px;
+}
+.back_main_block{
+    margin-left: 150px;
+}
+
+.noticeCon{
+    color: #999;
+}
+.project_img{
+    margin-top: 10px;
+}
+.project_img .img_cell{
+    position: relative;
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+    background-color: #fff;
+}
+.project_img .img_cell img{
+    object-fit: scale-down;
+}
+.project_img .img_cell .icon-cha1{
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    top: -8px;
+    right: -10px;
+    border-radius: 10px;
+    background-color: #FD4545;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.project_img img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #eee;
+}

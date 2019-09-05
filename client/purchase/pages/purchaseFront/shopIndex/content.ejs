@@ -1,0 +1,221 @@
+<script>
+        function initialize() {
+            // 百度地图API功能
+            var map = new BMap.Map("info_map");
+            var point = new BMap.Point(114.30752, 30.60629);
+            map.centerAndZoom(point, 15);
+            var marker = new BMap.Marker(point); // 创建标注
+            map.addOverlay(marker); // 将标注添加到地图中
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+            map.enableScrollWheelZoom(true); //启用滚轮放大缩小
+            var navigationControl = new BMap.NavigationControl({
+                // 靠左上角位置
+                anchor: BMAP_ANCHOR_TOP_LEFT,
+                // LARGE类型
+                type: BMAP_NAVIGATION_CONTROL_LARGE,
+                // 启用显示定位
+                enableGeolocation: true
+            });
+            map.addControl(navigationControl);
+        }
+    
+        function loadScript() {
+            var script = document.createElement("script");
+            script.src = "https://api.map.baidu.com/api?v=2.0&ak=niKOWVf1YxTrwpcHsbQfsG20&callback=initialize";//此为v2.0版本的引用方式
+            document.body.appendChild(script);
+        }
+    
+        window.onload = loadScript;
+    </script>
+<div class="sList_warp">
+    <div class="sList_banner">
+        <div class="sList_banner_con">
+            <div class="shop_logo">
+                <img src="<%= logo %>">
+            </div>
+            <div class="shop_name">
+                <p class="fontSize24 textBlack1">昆山金誉盛钢金属材料有限公司 </p>
+                <p class="fontSize12 marginT10">主营：五金工具，钉子，地板钉，手套，安全帽，安全帽，安全帽，安全帽，安全帽，安全帽，安全帽，安全帽...</p>
+            </div>
+            <div class="shop_tel">
+                <div class="telBg"></div>
+                <div class="telCon"><i class="iconfont icon-dianhua"></i>13498760987 / 杨洋</div>
+            </div>
+        </div>
+    </div>
+    <div class="sList_nav">
+        <div class="sList_nav_con">
+            <a href="#" class="sList_nav_cell active">首页</a>
+            <a href="#" class="sList_nav_cell">主营产品</a>
+            <a href="#" class="sList_nav_cell">公司简介</a>
+        </div>
+    </div>
+    <div class="pList_body">
+        <div class="banner_wrap js_slides">
+            <div class="banner_bg js_slidesContainer">
+                <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+                    <a href="javascript:;" class="banner_item" style="background-image: url(<%= banner1 %>)">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel_dot js_pagination">
+                <a href="javascript:;" class="carousel_dot_span"></a>
+            </div>
+        </div>
+        <div class="pList_product">
+            <div class="pList_title"><span class="title_line"></span>主营产品<span class="title_line"></span></div>
+            <ul>
+                <li>
+                    <a class="pList_pro_cell">
+                        <img src="<%= showDemo %>">
+                        <p class="textOrange">￥<span class="fontSize20">01.00</span></p>
+                        <p class="fontSize12">示例商品名称示例商品名称示例商品名称示例商品名称</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="pList_pro_cell">
+                        <img src="<%= showDemo %>">
+                        <p class="textOrange">￥<span class="fontSize20">01.00</span></p>
+                        <p class="fontSize12">示例商品名称示例商品名称示例商品名称示例商品名称</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="pList_pro_cell">
+                        <img src="<%= showDemo %>">
+                        <p class="textOrange">￥<span class="fontSize20">01.00</span></p>
+                        <p class="fontSize12">示例商品名称示例商品名称示例商品名称示例商品名称</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="pList_pro_cell">
+                        <img src="<%= showDemo %>">
+                        <p class="textOrange">￥<span class="fontSize20">01.00</span></p>
+                        <p class="fontSize12">示例商品名称示例商品名称示例商品名称示例商品名称</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="pList_pro_cell">
+                        <img src="<%= showDemo %>">
+                        <p class="textOrange">￥<span class="fontSize20">01.00</span></p>
+                        <p class="fontSize12">示例商品名称示例商品名称示例商品名称示例商品名称</p>
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="pList_pro_arrow left"><i class="iconfont icon-zuojiantou"></i></a>
+            <a href="javascript:;" class="pList_pro_arrow right"><i class="iconfont icon-youjiantou"></i></a>
+        </div>
+        <div class="pList_company">
+            <div class="pList_title"><span class="title_line"></span>主营产品<span class="title_line"></span></div>
+            <ul class="clearfix">
+                <li class="pList_com_cell">
+                    <img src="<%= companyDemo %>">
+                    <p>标题例如”深度工程定制解决方案“</p>
+                </li>
+                <li class="pList_com_cell">
+                    <img src="<%= companyDemo %>">
+                    <p>标题例如”深度工程定制解决方案“</p>
+                </li>
+                <li class="pList_com_cell">
+                    <img src="<%= companyDemo %>">
+                    <p>标题例如”深度工程定制解决方案“</p>
+                </li>
+                <li class="pList_com_cell">
+                    <img src="<%= companyDemo %>">
+                    <p>标题例如”深度工程定制解决方案“</p>
+                </li>
+                <li class="pList_com_cell">
+                    <img src="<%= companyDemo %>">
+                    <p>标题例如”深度工程定制解决方案“</p>
+                </li>
+                <li class="pList_com_cell">
+                    <img src="<%= companyDemo %>">
+                    <p>标题例如”深度工程定制解决方案“</p>
+                </li>
+            </ul>
+            <div class="pList_company_bg"></div>
+        </div>
+        <div class="pList_list_con">
+            <div class="pList_title"><span class="title_line"></span>主营产品<span class="title_line"></span></div>
+            <ul>
+                <li class="pList_body_cell clearfix">
+                    <div class="cell_img">
+                        <img src="<%= proDemo %>">
+                    </div>
+                    <div class="cell_name">
+                        <a href="#" class="block textBlack1">商品名称<span class="textBlack3">（品牌）</span></a>
+                        <a href="#" class="block fontSize12 textBlack3 marginT10">商家上架商品描述商家上架商品描商家上架商品描述商家上架商品描述述..</a>
+                    </div>
+                    <div class="cell_des">
+                        <p class="block fontSize12 textBlack1 ellipsis">属性1 / 属性2 / 最多显示大约这么长吧属性1 / 属性2 / 最多显示大约这么长吧</p>
+                        <p class="block fontSize12 textBlack1 ellipsis">属性1 / 属性2 / 最多显示大约这么长吧</p>
+                        <a href="#" class="block fontSize12 textOrange marginT10">共5个属性组合></a>
+                    </div>
+                    <div class="cell_money">
+                        <span class="fontSize16 textRed">￥5,000.00/吨</span> 起
+                    </div>
+                    <div class="cell_warehouse">
+                        <span class="textBlack1">仓库：阳逻库</span>（武汉）
+                    </div>
+                    <a href="javascript:;" class="cell_btn">查看详情</a>
+                </li>
+                <li class="pList_body_cell clearfix">
+                    <div class="cell_img">
+                        <img src="<%= proDemo %>">
+                    </div>
+                    <div class="cell_name">
+                        <a href="#" class="block textBlack1">商品名称<span class="textBlack3">（品牌）</span></a>
+                        <a href="#" class="block fontSize12 textBlack3 marginT10">商家上架商品描述商家上架商品描商家上架商品描述商家上架商品描述述..</a>
+                    </div>
+                    <div class="cell_des">
+                        <p class="block fontSize12 textBlack1 ellipsis">属性1 / 属性2 / 最多显示大约这么长吧属性1 / 属性2 / 最多显示大约这么长吧</p>
+                        <p class="block fontSize12 textBlack1 ellipsis">属性1 / 属性2 / 最多显示大约这么长吧</p>
+                        <a href="#" class="block fontSize12 textOrange marginT10">共5个属性组合></a>
+                    </div>
+                    <div class="cell_money">
+                        <span class="fontSize16 textRed">￥5,000.00/吨</span> 起
+                    </div>
+                    <div class="cell_warehouse">
+                        <span class="textBlack1">仓库：阳逻库</span>（武汉）
+                    </div>
+                    <a href="javascript:;" class="cell_btn">查看详情</a>
+                </li>
+                <li class="pList_body_cell clearfix">
+                    <div class="cell_img">
+                        <img src="<%= proDemo %>">
+                    </div>
+                    <div class="cell_name">
+                        <a href="#" class="block textBlack1">商品名称<span class="textBlack3">（品牌）</span></a>
+                        <a href="#" class="block fontSize12 textBlack3 marginT10">商家上架商品描述商家上架商品描商家上架商品描述商家上架商品描述述..</a>
+                    </div>
+                    <div class="cell_des">
+                        <p class="block fontSize12 textBlack1 ellipsis">属性1 / 属性2 / 最多显示大约这么长吧属性1 / 属性2 / 最多显示大约这么长吧</p>
+                        <p class="block fontSize12 textBlack1 ellipsis">属性1 / 属性2 / 最多显示大约这么长吧</p>
+                        <a href="#" class="block fontSize12 textOrange marginT10">共5个属性组合></a>
+                    </div>
+                    <div class="cell_money">
+                        <span class="fontSize16 textRed">￥5,000.00/吨</span> 起
+                    </div>
+                    <div class="cell_warehouse">
+                        <span class="textBlack1">仓库：阳逻库</span>（武汉）
+                    </div>
+                    <a href="javascript:;" class="cell_btn">查看详情</a>
+                </li>
+            </ul>
+            <a href="#" class="pList_list_more">查看更多</a>
+        </div>
+        <div class="pList_info_con">
+            <div class="info_warp"> 
+                <div class="inof_txt">
+                    <h1>湖北省楚建易网络科技有限公司<i class="iconfont icon-vip"></i></h1>
+                    <span class="inof_line"></span>
+                    <div class="info_item"><label>主管</label><span>工具刀具；工具刀具工具刀具；工具刀具工具刀具；工具刀具工具具刀具工具刀刀具工具刀具；工具刀具工具刀具；工具刀具工具刀具；工具刀具工具具刀具工具刀刀具</span></div>
+                    <div class="info_item"><label>联系人</label><span>杨洋<a href="#" class="askForQQ"><i class="iconfont icon-QQ"></i>立即咨询</a></span></div>
+                    <div class="info_item"><label>联系电话</label><span>13727015195</span></div>
+                    <div class="info_item"><label>公司类型</label><span>注册信息处获取</span></div>
+                    <div class="info_item"><label>所在地区</label><span>湖北省武汉市江岸区新长江国际广场A座</span></div>
+                </div>
+                <div id="info_map" class="info_map"></div>
+            </div>
+        </div>
+    </div>
+</div>

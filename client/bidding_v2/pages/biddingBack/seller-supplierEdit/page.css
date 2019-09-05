@@ -1,0 +1,42 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #FF3600;
+    border: 1px solid #FF3600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #ec3200;
+    border: 1px solid #ec3200;
+    color: #fff;
+}
+.back_main_content{
+    padding: 50px 30px;
+}
+.back_info_item{
+    margin-bottom: 20px;
+}
+.back_info_item label{
+    float: left;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+.back_info_item label.back_info_title{
+    width: 240px;
+    text-align: right;
+    color: #999;
+}
+.back_info_item .back_main_block{
+    margin-left: 240px;
+}
+.back_info_item .back_main_block select{
+    width: 160px;
+}

@@ -1,0 +1,52 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">供应商类别管理</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input name="company_name" type="text" placeholder="输入关键字：供应商名称/联系人姓名" class="cjy-input-">
+            <a href="javascript:;" class="btn_confirm">搜索</a>
+            <a href="javascript:;" class="btn_clear">清除</a>
+        </div>
+        <div class="back_main_list" id="supplier">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="250">
+                        <col width="250">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>供应商名称</th>
+                        <th>供应商类别</th>
+                        <th>联系人</th>
+                        <th>联系方式</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="5">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="item in list">
+                        <td>{{item.supplier_name}}</td>
+                        <td><span v-for="cell in item.all_type">{{cell}};</span></td>
+                        <td>{{item.real_name}}</td>
+                        <td>{{item.user_mobile}}</td>
+                        <td><a href="javascript:;" class="marginR10 textBlue">编辑</a>-<a href="javascript:;" class="marginL10">删除</a></td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="5"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>

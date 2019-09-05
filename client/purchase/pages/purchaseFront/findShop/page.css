@@ -1,0 +1,206 @@
+.filter_wrap{
+    width: 100%;
+    height: 62px;
+    border-bottom: 1px solid #eee;
+}
+.filter_wrap .filter_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.filter_inner .all_shop_num{
+    float: right;
+    line-height: 62px;
+    font-size: 12px;
+    color: #999;
+}
+.all_shop_num span{
+    color: #fc6940;
+}
+/* 筛选地区 */
+.filter_ul{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+/* .filter_ul .select_area, */
+.filter_ul .select_people{
+    float: left;
+    cursor: pointer;
+}
+.filter_ul .filter_item{
+    font-size: 14px;
+    color: #333;
+}
+.filter_ul .filter_line{
+    display: block;
+    height: 2px;
+    width: 26px;
+    background-color: transparent;
+    margin: 18px auto 0;
+}
+li.active .filter_line{
+    background-color: #000033;
+}
+/* .filter_ul .select_people{
+    margin-left: 20px;
+}
+.select_area .filter_item{
+    display: inline-block;
+}
+.select_area .icon-xiajiantou{
+    font-size: 12px;
+    margin-left: 10px;
+} */
+/* 列表 */
+.findshop_wrap{
+    background-color: #f4f4f4;
+}
+.findshop_wrap .findshop_list{
+    width: 1180px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.findshop_inner .findshop_item{
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.findshop_inner .findshop_item:last-child{
+    margin-bottom: 0;
+}
+.findshop_item .findshop_left,.findshop_item .findshop_right{
+    float: left;
+}
+.findshop_item .findshop_left{
+    margin-right: 40px;
+}
+.findshop_left .findshop_photo{
+    float: left;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.findshop_photo img{
+    max-width: 50px;
+}
+.findshop_left .findshop_descript{
+    float: left;
+}
+.findshop_descript .findshop_title{
+    width: 520px;
+    height: 30px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.findshop_title h3{
+    max-width: 420px;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+.findshop_title > a{
+    float: right;
+    display: block;
+    width: 96px;
+    height: 28px;
+    font-size: 14px;
+    color: #fc6940;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #fc6940;
+    border-radius: 5px;
+}
+.findshop_title .icon-vip{
+    font-size: 20px;
+    color: #ffc000;
+    margin-left: 6px;
+    vertical-align: 7px;
+}
+.findshop_descript .findshop_info{
+    width: 520px;
+    font-size: 12px;
+    color: #666;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+.findshop_info .infolist_dl{
+    float: left;
+    width: 260px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.findshop_info .infolist_dl:nth-child(2n){
+    width: 220px;
+    margin-right: 0;
+}
+.infolist_dl dt,.infolist_dl dd{
+    display: inline-block;
+}
+.infolist_dl dd{
+    width: 190px;
+    vertical-align: -2px;
+}
+.findshop_info .infolist_dl:nth-child(2n) dd{
+    width: 150px;
+}
+.findshop_right .imglist_item{
+    float: left;
+    width: 157px;
+    margin-right: 19px;
+}
+.imglist_item .imglist_photo{
+    width: 157px;
+    height: 157px;
+    text-align: center;
+    overflow: hidden;
+}
+.imglist_photo img{
+    width: 157px;
+    height: 157px;
+}
+.imglist_photo p{
+    font-size: 12px;
+    color: #fff;
+    height: 30px;
+    width: 117px;
+    padding: 20px;
+    background-color: #f66844;
+    transition: transform .3s;
+    overflow: hidden;
+}
+.imglist_photo:hover p{
+    transform: translateY(-70px);
+}
+.imglist_item:last-child{
+    margin-right: 0px;
+}
+.imglist_item .imglist_txt{
+    margin-top: 15px;
+    line-height: 21px;
+}
+.imglist_txt .imglist_price{
+    font-size: 16px;
+    color: #fc6940;
+    font-weight: bold;
+}
+.imglist_txt .imglist_num{
+    font-size: 12px;
+    color: #999;
+    float: right;
+}
+.findshop_list .pages_shop{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.page_container_nav a{
+    background-color: #fff;
+}
+/* 地区选择控制 */
+.region_select{
+    float: left;
+    margin-top: 13px;
+}

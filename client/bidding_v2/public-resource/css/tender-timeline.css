@@ -1,0 +1,142 @@
+.tender_timeline_wrap{
+    width: 100%;
+    height: 168px;
+    background-color: #fff;
+}
+.tender_timeline_wrap .ttl_inner{
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+.ttl_inner .ttl_container{
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+.ttl_container .ttl_time_box{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.ttl_time_box .step_box{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.step_box i{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 100%;
+    margin: 6px;
+}
+.ttl_time_box .step_status{
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 6px;
+}
+.ttl_time_box .step_status i.icon-wenhao{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 6px;
+    border-radius: 16px;
+    background: #f4c148;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.ttl_container .step1{
+    left: 118px;
+    top: -30px;
+}
+.ttl_container .step2{
+    left: 412px;
+    top: -30px;
+}
+.ttl_container .step3{
+    right: 412px;
+    top: -30px;
+}
+.ttl_container .step4{
+    right: 118px;
+    top: -30px;
+}
+.bg_green{
+    background-color: #31c37c;
+}
+.bg_red{
+    background-color: #e66f62;
+}
+.bg_gray{
+    background-color: #f0f0f0;
+}
+.color_white{
+    color: #fff;
+}
+.color_gray{
+    color: #ccc;
+}
+.btn_bg_green{
+    border: 1px solid #019a6d;
+    background-color: #00b27e;
+}
+.btn_no_allow{
+    cursor: not-allowed;
+    border: 1px solid #80ccb6;
+    background-color: #7fd8be;
+}
+.ttl_container .takepart_btn,.ttl_container .voucher_btn{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.ttl_container .takepart_btn:hover,.ttl_container .voucher_btn:hover{
+    color: #fff;
+}
+.ttl_time_box .yibao{
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+}
+.ttl_time_box .view_a{
+    display: inline-block;
+    font-size: 16px;
+    color: #FF3600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.ttl_time_box .zhongbiao_p{
+    font-size: 16px;
+    color: #999;
+    margin-top: 20px;
+    width: 295px;
+}
+.zhongbiao_p .view_company{
+    color: #333;
+}
+.zhongbiao_p .view_company:hover{
+    text-decoration: underline;
+}
+.ttl_vertical{
+    font-size: 16px;
+    color: #ccc;
+    margin: 0 6px;
+}

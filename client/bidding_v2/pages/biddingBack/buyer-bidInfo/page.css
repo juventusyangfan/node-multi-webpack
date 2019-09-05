@@ -1,0 +1,104 @@
+.back_main_crumbs{
+    height: 66px;
+    line-height: 66px;
+    padding: 0 30px;
+    background-color: #FAFAFA;
+    color: #999;
+}
+.bid_info_title{
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.bid_info_title .bid_info_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: -1px;
+    margin-right: 6px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+.bid_info_head{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fcfcfc;
+}
+.bid_info_head .head_cell {
+    width: 400px;
+    height: 88px;
+    margin: 30px 0;
+    border-left: 1px solid #e5e5e5;
+    float: left;
+}
+.bid_info_head .head_cell:first-child {
+    border-left: none;
+}
+.bid_info_head .head_cell .head_icon1, .bid_info_head .head_cell .head_icon2, .bid_info_head .head_cell .head_icon3 {
+    display: inline-block;
+    width: 92px;
+    height: 100px;
+    margin: -6px 18px -6px 34px;
+    float: left;
+}
+.bid_info_head .head_cell .head_icon1{
+    background: url(imgs/head-icon1.png) no-repeat;
+}
+.bid_info_head .head_cell .head_icon2{
+    background: url(imgs/head-icon2.png) no-repeat;
+}
+.bid_info_head .head_cell .head_icon3{
+    background: url(imgs/head-icon3.png) no-repeat;
+}
+.bid_info_head .head_cell_tips{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    margin-left: 10px;
+    padding: 0 16px;
+    color: #DC2F00;
+    text-align: center;
+    vertical-align: 4px;
+}
+
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 3px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+.material_list .table_package{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 0 15px;
+    background-color: #FFF5F3;
+    border-radius: 26px;
+    color: #D86849;
+    text-align: center;
+}

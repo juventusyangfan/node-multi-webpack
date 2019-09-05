@@ -1,0 +1,84 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>筛选查询</span>
+    </div>
+    <div class="back_main_content">
+        <div class="result_form">
+            <div class="result_form_item">
+                <label>客户关键字：</label>
+                <input type="text" name="" placeholder="客户姓名/公司名称/客户电话" class="cjy-input-" autocomplete="off">
+            </div>
+            <div class="result_form_item">
+                <label>产品名称：</label>
+                <input type="text" name="" placeholder="请输入产品名称" class="cjy-input-" autocomplete="off">
+            </div>
+            <div class="result_form_item">
+                <label>意向申请时间：</label>
+                <input name="" type="text" calendar placeholder="年-月-日" id="date_start" class="cjy-calendar-input" readonly autocomplete="off">
+                <span>至</span>
+                <input name="" type="text" calendar placeholder="年-月-日" id="date_end" class="cjy-calendar-input" readonly autocomplete="off">
+            </div>
+            <div class="result_form_item">
+                <label>标记状态：</label>
+                <select name="" value="1">
+                    <option value="1">潜在资源客户</option>
+                    <option value="2">意向清晰客户</option>
+                    <option value="3">需求沟通客户</option>
+                    <option value="4">方案设计客户</option>
+                    <option value="5">下单成交客户</option>
+                </select>
+            </div>
+            <div class="result_form_sub">
+                <button class="result_btn">查询结果</button>
+            </div>
+        </div>
+    </div>
+    <div class="back_main_title">
+        <span>内容列表</span>
+    </div>
+    <div class="back_main_content" id="productList">
+        <div class="customer_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="w60">客户姓名</th>
+                        <th class="w150">客户公司</th>
+                        <th class="w100">联系电话</th>
+                        <th class="w60">意向金额</th>
+                        <th class="w60">期望年利率</th>
+                        <th class="w60">还款期限</th>
+                        <th class="w60">放款时间</th>
+                        <th class="w100">意向申请时间</th>
+                        <th class="w150">客户标记</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>张三</td>
+                        <td>
+                            <p class="ellipsis" title="中铁贵州旅游文化发展有限公司">中铁贵州旅游文化发展有限公司</p>
+                        </td>
+                        <td>13035368514</td>
+                        <td>100万元</td>
+                        <td>4%</td>
+                        <td>180个月</td>
+                        <td>100天</td>
+                        <td>2018-2-13 9:00</td>
+                        <td>
+                            <select name="" value="1">
+                                <option value="1">潜在资源客户</option>
+                                <option value="2">意向清晰客户</option>
+                                <option value="3">需求沟通客户</option>
+                                <option value="4">方案设计客户</option>
+                                <option value="5">下单成交客户</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="pages">
+            <%= pageNav %>
+        </div>
+    </div>
+</div>

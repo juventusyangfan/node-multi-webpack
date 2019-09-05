@@ -1,0 +1,89 @@
+.back_info_item{
+    margin-bottom: 20px;
+}
+.back_info_item label{
+    float: left;
+    display: block;
+    max-width: 750px;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+.back_info_item label.back_info_title{
+    width: 240px;
+    text-align: right;
+    color: #999;
+}
+.back_info_item .back_main_block{
+    margin-left: 240px;
+}
+
+.back_info_item .itemBtn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.back_info_item .itemBtn:hover {
+    background-color: #00A776;
+    color: #fff;
+}
+
+
+.back_info_item .itemBtn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.back_info_item .itemBtn:hover {
+    background-color: #00A776;
+    color: #fff;
+}
+
+.back_main_block textarea,.back_main_block input.cjy-input-{
+    width: 600px;
+}
+.back_main_block textarea{
+    height: 300px;
+}
+
+/*附件上传*/
+.affixCon{
+    display: none;
+    padding: 0 10px 10px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+}
+.affixCon .affix_item{
+    margin-top: 10px;
+}
+.affix_item span{
+    display: inline-block;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.affix_item i{
+    vertical-align: 2px;
+}
+.affix_item i.icon-huishouxiang{
+    cursor: pointer;
+}
+
+.js_none{
+    display: none;
+}
+

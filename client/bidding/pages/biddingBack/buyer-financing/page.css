@@ -1,0 +1,112 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+.back_main_notice{
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #FCFAE3;
+    border: 1px solid #F7E3A4;
+}
+.back_main_notice .noticeBg,.back_main_notice .warningBg {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.back_main_notice p{
+    line-height: 2;
+    font-size: 14px;
+}
+.back_main_notice .noticeBg i,.back_main_notice .warningBg i{
+    font-size: 14px;
+}
+.back_main_list{
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+
+.back_list_nav{
+    margin-bottom: 20px;
+}
+.back_list_nav span{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.material_list td{
+    padding: 0 10px;
+    line-height: 1.5!important;
+}
+
+/* 添加专家弹框 */
+.expertDlg-content{
+    padding: 0 30px;
+}
+.expertDlg-content .expertDlg-block{
+    margin-bottom: 20px;
+}
+.expertDlg-block label{
+    float: left;
+    display: block;
+    width: 114px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.expertDlg-block label span{
+    color: #ca3c3c;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+.expertDlg-input .cjy-input-,.expertDlg-input .cjy-textarea{
+    width: 344px;
+}
+.expertDlg-input select{
+    width: 158px;
+}
+.expertDlg-input .cjy-select{
+    margin-right: 10px;
+}
+
+
+.cjy-select dd i.icon-gou{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #E0E4EC;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+.cjy-select dd.sel-this i.icon-gou{
+    background-color: #46C88D;
+}

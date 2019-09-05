@@ -1,0 +1,77 @@
+.admgmt_table table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-left:none;
+}
+.admgmt_table .w30{
+    width: 30px;
+}
+.admgmt_table .w80{
+    width: 80px;
+}
+.admgmt_table .w140{
+    width: 140px;
+}
+.admgmt_table .w239{
+    width: 239px;
+}
+.admgmt_table td, .admgmt_table th{
+    height: 60px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 4px;
+}
+.admgmt_table p{
+    width: 205px;
+    margin: 0 auto;
+}
+.admgmt_table .table_img{
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.table_img img{
+    max-width: 70px;
+}
+.admgmt_table button{
+    width: 40px;
+    height: 20px;
+    margin: 0 5px;
+}
+.admgmt_table .up_btn{
+    font-size: 14px;
+    color: #fff;
+    background-color: #fc6940;
+    border: none;
+    border-radius: 4px;
+}
+.admgmt_table .down_btn{
+    font-size: 14px;
+    color: #fff;
+    background-color: #00b27e;
+    border: none;
+    border-radius: 4px;
+}
+.back_main_title .add_product{
+    float: right;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .add_product:hover{
+    background-color: #f3623a;
+}

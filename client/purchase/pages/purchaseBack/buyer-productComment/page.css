@@ -1,0 +1,177 @@
+body{
+    min-width: 1450px;
+}
+.back_main_crumbs{
+    height: 66px;
+    line-height: 66px;
+    padding: 0 30px;
+    background-color: #FAFAFA;
+}
+.back_main_crumbs span{
+    margin-left: 10px;
+    color: #999;
+}
+.back_comment_warp{
+    background-color: #fff;
+}
+.back_comment_con{
+    width: 1180px;
+    margin: 0 auto;    
+}
+.back_comment_cell{
+    width: 1118px;
+    height: 202px;
+    margin-top: 20px;
+    padding: 30px;
+    border: solid 1px #e5e5e5;
+    background-color: #FAFAFA;
+}
+.back_comment_left{
+    width: 247px;
+    height: 182px;
+    padding: 10px 30px 10px 0;
+    float: left;
+    text-align: center;
+}
+.back_comment_left img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.back_comment_left p{
+    line-height: 2;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}
+.back_comment_right{
+    width: 810px;
+    height: 202px;
+    padding-left: 30px;
+    border-left: solid 1px #e5e5e5;
+    float: right;
+}
+.back_comment_star{
+    font-size: 12px;
+}
+.back_comment_star .starTxt,.back_comment_star .starDes{
+    display: none;
+}
+.back_star_con{
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: -6px;
+}
+.back_star_con i{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 4px;
+    background: url(imgs/starK.png) no-repeat;
+    cursor: pointer;
+}
+.back_star_con i.act{
+    background: url(imgs/starS.png) no-repeat;
+}
+.back_comment_right .textCon{
+    margin-top: 20px;
+    background-color: #fff;
+}
+.back_comment_right .back_imgs_cell,.back_comment_right .back_imgs_add{
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+}
+.back_comment_right .back_imgs_cell{
+    border: solid 1px #ccc;
+}
+.back_comment_right .back_imgs_cell .imgs_del{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    top: -8px;
+    right: -8px;
+    border-radius: 18px;
+    background-color: #FD4545;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.back_comment_right .back_imgs_cell img{
+    width: 38px;
+    height: 38px;
+}
+.back_comment_right .back_imgs_add{
+    line-height: 38px;
+    border: dashed 1px #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.back_comment_right .back_imgs_add i{
+    font-size: 30px;
+    color: #ccc;
+}
+.back_comment_btns{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.back_comment_btns .comment_add{
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #FC6940;
+    color: #fff;
+    text-align: center;
+    float: right;
+}
+.back_comment_btns .comment_add:hover{
+    background-color: #F3623A;
+}
+
+/* uppy上传 */
+.js_upload{
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 10px;
+    border: 1px dashed #ccc;
+    text-align: center;
+}
+.js_upload i.icon-shangchuanzhaopian{
+    font-size: 30px;
+    color: #ccc;
+}
+.js_upload .uppy-FileInput-container{
+    position: absolute!important;
+    width: 38px!important;
+    height: 38px!important;
+    line-height: 38px!important;
+    left: 0!important;
+    top: 0!important;
+}
+.js_upload .uppy-FileInput-btn{
+    width: 38px!important;
+    height: 38px!important;
+    line-height: 38px!important;
+    background-color: #fff!important;
+    text-align: center!important;
+    opacity: 0!important;
+}
+.process-files{
+    margin-top: 10px;
+}

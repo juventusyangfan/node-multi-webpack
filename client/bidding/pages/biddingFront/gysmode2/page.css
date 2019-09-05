@@ -1,0 +1,260 @@
+/* 面包屑 */
+.breadcrumbs_wrap{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.breadcrumbs_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+/* 招标头部 */
+.guestmode_bg{
+    width: 100%;
+    height: 245px;
+}
+.guestmode_bg .guestmode_bg_inner{
+    max-width: 1920px;
+    height: 245px;
+    margin: 0 auto;
+    background: url(imgs/bg.jpg) center no-repeat;
+}
+.guestmode_bg_inner .guestmode_jindu{
+    width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.guestmode_jindu i{
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    color: #f69b6e;
+    text-align: center;
+    line-height: 65px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.guestmode_jindu p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 18px;
+}
+.guestmode_jindu p b{
+    font-weight: normal;
+}
+
+.bgf2{
+    padding: 20px 0 80px;
+    background-color: #f2f2f2;
+}
+/* 提示 */
+.msg_tips_wrap{
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.msg_tips{
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    border: 1px solid #f7e3a4;
+    background-color: #fcfae3;
+}
+.msg_tips i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-indent: 0;
+    line-height: 24px;
+    background-color: #50b2f6;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.msg_tips a{
+    color: #0084ff;
+}
+.msg_tips a:hover{
+    text-decoration: underline;
+}
+
+/* 招标单位简介 */
+.zhaobiao_info{
+    width: 1178px;
+    margin: 20px auto 0;
+}
+.zb_tabs_list{
+    border-left: 1px solid #ececec;
+}
+.zb_tabs_list .zb_tabs_li{
+    float: left;
+    font-size: 16px;
+    padding: 16px 28px;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    background-color: #f8f8f8;
+}
+.zb_tabs_list li.active{
+    background-color: #fff;
+}
+.zb_tabs_list .zb_tabs_li a{
+    color: #999;
+}
+.zb_tabs_list li.active a{
+    color: #333;
+}
+.zhaobiao_info .zb_tabs_wrap{
+    width: 1058px;
+    padding: 60px 60px 100px;
+    border: 1px solid #ececec;
+    background-color: #fff;
+}
+.padding20{
+    padding: 0 20px;
+}
+.zb_tabs_content .zb_unit_img{
+    display: inline-block;
+    width: 350px;
+    height: 194px;
+    overflow: hidden;
+}
+.unit_info{
+    display: inline-block;
+    width: 600px;
+    margin-left: 50px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.unit_info li{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.unit_info .color999{
+    color: #999;
+}
+
+/* 独家招标 - 供应商 */
+.zhaobiao-pop{
+    padding: 0 30px;
+}
+.zhaobiao-pop p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+}
+.zhaobiao-pop p span{
+    color: #333;
+}
+
+/* 在线投标 */
+.online-bid-box{
+    padding: 0 30px;
+}
+.online-bid-item{
+    margin-bottom: 20px;
+}
+.online-bid-item .bid-item-title{
+    float: left;
+    display: block;
+    width: 70px;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+.online-bid-block .upfile_btn{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+}
+.online-bid-block .upfile_btn:hover{
+    background-color: #00a776;
+}
+#uploadFile {
+    display: none;
+}
+.online-bid-block .upload-tips{
+    font-size: 14px;
+    color: #999;
+}
+.upload-tips i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0084ff;
+    border-radius: 100%;
+    margin-right: 4px;
+    margin-left: 10px;
+}
+.online-bid-block .showFileCon{
+    display: none;
+    width: 424px;
+    padding: 20px 20px 6px 20px;
+    background-color: #F7F7F7;
+    border: 1px solid #eee;
+    margin-left: 66px;
+}
+.showFileCon li{
+    margin-bottom: 10px;
+}
+.showFileCon i{
+    font-size: 20px;
+    color: #999;
+}
+.showFileCon span{
+    display: inline-block;
+    width: 324px;
+    margin-right: 40px;
+    margin-left: 6px;
+}
+.online-bid-box .online-bid-btn{
+    font-size: 16px;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+}
+.online-bid-box .go-encroll{
+    display: inline-block;
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+}
+.online-bid-box .online-bid-btn:hover,.online-bid-box .go-encroll:hover{
+    border-color: #e75d36;
+    background-color: #f3623a;
+}
+.online-bid-block strong,.online-bid-block .dead-time{
+    font-size: 16px;
+    color: #fc6940;
+    font-weight: normal;
+    vertical-align: -13px;
+}
+.online-bid-box p{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}

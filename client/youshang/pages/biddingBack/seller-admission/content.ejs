@@ -1,0 +1,128 @@
+<div class="back_main" id="supplier">
+    <div class="back_main_title">
+        <span class="active">友商申请</span>
+        <span>审批列表</span>
+    </div>
+    <div class="process_box">
+        <div class="process_line"></div>
+        <div class="process_block">
+            <div class="process_item process_bg">
+                <i class="iconfont icon-chazhao"></i>
+            </div>
+            <div class="process_item process_txt">
+                <span>01</span>
+                <strong>查找供应商</strong>
+            </div>
+            <div class="process_item process_bg">
+                <i class="iconfont icon-yaoqiu"></i>
+            </div>
+            <div class="process_item process_txt">
+                <span>02</span>
+                <strong>查看加入要求</strong>
+            </div>
+            <div class="process_item process_bg">
+                <i class="iconfont icon-xin"></i>
+            </div>
+            <div class="process_item process_txt">
+                <span>03</span>
+                <strong>发送申请</strong>
+            </div>
+            <div class="process_item process_bg">
+                <i class="iconfont icon-shenpi"></i>
+            </div>
+            <div class="process_item process_txt">
+                <span>04</span>
+                <strong>资料审批</strong>
+            </div>
+            <div class="process_item process_bg">
+                <i class="iconfont icon-jieguo"></i>
+            </div>
+            <div class="process_item process_txt">
+                <span>05</span>
+                <strong>查看结果</strong>
+            </div>
+            <div class="process_item process_bg">
+                <i class="iconfont icon-jieshu"></i>
+            </div>
+        </div>
+    </div>
+    <div class="admission_search">
+        <input type="text" class="cjy-input-" v-model="key" placeholder="输入关键字，检索采购商">
+        <button class="" @click="goSearch">搜索</button>
+    </div>
+    <div class="admission_content">
+        <div class="findgys_list">
+            <p class="findgys_records">共<span>{{count}}</span>条记录</p>
+            <table class="findgys_table" style="display:none;">
+                <colgroup>
+                    <col width="150">
+                    <col width="60">
+                    <col width="80">
+                    <col width="60">
+                    <col width="60">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>采购商名称</th>
+                        <th>联系人</th>
+                        <th>联系方式</th>
+                        <th colspan="2">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-if="loading">
+                        <td colspan="5">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="item in list">
+                        <td>
+                            <a class="findgys_name ellipsis" href="javascript:;" :title="item.company_name">{{item.company_name}}</a>
+                        </td>
+                        <td>{{item.real_name}}</td>
+                        <td>{{item.user_mobile}}</td>
+                        <td><a href="javascript:;" class="textBlue">查看</a></td>
+                        <td>
+                            <a class="admission_invite" href="javascript:;" v-if="item.status==0" @click="goInvite(item.company_id,item.real_name,item.user_mobile)">发起申请</a>
+                            <span class="admission_fefuse" v-if="item.status==5">审核驳回</span>
+                            <span class="admission_fefuse" v-if="item.status==3">拒绝邀请</span>
+                            <span class="has_invited" v-if="item.status==1">已邀请</span>
+                            <span class="has_invited" v-if="item.status==2">审批中</span>
+                            <span class="has_invited" v-if="item.status==4">审批通过</span>
+                        </td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="5"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 10px;font-size: 24px;color: #999;text-align: center;">暂无供应商加入您的企业库，快去申请吧〜</p></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="pages">
+        <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+    </div>
+</div>
+
+<!-- <div class="inviteDialog">
+    <div class="inviteDlgLeft"></div>
+    <div class="inviteDlgMiddle">
+        <p class="sentTo">确认发送给</p>
+        <p class="sentName">这里是供应商的名称这里是供应商的名称 供应商的名称</p>
+        <p class="includeTo">—— 邀请函将包括 ——</p>
+        <div class="includeWarp">
+            <span class="includeCell">
+                <i class="joinIcon"></i>
+                <a class="javascript:;">供应商加入要求<div class="includeTips"><span class="includeArrow"></span><span class="includeCon"><p>加入要求正文加入要求正文加入要求正文加入要求正文加入要求正文加入要求正文加入要求正文加入要求正文加入要求正文加入要求正文加入要</p><div class="fujianCon"><i class="iconfont icon-fujian"></i><span class="ellipsis">这里是附件名称</span><span class="down">下载</span></div><div class="fujianCon"><i class="iconfont icon-fujian"></i><span class="ellipsis">这里是附件名称</span><span class="down">下载</span></div></span></div></a>
+            </span>
+            <span class="includeCell">
+                <i class="summaryIcon"></i>
+                <a class="javascript:;">采购商单位简介<div class="includeTips"><span class="includeArrow"></span><span class="includeCon"><span class="includeBlock"><label>公司名称：</label><span>名称</span></span><span class="includeBlock"><label>联系方式：</label><span>027-794837278</span></span><span class="includeBlock"><label>公司地址：</label><span>显示地址</span></span><span class="includeBlock"><label>详细地址：</label><span>显示地址显示地址显示地址显示地址显示地址显示地址显示地址显示地址显示地址显示地址显示地址显示地址</span></span></span></div></a>
+            </span>
+        </div>
+        <div class="inviteFooter">
+            <a href="javascript:;" class="invite_cancel">取消</a>
+            <a href="javascript:;" class="invite_confirm">确认发送</a>
+        </div>
+    </div>
+    <div class="inviteDlgRight"></div>
+</div> -->

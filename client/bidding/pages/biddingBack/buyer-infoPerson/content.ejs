@@ -1,0 +1,83 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>个人信息管理</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_info_item clearfix">
+            <label class="back_info_title">姓名：</label>
+            <label>楚生材</label>
+        </div>
+        <div class="back_info_item clearfix">
+            <label class="back_info_title">手机：</label>
+            <label>150****7362 <span class="textBlack3">(用于登录)</span></label>
+        </div>
+        <div class="back_info_item clearfix">
+            <label class="back_info_title"></label>
+            <label><a href="#" class="textOrange">更换手机号</a><a href="#" class="textOrange marginL30">修改密码</a></label>
+        </div>
+    </div>
+    <div class="back_main_title">
+        <span>修改密码</span>
+    </div>
+    <form action="/account/changePwd">
+        <div class="back_main_content">
+            <div class="back_main_item">
+                <label>当前密码：</label>
+                <div class="back_main_block">
+                    <input type="password" name="old_pwd" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>新密码：</label>
+                <div class="back_main_block">
+                    <input type="password" name="user_pwd" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>确认新密码：</label>
+                <div class="back_main_block">
+                    <input type="password" name="renew_pwd" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>验证码：</label>
+                <div class="back_main_block">
+                    <input type="text" name="sms_code" class="cjy-input-" style="width: 178px;">
+                    <a href="javascript:;" class="verifyCode">放验证码</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="back_main_btns clearfix">
+        <a class="btn_confirm floatR js_psd" href="javascript:;">确定</a>
+    </div>
+    <div class="back_main_title">
+        <span>更换手机号</span>
+    </div>
+    <form action="/account/changeMobile">
+        <div class="back_main_content">
+            <div class="back_main_item">
+                <label>登录密码：</label>
+                <div class="back_main_block">
+                    <input type="password" name="user_pwd" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>新手机号：</label>
+                <div class="back_main_block">
+                    <input type="text" name="user_mobile" class="cjy-input-">
+                </div>
+            </div>
+            <div class="back_main_item">
+                <label>短信验证码：</label>
+                <div class="back_main_block">
+                    <input type="text" name="sms_code" class="cjy-input-" style="width: 148px;">
+                    <a href="javascript:;" name="sms_code" class="sendCode">获取验证码</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="back_main_btns clearfix">
+        <a class="btn_confirm floatR is_tel" href="javascript:;">确定</a>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>企业项目库</span>
+        <a href="javascript:;" class="back_title_btn floatR">+ 新建项目</a>
+    </div>
+    <div class="back_main_content" id="project">
+        <div class="back_main_search">
+            <input type="text" name="time" calendar placeholder="请选择日期" class="cjy-calendar-input" readonly>
+            <input type="text" name="keyWord" placeholder="输入关键字，如：湖北国际经济技术合作" class="cjy-input-">
+            <a href="javascript:;" class="btn_confirm">确认</a>
+        </div>
+        <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+        <div class="page_list" v-if="list.length>0">
+            <div class="back_list_con" v-for="item in list">
+                <div class="back_list_item">
+                    <div class="back_item_detail">
+                        <p class="back_item_title"><a target="_blank" :href="'/item/details.html?id='+item.itemId">{{item.itemName}}</a></p>
+                        <div class="back_item_tips"><span>企业项目编号：{{item.BusinessCode}}</span><span>平台项目编号：{{item.AppCode}}</span></div>
+                        <p class="back_item_con">{{item.content}}</p>
+                    </div>
+                    <div class="back_item_bottom">
+                        <span>创建时间：{{item.createTime}}</span>
+                        <span>创建者：{{item.createUser}}</span>
+                        <span>附属的招标项目个数：{{item.tenderNum}}</span>
+                    </div>
+                    <a target="_blank" :href="'/tender/add/normal.html?itemId='+item.itemId" class="back_list_add">
+                        <i class="iconfont icon-jiahao1"></i>
+                        <span>招标</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+        <div id="pages" class="page_container_wrap">
+            <vue-page @get-list="getProject" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+        </div>
+    </div>
+</div>

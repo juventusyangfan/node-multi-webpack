@@ -1,0 +1,86 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">供应商评价</span>
+    </div>
+    <div class="back_main_nav">
+        <ul class="keyUl">
+            <li class="act" data-id="1"><a href="javascript:;">物资/设备采购</a></li>
+            <li data-id="2"><a href="javascript:;">物资/设备租赁</a></li>
+            <li data-id="3"><a href="javascript:;">劳务分包</a></li>
+            <li data-id="4"><a href="javascript:;">专业分包</a></li>
+            <li data-id="5"><a href="javascript:;">其它</a></li>
+        </ul>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <div>
+                <select name="level">
+                    <option value="">供应商等级</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                    <option value="4">D</option>
+                </select>
+                <select name="status">
+                    <option value="">不良记录情况</option>
+                    <option value="1">有不良记录</option>
+                    <option value="2">无不良记录</option>
+                </select>
+                <a href="javascript:;" class="btn_clear">清除</a>
+            </div>
+            <div class="marginT20">
+                <input name="company_name" type="text" placeholder="输入关键字：供应商名称" class="cjy-input-">
+                <a href="javascript:;" class="btn_confirm">搜索</a>
+                <a href="javascript:;" class="btn_clear">清除</a>
+            </div>
+        </div>
+
+        <div class="back_main_list" id="supplier">
+            <div class="back_list_top">
+                <span class="floatR">共<span>{{count}}</span>条记录</span>
+            </div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="250">
+                        <col width="50">
+                        <col width="50">
+                        <col width="50">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>评价等级</th>
+                        <th>供应商名称</th>
+                        <th>已评价</th>
+                        <th>不良记录</th>
+                        <th>操作</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="5">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{item.supplier_level_name}}</td>
+                        <td>{{item.supplier_name}}</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td><a href="javascript:;" class="textBlue">编辑</a></td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="5"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 10px;font-size: 24px;color: #999;text-align: center;">暂无供应商加入您的企业库，快去申请吧〜</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+.room_container{
+    position: relative;
+    width: 100%;
+    height: 787px;
+    margin-top: -50px;
+    padding-top: 300px;
+    background: url(imgs/roomBg.jpg) center;
+    background-color: #E8E1E8;
+}
+.room_layout{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    /* padding: 30px 0; */
+    top: 216px;
+    background: url(imgs/roomBg.png);
+    overflow: hidden;
+    transition: all .3s;
+}
+.room_layout_open{
+    height: 790px;
+    padding: 30px 0;
+}
+.room_layout .room_rulesCon{
+    width: 1366px;
+    margin: 0 auto;
+}
+.room_rulesCon .package_con{
+    position: relative;
+    margin-bottom: 24px;
+}
+.package_con ul{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+.package_con ul li{
+    margin-left: 20px;
+}
+.package_con ul li:first-child{
+    margin-left: 0;
+}
+.package_con .package_cell{
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 30px;
+    background-color: #E8EFDD;
+    color: #9AC45C;
+    text-align: center;
+}
+.package_con li.act .package_cell{
+    background-color: #9AC45C;
+    color: #fff;
+}
+.package_con li.act .package_cell:after{
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: 50%;
+    margin-left: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 4px solid #9AC45C;
+}
+
+.room_rulesCon .setting_table_con{
+    min-height: 452px;
+    background-color: #fff;
+}
+
+.room_rulesCon .setting_table_con .setting_list_title{
+    padding: 30px 0;
+    background-color: #FCFCFC;
+    border: solid 1px #e5e5e5;
+    border-bottom: none;
+    text-align: center;
+}
+.room_rulesCon .setting_list_title p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+.room_rulesCon .setting_list_title .setting_list_type{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 16px;
+    border: solid 1px #F24D20;
+    border-radius: 30px;
+    color: #F24D20;
+    text-align: center;
+}

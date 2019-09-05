@@ -1,0 +1,604 @@
+/*checkbox,radio样式*/
+.cjy-checkbox, .cjy-radio {
+    position: relative;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+    box-sizing: border-box;
+}
+
+.cjy-checkbox span, .cjy-radio span {
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 0 0 2px;
+    font-size: 14px;
+    background: 0 0;
+    color: #333;
+    border-radius: 2px 0 0 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cjy-checkbox i, .cjy-radio i {
+    font-size: 18px;
+}
+
+.cjy-checkbox:hover span, .cjy-checkbox:hover i, .cjy-radio:hover span, .cjy-radio:hover i {
+    color: #0084ff;
+}
+
+.cjy-checked i {
+    color: #0084ff;
+}
+
+.cjy-disabled {
+    cursor: not-allowed !important;
+}
+
+.cjy-disabled span, .cjy-disabled i {
+    color: #ccc !important;
+}
+
+/*select样式*/
+.cjy-select {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cjy-select .cjy-select-input {
+    display: block;
+    width: 260px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cjy-select-title {
+    cursor: pointer;
+}
+
+.cjy-select-title i {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.cjy-select dl {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    min-width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+
+.cjy-selected .cjy-select-input {
+    background-color: #F7F7F7;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-bottom: #F7F7F7;
+}
+
+.cjy-selected dl {
+    display: block;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-top: none;
+}
+
+.cjy-select dl dd {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cjy-select dl dd.cjy-disabled{
+    background-color: #e5e5e5!important;
+}
+
+.cjy-select dl dd:hover, .cjy-select dl dd.sel-this {
+    background-color: #D2EBFF;
+}
+
+/*多级下拉样式nulti*/
+.cjy-multi{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+}
+.cjy-multi-title{
+    cursor: pointer;
+}
+.cjy-multi .cjy-multi-input{
+    display: block;
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+.cjy-selected .cjy-multi-input {
+    background-color: #F7F7F7;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-bottom: #F7F7F7;
+}
+.cjy-multi-title i {
+    position: absolute;
+    top: 12px;
+    right: -20px;
+}
+.cjy-multi-content{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    min-width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.cjy-selected .cjy-multi-content{
+    display: block;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-top: none;
+}
+.cjy-multi-content ul{
+    width: 200px;
+    max-height: 320px;
+    overflow-y: auto;
+    float: left;
+}
+.cjy-multi-content ul::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+/* 城市多选样式 */
+.cjy-multi .cjy-multi-wrap{
+    display: block;
+    width: 140px;
+    height: 38px;
+    line-height: 38px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cjy-selected .cjy-multi-wrap {
+    background-color: #F7F7F7;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-bottom: #F7F7F7;
+}
+.cjy-multi-wrap .cjy-multiCity-cell{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin: 5px 0 5px 10px;
+    padding: 0 10px;
+    border: 1px solid #B5D8F4;
+    border-radius: 2px;
+    background-color: #D2EBFF;
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+.cjy-multi-wrap .cjy-multiCity-cell i{
+    margin-left: 10px;
+    font-size: 10px;
+    color: #9FCCF1;
+    cursor: pointer;
+}
+.cjy-multi-wrap .cjy-multiCity-none{
+    margin-left: 10px;
+    color: #999;
+    font-size: 14px;
+}
+.cjy-multi .cjy-multi-city i.icon-gou{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #E0E4EC;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+.cjy-multi .cjy-multi-city li.act i.icon-gou{
+    background-color: #46C88D;
+}
+/* 设置滚动条的滑轨 */
+.cjy-multi-content ul::-webkit-scrollbar-track {
+    background-color: #F7F7F7;
+}
+/* 滑块 */
+.cjy-multi-content ul::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 5px;
+}
+/* 滑轨两头的监听按钮 */
+.cjy-multi-content ul::-webkit-scrollbar-button {
+    background-color: #888;
+    display: none;
+}
+.cjy-multi-content ul a{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cjy-multi-content ul a:hover{
+    background-color: #D2EBFF;
+}
+.cjy-multi-content li.act a{
+    background-color: #D2EBFF;
+}
+
+
+/*areaSelect组件样式*/
+.cjy-area {
+    position: relative;
+    display: inline-block;
+}
+
+.cjy-area .cjy-area-input {
+    display: inline-block;
+    min-width: 50px;
+    height: 38px;
+    line-height: 38px;
+    padding-right: 22px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.cjy-area-title {
+    cursor: pointer;
+    min-width: 82px;
+    height: 40px;
+    position: relative;
+}
+
+.cjy-area-title i {
+    position: absolute;
+    top: 14px;
+    right: 6px;
+    font-size: 12px;
+}
+
+.cjy-area-con {
+    display: none;
+    position: absolute;
+    width: 548px;
+    top: 40px;
+    left: 0;
+    min-width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+
+.cjy-selected .cjy-area-con {
+    display: block;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-top: none;
+}
+
+.cjy-selected .cjy-area-input {
+    background-color: #F7F7F7;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-bottom: #F7F7F7;
+}
+
+.cjy-area-box {
+    position: relative;
+}
+.cjy-area-box .all-region{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    display: inline-block;
+    padding: 4px;
+    font-size: 14px;
+    color: #666;
+}
+
+.cjy-area-taps {
+    width: 528px;
+    height: 31px;
+    margin-top: 16px;
+    padding: 0 10px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+    overflow: visible;
+}
+
+.cjy-area-taps .area-taps-item {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    background-color: #F5F5F5;
+    font-size: 14px;
+    color: #666;
+}
+
+.cjy-area-taps .area-taps-item-current {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+.cjy-area-content {
+    padding: 0 10px 15px 10px;
+    background-color: #fff;
+}
+
+.cjy-area-content li {
+    width: 132 px;
+    margin-top: 15px;
+    float: left;
+}
+
+.cjy-area-content li a {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.cjy-area-content li a:hover, .cjy-area-con a.area-current,.cjy-area-box .all-region:hover {
+    background-color: #D2EBFF;
+}
+
+/*input组件样式*/
+.cjy-input- {
+    display: inline-block;
+    width: 278px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    vertical-align: middle;
+}
+
+.cjy-input-:focus {
+    border: 1px solid #426bc0 !important;
+    box-shadow: 0 0 5px #426bc0;
+}
+
+.cjy-input-error:focus {
+    border: 1px solid #FD4545 !important;
+    box-shadow: 0 0 5px #FD4545;
+}
+
+.msgCon {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+/*textarea组件样式*/
+.textCon {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.textNumCon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #999;
+}
+
+.textError {
+    border: 1px solid #FD4545 !important;
+    box-shadow: 0 0 5px #FD4545;
+}
+
+.textError .textNum {
+    color: #FD4545;
+}
+
+.cjy-textarea {
+    height: 120px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+/*日历控件样式*/
+.cjy-calendar {
+    position: relative;
+    display: inline-block;
+}
+
+.cjy-calendar .cjy-calendar-input {
+    width: 150px;
+    height: 38px;
+    border: 1px solid #ccc;
+    line-height: 38px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cjy-calendar .cjy-calendar-input:focus {
+    border: 1px solid #426bc0 !important;
+    box-shadow: 0 0 5px #426bc0;
+}
+
+.cjy-calendar i {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 26px;
+}
+
+/*按钮样式*/
+.btn_confirm,.btn_cancel{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+}
+.btn_confirm{
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    color: #fff;
+}
+.btn_cancel{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+}
+
+.btn_confirm:hover {
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+
+/*自做icon*/
+.successBg, .warningBg, .errorBg, .noticeBg, .helpBg {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 4px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.successBg {
+    background-color: #31C37C;
+}
+
+.warningBg {
+    background-color: #FBB700;
+}
+
+.errorBg {
+    background-color: #FD4545;
+}
+
+.noticeBg {
+    background-color: #50B2F6;
+}
+
+.helpBg {
+    background-color: #DDDDDD;
+}
+
+.helpBg:hover {
+    background-color: #7392B5;
+}
+
+.successBg i, .warningBg i, .errorBg i, .noticeBg i, .helpBg i {
+    font-size: 10px;
+    color: #fff;
+}
+
+.msgCon .tagBox {
+    position: absolute;
+    display: none;
+    width: 470px;
+    line-height: normal;
+    top: 36px;
+    left: -16px;
+    font-size: 0;
+    z-index: 100;
+}
+.msgCon:hover .tagBox{
+    display: inline-block;
+}
+.tagBox .tagArrow {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
+    margin-bottom: -5px;
+    border-width: 1px 0 0 1px;
+    border-color: #F7E3A4;
+    border-style: solid;
+    background-color: #FCFAE3;
+}
+
+.tagBox .tagCon {
+    display: inline-block;
+    margin-left: -6px;
+    border: 1px solid #F7E3A4;
+    padding: 10px;
+    background-color: #FCFAE3;
+    font-size: 14px;
+}
+.tagBox .tagCon p{
+    line-height: 2;
+}

@@ -1,0 +1,126 @@
+.back_status_warp{
+    height: 136px;
+    background-color: #F8F8F8;
+}
+.back_status_warp ul{
+    width: 1182px;
+    margin: 0 auto;
+}
+.back_status_warp .back_status_cell{
+    width: 394px;
+    margin-top: 24px;
+    text-align: center;
+    float: left;
+} 
+.back_status_warp  .iconLine{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.back_status_warp .status_done .iconLine{
+    border-bottom: solid 2px #FC9440;
+}
+.back_status_warp .status_none .iconLine{
+    border-bottom: dashed 2px #CCCCCC;
+}
+.back_status_warp .iconCon{
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 22px;
+    margin-left: -11px;
+    top: -10px;
+}
+.back_status_warp .status_done .iconCon{
+    background: url(imgs/statusDone.png) no-repeat;
+}
+.back_status_warp .status_none .iconCon{
+    background: url(imgs/statusNone.png) no-repeat;
+}
+.back_status_warp .statusName{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #aaa;
+}
+.back_status_warp .status_done .statusName{
+    color: #FC9440;
+}
+
+
+.back_info_item{
+    margin-bottom: 20px;
+}
+.back_info_item label{
+    float: left;
+    display: block;
+    max-width: 750px;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+.back_info_item label.back_info_title{
+    width: 240px;
+    text-align: right;
+    color: #999;
+}
+.back_info_item .back_main_block{
+    margin-left: 240px;
+}
+.back_info_item .cjy-radio,.back_info_item .cjy-radio span,.back_info_item .cjy-checkbox,.back_info_item .cjy-checkbox span{
+    height: 40px;
+    line-height: 40px;
+}
+.back_info_item .cjy-radio{
+    margin-right: 30px;
+}
+.back_info_item .back_main_block select{
+    width: 160px;
+}
+.back_info_item .cjy-select{
+    vertical-align: 2px;
+}
+
+.back_info_item .itemBtn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.back_info_item .itemBtn:hover {
+    background-color: #00A776;
+    color: #fff;
+}
+
+/*附件上传*/
+.affixCon{
+    display: none;
+    padding: 0 10px 10px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+}
+.affixCon .affix_item{
+    margin-top: 10px;
+}
+.affix_item span{
+    display: inline-block;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.affix_item i{
+    vertical-align: 2px;
+}
+.affix_item i.icon-huishouxiang{
+    cursor: pointer;
+}
+
+.js_none{
+    display: none;
+}

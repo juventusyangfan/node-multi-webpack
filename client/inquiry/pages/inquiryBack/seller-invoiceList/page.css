@@ -1,0 +1,155 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_tips{
+    padding: 5px 30px;
+    background-color: #fcfae3;
+    border: 1px solid #f7e3a4;
+}
+.back_main_tips p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.back_main_search .cjy-checkbox{
+    margin-left: 30px;
+    vertical-align: -4px;
+}
+.back_main_nav{
+    padding: 20px 30px 0 30px;
+}
+.back_main_list{
+    padding: 20px 30px;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody{
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody:hover{
+    border-top: solid 1px #ccc;
+}
+.material_list tr{
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:first-child{
+    background-color: #FDFDFD;    
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    border-left: solid 1px #eee;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+.material_list th{
+    height: 50px;
+}
+.material_list td{
+    padding: 20px;
+    color: #999;
+    vertical-align: top;
+}
+.material_list th:first-child,.material_list td:first-child{
+    border-left: none;
+}
+.material_list th{
+    background-color: #FAFAFA;
+}
+tbody::after {
+    content: "-";
+    display: block;
+    line-height: 20px;
+    color: transparent;
+}
+
+.material_list .invoice_footer{
+    height: 40px;
+    line-height: 40px;
+}
+.material_list .invoiceApplay,.material_list .invoiceApplayDisabled{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 30px;
+    border-radius: 4px;
+    text-align: center;
+    float: right;
+}
+.material_list .invoiceApplay{
+    background: #fc6940;
+    color: #fff;
+}
+.material_list .invoiceApplayDisabled{
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+
+/* 新增收货地址 */
+.invoice-box .invoice-item{
+    margin-bottom: 20px;
+}
+.invoice-item .invoice-label{
+    float: left;
+    display: block;
+    width: 114px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.invoice-label span{
+    color: #ca3c3c;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+.invoice-input .cjy-input-{
+    width: 344px;
+}
+.invoice-input select{
+    width: 158px;
+}
+.invoice-input .cjy-select{
+    margin-right: 10px;
+}
+.invoice-item .cjy-radio{
+    margin-left: 100px;
+}
+/* 新增发票 */
+.invoice-item .invoice-label{
+    width: 146px;
+}
+.invoice-input #receipts-name{
+    width: 78px;
+}
+.invoice-input #receipts-phone{
+    width: 234px;
+    margin-left: 10px;
+}

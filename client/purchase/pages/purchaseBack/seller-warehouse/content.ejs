@@ -1,0 +1,56 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>仓库管理</span>
+        <a href="javascript:;" class="back_title_btn floatR" id="warehouse_add">新增仓库</a>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_list" id="warehouse">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="100">
+                        <col width="200">
+                        <col width="100">
+                        <col width="200">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>仓库名称</th>
+                        <th>仓库地址</th>
+                        <th>关联商品数<span class="textBlack3">（条）</span></th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr v-if="loading">
+                            <td colspan="4">
+                                <div class="page_loading"></div>
+                            </td>
+                        </tr>
+                        <template v-if="list.length>0">
+                            <tr v-for="item in list" :id="item.id">
+                                <td>{{item.name}}</td>
+                                <td>{{item.province+item.city+item.area+item.address}}</td>
+                                <td>100</td>
+                                <td><span class="tips_default" v-if="item.is_default==1">默认仓库</span><template v-else><a href="javascript:;" class="textOrange" v-if="item.is_default==0" @click="defaultWarehouse(item.id)">设置为默认仓库</a> - </template><a href="javascript:;" @click="editWarehouse(item.id)">编辑</a> - <a href="javascript:;" @click="delWarehouse(item.id)">删除</a></td>
+                            </tr>
+                        </template>
+                        <tr v-else><td colspan="4"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getWarehouse" :count="count" :cPage="current" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function loadScript() {
+        var script = document.createElement("script");
+        script.src = "https://api.map.baidu.com/api?v=2.0&ak=niKOWVf1YxTrwpcHsbQfsG20&callback=initialize";//此为v2.0版本的引用方式
+        document.body.appendChild(script);
+    }
+    loadScript();
+</script>

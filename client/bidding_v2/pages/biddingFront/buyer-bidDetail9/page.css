@@ -1,0 +1,54 @@
+.other_top_con{
+    height: 116px;
+}
+
+.bid_form_block{
+    line-height: 46px;
+}
+.bid_form_block label{
+    display: inline-block;
+    width: 582px;
+    color: #333;
+    float: left;
+    text-align: right;
+}
+.bid_form_block .bid_form_cell{
+    color: #666;
+}
+.bid_form_block .bid_form_notice{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 6px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    padding: 0 16px;
+    color: #DC2F00;
+    text-align: center;
+}
+.bid_form_block .bid_form_btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    background-color: #FF3600;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+.bid_form_block .bid_form_btn:hover{
+    background-color: #ec3200;
+}
+.bid_form_block i.icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-left: 6px;
+    background-color: #7392B5;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}

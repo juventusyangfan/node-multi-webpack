@@ -1,0 +1,60 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>邀请供应商</span>
+        <span>审批列表</span>
+        <span class="active">加入要求</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_thin_content">
+            <div class="back_main_notice clearfix">
+                <div class="clearfix">
+                    <span class="noticeBg floatL"><i class="iconfont icon-i"></i></span>
+                    <p class="floatL">加入要求，将作为邀请函的一部分发送给供应商</p>
+                </div>
+            </div>
+            <form>
+                <div class="back_info_item clearfix">
+                    <label class="back_info_title">邀请函名称：</label>
+                    <div class="back_main_block">
+                        <input type="text" class="cjy-input-" name="title" placeholder="2-20个字，如：劳务分包邀请函">
+                    </div>
+                </div>
+                <div class="back_info_item clearfix">
+                    <label class="back_info_title">适用类别：</label>
+                    <div class="back_main_block">
+                        <select>
+                            <option value="">选择适用类别</option>
+                            <option value="1">物资/设备采购</option>
+                            <option value="2">物资.设备租赁</option>
+                            <option value="3">劳务分包</option>
+                            <option value="4">专业分包</option>
+                            <option value="5">其他</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="back_info_item clearfix">
+                    <label class="back_info_title">加入要求：</label>
+                    <div class="back_main_block">
+                        <textarea class="cjy-textarea" name="requirement" maxlen="500" rows="5" style="width: 600px;height: 280px;"></textarea>
+                    </div>
+                </div>
+                <div class="back_info_item clearfix">
+                    <label class="back_info_title">附件：</label>
+                    <div class="back_main_block">
+                        <span class="js_upload"></span>
+                        <!-- <a href="javascript:;" class="itemBtn js_upload" style="position: relative;">上传
+                            <input type="file" id="uploadFile" name="uploadFile" style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;">
+                        </a> -->
+                        <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>最多上传8个附件。支持doc;docx;pdf;xls;xlsx;jpg;png;txt;等格式文件</span>
+                        <div id="process-files"></div>
+                        <div class="affixCon"></div>
+                    </div>
+                </div>
+            </form>
+            <div class="back_main_btns clearfix">
+                <a class="btn_confirm floatR marginL10" href="javascript:;">确认</a>
+                <a class="btn_cancel floatR" href="javascript:;">返回</a>
+            </div>
+        </div>
+    </div>
+</div>

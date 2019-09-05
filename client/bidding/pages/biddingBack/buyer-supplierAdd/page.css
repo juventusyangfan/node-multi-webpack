@@ -1,0 +1,155 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_search{
+    border-bottom: 1px solid #eee;
+}
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+.page_list{
+    margin-bottom: 30px;
+}
+.back_list_con .back_add_item{
+    position: relative;
+    padding: 20px 20px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+.back_list_con .back_add_cell{
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    float: left;
+}
+.back_add_item .back_item_add,.back_add_item .back_item_done,.back_add_item .back_item_upload,.back_add_item .back_item_review{
+    position: absolute;
+    display: none;
+    width: 64px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: leftbit;
+    animation-name: leftbit;
+}
+.back_add_item .back_item_add{
+    background-color: #fc6940;
+}
+.back_add_item .back_item_done{
+    background-color: #00B27E;
+    cursor: not-allowed;
+}
+.back_add_item .back_item_upload{
+    background-color: #0084FF;
+}
+.back_add_item .back_item_review{
+    background-color: #BFBFBF;
+    cursor: not-allowed;
+}
+.hover_add:hover .back_item_add{
+    display: inline-block;
+}
+.hover_done .back_item_done{
+    display: inline-block;
+}
+.hover_upload:hover .back_item_upload{
+    display: inline-block;
+}
+.hover_review:hover .back_item_review{
+    display: inline-block;
+}
+.back_item_add:hover{
+    background-color: #f3623a;
+    color: #fff;
+}
+.back_item_upload:hover{
+    background-color: #005BAC;
+    color: #fff;
+}
+
+.back_item_add i,.back_item_done i,.back_item_upload i,.back_item_review i{
+    position: absolute;
+    display: block;
+    margin-top: -20px;
+    top: 50%;
+    left: 22px;
+    font-size: 20px;
+}
+.back_item_add span,.back_item_done span,.back_item_upload span,.back_item_review span{
+    position: absolute;
+    display: block;
+    margin-top: 6px;
+    top: 50%;
+    left: 18px;
+    font-size: 14px;
+}
+
+/*弹窗样式*/
+.cjy-layer-center .msgCon{
+    padding: 10px;
+    border: 1px solid #f7e3a4;
+    background-color: #fcfae3;
+}
+.apply_form{
+    margin-top: 20px;
+}
+.apply_form .back_main_item .itemBtn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+apply_form .back_main_item .itemBtn:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.back_main_block .showFileCon{
+    display: none;
+    width: 360px;
+    padding: 20px 20px 6px 20px;
+    background-color: #F7F7F7;
+    border: 1px solid #eee;
+}
+.showFileCon li{
+    margin-bottom: 10px;
+}
+.showFileCon i{
+    font-size: 20px;
+    color: #999;
+}
+.showFileCon span{
+    display: inline-block;
+    width: 240px;
+    margin-right: 40px;
+}
+.showFileCon a{
+    display: inline-block;
+    vertical-align: 2px;
+}

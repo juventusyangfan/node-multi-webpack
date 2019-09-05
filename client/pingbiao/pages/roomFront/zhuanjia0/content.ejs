@@ -1,0 +1,138 @@
+<div class="room_container">
+    <div class="room_bg"></div>
+    <input type="hidden" name="tender_id" value="137086">
+    <div class="room_box_bid">
+        <div class="bidLine_container">
+            <ul>
+                <li class="line_none" style="margin-left: -30px;"><span class="line_inner"></span></li>
+                <li class="line_done"><span class="line_inner"><i class="iconfont icon-xinfeng"></i></span></li>
+                <li class="line_done"><span class="line_inner"><i class="iconfont icon-maikefeng"></i></span></li>
+                <li class="line_act"><span class="line_inner"><i class="iconfont icon-ren1"></i></span></li>
+                <li class="line_done"><span class="line_inner"><i class="iconfont icon-fenxi"></i></span></li>
+                <li class="line_none"><span class="line_inner"></span></li>
+                <li class="line_none"><span class="line_inner"></span></li>
+            </ul>
+        </div>
+        <div class="room_box_title">
+            <p>投标中<span class="fontSize16 textCoffee">（评标进度：3/10）</span></p><a href="javascript:;" class="box_title_going">提交</a>
+        </div>
+        <div class="room_box_content" id="roomBox">
+            <div class="box_info_time">
+                <span>0</span><span class="marginR10">0</span>:<span class="marginL10">3</span><span class="marginR10">8</span>:<span
+                    class="marginL10">1</span><span>9</span>
+            </div>
+            <div class="package_con">
+                <ul>
+                    <li v-for="item in tender_package_info" :class="{'act':tender_package_id==item.tender_package_id}">
+                        <a href="javascript:;" class="package_cell" @click="changePackge(item.tender_package_id)">{{item.tender_package_title}}</a>
+                    </li>
+                </ul>
+                <span class="rate_type">
+                    <a href="javascript:;" :class="['rate_cell', score_type==1?'active':'']" @click="changeType(1)"><i class="iconfont icon-zongxiang"></i>纵向打分</a>
+                    <a href="javascript:;" :class="['rate_cell', score_type==2?'active':'']" @click="changeType(2)"><i class="iconfont icon-hengxiang"></i>横向打分</a>
+                </span>
+            </div>
+            <form>
+            <template v-if="score_type==1">
+            <div class="company_chose_con">
+                <div class="company_select">
+                    <span :class="['company_select_txt',supplier_ids.indexOf(supplier_info.supplier_id)>-1?'selected':'']"><i class="iconfont icon-gou"></i><span class="fontSize16 textBlack1 fontBold">{{supplier_info.supplier_name}}</span><i
+                            class="iconfont icon-xiajiantou"></i></span>
+                    <dl class="company_chose_list">
+                        <dd v-for="(val,key,index) in supplier_all" :class="[supplier_ids.indexOf(key)>-1?'selected':'']" @click="changeCompany(key)"><i class="iconfont icon-gou"></i>{{val}}</dd>
+                    </dl>
+                </div>
+                <a href="javascript:;" class="company_pre" @click="changeCompany(prev_supplier_id)">< 上一家单位</a> 
+                <a href="javascript:;" class="company_next" @click="changeCompany(next_supplier_id)">下一家单位 ></a>
+            </div>
+            <div class="material_list clearfix">
+                <table>
+                    <colgroup>
+                        <col width="150">
+                        <col width="80">
+                        <col width="80">
+                        <col width="50">
+                        <col width="50">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>供应商名称</th>
+                            <th>报价金额（元）</th>
+                            <th>投标/报价时间</th>
+                            <th>投标/报价文件</th>
+                            <th>投标详情</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr>
+                            <td>{{supplier_info.supplier_name}}</td>
+                            <td>{{supplier_info.offer}}</td>
+                            <td>{{supplier_info.bid_time}}</td>
+                            <td>{{supplier_info.bid_file_path_num}}  份</td>
+                            <td><a href="javascript:;" class="tdPurple" @click="showFile()">查看</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="hidden" name="tender_id" :value="tender_id">
+                <input type="hidden" name="tender_package_id" :value="tender_package_id">
+                <input type="hidden" name="template_id" :value="template_id">
+                <input type="hidden" :name="'score_info['+tender_package_id+']['+bid_company_id+'][score_total]'" class="input_total" :value="score_total">
+                <table class="marginT20">
+                    <colgroup>
+                        <col width="300">
+                        <col width="300">
+                        <col width="240">
+                        <col width="240">
+                        <col width="240">
+                        <col width="240">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>评分因素</th>
+                            <th>评分指标<span class="msgCon"><span class="helpBg"><i class="iconfont icon-wenhao"></i></span><div class="tagBox"><span class="tagArrow"></span><div class="tagCon"><p>综合评分由报价文件评审、投入资金及垫付能力评审、生产规模及业绩信誉评审、报价评审等构成。</p></div></div></span></th>
+                            <th>权重参考（%,100分）</th>
+                            <th>得分</th>
+                            <th>评审要点及计分标准</th>
+                            <th>总分</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr v-for="(cell) in template_detail">
+                            <td v-if="cell.idx==0" :rowspan="cell.len">{{cell.name}}</td>
+                            <td>{{cell.content[0]}}</td>
+                            <td>{{cell.content[1]}}</td>
+                            <td><input type="text" class="cjy-input- input_qz" :name="'score_info['+tender_package_id+']['+bid_company_id+'][score_detail][]'" placeholder="请输入分数" autocomplete="off"></td>
+                            <td><a href="javascript:;" class="tdPurple msgCon">查看<div class="tagBox"><span class="tagArrow"></span><div class="tagCon"><p>{{cell.content[2]}}</p></div></div></a></td>
+                            <td v-if="cell.index==0" :rowspan="score_len">{{score_total}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </template>
+            <div class="material_list th_low clearfix" v-if="score_type==2">
+                <input type="hidden" name="tender_id" :value="tender_id">
+                <input type="hidden" name="tender_package_id" :value="tender_package_id">
+                <input type="hidden" name="template_id" :value="template_id">
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">供应商名称</th>
+                            <th v-for="item in template_detail" :colspan="item.content.length">{{item.name}}（{{item.total}}%）</th>
+                        </tr>
+                        <tr>
+                            <th v-for="cell in template_content"> {{cell[0]}}（{{cell[1]}}）</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr v-for="(item,key,index) in score_info">
+                            <input type="hidden" :name="'score_info['+tender_package_id+']['+item.bid_company_id+'][score_total]'" class="input_total" :value="item.total_scores">
+                            <td class="tdGreen">{{item.bid_company_name}}</td>
+                            <td v-for="cell in item.scores"><input type="text" class="cjy-input- input_qz" :name="'score_info['+tender_package_id+']['+item.bid_company_id+'][score_detail][]'" autocomplete="off" :value="cell" placeholder="请输入分数"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

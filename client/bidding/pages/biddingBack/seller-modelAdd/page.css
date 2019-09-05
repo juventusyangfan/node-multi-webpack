@@ -1,0 +1,133 @@
+.back_main{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+/* 属性表格 */
+.attr_table table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+.attr_table th{
+    font-size: 14px;
+    color: #333;
+    height: 80px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ececec;
+}
+.attr_table th span.left24{
+    margin-left: 24%;
+}
+.attr_table th span.left32{
+    margin-left: 32%;
+}
+.attr_table .color999{
+    color: #999;
+}
+.attr_table .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #7392b5;
+    border-radius: 100%;
+    margin-left: 6px;
+    vertical-align: 1px;
+}
+.attr_table td{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+}
+.attr_table input{
+    width: 70%;
+}
+.attr_table .del_tr{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+.attr_table tr:hover{
+    background-color: #fdfdfd;
+}
+.attr_table .multi_td{
+    position: relative;
+    border-bottom: none;
+}
+.multi_tr .multi_td{
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+.multi_td .multi_box{
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+    z-index: 1;
+}
+.multi_box .multi_inner{
+    position: relative;
+}
+.multi_inner .multi_left,.multi_inner .multi_right,.multi_inner .multi_center{
+    float: left;
+    margin: 20px 0;
+}
+.multi_inner .multi_left{
+    width: 25%;
+    text-align: center;
+}
+.multi_inner textarea{
+    width: 70%;
+    min-height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.multi_box .multi_right{
+    width: 20%;
+    text-align: center;
+}
+.multi_box .multi_center{
+    width: 50%;
+    text-align: center;
+}
+.multi_td .multi_oprate{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #00b27e;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+.multi_oprate i{
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    background-color: #00b27e;
+    cursor: pointer;
+    z-index: 2;
+}
+.multi_oprate .add_multi{
+    top: -1px;
+    left: 100%;
+}
+.multi_oprate .del_multi{
+    top: 40px;
+    left: 100%;
+}
+.multi_box:hover .multi_oprate{
+    visibility: visible;
+    opacity: 1;
+}

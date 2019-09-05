@@ -1,0 +1,407 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #FF3600;
+    border: 1px solid #FF3600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #ec3200;
+    border: 1px solid #ec3200;
+    color: #fff;
+}
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+
+.back_main_nav{
+    padding: 20px 30px 0 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #FF3600;
+}
+.back_main_nav ul{
+    float: left;
+}
+.back_main_nav ul li{
+    float: left;
+}
+.back_main_nav li .back_nav_cell,.back_main_nav li .back_nav_more{
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 16px;
+    padding: 0 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    float: left;
+}
+.back_main_nav li .back_nav_cell{
+    background-color: #FFF5F3;
+    color: #D86849;
+}
+.back_main_nav li .back_nav_more{
+    background-color: #F7F7F7;
+    color: #999;
+    font-weight: 700;
+}
+.back_main_nav li .back_nav_more i{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.back_main_nav li .back_nav_num{
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 6px;
+    top: -8px;
+    right: -8px;
+    border-radius: 18px;
+    background-color: #DC2F00;
+    font-size: 12px;
+    color: #fff;
+}
+.back_main_nav li.active .back_nav_cell,.back_main_nav li.active .back_nav_more{
+    background-color: #FF3600;
+    color: #fff;
+}
+.back_main_nav li .moreList{
+    position: absolute;
+    display: none;
+    width: 160px;
+    padding: 10px 0;
+    left: 0;
+    top: 38px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    z-index: 1;
+}
+.back_main_nav li.showMore_li{
+    position: relative;
+}
+.back_main_nav li.show .moreList{
+    display: inline-block;;
+}
+.back_main_nav li .moreCell{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 14px;
+}  
+.back_main_nav li .moreCell .back_nav_num{
+    position: relative;
+    top: 7px;
+    vertical-align: 6px;
+}
+.back_main_nav li.showMore_li .icon-xiajiantou{
+    display: inline-block;
+    transition: transform .3s;
+}
+.back_main_nav li.showMore_li:hover .icon-xiajiantou {
+    transform: rotate(180deg);
+}
+
+.material_list{
+    padding: 0 30px;
+}
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list th,.material_list td{
+    padding-left: 30px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list td {
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    height: 60px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.material_list tr.table_tips td{
+    height: 50px;
+    line-height: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #F8F8F8;
+    color: #999;
+}
+.material_list tr.table_tips td i{
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 16px;
+}
+.material_list tr.table_tips .table_companyName{
+    display: inline-block;
+    width: 220px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    vertical-align: -20px;
+}
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5,.material_list .status6,.material_list .status7{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 2px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+.material_list .status6{
+    background-color: #FBB700;
+}
+.material_list .status7{
+    background-color: #FD4545;
+}
+.material_list a.table_bidName{
+    display: block;
+    max-height: 42px;
+    margin-bottom: 4px;
+    color: #333;
+    overflow: hidden;
+}
+.material_list a.table_bidName:hover{
+    color: #FF3600;
+}
+.material_list .table_bidTips{
+    margin-right: 20px;
+}
+.material_list .table_bidTips i{
+    margin-right: 4px;
+    font-size: 18px;
+    vertical-align: -2px;
+}
+.material_list .table_moneyCell{
+    display: inline-block;
+    width: 180px;
+    line-height: 24px;
+    vertical-align: -7px;
+}
+.material_list i.icon-i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    background-color: #50B2F6;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.material_list .table_btnDone,.material_list .table_btnNone,.material_list .table_btnDoing{
+    display: inline-block;
+    min-width: 80px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    text-align: center;
+}
+.material_list .table_btnDone{
+    background-color: #FF3600;
+    border-color: #FF3600;
+    color: #fff;
+}
+.material_list .table_btnDone:hover{
+    background-color: #ec3200;
+    border-color: #ec3200;
+    color: #fff;
+}
+.material_list .table_btnNone{
+    border-color: #ccc;
+}
+.material_list .table_btnNone:hover{
+    border-color: #FF3600;
+    color: #FF3600;
+}
+.material_list .table_btnDoing{
+    border-color: #FF3600;
+    color: #FF3600;
+}
+.material_list .table_timeTips{
+    display: block;
+    width: 60px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #F5AF9D;
+    border-radius: 22px;
+    font-size: 12px;
+    color: #DC2F00;
+    text-align: center;
+}
+.material_list .table_prompt{
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 6px;
+    background-color: #7392b5;
+    border-radius: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 2px;
+}
+
+.tagBox {
+    position: absolute;
+    display: inline-block;
+    width: 306px;
+    line-height: normal;
+    top: -180px;
+    left: -144px;
+    font-size: 0;
+    z-index: 50;
+}
+.tagBox .tagArrow {
+    display: inline-block;
+    transform: rotate(225deg);
+    width: 10px;
+    height: 10px;
+    margin-left: 147px;
+    margin-bottom: -175px;
+    border-width: 1px 0 0 1px;
+    border-color: #F7E3A4;
+    border-style: solid;
+    background-color: #FCFAE3;
+}
+
+.tagBox .tagCon {
+    display: inline-block;
+    border: 1px solid #F7E3A4;
+    padding: 15px;
+    background-color: #FCFAE3;
+    font-size: 12px;
+}
+.tagBox .tagCon p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+}
+.tagBox .tagCon i.icon-gantanhao{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 4px;
+    background-color: #FBB700;
+    border-radius: 9px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+.tagBox .tagCon i.icon-cha1{
+    font-size: 12px;
+    color: #999;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* 上传弹框 */
+.upload_wrap{
+    padding: 0 20px;
+}
+.upload_wrap .default_img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: solid 1px #eee;
+}
+.upload_wrap .default_img img{
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+.upload_wrap .upload_notice_con{
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto;
+}
+.upload_wrap .upload_notice_con .icon-i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    border-radius: 16px;
+    background-color: #50B2F6;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+.upload_wrap .upload_list{
+    width: 600px;
+    margin: 20px 0 20px 140px;
+}
+.upload_wrap .upload_list .upload_block{
+    height: 24px;
+    line-height: 24px;
+}
+.upload_wrap .upload_list i.icon-fujian{
+    margin-right: 4px;
+}
+.upload_wrap .upload_list span{
+    display: inline-block;
+    max-width: 540px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    vertical-align: -6px;
+}
+.upload_wrap label{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    float: left;
+}

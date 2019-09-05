@@ -1,0 +1,125 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_nav{
+    padding: 20px 30px 0 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #FC6940;
+}
+.back_main_nav ul{
+    width: 600px;
+    float: left;
+}
+.back_main_nav li .back_nav_cell{
+    position: relative;
+    display: inline-block;
+    width: 96px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #FFFBFA;
+    color: #fc6940;
+    text-align: center;
+    float: left;
+}
+.back_main_nav li .back_nav_num{
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 6px;
+    border-radius: 18px;
+    background-color: #DF1C1C;
+    font-size: 12px;
+    color: #fff;
+}
+.back_main_nav li .back_nav_cell:hover{
+    background-color: #fcf1ee;
+}
+.back_main_nav li.active .back_nav_cell{
+    background-color: #fc6940;
+    color: #fff;
+}
+.back_main_list{
+    padding: 20px 30px;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody{
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody:hover{
+    border-top: solid 1px #ccc;
+}
+.material_list tr{
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody:hover tr{
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+}
+.material_list tbody:hover tr:last-child{
+    border-bottom: solid 1px #ccc;
+    box-shadow: 0 5px 10px -5px #ccc;
+}
+.material_list tbody tr:first-child{
+    background-color: #FDFDFD;    
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    border-left: solid 1px #eee;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+.material_list th{
+    height: 50px;
+}
+.material_list td{
+    padding: 20px;
+    color: #999;
+    vertical-align: top;
+}
+.material_list th:first-child,.material_list td:first-child{
+    border-left: none;
+}
+.material_list th{
+    background-color: #FAFAFA;
+}
+tbody::after {
+    content: "-";
+    display: block;
+    line-height: 20px;
+    color: transparent;
+}
+
+
+.alignL{
+    text-align: left!important;
+}

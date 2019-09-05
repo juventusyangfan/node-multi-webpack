@@ -1,0 +1,107 @@
+<div class="module_item_wrap">
+    <div class="module_item">
+        <h1>多选框checkbox</h1>
+        <input type="checkbox" title="可用-已选" checked>
+    </div>
+    <div class="module_item">
+        <h1>单选框radio</h1>
+        <input type="radio" name="radio" title="可用-已选" checked>
+        <input type="radio" name="radio" title="可用-已选">
+        <input type="radio" name="radio" title="可用-已选">
+        <input type="radio" name="radio1" title="可用-已选" disabled>
+        <input type="radio" name="radio1" title="可用-已选" checked>
+        <input type="radio" name="radio1" title="可用-已选">
+    </div>
+    <div class="module_item">
+        <h1>下拉框select</h1>
+        <select cjy-search>
+            <option value="">请选择</option>
+            <option value="1">请选择1</option>
+            <option value="2">请选择2</option>
+            <option value="3">请选择3</option>
+            <option value="1">请选择1</option>
+            <option value="2">请选择2</option>
+            <option value="3">请选择3</option>
+            <option value="1">请选择1</option>
+            <option value="2">请选择2</option>
+            <option value="3">请选择3</option>
+            <option value="1">请选择1</option>
+            <option value="2">请选择2</option>
+            <option value="3">请选择3</option>
+        </select>
+    </div>
+    <div class="module_item">
+        <h1>多级下拉框multi</h1>
+        <div cjy-multi></div>
+    </div>
+    <div class="module_item">
+        <h1>输入框input</h1>
+        <input type="text" name="successDemo" class="cjy-input-">
+        <input type="text" name="warningDemo" class="cjy-input-">
+        <input type="text" name="errorDemo" class="cjy-input-">cjy-autoInput
+    </div>
+    <div class="module_item">
+        <h1>文本框input</h1>
+        <textarea class="cjy-textarea" maxlen="50" rows="3" style="width: 600px;"></textarea>
+    </div>
+    <div class="module_item">
+        <h1>自动完成input</h1>
+        <input type="text" class="cjy-input-" cjy-autoInput>
+    </div>
+    <div class="module_item">
+        <h1>地区选择控件</h1>
+        <div cjy-area province="1" city="11" area="111"></div>
+    </div>
+    <div class="module_item">
+        <h1>商家入驻</h1>
+        <a class="apply_entry" href="javascript:;">申请入驻</a>
+    </div>
+    <div class="module_item">
+        <h1>修改分类</h1>
+        <a class="edit_type" href="javascript:;">修改分类</a>
+    </div>
+    <div class="module_item">
+        <h1>新增仓库</h1>
+        <a class="add_warehouse" href="javascript:;">新增仓库</a>
+    </div>
+    <div class="module_item">
+        <h1>提示</h1>
+        <a class="tips_btn" href="javascript:;">提示</a>
+    </div>
+    <div class="module_item">
+        <h1>修改运费</h1>
+        <a class="edit_fare" href="javascript:;">修改运费</a>
+    </div>
+    <div class="module_item">
+        <h1>上传付款凭证</h1>
+        <a class="upload_payment" href="javascript:;">上传付款凭证</a>
+    </div>
+    <div class="module_item">
+        <h1>新增收货地址</h1>
+        <a class="new_addr" href="javascript:;">新增收货地址</a>
+    </div>
+    <div class="module_item">
+        <h1>新增增值税普通发票</h1>
+        <a class="new_invoice" href="javascript:;">新增增值税普通发票</a>
+    </div>
+    <div class="module_item">
+        <h1>图片轮播、公司实力</h1>
+        <a class="upload_banner" href="javascript:;">图片轮播</a>
+    </div>
+    <div class="module_item">
+        <h1>主营产品</h1>
+        <a class="main_product" href="javascript:;">主营产品</a>
+    </div>
+    <div class="module_item">
+        <h1>商家入驻</h1>
+        <a class="quote_service" href="javascript:;">报价服务</a>
+    </div>
+</div>
+<script type="text/javascript">
+function loadScript() {
+    var script = document.createElement("script");
+    script.src = "https://api.map.baidu.com/api?v=2.0&ak=niKOWVf1YxTrwpcHsbQfsG20&callback=initialize";//此为v2.0版本的引用方式
+    document.body.appendChild(script);
+}
+loadScript();
+</script>

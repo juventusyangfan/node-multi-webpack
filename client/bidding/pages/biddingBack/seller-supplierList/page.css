@@ -1,0 +1,84 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    padding: 0 16px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+.back_main_list{
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+
+
+/*弹窗样式*/
+.cjy-layer-center .msgCon{
+    padding: 10px;
+    border: 1px solid #f7e3a4;
+    background-color: #fcfae3;
+}
+.apply_form{
+    margin-top: 20px;
+}
+.apply_form .back_main_item .itemBtn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+apply_form .back_main_item .itemBtn:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.back_main_block .msgCon{
+    display: inline-block;
+    width: 300px;
+    line-height: 28px;
+    vertical-align: -28px;
+}
+.back_main_block .showFileCon{
+    display: none;
+    width: 360px;
+    padding: 20px 20px 6px 20px;
+    background-color: #F7F7F7;
+    border: 1px solid #eee;
+}
+.showFileCon li{
+    margin-bottom: 10px;
+}
+.showFileCon i{
+    font-size: 20px;
+    color: #999;
+}
+.showFileCon a{
+    display: inline-block;
+    vertical-align: 2px;
+}
+.showFileCon a.showPic{
+    width: 240px;
+    margin-right: 40px;
+    vertical-align: 0;
+}

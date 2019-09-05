@@ -1,0 +1,27 @@
+<div class="material_list">
+    <table>
+        <colgroup>
+            <% for(var x = 0;x < tableList.widths.length;x++){ %>
+            <col width="<%= tableList.widths[x] %>">
+            <% } %>
+        </colgroup>
+        <thead>
+        <tr>
+            <% for(var y = 0;y < tableList.titles.length;y++){ %>
+            <th><%= tableList.titles[y] %></th>
+            <% } %>
+        </tr>
+        </thead>
+        <tbody>
+        <% for(var z = 0;z < tableList.contents.length;z++){ %>
+        <tr>
+            <% for(var i = 0;i < tableList.contents[z].length;i++){ %>
+            <td><%= tableList.contents[z][i] %></td>
+            <% } %>
+        </tr>
+        <% } %>
+        </tbody>
+    </table>
+    <div class="clear"></div>
+</div>
+

@@ -1,0 +1,105 @@
+.back_main_crumbs{
+    height: 66px;
+    line-height: 66px;
+    padding: 0 30px;
+    background-color: #FAFAFA;
+    color: #999;
+}
+.back_main_content .project_title{
+    width: 1090px;
+    line-height: 1.5;
+    margin: 20px auto 0 auto;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+.back_main_content .project_status{
+    margin-top: 15px;
+    text-align: center;
+}
+.back_main_content .project_status span {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    margin-right: 8px;
+    padding: 0 16px;
+    color: #DC2F00;
+    text-align: center;
+}
+.project_detail_title{
+    width: 1140px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.project_detail_title .detail_title_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: -1px;
+    margin-right: 6px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+.project_detail_title a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 10px;
+    padding: 0 15px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    font-weight: 400;
+    color: #FF3600;
+    text-align: center;
+    float: right;
+}
+.project_info_warp,.project_content_warp{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+.project_info_warp .project_info_block{
+    margin-top: 24px;
+}
+.project_info_warp .project_info_block label{
+    color: #666;
+}
+.project_info_warp .project_info_block .project_person{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 10px;
+    padding: 0 15px;
+    background-color: #FFF5F3;
+    border-radius: 26px;
+    color: #D86849;
+    text-align: center;
+}
+.project_info_cell{
+    width: 470px;
+    float: left;
+}
+.project_content_warp{
+    padding: 30px 120px;
+    line-height: 2;
+    color: #333;
+}
+.project_content_warp .project_content_imgs{
+    margin-top: 30px;
+}
+.project_content_warp .project_content_imgs img{
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    margin: 0 20px 20px 0;
+    object-fit: scale-down;
+    background-color: #fcfcfc;
+}

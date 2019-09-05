@@ -1,0 +1,235 @@
+.topCon{
+    width: 100%;
+    background-size: cover;
+}
+.export_top_menu,.export_footer{
+    width: 1180px;
+    height: 130px;
+    margin: 0 auto;
+}
+.export_top_menu .export_logo{
+    display: block;
+    width: 363px;
+    height: 66px;
+    margin-top: 54px;
+    background: url(imgs/exportLogo.png) no-repeat;
+    float: left;
+}
+.export_footer .export_btn,.export_top_menu .export_btn{
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 60px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fc6940;
+    float: right;
+}
+.export_footer .edit_btn,.export_top_menu .edit_btn{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 60px;
+    margin-right: 20px;
+    border: solid 1px #ccc;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+    float: right;
+}
+.export_footer .export_btn{
+    margin-top: 60px;
+}
+.export_top_menu .export_btn:hover,.export_footer .export_btn:hover{
+    background-color: #f3623a;
+}
+.exportCon{
+    width: 100%;
+    height: auto;
+    background: url(imgs/exportBg.png) repeat 50%;
+    background-color: #F0F0F0;
+}
+.export_box{
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.export_title{
+    display: inline-block;
+    width: 720px;
+    height: 88px;
+    line-height: 1.5;
+    margin-left: -20px;
+    padding: 40px 250px;
+    background: url(imgs/viewTop.png) no-repeat;
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+}
+.export_box .export_status{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.export_box .export_status span{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    color: #fff;
+}
+.export_box .export_status .bg_gray{
+    background-color: #BFBFBF;
+}
+.export_head{
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 16px;
+    border-bottom: solid 1px #eeeeee;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+.export_head .export_line{
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    margin-left: -30px;
+    bottom: -1px;
+    left: 50%;
+    border-bottom: solid 2px #FC6940;
+}
+.export_body{
+    padding: 40px;
+}
+.export_body h2{
+    height: 16px;
+    line-height: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: solid 6px #FC6940;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+.export_body table{
+    width: 100%!important;
+    line-height: 1.5;
+    border-collapse: collapse;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    font-size: 14px;
+    color: #666;
+}
+.export_body table th{
+    height: 60px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    background-color: #F8F8F8;
+    text-align: center;
+}
+.export_body table td{
+    padding: 0 20px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.export_body table.normal td{
+    height: 60px;
+    text-align: center;
+}
+.export_body table td.export_tlt{
+    padding: 0 10px;
+    background-color: #F8F8F8;
+    text-align: right;
+    color: #333;
+}
+.export_body table.td60 td{
+    height: 60px;
+}
+.export_body table.td80 td{
+    height: 80px;
+}
+
+.export_body .export_tips{
+    line-height: 3;
+    margin: 0 20px 30px 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #eeeeee;
+    color: #333;
+}
+.export_body .export_tips img{
+    max-width: 100%;
+}
+.export_body .export_annex li{
+    margin-bottom: 20px;
+    color: #333;
+}
+.export_annex li i{
+    margin-right: 6px;
+    font-size: 18px;
+    vertical-align: -1px;
+}
+.export_annex li a{
+    margin-left: 50px;
+}
+i.icon-xlsx,i.icon-word,i.icon-pdf{
+    vertical-align: -4px!important;
+}
+i.icon-xlsx{
+    color: #00B27E;
+}
+i.icon-word{
+    color: #1362D9;
+}
+i.icon-pdf{
+    color: #FC6940;
+}
+.export_body .export_remark{
+    color: #666;
+}
+.export_numCon{
+    position: relative;
+}
+.export_body .export_num{
+    position: absolute;
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    line-height: 24px;
+    left: -28px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #00B27E;
+    color: #fff;
+    text-align: center;
+}
+.page_container{
+    margin-top: 20px;
+}
+.gongzhang{
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -70px;
+    right: 128px;
+    background: url("imgs/gongzhang.gif") no-repeat;
+    background-size: 100%;
+}
+.export_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("imgs/watermark.png") repeat-y;
+    z-index: 1;
+}

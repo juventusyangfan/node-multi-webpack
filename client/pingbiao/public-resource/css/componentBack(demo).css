@@ -1,0 +1,154 @@
+.back_wrapper {
+    width: 100%;
+    padding: 10px 0 0 0;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+.back_contain {
+    /*width: 1180px;*/
+    margin: 0 auto;
+}
+
+/*做标题栏*/
+.com_side_menu {
+    width: 250px;
+    min-height: 1000px;
+    float: left;
+    background-color: #fff;
+}
+
+.com_side_menu dt, .com_side_menu dd {
+    font-size: 16px;
+}
+.com_side_menu dt{
+    position: relative;
+    height: 68px;
+    line-height: 68px;
+    padding-left: 60px;
+    background-color: #FDF8F7;
+    color: #fc6940;
+}
+.com_side_menu dt i{
+    position: absolute;
+    left: 30px;
+    font-size: 24px;
+}
+.com_side_menu dd a{
+    display: inline-block;
+    width: 190px;
+    height: 66px;
+    line-height: 66px;
+    padding-left: 60px;
+}
+.com_side_menu dd a.active,.com_side_menu dd a:hover{
+    background-color: #fc6940;
+    color: #fff;
+}
+
+/*后台主体区域*/
+.back_main_warp{
+    width: 100%;
+    min-height: 1000px;
+    margin-right: -251px;
+    border-left: solid 1px #EDD2CC;
+    background-color: #fff;
+    float: right;
+}
+.back_main{
+    margin-right: 251px;
+}
+.back_main_title{
+    padding: 0 30px;
+    border-bottom: 1px solid #eee;
+}
+.back_main_title span{
+    display: inline-block;
+    height: 66px;
+    line-height: 76px;
+    border-bottom: 2px solid #fc6940;
+    font-size: 16px;
+    font-weight: 700;
+}
+.back_main_content{
+    padding: 30px;
+}
+.back_main_item{
+    margin-bottom: 20px;
+}
+.back_main_item label{
+    float: left;
+    display: block;
+    width: 100px;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+.back_main_block{
+    margin-left: 100px;
+}
+.back_main_block select{
+    width: 300px;
+}
+.back_main_block textarea{
+    width: 500px;
+}
+.back_main_btns{
+    height: 40px;
+    padding: 30px;
+    background-color: #F7F7F7;
+}
+/*搜索部分*/
+.back_main_search{
+    padding-bottom: 20px;
+}
+.back_main_search .cjy-input-{
+    width: 330px;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.back_main_search select{
+    width: 160px;
+}
+.back_main_search label{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #999;
+}
+/*状态小标*/
+.back_tips_waiting,.back_tips_disabled,.back_tips_success,.back_tips_havebid,.back_tips_bidded,.back_tips_expire{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+/* 已报名 */
+.back_tips_success{
+    background-color: #00b27e;
+}
+/* 已投标 */
+.back_tips_havebid{
+    background-color: #e1a060;
+}
+/* 待投标 */
+.back_tips_waiting{
+    background-color: #0084ff;
+}
+/* 已中标 */
+.back_tips_bidded{
+    background-color: #fc6940;
+}
+/* 未中标 */
+.back_tips_disabled{
+    background-color: #bfbfbf;
+}
+/* 已过期 */
+.back_tips_expire{
+    background-color: #48b1a3;
+}

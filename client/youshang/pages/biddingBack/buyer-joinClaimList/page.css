@@ -1,0 +1,91 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_notice{
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: #FCFAE3;
+    border: 1px solid #F7E3A4;
+}
+.back_main_notice .noticeBg,.back_main_notice .warningBg {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.back_main_notice p{
+    width: 780px;
+    line-height: 2;
+    font-size: 14px;
+}
+.back_main_notice .noticeBg i,.back_main_notice .warningBg i{
+    font-size: 14px;
+}
+.back_main_list{
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+
+.back_list_top{
+    height: 54px;
+    line-height: 54px;
+}
+.back_list_top .back_list_sort li{
+    float: left;
+    margin-right: 20px;
+    color: #999;
+    cursor: pointer;
+}
+.back_list_top .back_list_sort li.act,.back_list_top .back_list_sort li:hover{
+    color: #333;
+}
+.back_list_top .back_list_sort li i{
+    margin-left: 4px;
+    font-size: 12px;
+}
+.back_main_list .back_list_btn{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 11px;
+    margin-left: 10px;
+    padding: 0 16px;
+    background-color: #fc6940;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+.back_main_list .back_list_btn:hover{
+    background-color: #F3623A;
+}
+
+.back_main_list{
+    padding-top: 0;
+}
+
+.page_list .ellipsis{
+    width: 240px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: -6px;
+}
+

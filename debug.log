@@ -1,0 +1,6 @@
+[1113/104313.966:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 操作超时 (0x2ee2)
+[1114/082711.608:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 操作超时 (0x2ee2)
+[1120/083419.132:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 操作超时 (0x2ee2)
+[1122/105645.739:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name metrics_client_id, discarding value 058a9de653304b059b750902c1eaa739
+[1122/105706.773:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 操作超时 (0x2ee2)
+[0226/145555.299:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: 操作成功完成。 (0x0)

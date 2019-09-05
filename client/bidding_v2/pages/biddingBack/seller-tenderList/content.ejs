@@ -1,0 +1,235 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">我的投标</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input type="text" name="keyword" placeholder="输入关键字：招标名称/采购单位名称" class="cjy-input-" value="">
+            <select name="tenderType">
+                <option value="">招标方式</option>
+                <option value="1">公开招标</option>
+                <option value="2">邀请招标</option>
+            </select>
+            <select name="tenderType">
+                <option value="">招标类型</option>
+                <option value="1">公开招标</option>
+                <option value="2">邀请招标</option>
+            </select>
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div id="bidList" v-cloak>
+            <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li :class="{'active':status==0,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(0)" class="back_nav_cell">全部 </a>
+                    </li>
+                    <li :class="{'active':status==1,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(1)" class="back_nav_cell">待接受邀请<span v-if="apply.wait_invitation>0" class="back_nav_num">{{apply.wait_invitation}}</span></a></li>
+                    <li :class="{'active':status==4,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(4)" class="back_nav_cell">待资格预审<span v-if="(apply.wait_pay_seniority+apply.wait_seniority_down+apply.wait_seniority_up+apply.wait_seniority_audit)>0" class="back_nav_num">{{apply.wait_pay_seniority+apply.wait_seniority_down+apply.wait_seniority_up+apply.wait_seniority_audit}}</span></a>
+                    </li>
+                    <li :class="{'active':status==11,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(11)" class="back_nav_cell">待投标/报价<span v-if="(apply.wait_pay_tender+apply.wait_tender_down+apply.wait_pay_bit+apply.wait_bit)>0" class="back_nav_num">{{apply.wait_pay_tender+apply.wait_tender_down+apply.wait_pay_bit+apply.wait_bit}}</span></a>
+                    </li>
+                    <li :class="{'active':status==15,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(15)" class="back_nav_cell">已投标/报价<span v-if="apply.has_bit>0" class="back_nav_num">{{apply.has_bit}}</span></a>
+                    </li>
+                    <li :class="{'active':status==18,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(18)" class="back_nav_cell">已入围中标候选人<span v-if="apply.bid_candidate>0" class="back_nav_num">{{apply.bid_candidate}}</span></a>
+                    </li>
+                    <li :class="{'active':status==19,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(19)" class="back_nav_cell">已中标/成交<span v-if="apply.has_bid_deal>0" class="back_nav_num">{{apply.has_bid_deal}}</span></a>
+                    </li>
+                    <li :class="{'active':status==20,'clearfix':true}">
+                        <a href="javascript:;" @click="changeStatus(20)" class="back_nav_cell">未中标/成交<span v-if="apply.no_bid_deal>0" class="back_nav_num">{{apply.no_bid_deal}}</span></a>
+                    </li>
+                    <li :class="{'active':status==2||status==3||status==8||status==9||status==10||status==16||status==17,'showMore_li':true}">
+                        <a href="javascript:;" @click="changeStatus(statusOtherId)" class="back_nav_more">{{statusOther}}<i class="iconfont icon-xiajiantou"></i></a>
+                        <span class="moreList">
+                            <a href="javascript:;" @click="changeStatus(2,'已拒绝邀请')" class="moreCell">已拒绝邀请<span v-if="apply.refuse_invitation>0" class="back_nav_num">{{apply.refuse_invitation}}</span></a>
+                            <a href="javascript:;" @click="changeStatus(3,'邀请已过期')" class="moreCell">邀请已过期<span v-if="apply.miss_invitation>0" class="back_nav_num">{{apply.miss_invitation}}</span></a>
+                            <a href="javascript:;" @click="changeStatus(8,'已撤回资审申请文件')" class="moreCell">已撤回资审申请文件<span v-if="apply.withdraw_seniority_file>0" class="back_nav_num">{{apply.withdraw_seniority_file}}</span></a>
+                            <a href="javascript:;" @click="changeStatus(9,'资审未通过')" class="moreCell">资审未通过<span v-if="apply.seniority_not_pass>0" class="back_nav_num">{{apply.seniority_not_pass}}</span></a>
+                            <a href="javascript:;" @click="changeStatus(10,'错过资审')" class="moreCell">错过资审<span v-if="apply.miss_seniority>0" class="back_nav_num">{{apply.miss_seniority}}</span></a>
+                            <a href="javascript:;" @click="changeStatus(16,'已撤回投标/报价文件')" class="moreCell">已撤回投标/报价文件<span v-if="apply.withdraw_bid_file>0" class="back_nav_num">{{apply.withdraw_bid_file}}</span></a>
+                            <a href="javascript:;" @click="changeStatus(17,'未投标/报价')" class="moreCell">未投标/报价<span v-if="apply.no_bid>0" class="back_nav_num">{{apply.no_bid}}</span></a>
+                        </span>
+                    </li>
+                </ul>
+                <span class="floatR textBlack1 marginT10">共{{count}}条符合条件的数据</span>
+            </div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="25%">
+                        <col width="20%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="20%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>采购名称</th>
+                            <th>金额</th>
+                            <th>报名截止时间</th>
+                            <th>投标截止时间</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list" v-for="item in list">
+                        <tr class="table_tips">
+                            <td colspan="6"><i class="iconfont icon-gongsi"></i><span class="table_companyName">{{item[0].buyer_name}}</span>{{item[0].bid_add_time}} 发布</td>
+                        </tr>
+                        <tr v-for="cell in item" :apply_id="cell.apply_id">
+                            <td>
+                                <a class="table_bidName" href="#">{{cell.tender_name}}</a>
+                                <span class="table_bidTips"><i class="iconfont icon-zhaobiao"></i>{{cell.collect_type_name}}</span>
+                                <span class="table_bidTips"><i class="iconfont icon-liucheng"></i>{{cell.bid_type}}</span>
+                                <span class="table_bidTips textRed"><i class="iconfont icon-shigongzongchengbao"></i>{{cell.package_code}}</span>
+                            </td>
+                            <td>
+                                <p v-if="cell.seniority_file_price!==''"><span class="table_moneyCell"><span class="floatL">资审文件费</span><span class="floatR">￥{{cell.seniority_file_price}}</span></span><span class="textBlack3" v-html="moneyStatus[cell.seniority_pay_status]"></span></p>
+                                <a href="javascript:;" class="table_btnIng marginB10 marginT4 js_upload" v-if="cell.status==4&&(cell.seniority_pay_status===''||cell.seniority_pay_status===0)">上传凭证</a>
+
+                                <p><span class="table_moneyCell"><span class="floatL">标书费</span><span class="floatR">￥{{cell.tender_file_price}}</span></span><span class="textBlack3" v-html="moneyStatus[cell.tender_file_pay_status]"></span></p>
+                                <a href="javascript:;" class="table_btnIng marginB10 marginT4 js_upload" v-if="cell.status==11&&(cell.tender_file_pay_status===''||cell.tender_file_pay_status===0)">上传凭证</a>
+
+                                <p><span class="table_moneyCell"><span class="floatL">投标保证金</span><span class="floatR">￥{{cell.deposit_price}}</span></span><span class="textBlack3" v-html="moneyStatus[cell.tender_margin_pay_status]"></span></p>
+                                <a href="javascript:;" class="table_btnIng marginB10 marginT4 js_upload" v-if="cell.status==13&&(cell.tender_mayrgin_pay_status===''||cell.tender_margin_pay_status===0)">上传凭证</a>
+                            </td>
+                            <td v-if="cell.enroll_end_time_change!=''">{{cell.enroll_end_time_change}}<span class="table_timeTips marginT10">已变更</span></td>
+                            <td v-else>{{cell.enroll_end_time}}</td>
+                            <td v-if="cell.bid_end_time_change!=''">{{cell.bid_end_time_change}}<span class="table_timeTips marginT10">已变更</span></td>
+                            <td v-else>{{cell.bid_end_time}}</td>
+                            <td><i v-if="cell.status==1||cell.status==4||cell.status==5||cell.status==6||cell.status==7||cell.status==11||cell.status==12||cell.status==13||cell.status==14" class="status1"></i><i v-else-if="cell.status==2||cell.status==3||cell.status==9||cell.status==10" class="status3"></i><i v-else-if="cell.status==18||cell.status==19" class="status4"></i><i v-else-if="cell.status==8||cell.status==16" class="status2"></i><i v-else class="status5"></i>{{cell.status_name}}
+                                <span v-if="cell.status==4||cell.status==5">
+                                    <a class="table_prompt iconfont icon-wenhao">
+                                        <div class="tagBox"><span class="tagArrow"></span>
+                                            <div class="tagCon">
+                                                <p><i class="iconfont icon-gantanhao"></i>提醒<i class="iconfont icon-cha1 js_tagClose"></i></p>
+                                                <p>1、若资格预审文件设置为需要购买，请先完成资格预审文件的购买~</p>
+                                                <p>2、若选择对公转账方式购买资格预审文件，需先上传支付凭证，待采购单位确认无误后，可在线下载文件。若有疑问，请咨询 <span class="textRed">027-82815329</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="textBlack3"> （待下载资审文件）</p>
+                                </span>
+                                <p v-else-if="cell.status==6" class="textBlack3"> （待提交资审申请文件）</p>
+                                <p v-else-if="cell.status==7" class="textBlack3"> （等待资审结果）</p>
+                                <span v-else-if="cell.status==11||cell.status==12">
+                                    <a class="table_prompt iconfont icon-wenhao">
+                                        <div class="tagBox"><span class="tagArrow"></span>
+                                            <div class="tagCon">
+                                                <p><i class="iconfont icon-gantanhao"></i>提醒<i class="iconfont icon-cha1 js_tagClose"></i></p>
+                                                <p>1、若资格预审文件设置为需要购买，请先完成资格预审文件的购买~</p>
+                                                <p>2、若选择对公转账方式购买资格预审文件，需先上传支付凭证，待采购单位确认无误后，可在线下载文件。若有疑问，请咨询 <span class="textRed">027-82815329</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="textBlack3"> （待下载招标/询价文件）</p>
+                                </span>
+                                <span v-else-if="cell.status==13">
+                                    <a class="table_prompt iconfont icon-wenhao">
+                                        <div class="tagBox" style="top: -116px;"><span class="tagArrow" style="margin-bottom: -112px;"></span>
+                                            <div class="tagCon">
+                                                <p><i class="iconfont icon-cha1 js_tagClose"></i></p>
+                                                <p><i class="iconfont icon-gantanhao"></i>为避免影响您正常投标/报价，请抓紧时间支付投标/报价保证金。若选择线下支付，请先上传支付凭证，待招标方确认无误后可开始投标/报价。</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <p class="textBlack3"> （待支付保证金）</p>
+                                </span>
+                            </td>
+                            <td v-if="cell.status==1">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>邀请过期：<span class="textRed">剩余{{cell.enroll_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDone js_invite">接收邀请</a>
+                                <a href="javascript:;" class="table_btnNone marginL10 js_noInvite">拒绝邀请</a>
+                            </td>
+                            <td v-else-if="cell.status==4||cell.status==5">
+                                <p class="marginB10" v-if="cell.seniority_down_end_time_left===''"><i class="iconfont icon-i"></i>资审申请文件递交截止：<span class="textRed">剩余{{cell.seniority_end_time_left}}</span></p>
+                                <p class="marginB10" v-else-if="cell.seniority_down_end_time_left===0"><i class="iconfont icon-i"></i>资审文件已截止下载</span></p>
+                                <p class="marginB10" v-else><i class="iconfont icon-i"></i>资审文件下载截止：<span class="textRed">剩余{{cell.seniority_down_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDone js_download" v-if="cell.seniority_down_end_time_left!==0">下载资审文件</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==6">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>资审申请文件递交截止：<span class="textRed">剩余{{cell.seniority_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDone js_uploadList" data-type="seniority_file_src">上传资审申请文件</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==7">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>资审申请文件递交截止：<span class="textRed">剩余{{cell.seniority_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDoing js_uploadList" data-type="seniority_file_src">修改资审申请文件</a><a href="javascript:;" class="table_btnNone marginL10 js_recall" data-type="seniority_file_src">撤回资审申请文件</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==8">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>资审申请文件递交截止：<span class="textRed">剩余{{cell.seniority_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDoing js_uploadList" data-type="seniority_file_src" v-if="cell.seniority_end_time_left!==0">重新上传</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==9">
+                                <a href="javascript:;" class="table_btnNone js_reason" :reason="cell.seniority_back_reason">查看未通过原因</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==10">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>资审申请文件已截止递交</p>
+                                <p><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==11||cell.status==12">
+                                <p class="marginB10" v-if="cell.bid_down_end_time_left===''"><i class="iconfont icon-i"></i>投标/报价截止：<span class="textRed">剩余{{cell.bid_down_end_time_left}}</span></p>
+                                <p class="marginB10" v-else-if="cell.bid_down_end_time_left===0"><i class="iconfont icon-i"></i> 招标/询价文件已截止下载</p>
+                                <p class="marginB10" v-else><i class="iconfont icon-i"></i>招标/询价文件下载截止：<span class="textRed">剩余{{cell.bid_down_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDone js_download" v-if="cell.bid_down_end_time_left!==0">下载招标/询价文件</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==13">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>投标/报价截止：<span class="textRed">剩余{{cell.bid_end_time_left}}</span></p>
+                                <a target="_blank" :href="'/supplier/Payment/pay?apply_id='+cell.apply_id" class="table_btnDone">支付保证金</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==14">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>投标/报价截止：<span class="textRed">剩余{{cell.bid_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDone js_uploadList" data-type="bid_file_src">在线投标/报价</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==16">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>投标/报价截止：<span class="textRed">剩余{{cell.bid_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDoing js_uploadList" data-type="bid_file_src" v-if="cell.bid_end_time_left!==0">重新上传</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==15">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>投标/报价截止：<span class="textRed">剩余{{cell.bid_end_time_left}}</span></p>
+                                <a href="javascript:;" class="table_btnDoing js_uploadList" data-type="bid_file_src">修改投标/报价文件</a><a href="javascript:;" class="table_btnNone marginL10 js_recall" data-type="bid_file_src">撤回投标/报价文件</a>
+                                <p class="marginT10"><a href="javascript:;" class="textBlue js_question">澄清提问</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==17">
+                                <p class="marginB10"><i class="iconfont icon-i"></i>投标/报价已截止</p>
+                                <p><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==18">
+                                <p><a href="#" class="textBlue">查看结果公示</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else-if="cell.status==19">
+                                <p class="marginB10"><a href="#" class="textBlue">查看结果公示</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                                <p><a href="#" class="textBlue">确认保证金转为履约保证金</a></p>
+                            </td>
+                            <td v-else-if="cell.status==20">
+                                <p class="marginB10"><a href="#" class="textBlue">查看结果公告</a><span style="margin:0 6px;color:#999;">/</span><a href="#" class="textBlue">投标/报价详情</a></p>
+                            </td>
+                            <td v-else></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getBidList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,372 @@
+<script>
+    var dataJson = "";
+</script>
+<div class="other_main">
+    <div class="other_main_notice clearfix">
+        <div class="clearfix"><span class="noticeBg floatL"><i class="iconfont icon-i"></i></span>
+            <p class="floatL">提示：如标书设置为需要购买，未经企业确认的供应商将无法在线查看/下载以下内容</p></div>
+    </div>
+    <div class="other_main_title">
+        <span>报价方式</span>
+    </div>
+    <form>
+        <input type="hidden" name="id" value="9">
+        <div class="other_main_content">
+            <input type="radio" name="type" value="1" title="综合单价（到站价）" checked>
+            <!--<input type="radio" name="type" value="2" title="市场浮动单价">-->
+            <!--<input type="radio" name="type" value="3" title="组合单价">-->
+        </div>
+        <div class="other_main_title">
+            <span>报价单模板</span>
+        </div>
+        <div class="other_main_content other_table js_right">
+            <a class="move_table move_left iconfont icon-huadong-zuo"></a>
+            <a class="move_table move_right iconfont icon-huadong-you"></a>
+            <table name="priceTable1">
+                <thead>
+                <tr>
+                    <th style="width: 90px;" rowspan="2">序号</th>
+                    <th style="width: 150px;" rowspan="2">录入方式</th>
+                    <th style="width: 250px;" rowspan="2">物资名称</th>
+                    <th style="width: 180px;" rowspan="2">规格型号</th>
+                    <th style="width: 150px;" rowspan="2">计量单位</th>
+                    <th style="width: 150px;">数量</th>
+                    <th style="width: 150px;">税前单价</th>
+                    <th style="width: 150px;">增值税率（%）</th>
+                    <th style="width: 150px;">含税单价</th>
+                    <th style="width: 150px;">税前合价</th>
+                    <th style="width: 150px;">税金</th>
+                    <th style="width: 150px;">含税合价</th>
+                    <th style="width: 180px;" rowspan="2">描述（选填）</th>
+                    <th style="width: 150px;" rowspan="2">操作</th>
+                </tr>
+                <tr>
+                    <th>N</th>
+                    <th>a</th>
+                    <th>t</th>
+                    <th>b=a*（1+t）</th>
+                    <th>S1=a*N</th>
+                    <th>T=(b-a)*N</th>
+                    <th>S=b*N</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="js_index">1</td>
+                    <td>
+                        <select name="inType" value="1" style="width: 100px;">
+                            <option value="1">选择</option>
+                            <option value="2">自定义</option>
+                        </select>
+                    </td>
+                    <td class="td_product">
+                        <div cjy-multi style="margin-left: 30px;"></div>
+                    </td>
+                    <td class="td_gg">
+                        <select name="gg[]" value="" style="width: 150px;">
+                            <option value="">请选择规格型号</option>
+                        </select>
+                    </td>
+                    <td class="td_unit">
+                        <input type="hidden" name="unit[]">
+                        <span class="js_unit"></span>
+                    </td>
+                    <td>
+                        <input class="cjy-input-" name="product_num[]" style="width: 100px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><textarea class="cjy-textarea" name="describe[]" maxlen="50" rows="3"></textarea></td>
+                    <td><a href="javascript:;" class="js_rowDel"><i
+                                    class="iconfont icon-huishouxiang fontSize24 textRed"></i></a></td>
+                </tr>
+                <tr>
+                    <td colspan="14" class="rowAdd js_rowAdd">+</td>
+                </tr>
+                <tr>
+                    <td colspan="4">总计</td>
+                    <td colspan="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">总计（大写）</td>
+                    <td colspan="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">其他报价事项（选填）</td>
+                    <td colspan="10"><input type="text" name="item" class="cjy-input-" style="width: 1000px;"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--<div class="other_main_content other_table js_right">-->
+        <!--<div class="priceType_border"></div>-->
+        <!--<a class="move_table move_left iconfont icon-huadong-zuo"></a>-->
+        <!--<a class="move_table move_right iconfont icon-huadong-you"></a>-->
+        <!--<table>-->
+        <!--<thead>-->
+        <!--<tr>-->
+        <!--<th style="width: 90px;" rowspan="3">序号</th>-->
+        <!--<th style="width: 180px;" rowspan="3">物资名称</th>-->
+        <!--<th style="width: 150px;" rowspan="3">规格型号</th>-->
+        <!--<th style="width: 150px;" rowspan="3">材质</th>-->
+        <!--<th style="width: 120px;" rowspan="3">计量单位</th>-->
+        <!--<th style="width: 140px;" rowspan="2">数量</th>-->
+        <!--<th colspan="6" class="js_title">综合单价</th>-->
+        <!--<th style="width: 110px;" rowspan="2">合价</th>-->
+        <!--<th style="width: 130px;" rowspan="3">运输方式</th>-->
+        <!--<th style="width: 150px;" rowspan="3">交货地点(选填)</th>-->
+        <!--<th style="width: 150px;" rowspan="3">描述(选填)</th>-->
+        <!--<th style="width: 90px;" rowspan="3">操作</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<th class="js_type" style="width: 160px">-->
+        <!--<span class="priceType">-->
+        <!--<input type="text" class="cjy-input- marginR10" style="width: 88px;"><i class="iconfont icon-xiajiantou"></i>-->
+        <!--<div class="priceType_con">-->
+        <!--<ul>-->
+        <!--<li class="act">分类一</li>-->
+        <!--<li>分类二</li>-->
+        <!--<li>分类三</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</span>-->
+        <!--<span class="handle_con">-->
+        <!--<a href="javascript:;" class="handle_add"><i class="iconfont icon-jiahao1"></i></a>-->
+        <!--<a href="javascript:;" class="handle_del marginT10"><i class="iconfont icon-huishouxiang"></i></a>-->
+        <!--</span>-->
+        <!--</th>-->
+        <!--<th class="js_type" style="width: 160px">-->
+        <!--<span class="priceType">-->
+        <!--<input type="text" class="cjy-input- marginR10" style="width: 88px;"><i class="iconfont icon-xiajiantou"></i>-->
+        <!--<div class="priceType_con">-->
+        <!--<ul>-->
+        <!--<li class="act">分类一</li>-->
+        <!--<li>分类二</li>-->
+        <!--<li>分类三</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</span>-->
+        <!--<span class="handle_con">-->
+        <!--<a href="javascript:;" class="handle_add"><i class="iconfont icon-jiahao1"></i></a>-->
+        <!--<a href="javascript:;" class="handle_del marginT10"><i class="iconfont icon-huishouxiang"></i></a>-->
+        <!--</span>-->
+        <!--</th>-->
+        <!--<th class="js_type" style="width: 160px">-->
+        <!--<span class="priceType">-->
+        <!--<input type="text" class="cjy-input- marginR10" style="width: 88px;"><i class="iconfont icon-xiajiantou"></i>-->
+        <!--<div class="priceType_con">-->
+        <!--<ul>-->
+        <!--<li class="act">分类一</li>-->
+        <!--<li>分类二</li>-->
+        <!--<li>分类三</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</span>-->
+        <!--<span class="handle_con">-->
+        <!--<a href="javascript:;" class="handle_add"><i class="iconfont icon-jiahao1"></i></a>-->
+        <!--<a href="javascript:;" class="handle_del marginT10"><i class="iconfont icon-huishouxiang"></i></a>-->
+        <!--</span>-->
+        <!--</th>-->
+        <!--<th style="width: 90px">税率</th>-->
+        <!--<th style="width: 140px">税金(T)</th>-->
+        <!--<th style="width: 140px">合计单价(U)</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<th style="width: 140px;">N</th>-->
+        <!--<th style="width: 160px" class="js_letter">a</th>-->
+        <!--<th style="width: 160px" class="js_letter">b</th>-->
+        <!--<th style="width: 160px" class="js_letter">c</th>-->
+        <!--<th style="width: 90px">t</th>-->
+        <!--<th style="width: 140px">T=(a+b+c)*t</th>-->
+        <!--<th style="width: 140px">U=a+b+c+T</th>-->
+        <!--<th style="width: 110px">S=N*U</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+        <!--<td>1</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3" style="width: 120px"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<select value="克">-->
+        <!--<option value="克">克</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<input type="text" class="cjy-input-">-->
+        <!--</td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td>-->
+        <!--<select value="">-->
+        <!--<option value="">不限</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<a href="javascript:;" class="js_rowDel"><i class="iconfont icon-huishouxiang fontSize24 textRed"></i></a>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>1</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3" style="width: 120px"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<select value="克">-->
+        <!--<option value="克">克</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<input type="text" class="cjy-input-">-->
+        <!--</td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td>-->
+        <!--<select value="">-->
+        <!--<option value="">不限</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<a href="javascript:;" class="js_rowDel"><i class="iconfont icon-huishouxiang fontSize24 textRed"></i></a>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td>1</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3" style="width: 120px"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<select value="克">-->
+        <!--<option value="克">克</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<input type="text" class="cjy-input-">-->
+        <!--</td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td>-->
+        <!--<select value="">-->
+        <!--<option value="">不限</option>-->
+        <!--</select>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<textarea class="cjy-textarea" maxlen="50" rows="3"></textarea>-->
+        <!--</td>-->
+        <!--<td>-->
+        <!--<a href="javascript:;" class="js_rowDel"><i class="iconfont icon-huishouxiang fontSize24 textRed"></i></a>-->
+        <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td colspan="17" class="rowAdd js_rowAdd">+</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td colspan="4">总计</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td></td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td>/</td>-->
+        <!--<td></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td colspan="4">总计（大写）</td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+        <!--<td colspan="4">其他报价事项（选填）</td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--<td></td>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+        <!--</table>-->
+        <!--</div>-->
+    </form>
+
+    <div class="other_main_btns clearfix">
+        <a class="btn_confirm floatR" href="javascript:;">保存并关闭</a>
+    </div>
+</div>

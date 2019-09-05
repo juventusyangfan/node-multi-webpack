@@ -1,0 +1,204 @@
+.back_main_title .back_title_btn {
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.back_main_title .back_title_btn:hover {
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_title .preview_btn{
+    display: inline-block;
+    height: 64px;
+    line-height: 76px;
+    font-size: 14px;
+    color: #fc6940;
+    float: right;
+}
+.back_main_title .preview_btn i{
+    margin-right: 4px;
+    font-size: 16px;
+}
+.back_main_btns .preview_btn{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 20px;
+    background-color: #FEEAD8;
+    border: solid 1px #FEEAD8;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    color: #fc6940;
+}
+.back_main_btns .preview_btn i{
+    margin-right: 4px;
+    font-size: 16px;
+}
+.back_info_code {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    font-size: 0;
+}
+
+.back_info_code span {
+    width: 360px;
+    font-size: 18px;
+    color: #00B27E;
+    margin-left: 60px;
+}
+
+.back_info_code span:first-child {
+    margin-left: 0;
+}
+
+.back_main_notice{
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #FCFAE3;
+    border: 1px solid #F7E3A4;
+}
+.back_main_notice .noticeBg,.back_main_notice .warningBg {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.back_main_notice p{
+    width: 780px;
+    line-height: 2;
+    font-size: 14px;
+}
+.back_main_notice .noticeBg i,.back_main_notice .warningBg i{
+    font-size: 14px;
+}
+
+
+.back_con_item {
+    margin-bottom: 10px;
+}
+
+.back_con_item label {
+    float: left;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    color: #999;
+    font-size: 16px;
+}
+
+.back_con_item label.textR {
+    width: 180px;
+    text-align: right;
+}
+
+.back_con_item label.textL {
+    width: 240px;
+    text-align: left;
+    color: #333;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.back_con_item .back_main_block {
+    line-height: 2;
+    padding-top: 4px;
+    margin-left: 180px;
+    font-size: 16px;
+}
+
+.back_main_item label{
+    width: 120px;
+}
+.back_main_item .back_main_block{
+    margin-left: 120px;
+}
+.back_main_item .itemBtn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.back_main_item .itemBtn:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.back_main_block p{
+    overflow: hidden;
+}
+
+.back_main_block .showFileCon{
+    display: none;
+    width: 400px;
+    padding: 20px 20px 6px 20px;
+    background-color: #F7F7F7;
+    border: 1px solid #eee;
+}
+.showFileCon li{
+    margin-bottom: 10px;
+}
+.showFileCon i{
+    font-size: 20px;
+    color: #999;
+}
+.showFileCon span{
+    display: inline-block;
+    width: 280px;
+    margin-right: 40px;
+}
+.showFileCon a{
+    display: inline-block;
+    vertical-align: 2px;
+}
+.back_main_block .quotation_item{
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+.quotation_item .quotation_head{
+    height: 42px;
+    line-height: 42px;
+    padding: 0 20px;
+    background-color: #F7F7F7;
+}
+.quotation_item .quotation_body{
+    padding: 20px;
+}
+.quotation_item .quotation_body label{
+    width: 60px;
+}
+.quotation_btns .quotation_add{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.quotation_btns .quotation_add:hover{
+    background-color: #00A776;
+    color: #fff;
+}

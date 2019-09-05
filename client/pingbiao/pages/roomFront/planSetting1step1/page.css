@@ -1,0 +1,216 @@
+.setting_warp{
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #F4F4F4;
+}
+.setting_warp .crumbs_con{
+    width: 1366px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    color: #888;
+}
+.setting_warp .crumbs_con i.icon-ditu{
+    margin-right: 4px;
+    vertical-align: -1px;
+}
+.setting_container{
+    width: 1366px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+.setting_container {
+    width: 1366px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.setting_container .package_con {
+    position: relative;
+}
+
+.package_con .noPackage{
+    position: absolute;
+    display: inline-block;
+    width: 410px;
+    height: 71px;
+    background: url(imgs/headerImg.png) no-repeat;
+}
+
+.package_con ul {
+    display: flex;
+    justify-content: center;
+    height: 54px;
+    padding-top: 20px;
+    background: url(imgs/headerBg.png) no-repeat;
+}
+
+.package_con ul li {
+    margin-left: 20px;
+}
+
+.package_con ul li:first-child {
+    margin-left: 0;
+}
+
+.package_con .package_cell {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 30px;
+    background-color: #E8EFDD;
+    color: #9AC45C;
+    text-align: center;
+}
+
+.package_con li.act .package_cell {
+    background-color: #9AC45C;
+    color: #fff;
+}
+
+.package_con li.act .package_cell:after {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: 50%;
+    margin-left: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 4px solid #9AC45C;
+}
+
+.package_con .package_down {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    top: 0;
+    right: 0;
+    border: solid 1px #f24d20;
+    border-radius: 30px;
+    color: #f24d20;
+    text-align: center;
+}
+
+.package_con .setting_add {
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    top: 20px;
+    right: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 1px 5px 0px #ccc;
+    color: #F24D20;
+    text-align: center;
+}
+
+.setting_table_con{
+    min-height: 452px;
+    padding: 30px 30px 80px 30px;
+}
+
+.setting_table_con .setting_btns{
+    margin: 40px auto;
+    padding-top: 20px;
+    border-top: solid 1px #e5e5e5;
+    text-align: center;
+}
+.setting_btns .setting_btn_confirm{
+    display: inline-block;
+    width: 120px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #9AC45C;
+    border: solid 1px #9AC45C;
+    border-radius: 46px;
+    color: #fff;
+    box-shadow: 0 1px 5px 0px #9AC45C;
+    font-size: 16px;
+    text-align: center;
+}
+.setting_btns .setting_btn_confirm:hover{
+    background-color: #6aa611
+}
+
+.material_list th,.material_list td{
+    position: inherit;
+}
+
+.setting_btns a {
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 26px;
+    border-radius: 46px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.setting_btns .setting_btn_export {
+    margin-right: 20px;
+    padding: 0 44px;
+    border: solid 1px #e5e5e5;
+    box-shadow: 0 1px 5px 0px #e5e5e5;
+}
+
+
+/* 选择评标专家 */
+.zjChoose-content{
+    padding: 0 30px;
+}
+.zjChoose-search{
+    margin-bottom: 20px;
+}
+.zjChoose-search input{
+    width: 520px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    border: solid 1px #ccc;
+    border-radius: 38px;
+}
+.zjChoose-search .zjChoose-search-btn{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -40px;
+    background-color: #F24D20;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: -1px;
+    text-align: center;
+}
+.zjChoose-search .zjChoose-search-btn:hover{
+    background-color: #e83838
+}
+.zjChoose-search .zjChoose-clear{
+    display: inline-block;
+    min-width: 102px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    color: #666;
+    border-radius: 38px;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 5px 0px #ccc;
+    text-align: center;
+}
+.zjChoose-search .zjChoose-clear:hover{
+    background-color: #f7f7f7;
+}

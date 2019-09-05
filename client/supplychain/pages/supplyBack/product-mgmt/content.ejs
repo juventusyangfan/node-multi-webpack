@@ -1,0 +1,103 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>筛选查询</span>
+    </div>
+    <div class="back_main_content">
+        <div class="result_form">
+            <div class="result_form_item">
+                <label>产品名称：</label>
+                <input type="text" name="" placeholder="请输入产品名称" class="cjy-input-" autocomplete="off">
+            </div>
+            <div class="result_form_item">
+                <label>产品状态：</label>
+                <select name="" value="1">
+                    <option value="1">上架</option>
+                    <option value="2">下架</option>
+                    <option value="3">强制下架</option>
+                </select>
+            </div>
+            <div class="result_form_sub">
+                <button class="result_btn">查询结果</button>
+            </div>
+        </div>
+    </div>
+    <div class="back_main_title">
+        <span>内容列表</span>
+        <button class="add_product">+ 新增产品</button>
+    </div>
+    <div class="back_main_content">
+        <div class="customer_table">
+            <div class="condition_area">
+                <input type="checkbox" title="全选" class="select_all">
+                <button class="del_selected">删除选中</button>
+                <select name="" value="1">
+                    <option value="1">10条</option>
+                    <option value="2">20条</option>
+                    <option value="3">40条</option>
+                    <option value="4">80条</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="w30">全选</th>
+                        <th class="w200">产品名称</th>
+                        <th class="w80">贷款期限</th>
+                        <th class="w80">贷款金额</th>
+                        <th class="w80">利率</th>
+                        <th class="w120">上传时间</th>
+                        <th class="w60">申请人数</th>
+                        <th class="w140">产品状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" title="" checked></td>
+                        <td>
+                            <a class="ellipsis view_bank" href="javascript:;" target="_blank" title="中信银行-贸易融资贷款">中信银行-贸易融资贷款</a>
+                        </td>
+                        <td>3~6个月</td>
+                        <td>50~10万</td>
+                        <td>日利率0.03</td>
+                        <td>2018-2-13 9:00</td>
+                        <td>200</td>
+                        <td>
+                            <a href="javascript:;">上架</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" title="" checked></td>
+                        <td>
+                            <a class="ellipsis view_bank" href="javascript:;" target="_blank" title="中信银行-贸易融资贷款">中信银行-贸易融资贷款</a>
+                        </td>
+                        <td>3~6个月</td>
+                        <td>50~10万</td>
+                        <td>日利率0.03</td>
+                        <td>2018-2-13 9:00</td>
+                        <td>200</td>
+                        <td>
+                            <a href="javascript:;">下架</a>
+                        </td>
+                    </tr>
+                    <tr class="tr_noallow">
+                        <td><input type="checkbox" title=""></td>
+                        <td>
+                            <a class="ellipsis view_noallow" href="javascript:;" target="_blank" title="中信银行-贸易融资贷款">中信银行-贸易融资贷款</a>
+                        </td>
+                        <td>3~6个月</td>
+                        <td>50~10万</td>
+                        <td>日利率0.03</td>
+                        <td>2018-2-13 9:00</td>
+                        <td>200</td>
+                        <td>
+                            <span class="no_txt">强制下架</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="pages">
+            <%= pageNav %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,192 @@
+<div class="notify_wrap">
+    <div class="notify_inner js_supplier">
+        <i class="iconfont icon-laba"></i>
+        <div class="notify_container">
+            <ul class="notify_list clearfix">
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【招标快报】由湖北省路桥集团有限公司承建的鄂咸高速公路工程项目钢护栏材料询价采购上线了！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【中标快报】恭喜湖北****公司中标武汉博宏建设有限公司承建的英才中学干混砂浆项目！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【招标快报】湖北省路桥集团有限公司在建3项目工程路灯询价采购上线了！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【供应商】恭喜湖北交投物流集团有限公司成为生材网VIP！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【供应商】恭喜中铁物资集团中南有限公司成为生材网VIP！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【供应商】恭喜盛隆电气集团有限公司成为生材网VIP!</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【招标快报】由武汉市市政路桥有限公司承建的207国道公安县埠河至南平段改建工程项目2.8万吨钢材公开招标上线了！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【采购商/供应商】恭喜中铁一局集团城市轨道交通工程有限公司成为生材网VIP！</b>
+                </li>
+                <li class="notify_item">
+                    <b class="" href="javascript:;">【采购商/供应商】恭喜中铁一局集团城市轨道交通工程有限公司成为生材网VIP！</b>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="productList">
+    <div class="filter_warp">
+        <div class="filter_container">
+            <div class="filter_result" v-if="fid!=0||pid!=0||cid!=0">
+                <label class="">分类</label><i class="iconfont icon-youjiantou"></i>
+                <a href="javascript:;" class="filter_result_cell" v-if="fid!=0" @click="fid=0;fName='';pid=0;pName='';cid=0;cName='';getProInfo(1);">{{fName}}<i class="iconfont icon-cha1"></i></a>
+                <a href="javascript:;" class="filter_result_cell" v-if="pid!=0" @click="pid=0;pName='';cid=0;cName='';getProInfo(1);">{{pName}}<i class="iconfont icon-cha1"></i></a>
+                <a href="javascript:;" class="filter_result_cell" v-if="cid!=0" @click="cid=0;cName='';getProInfo(1);">{{cName}}<i class="iconfont icon-cha1"></i></a>
+            </div>
+            <div class="pList_sel_con">
+                <div class="pList_sel_line clearfix" v-if="fArr.length>0"><label>一级分类</label>
+                    <div class="pList_sel_list">
+                        <div class="pList_sel_inner"><a v-for="item in fArr" @click="fid=item.code;fName=item.name;getProInfo(1);">{{item.name}}</a></div>
+                    </div> <a href="javascript:;" class="pList_sel_btn" style="display: none;">更多<i class="iconfont icon-xiajiantou"></i></a>
+                </div>
+                <div class="pList_sel_line clearfix" v-if="pArr.length>0"><label>二级分类</label>
+                    <div class="pList_sel_list">
+                        <div class="pList_sel_inner"><a v-for="item in pArr" @click="pid=item.code;pName=item.name;getProInfo(1);">{{item.name}}</a></div>
+                    </div> <a href="javascript:;" class="pList_sel_btn" style="display: none;">更多<i class="iconfont icon-xiajiantou"></i></a>
+                </div>
+                <div class="pList_sel_line clearfix" v-if="cArr.length>0"><label>三级分类</label>
+                    <div class="pList_sel_list">
+                        <div class="pList_sel_inner"><a v-for="item in cArr" @click="cid=item.code;cName=item.name;getProInfo(1);">{{item.name}}</a></div>
+                    </div> <a href="javascript:;" class="pList_sel_btn" style="display: none;">更多<i class="iconfont icon-xiajiantou"></i></a>
+                </div>
+            </div>
+            <div class="pList_sort_con">
+                <ul>
+                    <li :class="sort==1?'active':''" @click="changeSort(1)"><a href="javascript:;">最新发布</a><i class="sort-bottom"></i></li>
+                    <li :class="sort==2?'active':''" @click="changeSort(2)"><a href="javascript:;">即将截止</a><i class="sort-bottom"></i></li>
+                </ul>
+                <select name="province_code" noRender>  
+                    <option value="0">不限省</option>
+                    <option v-for="item in provinceArr" :value="item.id">{{item.name}}</option>
+                </select>
+                <select name="city_code" noRender>
+                    <option value="0">不限市</option>
+                    <option v-for="item in cityArr" :value="item.id">{{item.name}}</option>
+                </select>
+                <div class="pList_count_con">
+                    <a href="javascript:;" class="iconfont icon-zuojiantou" @click="changePage('down')"></a>
+                    <span class="textOrange marginL10">{{current}}</span>/{{Math.ceil(count / 10)}}
+                    <a href="javascript:;" class="iconfont icon-youjiantou" @click="changePage('up')"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_warp">
+        <div class="product_container">
+            <ul class="clearfix" v-if="list.length>0">
+                <li class="inquiry_cell" v-for="item in list">
+                    <div class="inquiry_title">
+                        <a :href="'/inquiry/detail?inquiry_id='+item.id" target="_blank">{{item.title}}</a>
+                    </div>
+                    <div class="inquiry_company">
+                        <a href="javascript:;">{{item.company_name}}</a>
+                        <span><i class="iconfont icon-ditu"></i>{{item.province.name}}-{{item.city.name}}</span>
+                    </div>
+                    <div class="inquiry_time">
+                        <span class="textRed block" v-if="item.status==1"><i class="iconfont icon-ditu"></i>仅剩 <span
+                                class="textRed">{{item.remain_days}}</span>
+                            天</span>
+                        <span v-else class="block">{{item.remain_days}}</span>
+                        <span>{{item.create_time}} <span class="textBlack3">发布</span></span>
+                    </div>
+                    <div class="inquiry_count">
+                        <span v-if="item.status==1"><span class="textGreen fontBold">{{item.quoted_num}}</span> 家已报价</span>
+                        <span v-else>{{item.quoted_num}}</span>
+                    </div>
+                    <div class="inquiry_handle">
+                        <a v-if="item.status==1" href="javascript:;" @click="goQuote(item.id)" target="_blank" class="inquiry_btn">立即报价</a>
+                        <span v-else class="textBlack3">报价已截止</span>
+                    </div>
+                </li>
+            </ul>
+            <div style="text-align: center" v-else>
+                <template v-if="!loading">
+                    <div class="page_list_noneBg"></div>
+                    <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                </template>
+            </div>
+            <div id="pages">
+                <vue-page @get-list="getProInfo" :count="count" :limit="10" :cPage="current" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="handle_warp"></div>
+<!-- 右侧工具 -->
+<div class="toolbar-menu">
+    <ul class="toolbar-list">
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-vip"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">VIP会员服务</span>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-zhinanzhen"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">新手入门</span>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-erweima"></i>
+            </a>
+            <div class="toolbar-box">
+                <div class="qrcode-wrap">
+                    <div class="qrcode-inner">
+                        <img src="<%= kefuApp %>" alt="生材网二维码">
+                        <p>扫描二维码下载APP</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-kefu1"></i>
+            </a>
+            <div class="toolbar-box">
+                <div class="kefu-wrap">
+                    <dl class="app-kefu">
+                        <dt class="kefu-zixun">客户咨询：</dt>
+                        <dd class="kefu-txt">027-82815329</dd>
+                        <dt class="kefu-shou">售后服务：</dt>
+                        <dd class="kefu-txt">027-82813259</dd>
+                        <dt class="kefu-tousu">投诉电话：</dt>
+                        <dd class="kefu-txt">027-82810705</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-fankui"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">用户反馈</span>
+            </div>
+        </li>
+        <li class="toolbar-item" style="display: none;">
+            <a class="toolbar-alink backtop" href="javascript:;">
+                <i class="iconfont icon-huidaodingbu"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">回到顶部</span>
+            </div>
+        </li>
+    </ul>
+</div>

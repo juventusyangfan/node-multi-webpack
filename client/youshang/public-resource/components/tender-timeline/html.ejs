@@ -1,0 +1,32 @@
+<div class="tender_timeline_wrap">
+    <div class="ttl_inner">
+        <div class="ttl_container">
+            <% for(var i = 0; i < step.length; i++) { %>
+            <div class="ttl_time_box step<%= (i+1) %>">
+                <span class="step_box">
+                    <i class="color_white <%= step[i].changeI %>"><%= step[i].changeItxt %></i>
+                </span>
+                <span class="step_status"><%= step[i].changeStatus %></span>
+                <% if (step[i].changeA !== "") { %>
+                <a class="takepart_btn <%= step[i].changeAbg %>" href="javascript:;"><%= step[i].changeA %></a>
+                <% } %>
+                <% if (step[i].description1 !== "") { %>
+                <span class="yibao"><%= step[i].description1 %></span>
+                    <% if (step[i].description1_2 !== "") { %>
+                    <span class="ttl_vertical">/</span><a class="view_a" name="mybid" href="javascript:;"><%= step[i].description1_2 %></a>
+                    <% } %>
+                <% } %>
+                <% if (step[i].description2 !== "") { %>
+                <a class="view_a" name="openBid" href="javascript:;"><%= step[i].description2 %></a>
+                    <% if (step[i].description2_2 !== "") { %>
+                    <span class="ttl_vertical">/</span><a class="view_a" name="mybid" href="javascript:;"><%= step[i].description2_2 %></a>
+                    <% } %>
+                <% } %>
+                <% if (step[i].description3 !== "") { %>
+                <p class="zhongbiao_p ellipsis">中标单位：<span title="><%= step[i].description3 %>">><%= step[i].description3 %></span></p>
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>

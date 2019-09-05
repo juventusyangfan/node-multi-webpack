@@ -1,0 +1,137 @@
+<%= otherTop %>
+<div class="publish_wrap">
+    <div class="publish_container">
+        <div class="publish_head"><span>////////////</span>采购概况与招标内容<span>////////////</span><a href="javascript:;" class="publish_edit"><i class="iconfont icon-bianji"></i>修改</a></div>
+        <div class="publish_block clearfix">
+            <div class="publish_block_half clearfix">
+                <label><span class="textRed">*</span>采购名称：</label>
+                <div class="publish_block_item"><input type="text" class="cjy-input-" placeholder="招标/采购名称"><div class="publish_msg_con"><i class="iconfont icon-i"></i>发布后公告名称将显示为：<span class="textOrange">‘采购名称‘+’采购方式‘+’资审方式‘公告</span></div></div>
+            </div>
+            <div class="publish_block_half clearfix">
+                <label><span class="textRed">*</span>采购编号：</label>
+                <div class="publish_block_item"><input type="text" class="cjy-input-" placeholder="企业内部约定的招标/采购编号，2-50字"></div>
+            </div>
+        </div>
+        <div class="publish_block clearfix">
+            <label><span class="textRed">*</span>资审方式：</label>
+            <div class="publish_block_item">
+                <input type="radio" name="seniority" title="资格后审" checked><input type="radio" name="seniority" title="资格预审">
+                <div class="publish_msg_con" style="margin-top: -4px;margin-left: 146px;"><i class="iconfont icon-i"></i>将单独设置资格预审文件，及资格预审文件售卖信息。供应商在线报名后，需经办人录入资审结果，资格预审通过的供应商才能进入投标/报价环节</div>
+            </div>
+        </div>
+        <div class="publish_block clearfix">
+            <label><span class="textRed">*</span>标包信息：</label>
+            <div class="publish_block_item">
+                <input type="radio" name="pType" title="单个包件" value="single" checked><input type="radio" name="pType" title="多个包件" value="multi">
+                <div class="package_multi" style="display:none;">
+                    <table class="publish_table">
+                        <colgroup>
+                            <col width="100">
+                            <col width="150">
+                            <col width="200">
+                            <col width="100">
+                            <col width="150">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>包件编号</th>
+                                <th>采购内容</th>
+                                <th>项目信息</th>
+                                <th>交付地点</th>
+                                <th>详细地址</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="js_show">
+                                <td><input type="text" class="cjy-input-" placeholder="包件编号，2-20个字" style="width:85%;"></td>
+                                <td><input type="text" class="cjy-input-" placeholder="采购内容，2-20个字" style="width:90%;"></td>
+                                <td><select value="" cjy-search-input><option value="1">项目一</option></select></td>
+                                <td><span cjy-area></span></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入详细地址" style="width:88%;">
+                                <div class="multi_oprate">
+                                    <i class="iconfont icon-jiahao1 add_multi"></i>
+                                    <i class="iconfont icon-huishouxiang del_multi"></i>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr class="js_show">
+                                <td><input type="text" class="cjy-input-" placeholder="包件编号，2-20个字" style="width:85%;"></td>
+                                <td><input type="text" class="cjy-input-" placeholder="采购内容，2-20个字" style="width:90%;"></td>
+                                <td><select value="" cjy-search-input><option value="1">项目一</option></select></td>
+                                <td><span cjy-area></span></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入详细地址" style="width:88%;">
+                                <div class="multi_oprate">
+                                    <i class="iconfont icon-jiahao1 add_multi"></i>
+                                    <i class="iconfont icon-huishouxiang del_multi"></i>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr class="js_show">
+                                <td><input type="text" class="cjy-input-" placeholder="包件编号，2-20个字" style="width:85%;"></td>
+                                <td><input type="text" class="cjy-input-" placeholder="采购内容，2-20个字" style="width:90%;"></td>
+                                <td><select value="" cjy-search-input><option value="1">项目一</option></select></td>
+                                <td><span cjy-area></span></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入详细地址" style="width:88%;">
+                                <div class="multi_oprate">
+                                    <i class="iconfont icon-jiahao1 add_multi"></i>
+                                    <i class="iconfont icon-huishouxiang del_multi"></i>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="row_add"><a href="javascript:;">+添加包件</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="package_single">
+            <div class="publish_block clearfix">
+                <div class="publish_block_half clearfix">
+                    <label><span class="textRed">*</span>采购内容：</label>
+                    <div class="publish_block_item"><input type="text" class="cjy-input-" placeholder="请填写采购内容"></div>
+                </div>
+                <div class="publish_block_half clearfix">
+                    <label><span class="textRed">*</span>项目信息：</label>
+                    <div class="publish_block_item"><select value="" cjy-search-input><option value="1">项目一</option></select></div>
+                </div>
+            </div>
+            <div class="publish_block clearfix">
+                <div class="publish_block_half clearfix">
+                    <label><span class="textRed">*</span>交付地点：</label>
+                    <div class="publish_block_item"><input type="text" class="cjy-input-" placeholder="请填写采购内容"></div>
+                </div>
+                <div class="publish_block_half clearfix">
+                    <label>详细地址：</label>
+                    <div class="publish_block_item"><span cjy-area></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="publish_block clearfix">
+            <label><span class="textRed">*</span>物资类别：</label>
+            <div class="publish_block_item">
+                <input type="radio" name="type" title="物资/设备采购" checked><input type="radio" name="type" title="劳务分包"><input type="radio" name="type" title="专业分包"><input type="radio" name="type" title="设备/物资租赁"><input type="radio" name="type" title="施工总承包"><input type="radio" name="type" title="设计/咨询/服务"><input type="radio" name="type" title="其他">
+            </div>
+        </div>
+        <div class="publish_block clearfix">
+            <label><span class="textRed">*</span>采购内容：</label>
+            <div class="publish_block_item">
+                <input type="radio" name="content" title="钢筋类" checked><input type="radio" name="content" title="非钢筋类"><input type="radio" name="content" title="钢筋类、非钢筋类混合">
+                <span class="publish_msg_con" style="margin-left: -60px;vertical-align: 2px;"><i class="iconfont icon-i"></i>所称“钢筋”类，指且仅指螺纹钢、盘螺、高线、普线四类。</span>
+            </div>
+        </div>
+        <div class="publish_block clearfix">
+            <label><span class="textRed">*</span>采购预算：</label>
+            <div class="publish_block_item"><input type="text" class="cjy-input-" placeholder="预算金额（小数点后2位）"><span class="marginL10">元</span></div>
+        </div>
+        <div class="publish_block clearfix">
+            <label><span class="textRed">*</span>联系信息：</label>
+            <div class="publish_block_item"><input type="text" class="cjy-input- width200" placeholder="联系人"><input type="text" class="cjy-input- width390 marginL30" placeholder="联系电话（手机）"><input type="text" class="cjy-input- width390 marginL30" placeholder="联系电话（座机）"></div>
+        </div>
+        <div class="publish_btn_wrap">
+            <a href="javascript:;" class="btn_draft"><i class="iconfont icon-caogaoxiang"></i>保存为草稿</a>
+            <a href="javascript:;" class="btn_next floatR">下一步</a>
+        </div>
+    </div>
+</div>

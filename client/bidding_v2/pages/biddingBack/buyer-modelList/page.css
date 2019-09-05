@@ -1,0 +1,323 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #FF3600;
+    border: 1px solid #FF3600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #ec3200;
+    border: 1px solid #ec3200;
+    color: #fff;
+}
+.back_main_nav{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+}
+.back_main_nav li a{
+    margin: 0 30px;
+    color: #999;
+    float: left;
+}
+.back_main_nav li.act a,.back_main_nav li a:hover{
+    color: #FF3600;
+}
+.back_main_content{
+    padding: 0 30px 50px 30px;
+}
+.back_info_item{
+    margin-bottom: 20px;
+}
+.back_info_item label{
+    float: left;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+.back_info_item label.back_info_title{
+    width: 100px;
+    text-align: right;
+    color: #999;
+}
+.back_info_item .back_main_block{
+    margin-left: 100px;
+}
+.back_info_item .back_main_block select{
+    width: 160px;
+}
+
+.modelType{
+    height: 50px;
+    line-height: 50px;
+}
+.modelType span{
+    margin-right: 20px;
+    color: #999;
+}
+.modelType span.active{
+    color: #333;
+}
+.modelType i{
+    margin-right: 4px;
+}
+
+.modelWarp{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.modelCell{
+    position: relative;
+    width: 242px;
+    margin: 20px 36px 20px 0;
+    float: left;
+}
+.modelCell:first-child{
+    margin-left: 0;
+}
+.modelCell .modelAdd{
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    border: dashed 1px #e5e5e5;
+    background: url(imgs/model_add.png) no-repeat center;
+    background-position-y: 70px;
+}
+.modelCell .modelAdd p{
+    margin-top: 142px;
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+}
+.modelCell .modelImg{
+    position: relative;
+    width: 242px;
+    height: 242px;
+    overflow: hidden;
+}
+.modelCell .modelImgBg{
+    width: 240px;
+    height: 240px;
+    border: solid 1px #e5e5e5;
+    background-color: #ECF4FF;
+}
+.modelCell .modelBg,.modelCell .modelCtrBg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 242px;
+    left: 0;
+    text-align: center;
+    transition: top .3s;
+}
+.modelCell .modelBg{
+    background-color: #000;
+    opacity: 0.5;
+}
+.modelCell .modelImg:hover .modelBg,.modelCell .modelImg:hover .modelCtrBg{
+    top: 0;
+}
+.modelCell .modelCtrBg a.modelView{
+    display: inline-block;
+    width: 102px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 100px;
+    background-color: #FF3600;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+.modelCell .modelCtrBg a.modelView:hover{
+    background-color: #ec3200;
+    color: #fff;
+}
+.modelCell .modelCtrBg a:hover{
+    color: #FF3600;
+}
+.modelCell .modelTitle{
+    margin: 10px 0;
+    line-height: 1.5
+}
+.modelCell .normal{
+    display: block;
+}
+.modelCell .moderlDel{
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    top: -8px;
+    right: -8px;
+    background-color: #FD4545;
+    border-radius: 24px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.modelTips{
+    height: 60px;
+    overflow: hidden;
+}
+.modelTips > span{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border: solid 1px #FC9440;
+    margin-right: 10px;
+    color: #FC9440;
+}
+.modelmore{
+    position: absolute;
+    display: inline-block;
+    width: 52px;
+    height: 20px;
+    margin-left: -26px;
+    bottom: -20px;
+    left: 50%;
+    background-color: #fff;
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+    text-align: center;
+    color: #999;
+}
+
+
+
+
+
+.other_main_content{
+    margin: 30px;
+}
+
+.other_main_notice{
+    margin: 30px 30px 0 30px;
+    padding: 10px;
+    background-color: #FCFAE3;
+    border: 1px solid #F7E3A4;
+}
+.other_main_notice .noticeBg {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.other_main_notice p{
+    width: 780px;
+    line-height: 2;
+    font-size: 14px;
+}
+.other_main_notice .noticeBg i{
+    font-size: 14px;
+}
+
+.other_main_content .cjy-radio{
+    margin-right: 40px;
+}
+.other_table{
+    position: relative;
+    max-height: 480px;
+    overflow-y: scroll;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.other_table::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+/* 设置滚动条的滑轨 */
+.other_table::-webkit-scrollbar-track {
+    background-color: #F7F7F7;
+}
+/* 滑块 */
+.other_table::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 5px;
+}
+/* 滑轨两头的监听按钮 */
+.other_table::-webkit-scrollbar-button {
+    background-color: #888;
+    display: none;
+}
+/* 横向滚动条和纵向滚动条相交处尖角 */
+.other_table::-webkit-scrollbar-corner {
+    /*background-color: black;*/
+}
+.other_table table{
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.other_table table th,.other_table table td{
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.other_table table th{
+    position: relative;
+    padding: 20px 0;
+    background-color: #F8F8F8;
+}
+.other_table table th p{
+    line-height: 2;
+}
+.other_table table td{
+    height: 40px;
+}
+
+
+.other_table .priceType_border{
+    position: absolute;
+    display: none;
+    width: 165px;
+    height: 400px;
+    top: 37px;
+    left: 858px;
+    border: 1px dashed #00B27E;
+    transition: left .3s;
+    -moz-transition: left .3s;
+    -webkit-transition: left .3s;
+    -o-transition: left .3s;
+}
+.other_table .handle_con{
+    position: absolute;
+    display: none;
+    left: 165px;
+    top: -2px;
+    z-index: 99;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: leftbit;
+    animation-name: leftbit;
+}
+
+
+.wName{
+    width: 160px;
+    word-break: break-word;
+}
+.wContent{
+    width: 250px;
+    word-break: break-word;
+}
+.wPercent{
+    width: 90px;
+    word-break: break-word;
+}

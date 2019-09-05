@@ -1,0 +1,70 @@
+<div class="tender_wrap">
+    <div class="tender_inner">
+        <div class="tender_container">
+            <div class="tender_list">
+                <a province_code="" class="active" href="javascript:;">全部</a>
+                <a province_code="1709" href="javascript:;">湖北省</a>
+                <a province_code="1827" href="javascript:;">湖南省</a>
+                <a province_code="1532" href="javascript:;">河南省</a>
+                <a province_code="1263" href="javascript:;">江西省</a>
+            </div>
+            <div class="tender_list">
+                <a type="" class="active" href="javascript:;">全部</a>
+                <a type="1" href="javascript:;">公开招标</a>
+                <a type="2" href="javascript:;">邀请招标</a>
+                <a type="3" href="javascript:;">竞争性谈判</a>
+                <a type="4" href="javascript:;">询比价</a>
+            </div>
+            <div class="tender_search">
+                <div class="tender_search_area clearfix">
+                    <select value="name">
+                        <option value="name">集采名称</option>
+                        <option value="bid_company">采购单位名称</option>
+                    </select>
+                    <input class="cjy-input-" type="text" name="" placeholder="输入关键字，如：湖北国际经济技术合作"/>
+                </div>
+                <button>搜索</button>
+            </div>
+        </div>
+        <span class="hr_line"></span>
+        <span class="hr_line top137"></span>
+    </div>
+</div>
+<div class="tender_main" id="tender">
+    <div class="tender_main_content">
+        <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+        <ul class="exclusive_list" v-if="list.length>0">
+            <li class="exclusive_item clearfix" v-for="item in list">
+                <div class="exclusive_left">
+                    <div class="exclusive_img">
+                        <span class="bg_green">{{item.province_name}}</span>
+                    </div>
+                </div>
+                <div class="exclusive_right clearfix">
+                    <div class="exclusive_info">
+                        <a target="_blank" class="exclusive_name ellipsis" :href="item.href">{{item.name}}</a>
+                        <div class="exclusive_brief clearfix">
+                            <p>
+                                <span>招标单位：</span>
+                                <b class="textBlack1 ellipsis">{{item.bid_company}}</b>
+                            </p>
+                            <p>
+                                <span>发布时间：</span>
+                                <b class="textBlack1">{{item.end_time_format}}</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exclusive_invitation">
+                        <a href="/thirdbid/detail/13058.html">
+                            <i :class="'iconfont '+item.icon_class"></i><span>{{item.type_name}}</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+    </div>
+    <div id="pages">
+        <vue-page @get-list="getTenders" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+    </div>
+</div>

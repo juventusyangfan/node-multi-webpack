@@ -1,0 +1,408 @@
+.topCon{
+    width: 100%;
+    height: 338px;
+    background: url(imgs/topBg.png) no-repeat 50%;
+    background-size: cover;
+}
+.export_top_menu,.export_footer{
+    width: 1400px;
+    height: 150px;
+    margin: 0 auto;
+}
+.export_top_menu .export_logo{
+    display: block;
+    width: 363px;
+    height: 66px;
+    margin-top: 54px;
+    background: url(imgs/exportLogo.png) no-repeat;
+    float: left;
+}
+.export_footer{
+    margin-top: -170px;
+}
+.export_footer .export_btn,.export_top_menu .export_btn{
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FF3600;
+    float: right;
+}
+.export_footer .export_btn{
+    margin-top: 0;
+}
+.export_top_menu .export_btn:hover{
+    background-color: #ec3200;
+}
+.exportCon{
+    width: 100%;
+    height: auto;
+    background: url(imgs/exportBg.png) repeat 50%;
+    background-color: #F0F0F0;
+}
+.export_box{
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    top: -190px;
+}
+.export_title{
+    display: inline-block;
+    width: 970px;
+    line-height: 1.5;
+    padding: 60px 215px 40px 215px;
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+.export_head{
+    position: relative;
+    width: 1428px;
+    height: 59px;
+    line-height: 50px;
+    margin-left: -14px;
+    background: url(imgs/headBg.png) no-repeat;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.export_head .export_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+    border: solid 2px #fff;
+    border-radius: 8px;
+}
+
+
+.export_body{
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.export_body .export_body_title{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    border-bottom: solid 1px #eee;
+}
+.export_body .export_body_title span{
+    display: inline-block;
+    height: 58px;
+    line-height: 60px;
+    border-bottom: solid 2px #FF3600;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    transition: all .2s;
+}
+.export_body .close span{
+    border-bottom: solid 2px #fff;
+    font-weight: 400;
+}
+.export_body .export_body_title .export_showMore{
+    float: right;
+}
+.export_body .export_body_title .export_showMore span{
+    display: inline-block;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #DC2F00;
+}
+.export_body .export_body_title .export_showMore i{
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #DC2F00;
+    vertical-align: 1px;
+    transition: transform .3s;
+}
+.export_body .close .export_showMore i{
+    vertical-align: 2px;
+    transform: rotate(180deg);
+}
+
+.export_body .export_body_con{
+    padding: 20px 30px;
+}
+.export_body .closeCon{
+    width: 1400px;
+    height: 0;
+    padding: 0 30px;
+    overflow: hidden;
+}
+.export_body .export_nav {
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+    border-bottom: 1px solid #F5AF9D;
+}
+.export_body .export_nav li.act {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #F5AF9D;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #fff;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.export_body .export_nav li.act a {
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    color: #DC2F00;
+    cursor: default;
+}
+.export_body .export_rich_text{
+    padding: 50px 160px;
+}
+.export_body .export_info_con{
+    padding: 30px 0 10px 50px;
+}
+.export_body .export_info_con .export_info_cell{
+    margin-right: 100px;
+    color: #333;
+}
+.export_body .export_prompt {
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 30px 0 30px;
+    padding: 0 10px;
+    background-color: #FCFAE3;
+    border: solid 1px #F7E3A4;
+    color: #666;
+}
+.export_body .export_prompt > i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background-color: #50B2F6;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.export_body table{
+    border-collapse: collapse;
+    width: 100%;
+    border-top: solid 1px #e5e5e5;
+}
+.export_body tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.export_body th,.export_body td{
+    line-height: 1.5;
+    padding-left: 25px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.export_body td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.export_body th{
+    height: 60px;
+    background-color: #F8F8F8;
+    font-weight: 700;
+    color: #333;
+}
+.export_body td.export_tlt{
+    background-color: #F8F8F8;
+    font-weight: 700;
+    color: #333;
+}
+.export_body .list_info {
+    height: 20px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+.export_body .list_info i {
+    margin-top: -2px;
+    margin-right: 4px;
+    float: left;
+}
+.export_body .list_info span {
+    display: inline-block;
+    width: 196px;
+    float: left;
+}
+.export_body .fujian_con i {
+    margin-right: 4px;
+    vertical-align: -1px;
+}
+.export_body .remark_scroll{
+    max-height: 80px;
+    overflow-y: auto;
+}
+.export_body .remark_scroll::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+/* 设置滚动条的滑轨 */
+.export_body .remark_scroll::-webkit-scrollbar-track{
+    background-color: #F7F7F7;
+}
+/* 滑块 */
+.export_body .remark_scroll::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 3px;
+}
+/* 滑轨两头的监听按钮 */
+.export_body .remark_scroll::-webkit-scrollbar-button{
+    background-color: #888;
+    display: none;
+}
+.export_body  td .table_text{
+    padding: 40px;
+}
+
+.export_body .export_tips{
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    margin-left: 10px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #DC2F00;
+    text-align: center;
+}
+.export_body td .table_num {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    border: solid 1px #F5AF9D;
+    border-radius: 18px;
+    color: #DC2F00;
+    text-align: center;
+}
+.export_body td .table_name {
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 10px;
+    vertical-align: -15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
+.export_body td .table_pay{
+    margin-bottom: 10px;
+    color: #DC2F00;
+}
+
+/* 锚点 */
+.export_anchor_warp{
+    position: fixed;
+    width: 160px;
+    right: 40px;
+    top: 50%;
+    z-index: 100;
+}
+.export_anchor_title{
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.export_anchor_title .anchor_circle_big{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border: solid 2px #999;
+    border-radius: 8px;
+}
+.export_anchor_con li{
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.export_anchor_con li .anchor_circle_small{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-left: 4px;
+    margin-right: 14px;
+    background-color: #999;
+    border-radius: 4px;
+    vertical-align: 4px;
+}
+.export_anchor_con li.active{
+    color: #DC2F00;
+}
+.export_anchor_con li.active .anchor_circle_small{
+    width: 6px;
+    height: 6px;
+    margin-left: 3px;
+    margin-right: 13px;
+    background-color: #DC2F00;
+    border-radius: 6px;
+    vertical-align: 5px;
+}
+
+
+.gongzhang{
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -70px;
+    right: 128px;
+    background: url("imgs/gongzhang.gif") no-repeat;
+    background-size: 100%;
+}
+.export_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("imgs/watermark.png") repeat-y;
+    z-index: 1;
+}
+
+/* 重写上传按钮样式 */
+.uppy-FileInput-btn{
+    width: 130px!important;
+    height: 30px!important;
+    line-height: 30px!important;
+    margin-top: 10px!important;
+    padding: 0px!important;
+    background: #fff!important;
+    border: solid 1px #FF3600!important;
+    font-size: 14px!important;
+    color: #FF3600!important;
+}
+.uppy-FileInput-btn:hover {
+    background-color: #fff!important;
+    color: #FF3600!important;
+}

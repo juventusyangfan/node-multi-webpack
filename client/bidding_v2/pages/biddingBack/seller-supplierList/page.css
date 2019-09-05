@@ -1,0 +1,163 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    margin-top: 30px;
+    background-color: #FF3600;
+    border: 1px solid #FF3600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #ec3200;
+    border: 1px solid #ec3200;
+    color: #fff;
+}
+.back_main_nav{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+}
+.back_main_nav li a{
+    margin: 0 30px;
+    color: #999;
+    float: left;
+}
+.back_main_nav li.act a,.back_main_nav li a:hover{
+    color: #FF3600;
+}
+.back_main_search .cjy-input-{
+    width: 420px;
+    margin: 0 10px 0 0;
+}
+.back_main_list{
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+
+.back_list_top{
+    height: 54px;
+    line-height: 54px;
+}
+.back_list_top .back_list_sort li{
+    float: left;
+    margin-right: 20px;
+    color: #999;
+    cursor: pointer;
+}
+.back_list_top .back_list_sort li.act,.back_list_top .back_list_sort li:hover{
+    color: #333;
+}
+.back_list_top .back_list_sort li i{
+    margin-left: 4px;
+    font-size: 12px;
+}
+.back_main_list .back_list_btn{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 11px;
+    margin-left: 10px;
+    padding: 0 16px;
+    background-color: #FF3600;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+.back_main_list .back_list_btn:hover{
+    background-color: #ec3200;
+}
+
+.back_main_list{
+    padding-top: 0;
+}
+
+
+/* 企业供应商 - 审核/修改供应商 */
+.gys-basic .gys-basic-title{
+    padding-top: 20px;
+    position: relative;
+}
+.gys-basic-title h2{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FF3600;
+    position: relative;
+    z-index: 1;
+}
+.gys-basic-title .gys-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+.qygys-box .gys-basic{
+    background-color: #f7f7f7;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.gys-basic .gysbasic-list{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.gysbasic-list .gys-item,.gysbasic-list .gys-info{
+    float: left;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.gysbasic-list .gys-item{
+    width: 240px;
+}
+.gysbasic-list .gys-info{
+    width: 480px;
+}
+.gysbasic-list .gys-info a{
+    display: block;
+    margin-bottom: 10px;
+}
+.gys-item .color_red{
+    color: #FF3600!important;
+}
+.gysbasic-list .gys-item-title{
+    font-size: 14px;
+    color: #999;
+    float: left;
+}
+.gysbasic-list .gys-item-name{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+}
+.gysbasic-list .ellipsis{
+    width: 170px;
+    vertical-align: top;
+}
+.qygys-box .gys-sel-area{
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.gys-sel-area p{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.gys-sel-area .font_normal{
+    font-weight: normal;
+    color: #333;
+}
+.gys-sel-area select{
+    width: 160px;
+}

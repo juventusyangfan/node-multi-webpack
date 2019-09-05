@@ -1,0 +1,300 @@
+.publish_banner{
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    background: url(imgs/banner.png) 50% no-repeat;
+    background-size: cover;
+    color: #FCF0DB;
+}
+.publish_crumbs{
+    width: 1180px;
+    margin: 0 auto;
+}
+.publish_crumbs a{
+    margin: 0 6px;
+    color: #FCF0DB;
+}
+.publish_warp{
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #F2F2F2;
+}
+.publish_container{
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+    border-left: solid 2px #5FB76A;
+}
+.publish_container .publish_step_con{
+    position: absolute;
+    top: 100px;
+    left: -142px;
+}
+.publish_container .publish_step_con li a{
+    display: inline-block;
+    width: 150px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: #5FB76A;
+    text-align: right;
+}
+.publish_container .publish_step_con .line{
+    display: inline-block;
+    width: 22px;
+    margin: 4px 6px;
+    border-bottom: dashed 1px #5FB76A;
+}
+.publish_container .publish_step_con .circle{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: solid 2px #5FB76A;
+    border-radius: 14px;
+    vertical-align: -4px;
+}
+.publish_container .publish_step_con a.active .circle{
+    background-color: #5FB76A;
+}
+.shadow_left,.shadow_right{
+    position: absolute;
+    display: inline-block;
+    width: 34px;
+    height: 207px;
+    top: 0px;
+}
+.shadow_left{
+    background: url(imgs/shadowLeft.png) no-repeat;
+    left: -34px;
+    margin-left: 0;
+}
+.shadow_right{
+    background: url(imgs/shadowRight.png) no-repeat;
+    right: -34px;
+    margin-right: 0;
+}
+
+.publish_nav{
+    margin-bottom: 20px;
+    padding: 40px 93px;
+    background-color: #fff;
+}
+.publish_nav .publish_title{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #5FB76A;
+}
+.publish_nav .publish_line{
+    margin-bottom: 20px;
+}
+.publish_nav .publish_line:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.publish_nav .publish_line label{
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.publish_nav .publish_line .publish_text{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.publish_nav .publish_line .publish_block{
+    float: left;
+}
+.publish_nav .publish_line .cjy-area-title{
+    min-width: 170px;
+    height: 38px;
+    border: 1px solid #ccc;
+}
+.publish_nav .publish_line .upload_btn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #5FB76A;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.publish_nav .publish_line .upload_btn:hover{
+    background-color: #4fa15a;
+}
+.publish_nav .publish_line .file_con{
+    width: 620px;
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+    border: solid 1px #e5e5e5;
+}
+.publish_line .file_con li{
+    height: 28px;
+    line-height: 28px;
+}
+.publish_line .file_con li i.icon-fujian{
+    margin-right: 6px;
+    color: #999;
+    vertical-align: -1px;
+}
+.publish_line .file_con li a.file_del{
+    margin-left: 20px;
+    color: #9e6b49;
+}
+.publish_line .cjy-checkbox,.publish_line .cjy-radio{
+    margin-top: 6px;
+    margin-right: 30px;
+}
+.publish_line select{
+    width: 170px;
+}
+.publish_nav .rule_link{
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+.publish_nav .rule_link a{
+    display: inline-block;
+    color: #9e6b49;
+    vertical-align: 2px;
+}
+.publish_nav .publish_btns{
+    margin-top: 20px;
+    text-align: center;
+}
+.publish_nav .publish_btns a{
+    display: inline-block;
+    width: 212px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.publish_nav .publish_btns a.publish_done{
+    background-color: #EC7C52;
+    border: solid 1px #EC7C52;
+    color: #fff;
+}
+.publish_nav .publish_btns a.publish_save{
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+.publish_nav .publish_btns a.publish_done:hover{
+    background-color: #E96A3A;
+    border: solid 1px #E96A3A;
+}
+.icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #7392b5;
+    border-radius: 100%;
+    margin-left: 6px;
+    vertical-align: 1px;
+}
+.moneyIcon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    background-color: #FFF9DA;
+    border: solid 1px #E4C411;
+    font-size: 12px;
+    color: #E4C411;
+    text-align: center;
+    vertical-align: 2px;
+}
+
+
+
+.publish_table{
+    width: 100%;
+    border: solid 1px #e5e5e5;
+    border-collapse: collapse;
+    border-bottom: none;
+}
+.publish_table th{
+    height: 60px;
+    line-height: 60px;
+    background-color: #FDF7F3;
+    border-bottom: solid 1px #e5e5e5;
+    font-size: 14px;
+    color: #9E6B49;
+    text-align: center;
+}
+.publish_table td{
+    height: 60px;
+    padding: 0 10px;
+    border-bottom: solid 1px #e5e5e5;
+    border-left: solid 1px #e5e5e5;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.publish_table td:first-child{
+    border-left: none;
+}
+.publish_table td .cjy-input-{
+    margin: 0 6px;
+}
+
+.publish_total{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: right;
+}
+
+
+.publish_title .pay_info_tips {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 12px;
+    padding: 0 12px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #E12C2C;
+}
+.publish_title .pay_info_tips i{
+    margin-right: 4px;
+}
+.publish_title .pay_info_tips:before {
+    position: absolute;
+    display: inline-block;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-right-color: rgba(0, 0, 0, 0.2);
+    left: -8px;
+    top: 7px;
+    content: '';
+}
+.publish_title .pay_info_tips:after {
+    position: absolute;
+    display: inline-block;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #fff;
+    border-bottom: 7px solid transparent;
+    left: -7px;
+    top: 8px;
+    content: '';
+}

@@ -1,0 +1,81 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>企业供应商</span>
+        <a href="javascript:;" class="back_title_btn floatR">+ 邀请供应商</a>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <select name="status">
+                <option value="">供应商状态</option>
+                <option value="1">待上传</option>
+                <option value="2">待审核</option>
+                <option value="3">正常</option>
+                <option value="4">审核未通过</option>
+                <option value="5">已拉黑</option>
+            </select>
+            <select name="join_way">
+                <option value="">供应商加入方式</option>
+                <option value="2">申请加入</option>
+                <option value="1">邀请加入</option>
+            </select>
+            <input name="company_name" type="text" placeholder="输入关键字，如：湖北国际经济技术合作" class="cjy-input-">
+            <a href="javascript:;" class="btn_confirm">确认</a>
+        </div>
+
+        <div class="back_main_list" id="supplier">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="200">
+                        <col width="150">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="50">
+
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>供应商名称</th>
+                        <th>申请/加入时间</th>
+                        <th>加入方式</th>
+                        <th>状态</th>
+                        <th>供应商等级</th>
+                        <th>操作</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="7">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{index}}</td>
+                        <td>{{item.supplier_name}}</td>
+                        <input type="hidden" name="company_id" :value="item.company_id">
+                        <input type="hidden" name="id" :value="item.id">
+                        <td>{{item.add_time}}</td>
+                        <td>{{item.join_way}}</td>
+                        <td>{{item.status}}</td>
+                        <td>{{item.supplier_level}}</td>
+                        <td v-html="item.is_manager"></td>
+                        <input type="hidden" name="supplier_file" :value="item.supplier_file">
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="7"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <input type="hidden" name="role_type" value="1">
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

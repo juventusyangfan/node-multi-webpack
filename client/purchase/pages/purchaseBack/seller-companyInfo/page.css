@@ -1,0 +1,134 @@
+body{
+    min-width: 1450px;
+}
+.cInfo_warp{
+    width: 1180px;
+    margin: 30px auto;
+}
+.cInfo_cell_title{
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    border-bottom: solid 1px #e5e5e5;
+    color: #333;
+}
+.cInfo_cell_title .showCon{
+    font-size: 12px;
+    float: right;
+}
+.cInfo_cell_title .showCon i.icon-xiajiantou{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+    transition: transform .3s;
+}
+.cInfo_cell_title .open i.icon-xiajiantou{
+    transform: rotate(180deg);
+}
+.cInfo_cell_con{
+    padding: 20px;
+    max-height: 1000px;
+    border-bottom: solid 1px #e5e5e5;
+    transition: max-height .3s ease;
+    overflow: hidden;
+}
+.cInfo_cell_line{
+    height: 60px;
+    line-height: 60px;
+}
+.cInfo_cell_line label{
+    display: inline-block;
+    width: 200px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.cInfo_cell_line .cInfo_cell_block{
+    width: 900px;
+    float: left;
+}
+.cInfo_cell_line .cInfo_cell_tips{
+    height: 20px;
+    line-height: 20px;
+    color: #999;
+}
+.cInfo_cell_line .cInfo_cell_tips i.icon-i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 18px;
+    margin-right: 6px;
+    vertical-align: 2px;
+    background-color: #50B2F6;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.cInfo_cell_line .logoUpload{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    color: #fff;
+    text-align: center;
+}
+.cInfo_cell_line .logoUpload:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.logo_img .img_default{
+    position: relative;
+    width: 120px;
+    margin-right: 20px;
+    float: left;
+    background-color: #fff;
+    border: solid 1px #e5e5e5;
+}
+.logo_img .img_default img{
+    width: 120px;
+    height: 120px;
+    object-fit: scale-down;
+}
+.cInfo_cell_block textarea{
+    width: 800px;
+    height: 280px;
+}
+.cInfo_cell_line .textNumCon{
+    height: auto;
+    line-height: 1;
+}
+.cInfo_btn_clear,.cInfo_btn_save{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+}
+.cInfo_btn_clear{
+    margin-right: 10px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+}
+.cInfo_btn_clear:hover{
+    border: solid 1px #FC6940;
+}
+.cInfo_btn_save{
+    border: solid 1px #FC6940;
+    background-color: #FC6940;
+    color: #fff;
+}
+.cInfo_btn_save:hover{
+    background-color: #F3623A;
+    border-color: #F3623A;
+    color: #fff;
+}

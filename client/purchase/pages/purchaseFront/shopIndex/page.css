@@ -1,0 +1,418 @@
+.sList_warp{
+    width: 100%;
+}
+.sList_banner{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 140px;
+    background-image: url(imgs/bannerBg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sList_banner_con{
+    width: 1180px;
+    margin: 0 auto;
+}
+.sList_banner .shop_logo{
+    width: 102px;
+    height: 140px;
+    line-height: 140px;
+    vertical-align: middle;
+    float: left;
+}
+.sList_banner .shop_logo img{
+    display: inline-block;
+    width: 102px;
+}
+.sList_banner .shop_name{
+    width: 640px;
+    margin-top: 44px;
+    margin-left: 10px;
+    float: left;
+}
+.sList_banner .shop_tel{
+    width: 400px;
+    margin-top: 38px;
+    float: right;
+}
+.sList_banner .shop_tel .telBg{
+    width: 100%;
+    height: 17px;
+    margin-right: 18px;
+    background: url(imgs/telBg.png) no-repeat right;
+    float: right;
+}
+.sList_banner .shop_tel .telCon{
+    /* width: 245px; */
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+    padding-right: 16px;
+    border-radius: 36px;
+    background-color: #E04745;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+}
+.sList_banner .shop_tel .telCon i{
+    margin-left: 18px;
+    margin-right: 6px;
+    font-size: 22px;
+    vertical-align: -2px;
+}
+.sList_nav{
+    width: 100%;
+    background-color: #E04745;
+}
+.sList_nav_con{
+    width: 1180px;
+    margin: 0 auto;
+}
+.sList_nav_con .sList_nav_cell{
+    display: inline-block;
+    width: 88px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.sList_nav_con a.active{
+    background-color: #333;
+}
+
+.pList_body{
+    width: 100%;
+    background-color: #fafafa;
+}
+.pList_body ul{
+    width: 1180px;
+    margin: 0 auto;
+}
+.pList_body li.pList_body_cell{
+    padding: 20px;
+    border: solid 1px #E5E5E5;
+    border-top: none;
+    background-color: #fafafa;
+}
+.pList_body li.pList_body_cell:first-child{
+    border-top: solid 1px #E5E5E5;
+}
+.pList_body li.pList_body_cell:hover{
+    border: solid 1px #ccc;
+    border-top: none;
+    box-shadow: 0 2px 6px #ccc;
+    background-color: #fff;
+}
+.pList_body li.pList_body_cell:first-child:hover{
+    border-top: solid 1px #ccc;
+}
+li.pList_body_cell .cell_img{
+    width: 80px;
+    height: 80px;
+    border: solid 1px #e5e5e5;
+    float: left;
+}
+li.pList_body_cell .cell_img img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+}
+li.pList_body_cell .cell_name{
+    width: 260px;
+    line-height: 1.5;
+    margin-left: 20px;
+    float: left;
+}
+li.pList_body_cell .cell_des{
+    width: 230px;
+    line-height: 1.5;
+    margin-left: 20px;
+    float: left;
+}
+li.pList_body_cell .cell_des .ellipsis{
+    width: 220px;
+}
+li.pList_body_cell .cell_money,li.pList_body_cell .cell_warehouse{
+    width: 180px;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #999;
+    float: left;
+}
+li.pList_body_cell .cell_btn{
+    display: inline-block;
+    width: 95px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 20px;
+    border: solid 1px #FC6940;
+    border-radius: 4px;
+    color: #FC6940;
+    text-align: center;
+    float: right;
+}
+
+/* banner */
+.banner_wrap{
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+}
+.banner_wrap .banner_bg{
+    height: 420px;
+    margin: 0 auto;
+}
+.slides_cell{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.banner_bg .banner_item{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 420px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel_dot {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    z-index: 1;
+}
+.carousel_dot .carousel_dot_span{
+    display: inline-block;
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.carousel_dot a.active{
+    opacity: 1;
+}
+
+.pList_title{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+.pList_title .title_line{
+    display: inline-block;
+    width: 123px;
+    border-bottom: solid 1px #333;
+    margin: 0 10px;
+    vertical-align: 6px;
+}
+
+.pList_product{
+    position: relative;
+    width: 100%;
+    height: 462px;
+    background-color: #fff;
+}
+.pList_product ul{
+    display: flex;
+    justify-content: center;
+}
+.pList_product li{
+    margin-left: 20px;
+    float: left;
+}
+.pList_product li:first-child{
+    margin-left: 0;
+}
+.pList_product .pList_pro_cell{
+    display: inline-block;
+    width: 218px;
+    height: 330px;
+    border: solid 1px #fff;
+    transition: all .2s ease-in-out;
+}
+.pList_product .pList_pro_cell:hover{
+    margin-top: -10px;
+    border: solid 1px #e5e5e5;
+    box-shadow: 0 2px 6px #e5e5e5;
+}
+.pList_product .pList_pro_cell img{
+    width: 218px;
+    height: 218px;
+    object-fit: scale-down;
+}
+.pList_product .pList_pro_cell p{
+    line-height: 1.5;
+    margin: 14px 20px 0 20px;
+    color: #000;
+}
+.pList_product .pList_pro_cell p.fontSize12{
+    margin-top: 6px;
+}
+.pList_product .pList_pro_arrow{
+    position: absolute;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    top: 240px;
+    border-radius: 48px;
+    background-color: #eee;
+    text-align: center;
+}
+.pList_product .left{
+    left: 50%;
+    margin-left: -660px; 
+}
+.pList_product .right{
+    right: 50%;
+    margin-right: -660px; 
+}
+.pList_product .pList_pro_arrow i{
+    font-size: 24px;
+}
+
+.pList_company{
+    width: 100%;
+    background: url(imgs/comBgColor.png);
+}
+.pList_company_bg{
+    width: 100%;
+    height: 244px;
+    margin-top: -70px;
+    background: url(imgs/comBg.png) no-repeat;
+    background-size: cover;
+}
+.pList_company .pList_title{
+    color: #fff;
+}
+.pList_company .pList_title .title_line{
+    border-bottom: solid 1px #fff;
+}
+.pList_company .pList_com_cell{
+    width: 380px;
+    height: 245px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    float: left;
+}
+.pList_company .pList_com_cell:nth-child(3n+1){
+    margin-left: 0;
+}
+.pList_company .pList_com_cell img{
+    width: 380px;
+    height: 211px;
+    object-fit: scale-down;
+}
+.pList_company .pList_com_cell p{
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.pList_list_more{
+    display: block;
+    width: 95px;
+    height: 26px;
+    line-height: 26px;
+    margin: 40px auto;
+    border: solid 1px #e5e5e5;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #999;
+    text-align: center;
+}
+
+.pList_info_con{
+    width: 100%;
+    height: 290px;
+    padding: 60px 0;
+    background: url(imgs/infoBg.png) no-repeat;
+    background-size: cover;
+}
+.pList_info_con .info_warp{
+    width: 1160px;
+    height: 290px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+.pList_info_con .inof_txt{
+    width: 540px;
+    height: 290px;
+    color: #fff;
+    float: left;
+}
+.pList_info_con .inof_txt h1{
+    font-size: 18px;
+    font-weight: 400;
+}
+.pList_info_con .inof_txt i.icon-vip{
+    margin-left: 6px;
+    font-size: 20px;
+    color: #FFC000;
+    vertical-align: -1px;
+}
+.pList_info_con .inof_line{
+    display: block;
+    width: 43px;
+    height: 5px;
+    margin: 20px 0;
+    background: #D82E30;
+}
+.pList_info_con .info_item{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+.pList_info_con .info_item label{
+    display: inline-block;
+    width: 70px;
+    color: #ccc;
+}
+.pList_info_con .info_item span{
+    display: inline-block;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    vertical-align: -10px;
+}
+.pList_info_con .info_item .askForQQ{
+    display: inline-block;
+    width: 87px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border: solid 1px #5887E6;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #5887E6;
+    text-align: center;
+}
+.pList_info_con .info_item i.icon-QQ{
+    margin-right: 4PX;
+    vertical-align: -2px;
+}
+.pList_info_con .info_map{
+    width: 590px;
+    height: 290px;
+    float: right;
+}

@@ -1,0 +1,40 @@
+.back_main_content{
+    padding: 50px 30px;
+}
+.dimension_warp{
+    width: 900px;
+    margin: 0 auto;
+}
+.dimension_title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.dimension_time{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.dimension_content{
+    line-height: 2;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #777;
+}
+.dimension_file{
+    margin-top: 50px;
+}
+.affix_item span{
+    display: inline-block;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 20px;
+    vertical-align: 6px;
+}
+.affix_item i,.affix_item a{
+    vertical-align: 8px;
+}
+.affix_item i.icon-huishouxiang{
+    cursor: pointer;
+}

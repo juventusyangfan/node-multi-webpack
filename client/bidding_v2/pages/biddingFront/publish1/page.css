@@ -1,0 +1,126 @@
+.package_multi{
+    width: 1200px;
+    margin-top: 10px;
+}
+.package_single{
+    margin-top: 20px;
+}
+.package_single .publish_block select{
+    width: 440px;
+}
+.package_single .cjy-select .cjy-search-input{
+    width: 420px!important;
+}
+.package_single .cjy-select dl dd.cjy-search-input input{
+    width: 400px!important;
+}
+.package_single .cjy-area{
+    width: 410px;
+}
+.package_single .cjy-area .cjy-area-input{
+    width: 400px;
+}
+
+.publish_table{
+    width: 100%;
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+    border-collapse: collapse;
+}
+.publish_table th{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    background-color: #F8F8F8;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+}
+.publish_table td{
+    position: relative;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+.publish_table td .cjy-select{
+    width: 98%!important;
+    margin-right: 0;
+    float: left;
+}
+.publish_table .cjy-select .cjy-select-input {
+    width: 88%!important;
+}
+.publish_table .cjy-select dl dd{
+    width: 93%!important;
+}
+.publish_table .cjy-search-input input{
+    width: 93%!important;
+}
+.publish_table td .cjy-select-title i{
+    top: 12px;
+}
+.publish_table td .cjy-area{
+    width: 82%;
+}
+.publish_table td .cjy-area .cjy-area-input{
+    width: 90%;
+}
+
+
+.publish_table td.row_add{
+    padding: 0;
+}
+.publish_table td.row_add a{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FF3600;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.publish_table td.row_add a:hover{
+    background-color: #ec3200;
+}
+.publish_table tr{
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+}
+.publish_table tbody tr.js_show{
+    height: 61px;
+}
+.publish_table tbody tr.js_show:hover{
+    height: 59px;
+    border: dashed 1px #FF3600;
+}
+
+.multi_oprate{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.multi_oprate i{
+    position: absolute;
+    display: none;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+    background-color: #FF3600;
+    cursor: pointer;
+}
+.publish_table tbody tr.js_show:hover i{
+    display: block;
+}
+.multi_oprate .add_multi{
+    top: -40px;
+    left: 100%;
+}
+.multi_oprate .del_multi{
+    bottom: -18px;
+    left: 100%;
+}

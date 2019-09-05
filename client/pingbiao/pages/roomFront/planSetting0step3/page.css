@@ -1,0 +1,100 @@
+.setting_warp{
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #F4F4F4;
+}
+.setting_warp .crumbs_con{
+    width: 1366px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    color: #888;
+}
+.setting_warp .crumbs_con i.icon-ditu{
+    margin-right: 4px;
+    vertical-align: -1px;
+}
+.setting_container{
+    width: 1366px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+ul.setting_step_con{
+    width: 100%;
+    height: 106px;
+}
+ul.setting_step_con li{
+    display: inline-block;
+    width: 454px;
+    height: 106px;
+    margin-left: 2px;
+    background: url(imgs/bgNormal.png) no-repeat top;
+    float: left;
+}
+ul.setting_step_con li:first-child{
+    margin-left: 0;
+}
+ul.setting_step_con li.active{
+    background: url(imgs/bgActive.png) no-repeat top;
+}
+ul.setting_step_con .setting_step_title{
+    line-height: 68px;
+    font-size: 16px;
+    color: #D7C7FF;
+    text-align: center;
+}
+ul.setting_step_con .setting_step_num{
+    color: #D7C7FF;
+    text-align: center;
+}
+ul.setting_step_con li.active .setting_step_title{
+    font-weight: 700;
+    color: #fff;
+}
+ul.setting_step_con li.active .setting_step_num{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.setting_complete{
+    height: 500px;
+    padding-top: 120px;
+    text-align: center;
+}
+.setting_complete i.icon-gou{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #31C37C;
+    border-radius: 48px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+.setting_complete p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+.setting_complete .setting_btn_back{
+    display: inline-block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    margin-top: 40px;
+    background-color: #9AC45C;
+    border: solid 1px #9AC45C;
+    color: #fff;
+    box-shadow: 0 1px 5px 0px #9AC45C;
+    border-radius: 46px;
+    font-size: 16px;
+    text-align: center;
+}
+.setting_complete .setting_btn_back:hover{
+    background-color: #6aa611
+}

@@ -1,0 +1,10 @@
+<div class="com_side_menu">
+    <dl>
+        <% for(var i = 0;i < sideItems.length;i++) { %>
+        <dt><%= sideItems[i].dt %></dt>
+        <% for(var j = 0;j < sideItems[i].dd.length;j++){ %>
+        <dd><a href="#" class="<%= sideItems[i].dd[j].act ? "active" : "" %>"><%= sideItems[i].dd[j].name %><i class="iconfont icon-youjiantou-xi"></i></a></dd>
+        <% } %>
+        <% } %>
+    </dl>
+</div>

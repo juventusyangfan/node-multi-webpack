@@ -1,0 +1,95 @@
+.back_main{
+    text-align: center;
+}
+.back_main_bg{
+    display: inline-block;
+    width: 178px;
+    height: 132px;
+    margin: 320px auto 0 auto;
+    background: url("imgs/indexDefoult.png") no-repeat;
+}
+.back_main>p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.comingCon{
+    margin-bottom: 30px;
+}
+.comingCon .comingNotice{
+    width: 123px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 14px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: #00B27E;
+    color: #fff;
+    text-align: center;
+}
+.comingNotice i{
+    margin-right: 6px;
+}
+.comingList{
+    padding: 0 30px;
+}
+.comingList li{
+    position: relative;
+    display: block;
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+.comingList li p{
+    margin-top: 0;
+    text-align: left;
+}
+.comingList li a{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    right: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+.comingList li a.downLoad{
+    top: 60px;
+    background-color: #fc6940;
+    border-color: #fc6940;
+    color: #fff;
+}
+.comingList li a.downLoad:hover{
+    background-color: #F3623A;
+    border-color: #F3623A;
+    color: #fff;
+}
+
+.cjy-layer-center .cjy-tips{
+    padding: 10px 0 10px 10px;
+    line-height: 1.5;
+    text-align: left;
+}
+.downLoad-pop{
+    padding: 20px 30px;
+}
+.dl-pop-item{
+    margin-bottom: 10px;
+    clear: both;
+}
+.dl-pop-item label{
+    float: left;
+    display: block;
+    width: 100px;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+.dl-pop-block{
+    line-height: 40px;
+    margin-left: 100px;
+}

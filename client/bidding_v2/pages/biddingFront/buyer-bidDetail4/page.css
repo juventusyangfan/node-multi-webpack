@@ -1,0 +1,176 @@
+.other_top_con{
+    height: 176px;
+}
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    height: 60px;
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list td {
+    height: 46px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    background-color: #F8F8F8;
+    font-weight: 700;
+}
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 3px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+.material_list .table_btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #FF3600;
+    text-align: center;
+}
+
+.bid_detail_tips{
+    margin-bottom: 20px;
+}
+.bid_detail_tips .bid_detail_notice{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #F5AF9D;
+    border-radius: 28px;
+    padding: 0 16px;
+    color: #DC2F00;
+    text-align: center;
+}
+.bid_detail_tips .bid_detail_btn{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background-color: #FF3600;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+.bid_detail_tips .bid_detail_btn:hover{
+    background-color: #ec3200;
+}
+
+.payment_wrap{
+    padding: 0 20px;
+}
+.payment_block{
+    height: 40px;
+    line-height: 40px;
+}
+.payment_block label{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.payment_item{
+    width: 500px;
+    font-weight: 700;
+    color: #333;
+    float: left;
+}
+.payment_item .cjy-radio{
+    margin-right: 30px;
+}
+.payment_item textarea{
+    width: 400px;
+    padding: 10px;
+    border: solid 1px #ccc;
+}
+
+
+/* 选择评标方法 */
+.rateTypeDlg-content{
+    padding: 80px;
+    text-align: center;
+}
+.rateTypeDlg-content .rateType_cell{
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 20px;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+.rateTypeDlg-content .rateType_cell:first-child{
+    margin-left: 0;
+}
+.rateTypeDlg-content .rateType_cell:hover,.rateTypeDlg-content .selected{
+    border: solid 1px #F24D20;
+    color: #F24D20;
+}
+.rateTypeDlg-content .rateType_checked{
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-width: 16px;
+    border-color: #ccc transparent transparent #ccc;
+    border-style: solid;
+    border-top-left-radius: 4px;
+    overflow: hidden;
+}
+.rateTypeDlg-content .selected .rateType_checked,.rateTypeDlg-content .rateType_cell:hover .rateType_checked{
+    border-color: #F24D20 transparent transparent #F24D20;
+}
+.rateTypeDlg-content .rateType_cell i.icon-gou{
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    top: 2px;
+    left: 4px;
+}

@@ -1,0 +1,619 @@
+<div class="banner_wrap js_slides">
+    <div class="banner_bg js_slidesContainer">
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <a href="javascript:;" class="banner_item" style="background-image: url(<%= banner1 %>)">
+            </a>
+        </div>
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <div class="banner_item" style="background-image: url(<%= banner2 %>)">
+            </div>
+        </div>
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <div class="banner_item" style="background-image: url(<%= banner3 %>)">
+            </div>
+        </div>
+        <div class="slides_cell js_slidesCell" style="z-index: 0; display: none;">
+            <div class="banner_item" style="background-image: url(<%= banner5 %>)">
+            </div>
+        </div>
+    </div>
+    <div class="carousel_dot js_pagination">
+        <a href="javascript:;" class="carousel_dot_span"></a>
+        <a href="javascript:;" class="carousel_dot_span"></a>
+        <a href="javascript:;" class="carousel_dot_span"></a>
+        <a href="javascript:;" class="carousel_dot_span"></a>
+    </div>
+    <div class="login_wrap">
+        <!--<div class="login_box">-->
+        <!--<div class="login_item login_title position_relative">-->
+        <!--<strong class="active">我是供应商</strong>-->
+        <!--<strong>我是采购商</strong>-->
+        <!--</div>-->
+        <!--<div class="login_item marginT30">-->
+        <!--<i class="iconfont icon-ren user_icon"></i>-->
+        <!--<input type="text" name="" placeholder="请输入手机号" />-->
+        <!--</div>-->
+        <!--<div class="login_item">-->
+        <!--<i class="iconfont icon-quanxian-shouxian pwd_icon"></i>-->
+        <!--<input type="password" name="" placeholder="请输入密码" />-->
+        <!--</div>-->
+        <!--<div class="err_area">-->
+        <!--<div class="err_tips">-->
+        <!--<i class="iconfont icon-cha1 err_icon"></i>-->
+        <!--<span>账号错误</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="login_item">-->
+        <!--<button>登录生材网</button>-->
+        <!--</div>-->
+        <!--<div class="login_item marginB30 clearfix">-->
+        <!--<a class="forget_pwd" href="javascript:;">忘记密码？</a>-->
+        <!--<a class="sign_up" href="javascript:;">立即注册</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="login_box">
+            <div class="login_item login_title position_relative">
+                <strong class="active">采购商中心</strong>
+            </div>
+            <div class="buyerBox">
+                <div class="fastNav clearfix marginT20">
+                    <a href="javascript:;"><i class="iconfont icon-daan"></i><span>发布<br>招标</span></a>
+                    <a href="javascript:;"><i class="iconfont icon-fabuxunbijia"></i><span>发布<br>询比价</span></a>
+                    <a href="javascript:;"><i class="iconfont icon-fabujingzhengxingtanpan"></i><span>发布<br>竞争性谈判</span></a>
+                </div>
+                <div class="fastTitle">生材网头条</div>
+                <div class="fastCon">
+                    <ul>
+                        <li><a href="#">生材网平台正式上线生材网平台正式上线</a></li>
+                        <li><a href="#">生材网平台正式上线</a></li>
+                        <li><a href="#">生材网平台正式上线</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="login_box">-->
+        <!--<div class="login_item login_title position_relative">-->
+        <!--<strong class="active">供应商中心</strong>-->
+        <!--</div>-->
+        <!--<div class="sellerBox">-->
+        <!--<div class="fastNav clearfix marginT20">-->
+        <!--<a href="javascript:;"><i class="iconfont icon-zhaobiao"></i><br>企业<br>全部投标</a>-->
+        <!--<a href="javascript:;"><i class="iconfont icon-yaoqingguanli"></i><br>邀请<br>管理</a>-->
+        <!--</div>-->
+        <!--<div class="fastTitle marginT20">生材网头条</div>-->
+        <!--<div class="fastCon">-->
+        <!--<ul>-->
+        <!--<li><a href="#">生材网平台正式上线生材网平台正式上线</a></li>-->
+        <!--<li><a href="#">生材网平台正式上线</a></li>-->
+        <!--<li><a href="#">生材网平台正式上线</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="notify_wrap bgf7">
+    <div class="notify_inner">
+        <i class="iconfont icon-lingdang"></i>
+        <div class="notify_container">
+            <ul class="notify_list clearfix" style="left: 0;">
+                <li class="notify_item">
+                    <span></span>
+                    <b href="javascript:;">恭喜湖北省楚建易网络科技有限公司成功入驻生材网1！</b>
+                </li>
+                <li class="notify_item">
+                    <span></span>
+                    <b class="color333" href="javascript:;">恭喜湖北省楚建易网络科技有限公司成功入驻生材网2！</b>
+                </li>
+                <li class="notify_item">
+                    <span></span>
+                    <b href="javascript:;">恭喜湖北省楚建易网络科技有限公司成功入驻生材网3！</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="module_item_wrap" id="exclusive">
+    <div class="module_item">
+        <div class="module_header clearfix">
+            <div class="module_title">
+                <h3>独家招标</h3>
+            </div>
+            <div class="module_cate">
+                <span data-tender="tender" v-on:click="changeExclusive(0)" class="md_txt" :class="{active:type==0}" class="md_txt active" collect_type="0">全部<i class="md_line"></i></span>
+                <span data-tender="tender" v-on:click="changeExclusive(1)" class="md_txt" :class="{active:type==1}" collect_type="1">公开招标<i class="md_line"></i></span>
+                <span data-tender="tender" v-on:click="changeExclusive(2)" class="md_txt" :class="{active:type==2}" class="md_txt" collect_type="2">邀请招标<i class="md_line"></i></span>
+                <span data-tender="tender" v-on:click="changeExclusive(3)" class="md_txt" :class="{active:type==3}" class="md_txt" collect_type="3">询比价<i class="md_line"></i></span>
+                <span data-tender="tender" v-on:click="changeExclusive(4)" class="md_txt" :class="{active:type==4}" class="md_txt" collect_type="4">竞争性谈判<i class="md_line"></i></span>
+            </div>
+            <div class="module_more_wrap">
+                <div class="module_more_inner">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+            </div>
+        </div>
+        <div class="module_content">
+            <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+            <ul class="exclusive_list" style="display: none;" v-if="list.length>0">
+                <li class="exclusive_item clearfix" v-for="item in list">
+                    <div class="exclusive_left">
+                        <div class="exclusive_img">
+                            <img :src="item.exclusive_img">
+                            <span :class="item.class_span">{{item.tender_status_key}}</span>
+
+                        </div>
+                    </div>
+                    <div class="exclusive_right clearfix">
+                        <div class="exclusive_info">
+
+                            <p class="exclusive_name ellipsis"> <a target="_blank" :href="item.href">{{item.tender_name}}</a></p>
+
+                            <div class="exclusive_brief clearfix">
+                                <p>
+                                    <span>采购单位：</span>
+                                    <b class="textBlack1 ellipsis">{{item.buyer_name}}</b>
+                                </p>
+                                <p>
+                                    <span>所属项目：</span>
+                                    <b class="textBlack1 ellipsis">{{item.item_name}}</b>
+                                </p>
+                                <p class="marginR0">
+                                    <span>采购性质：</span>
+                                    <b>{{item.buy_type_name}}</b>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="exclusive_invitation">
+                            <a href="javascript:;">
+                                <i :class="'iconfont icon-'+item.icon_class+' invite_icon'"></i><span>{{item.collect_type_title}}</span>
+                            </a>
+                        </div>
+                        <div class="exclusive_bottom">
+                            <span>集采类型：</span>
+                            <span>{{item.tender_class_title}}</span>
+                            <span class="marginL40">发布时间：</span>
+                            <span>{{item.create_time}}</span>
+                            <span class="marginL40">投标/报价截止：</span>
+                            <span class="colorfc6940">{{item.bid_end_time}}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul >
+            <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+        </div>
+    </div>
+</div>
+<div class="module_item_wrap bgf7">
+    <div class="module_item">
+        <div class="module_header clearfix">
+            <div class="module_title">
+                <h3>中标公示</h3>
+            </div>
+            <div class="module_more_wrap">
+                <div class="module_more_inner">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+            </div>
+        </div>
+        <div class="module_content">
+            <div class="marquee_wrap">
+                <div class="marquee_wrap_inner">
+                    <div class="marquee_box clearfix">
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi01 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_green">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi02 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_blue">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi03 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_red">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi04 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_yellow">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi01 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_green">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi02 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_blue">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi03 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_red">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi04 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_yellow">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi01 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_green">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="marquee_item">
+                            <div class="marquee_img">
+                                <img src="<%= gongshi02 %>">
+                                <p class="marquee_date">
+                                    <span class="marquee_month">07&nbsp;/&nbsp;11</span>
+                                    <span class="marquee_year border_blue">2018</span>
+                                </p>
+                            </div>
+                            <div class="marquee_info">
+                                <a class="marquee_title">西藏博物馆改扩建项目土建工程施工降水及基坑支护、抗浮锚杆工程</a>
+                                <span class="marquee_pre">中标单位：</span>
+                                <p class="marquee_company ellipsis">中国一局集团第五建筑有限公司</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_area">
+                    <span class="btn_left"><i class="iconfont icon-zuojiantou btn_left_icon"></i></span>
+                    <span class="btn_right"><i class="iconfont icon-youjiantou btn_right_icon"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="module_item_wrap">
+    <div class="module_item">
+        <div class="module_header clearfix">
+            <div class="module_title">
+                <h3>优质供应商</h3>
+            </div>
+            <div class="module_more_wrap">
+                <div class="module_more_inner">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+            </div>
+        </div>
+        <div class="module_content">
+            <div class="supplier_wrap">
+                <ul class="supplier_inner clearfix">
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company001 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis" title="武汉恒鑫爵商贸有限公司">武汉恒鑫爵商贸有限公司</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis" title="水暖、建筑五金及塑料及制品">水暖、建筑五金及塑料及制品</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company002 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis" title="武汉普卫思建材科技有限公司">武汉普卫思建材科技有限公司</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis" title="水暖、建筑五金及建筑材料">水暖、建筑五金及建筑材料</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company003 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis" title="武汉鑫润祥物资有限公司">武汉鑫润祥物资有限公司</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis"
+                                      title="生铁、铁合金、型钢、钢板、钢带及有色金属">生铁、铁合金、型钢、钢板、钢带及有色金属</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company004 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis" title="湖北鑫祥商品混凝土有限公司">湖北鑫祥商品混凝土有限公司</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis" title="建筑材料">建筑材料</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="supplier_item clearfix">
+                        <div class="supplier_img">
+                            <img src="<%= company01 %>">
+                        </div>
+                        <div class="supplier_info">
+                            <a class="supplier_name ellipsis">武钢绿色城市建设</a>
+                            <p class="supplier_intro">
+                                <i class="iconfont icon-yewu iconfont icon-yewu supplier_icon"></i>
+                                <span class="supplier_txt ellipsis">土建材料、电气工程</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="module_item_wrap bgf7" id="app">
+    <div class="module_item">
+        <div class="module_header clearfix">
+            <div class="module_title">
+                <h3>三方招标信息</h3>
+            </div>
+            <div class="module_cate">
+                <span province_code="" v-on:click="changeProvince('')" class="md_txt" :class="{active:cate==''}">全部<i class="md_line"></i></span>
+                <span province_code="1709" v-on:click="changeProvince(1709)" class="md_txt" :class="{active:cate==1709}">湖北省<i class="md_line"></i></span>
+                <span province_code="1827" v-on:click="changeProvince(1827)" class="md_txt" :class="{active:cate==1827}">湖南省<i class="md_line"></i></span>
+                <span province_code="1532" v-on:click="changeProvince(1532)" class="md_txt" :class="{active:cate==1532}">河南省<i class="md_line"></i></span>
+                <span province_code="1263" v-on:click="changeProvince(1263)" class="md_txt" :class="{active:cate==1263}">江西省<i class="md_line"></i></span>
+            </div>
+            <div class="module_more_wrap">
+                <div class="module_more_inner">
+                    <i class="iconfont icon-gengduo"></i>
+                </div>
+            </div>
+        </div>
+        <div class="module_content">
+            <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+            <ul class="tender_content" style="display: block;" v-if="list.length>0">
+                <li class="tender_item" v-for="item in list">
+                    <p class="tender_info">
+                        <i class="iconfont icon-youjiantou tender_icon"></i>
+                        <a class="tender_title ellipsis" :href="item.origin_url" target="_blank">{{item.name}}</a>
+                        <span class="tender_area">{{item.province_name}}</span>
+                        <span class="tender_company ellipsis">{{item.bid_company}}</span>
+                        <span class="tender_date">{{item.release_time_format}}</span>
+                    </p>
+                </li>
+            </ul>
+            <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+        </div>
+    </div>
+</div>
+<!-- 右侧工具 -->
+<div class="toolbar-menu">
+    <ul class="toolbar-list">
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-vip"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">VIP会员服务</span>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-zhinanzhen"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">新手入门</span>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-erweima"></i>
+            </a>
+            <div class="toolbar-box">
+                <div class="qrcode-wrap">
+                    <div class="qrcode-inner">
+                        <img src="<%= kefuApp %>" alt="生材网二维码">
+                        <p>扫描二维码下载APP</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-kefu1"></i>
+            </a>
+            <div class="toolbar-box">
+                <div class="kefu-wrap">
+                    <dl class="app-kefu">
+                        <dt class="kefu-zixun">客户咨询：</dt>
+                        <dd class="kefu-txt">027-82815329</dd>
+                        <dt class="kefu-shou">售后服务：</dt>
+                        <dd class="kefu-txt">027-82813259</dd>
+                        <dt class="kefu-tousu">投诉电话：</dt>
+                        <dd class="kefu-txt">027-82810705</dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+        <li class="toolbar-item">
+            <a class="toolbar-alink" href="javascript:;">
+                <i class="iconfont icon-fankui"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">用户反馈</span>
+            </div>
+        </li>
+        <li class="toolbar-item" style="display: none;">
+            <a class="toolbar-alink backtop" href="javascript:;">
+                <i class="iconfont icon-huidaodingbu"></i>
+            </a>
+            <div class="toolbar-box">
+                <span class="toolbar-txt">回到顶部</span>
+            </div>
+        </li>
+    </ul>
+</div>

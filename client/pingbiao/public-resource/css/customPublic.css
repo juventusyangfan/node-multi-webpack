@@ -1,0 +1,230 @@
+/**基础样式**/
+body {
+    min-width: 1200px;
+    font-size:14px;
+    line-height:1.2;
+    padding:0;
+    margin:0;
+    font-family:'Microsoft YaHei','simsun';
+    color: #666666;
+}
+
+a{
+    color: #333333;
+    text-decoration: none;
+}
+a:hover{
+    color: #fc6940;
+}
+
+input,select,textarea,table {
+    font-size:14px;
+    font-family:'Microsoft YaHei','simsun';
+}
+
+table {
+    margin:0 auto;
+}
+
+.floatL {
+    float:left;
+}
+
+.floatR {
+    float:right;
+}
+.clear {
+    clear:both;
+    height:0;
+    line-height:0;
+    font-size:0;
+    overflow:hidden;
+}
+.clearBorder{
+    border: none!important;
+}
+
+.clearFloat {
+    clear:both;
+    overflow:hidden;
+}
+/* 用于浮动元素的父元素 */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*兼容IE6、7*/
+.clearfix {
+    *zoom:1;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+/**width**/
+.width180{
+    width: 180px;
+}
+.width300{
+    width: 300px;
+}
+.width1200{
+    width: 1200px;
+}
+/**margin-left**/
+.marginT10{
+    margin-top: 10px;
+}
+.marginT18{
+    margin-top: 18px;
+}
+.marginT20{
+    margin-top: 20px!important;
+}
+.marginT30{
+    margin-top: 30px;
+}
+.marginT60{
+    margin-top: 60px;
+}
+/**margin-left**/
+.marginL10{
+    margin-left: 10px!important;
+}
+.marginL20{
+    margin-left: 20px;
+}
+.marginL30{
+    margin-left: 30px;
+}
+.marginL40{
+    margin-left: 40px;
+}
+/**margin-right**/
+.marginR10{
+    margin-right: 10px!important;
+}
+.marginR20{
+    margin-right: 20px;
+}
+.marginR24{
+    margin-right: 24px;
+}
+.marginR60{
+    margin-right: 60px;
+}
+/**margin-bottom**/
+.marginB10{
+    margin-bottom: 10px;
+}
+.marginB20{
+    margin-bottom: 20px;
+}
+.marginB30{
+    margin-bottom: 30px;
+}
+/**font-size**/
+.fontSize12{
+    font-size: 12px!important;
+}
+.fontSize14{
+    font-size: 14px!important;
+}
+.fontSize16{
+    font-size: 16px!important;
+}
+.fontSize20{
+    font-size: 20px!important;
+}
+.fontSize24{
+    font-size: 24px!important;
+}
+.fontSize30{
+    font-size: 30px!important;
+}
+/* 文字加粗 */
+.fontBold{
+    font-weight: bold;
+}
+/**字体颜色**/
+.textOrange{
+    color: #fc6940!important;
+}
+.textRed{
+    color: #fd4545!important;
+}
+.textBlue{
+    color: #0084ff!important;
+}
+.textGreen{
+    color: #9AC45C!important;
+}
+.textBlack1{
+    color: #333!important;
+}
+.textBlack2{
+    color: #666!important;
+}
+.textBlack3{
+    color: #999!important;
+}
+.textWhite{
+    color: #fff!important;
+}
+.textCoffee{
+    color: #8b4e01!important;
+}
+/**字体排版**/
+.textC{
+    text-align: center;
+}
+.textR{
+    text-align: right;
+}
+.textL{
+    text-align: left;
+}
+/* table中字体颜色 */
+.tdGreen{
+    color: #9AC45C;
+}
+.tdGreenD{
+    color: #078146;
+}
+.tdRed{
+    color: #f24d20;
+}
+.tdRedD{
+    color: #c51919;
+}
+.tdPurple{
+    color: #653ec7;
+}
+/**背景颜色**/
+.backgroundColor1{
+    background-color: #DCEEFC;
+}
+/**验证必填**/
+.TZW{
+    vertical-align: -2px;
+    margin: 5px;
+    color: #ff5959;
+}
+/**手型**/
+.curPointer{
+    cursor: pointer;
+}
+/**限制显示省略号**/
+.ellipsis{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}

@@ -1,0 +1,51 @@
+.publish_fujian_list{
+    margin-top: 10px;
+}
+.publish_fujian_list .fujian_con{
+    margin-bottom: 6px;
+}
+.publish_fujian_list .fujian_con i{
+    margin-right: 4px;
+}
+.publish_fujian_list .fujian_con .fujian_link{
+    display: inline-block;
+    max-width: 900px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    vertical-align: -4px;
+}
+
+a.publish_view{
+    display: inline-block;
+    min-width: 70px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 10px;
+    padding: 0 20px;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    text-align: center;
+    float: right;
+}
+a.publish_view i{
+    margin-right: 10px;
+}
+
+.rich_text_dialog{
+    padding: 10px 20px;
+}
+
+.rich_text_dialog em {
+    font-style: italic;
+}
+.rich_text_dialog h1 { font-size: 2em;}
+.rich_text_dialog h2 { font-size: 1.5em;}
+.rich_text_dialog h3 { font-size: 1.17em;}
+.rich_text_dialog h4 { font-size: 1.12em;}
+.rich_text_dialog h5 { font-size: .83em;}
+.rich_text_dialog h6 { font-size: .75em;}
+.rich_text_dialog h1,.rich_text_dialog h2,.rich_text_dialog h3,.rich_text_dialog h4,.rich_text_dialog h5,.rich_text_dialog h6,.rich_text_dialog strong,.rich_text_dialog b {
+    font-weight: bolder;
+}

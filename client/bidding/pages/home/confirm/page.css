@@ -1,0 +1,199 @@
+.export_top_menu,.export_footer{
+    width: 1180px;
+    height: 150px;
+    margin: 0 auto;
+}
+.export_top_menu .export_logo{
+    display: block;
+    width: 363px;
+    height: 66px;
+    margin-top: 54px;
+    background: url(imgs/exportLogo.png) no-repeat;
+    float: left;
+}
+.export_footer{
+    margin-top: 20px;
+}
+.export_footer .export_btn,.export_top_menu .export_btn{
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fc6940;
+    float: right;
+}
+.export_footer .export_back,.export_top_menu .export_back{
+    display: inline-block;
+    width: 102px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+    float: right;
+}
+.export_footer .export_btn,.export_footer .export_back{
+    margin-top: 0;
+}
+.export_footer .export_btn:hover{
+    background-color: #f3623a;
+}
+.exportCon{
+    width: 100%;
+    height: auto;
+    background: url(imgs/exportBg.png) repeat 50%;
+    background-color: #4956A3;
+}
+.export_tips{
+    width: 1178px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 10px auto;
+    border: solid 1px #F7E3A4;
+    background-color: #FCFAE3;
+}
+.export_tips i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px;
+    background-color: #50B2F6;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+}
+.export_box{
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+.export_container{
+    width: 1140px;
+    background-color: #F9FAFF;
+}
+.export_con_top{
+    width: 1140px;
+    height: 16px;
+    background: url(imgs/exportTop.png) no-repeat;
+}
+.export_con_mid{
+    width: 800px;
+    margin: 0 auto;
+}
+.export_con_bottom{
+    width: 1140px;
+    height: 60px;
+    margin-top: 100px;
+    background: url(imgs/exportBottom.png) no-repeat;
+}
+.export_title{
+    width: 515px;
+    height: 108px;
+    margin: 50px auto 0 auto;
+    background: url(imgs/exportTitle.png) no-repeat;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+.export_head{
+    height: 16px;
+    line-height: 16px;
+    margin-top: 50px;
+}
+.export_head .export_head_text{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2C3EA8;
+    float: left;
+}
+.export_head .export_head_line{
+    display: inline-block;
+    width: 343px;
+    height: 1px;
+    margin-top: 7px;
+    margin-left: 2px;
+    background: url(imgs/exportLine.png) no-repeat;
+    float: left;
+}
+.export_head .export_head_tips{
+    display: inline-block;
+    margin-left: 360px;
+    margin-top: -16px;
+    float: left;
+}
+.export_head .export_head_tips i{
+    margin-right: 6px;
+}
+
+.export_body .export_block{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.export_body .export_block label{
+    display: inline-block;
+    width: 130px;
+    color: #666;
+    float: left;
+}
+.export_body h2{
+    height: 16px;
+    line-height: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: solid 6px #FC6940;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+.export_body table{
+    width: 100%!important;
+    line-height: 1.5;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #333;
+}
+.export_body table th{
+    height: 60px;
+    padding-left: 20px;
+    background-color: #E9ECFF;
+    color: #2C3EA8;
+}
+.export_body table td{
+    padding-left: 20px;
+}
+.export_body table td{
+    height: 50px;
+}
+.export_body .export_info_label{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #666;
+}
+.export_body .export_info_input{
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    padding: 0;
+    border: none;
+    border-bottom: solid 1px #666;
+    background-color: #F9FAFF;
+    font-size: 16px;
+}

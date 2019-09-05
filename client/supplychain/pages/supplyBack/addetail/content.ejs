@@ -1,0 +1,42 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>添加广告</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_item">
+            <label>广告名称：</label>
+            <div class="back_main_block">
+                <input type="text" class="cjy-input-" autocomplete="off">
+                <span class="msgCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>广告名称只是作为辨别多个广告条目之用，并不显示在广告中</span>
+            </div>
+        </div>
+        <div class="back_main_item">
+            <label><span>*</span>广告图片：</label>
+            <div class="back_main_block">
+                <span class="js_upload"></span>
+                <!-- <a class="upload_img" style="position: relative;" href="javascript:;">点击上传<input name="uploadFile" id="uploadFile" style="position: absolute;width: 100%;height: 100%;top: 0;right: 0;opacity: 0;cursor: pointer;" type="file" accept="image/*"></a> -->
+                <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>支持jpg / jepg / png</span>
+                <div id="process-files"></div>
+                <div class="adv_img">
+                    <img src="<%= noPic %>">
+                    <input name="" type="hidden" value="">
+                </div>
+            </div>
+        </div>
+        <div class="back_main_item">
+            <label><span>*</span>广告链接：</label>
+            <div class="back_main_block">
+                <input type="text" class="cjy-input-" autocomplete="off">
+            </div>
+        </div>
+        <div class="back_main_item">
+            <label>广告备注：</label>
+            <div class="back_main_block">
+                <textarea class="cjy-textarea" maxlen="100" rows="3" style="width: 400px;" placeholder="请输入内容"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="back_main_btns clearfix">
+        <a class="btn_confirm floatR" href="javascript:;">保存</a>
+    </div>
+</div>

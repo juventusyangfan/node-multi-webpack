@@ -1,0 +1,75 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>更新招标</span>
+    </div>
+    <div class="back_main_head">
+        <p class="fontSize24 fontBold">常州奇华顿项目钢材招标</p>
+        <span class="back_tips_success">报名中</span>
+        <div class="back_head_tips">
+            <span class="head_tips_cell">邀请招标</span>
+            <span class="head_tips_cell">在线投标</span>
+            <span class="head_tips_cell">在线评标</span>
+            <span class="head_tips_cell">劳务分包</span>
+        </div>
+    </div>
+    <div class="back_change_wrap">
+        <span style="margin-right:40px;">报名截止时间：2019-12-12  12：00<i class="iconfont icon-wenhao" title="报名截止前，可修改该时间"></i></span>
+        <span>投标截止时间：2019-12-12  12：00<i class="iconfont icon-wenhao" title="投标截止前，可修改该时间"></i></span>
+        <span class="floatR"><a href="javascript:;" class="textBlue"><i class="iconfont icon-dingdan2"></i>变更记录</a>（2）<a href="javascript:;" class="change_btn">变更</a></span>
+    </div>
+    <div class="back_main_content" id="supplier">
+        <div class="back_list_nav">
+            <span>受邀单位<i class="iconfont icon-wenhao" title="报名截止前，可新增受邀单位"></i></span>
+            <a href="javascript:;" class="addCompany_btn floatR" style="margin-top:15px;">新增受邀单位</a>
+        </div>
+        <div class="back_main_list">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="200">
+                        <col width="80">
+                        <col width="50">
+                        <col width="80">
+                        <col width="100">
+
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>供应商名称</th>
+                        <th>供应商来源</th>
+                        <th>供应商等级</th>
+                        <th>联系人</th>
+                        <th>联系方式</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="6">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{index+1}}</td>
+                        <td>{{item.user.real_name}}</td>
+                        <td>{{item.user.user_mobile}}</td>
+                        <td>{{item.expert_source=="1"?"公司内部":"外聘"}}</td>
+                        <td>{{item.remarks}}</td>
+                        <td><a href="javascript:;" class="textBlue" @click="expertEdit(index)">编辑</a><a href="javascript:;" class="textRed marginL20" @click="expertDel(item.expert_user_id)">移除</a></td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="6"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <input type="hidden" name="role_type" value="1">
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

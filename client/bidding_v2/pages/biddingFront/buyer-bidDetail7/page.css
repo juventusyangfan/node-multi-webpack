@@ -1,0 +1,24 @@
+.other_top_con{
+    height: 116px;
+}
+
+.bid_detail_form .bid_form_cell{
+    display: inline-block;
+    width: 260px;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 20px;
+}
+.bid_detail_form .bid_form_btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    background-color: #FF3600;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+}
+.bid_detail_form .bid_form_btn:hover{
+    background-color: #ec3200;
+}

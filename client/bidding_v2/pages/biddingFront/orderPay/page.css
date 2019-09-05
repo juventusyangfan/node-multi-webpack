@@ -1,0 +1,584 @@
+.order_warp{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-color: #f4f4f4;
+}
+.order_notice_con{
+    width: 1150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto 10px auto;
+    padding: 0 15px;
+    background-color: #fcfae3;
+    border: 1px solid #f7e3a4;
+}
+.order_notice_con .icon-i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    border-radius: 16px;
+    background-color: #50B2F6;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+.order_pay_con{
+    width: 1180px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+.order_pay_top{
+    padding: 0 30px;
+}
+.order_pay_top .pay_detail{
+    width: 750px;
+    line-height: 24px;
+    margin-left: 10px;
+    float: left;
+}
+.order_pay_top i.icon-xiangmu1{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #FFC600;
+    border-radius: 32px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+.order_pay_top .pay_bidName{
+    width: 680px;
+    min-height: 28px;
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    float: left;
+}
+.order_pay_top .pay_bidLoad{
+    margin-top: 6px;
+    margin-left: 42px;
+    float: left;
+}
+.order_pay_top .pay_bidLoad a{
+    vertical-align: 1px;
+    text-decoration: underline;
+}
+.order_pay_top .pay_money{
+    display: inline-block;
+    line-height: 24px;
+    color: #333;
+    text-align: right;
+    float: right;
+}
+.order_pay_top .pay_money a{
+    display: block;
+    font-size: 12px;
+    color: #2272EA;
+}
+.order_pay_nav{
+    height: 80px;
+    padding: 0 30px;
+    border-bottom: solid 2px #A4543F;
+    background: url(imgs/navBg.png) no-repeat;
+    background-position: bottom right;
+}
+.order_pay_nav .pay_nav_cell{
+    display: inline-block;
+    width: 96px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 42px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #A4543F;
+    color: #fff;
+    text-align: center;
+}
+.order_pay_body{
+    margin: 30px 30px 50px 30px;
+}
+.order_pay_body .pay_body_cell{
+    position: relative;
+    width: 353px;
+    height: 145px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+    cursor: pointer;
+}
+.order_pay_body .pay_body_bg1{
+    margin-right: 30px;
+    background: url(imgs/bodyBg1.png) no-repeat;
+}
+.order_pay_body .pay_body_bg2{
+    margin-right: 30px;
+    background: url(imgs/bodyBg2.png) no-repeat;
+}
+.order_pay_body .pay_body_bg3{
+    background: url(imgs/bodyBg3.png) no-repeat;
+}
+.order_pay_body .cell_bg{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #333;
+    opacity: .2;
+    z-index: 1;
+}
+.order_pay_body .pay_body_cell .icon-gou{
+    position: absolute;
+    display: none;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #31C37C;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+.order_pay_body .active .cell_bg,.order_pay_body .pay_body_cell:hover .cell_bg{
+    display: none;
+}
+.order_pay_body .active .icon-gou{
+    display: inline-block;
+}
+.order_pay_body .body_cell_con{
+    height: 64px;
+    margin: 40px;
+}
+.order_pay_body .cell_logo_bg{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: #fff;
+    overflow: hidden;
+    float: left;
+}
+.order_pay_body .cell_des{
+    position: relative;
+    line-height: 32px;
+    margin-left: 20px;
+    color: #fff;
+    float: left;
+}
+.order_pay_body .cell_notice{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: -24px;
+    font-size: 12px;
+    color: #333;
+}
+.order_pay_body .cell_notice i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-right: 4px;
+    border: solid 1px #666;
+    border-radius: 14px;
+    font-size: 12px;
+    text-align: center;
+}
+.order_pay_body .cell_notice:hover{
+    color: #FF3600;
+}
+.order_pay_body .cell_notice:hover i{
+    border: solid 1px #FF3600;
+}
+.order_pay_body .showTag{
+    position: relative;
+}
+.order_pay_body .tagBox{
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: -100px;
+    z-index: 3;
+}
+.order_pay_body .tagArrow{
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    margin-left: 114px;
+    margin-bottom: -16px;
+    border-width: 1px 0 0 1px;
+    border-color: #F7E3A4;
+    border-style: solid;
+    background-color: #FCFAE3;
+}
+.order_pay_body .tagCon{
+    display: inline-block;
+    width: 220px;
+    border: 1px solid #F7E3A4;
+    padding: 10px;
+    background-color: #FCFAE3;
+    font-size: 14px;
+    color: #666;
+}
+.order_pay_body .tagBox .tagCon p{
+    line-height: 2;
+    font-size: 12px;
+}
+.order_pay_body .showTag:hover .tagBox{
+    display: block;
+}
+.order_pay_body .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 10px;
+    border-radius: 18px;
+    background-color: #F4C148;
+    font-size: 12px;
+    text-align: center;
+}
+.order_pay_foot{
+    margin: 0 30px;
+    padding-top: 30px;
+    border-top: solid 1px #e5e5e5;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.order_pay_foot .order_confirm,.order_pay_foot .order_confirm_none,.order_pay_foot .order_cancel{
+    display: inline-block;
+    width: 214px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-align: center;
+    float: right;
+}
+.order_pay_foot .order_confirm{
+    background-color: #FF3600;
+    border: solid 1px #FF3600;
+    color: #fff;
+}
+.order_pay_foot .order_confirm_none{
+    background-color: #ccc;
+    border: solid 1px #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+.order_pay_foot .order_confirm:hover{
+    background-color: #ec3200;
+}
+.order_pay_foot .order_cancel{
+    border: solid 1px #ccc;
+}
+.order_pay_foot .order_cancel:hover{
+    border: solid 1px #FF3600;
+    color: #FF3600;
+}
+
+.transfer_warp{
+    display: none;
+    padding: 0 30px;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: showTransfer;
+    animation-name: showTransfer;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+.transfer_flow{
+    padding: 30px 0;
+    background-color: #F9FAFC;
+}
+.transfer_flow_title{
+    width: 743px;
+    height: 17px;
+    line-height: 17px;
+    margin: 0 auto;
+    background: url(imgs/flowBg.png) no-repeat;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+.transfer_flow_steps{
+    position: relative;
+    margin-top: 30px;
+}
+.flow_steps_line{
+    position: absolute;
+    display: flex;
+    width: 832px;
+    height: 2px;
+    margin-left: -416px;
+    left: 50%;
+    top: 12px;
+    background-color: #3DCA55;
+    z-index: 1;
+}
+.transfer_flow_steps ul{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.transfer_flow_steps ul li{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.transfer_flow_steps ul li p{
+    line-height: 1.5;
+}
+.transfer_flow_steps .flow_steps_num{
+    display: block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 auto;
+    background-color: #3DCA55;
+    border-radius: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+.transfer_date_tips{
+    height: 70px;
+    line-height: 70px;
+    padding: 0 50px;
+    font-weight: 700;
+    color: #333;
+}
+.transfer_date_tips i{
+    margin-right: 6px;
+    font-size: 20px;
+    color: #DC2F00;
+    vertical-align: -2px;
+}
+.transfer_date_tips .tips_box{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 4px;
+    padding: 0 4px;
+    border: solid 1px #DC2F00;
+    color: #DC2F00;
+}
+
+.transfer_info_warp{
+    width: 1120px;
+    height: 246px;
+    margin: 0 auto 30px auto;
+    background: url(imgs/infoBg.png) no-repeat;
+}
+.transfer_info_con{
+    width: 440px;
+    height: 160px;
+    padding: 43px 60px;
+    float: left;
+}
+.transfer_info_title{
+    font-weight: 700;
+    color: #DC2F00;
+}
+.transfer_info_con .transfer_info_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+.transfer_info_block{
+    line-height: 1.5;
+    margin-top: 14px;
+    color: #333;
+}
+.transfer_info_block label{
+    display: inline-block;
+    width: 88px;
+    color: #666;
+    float: left;
+}
+.transfer_info_block .transfer_info_item{
+    width: 352px;
+    font-weight: 700;
+    color: #333;
+    float: left;
+}
+.transfer_info_con li{
+    display: block;
+    margin-top: 14px;
+}
+.transfer_info_con li .transfer_info_dot{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background-color: #696969;
+    border-radius: 5px;
+    float: left;
+}
+.transfer_info_con li p{
+    display: inline-block;
+    width: 425px;
+    line-height: 1.5;
+    color: #333;
+    float: left;
+}
+
+
+/* 公对公动画 */
+.transfer_open .cell_des > .fontSize12,.transfer_open .cell_des .showTag {
+    display: none;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .pay_body_cell{
+    width: 1120px;
+    height: 60px;
+    line-height: 60px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .pay_body_bg1{
+    margin-right: 0;
+    background: url(imgs/bodyBg1.png) center;
+    background-size: cover;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .cell_logo_bg{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: #fff;
+    overflow: hidden;
+    float: left;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .cell_logo_bg img{
+    width: 32px;
+    height: 32px;
+    vertical-align: 32px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .body_cell_con {
+    height: 32px;
+    margin: 14px 20px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .pay_body_cell .icon-gou {
+    bottom: 18px;
+    right: 20px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+.transfer_open .cell_des {
+    margin-left: 10px;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+
+@-webkit-keyframes showTransfer {
+    from {
+        -webkit-transform: translate3d(800px, 0, 0);
+        opacity: .3
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes showTransfer {
+    from {
+        transform: translate3d(800px, 0, 0);
+        opacity: .3
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+/* 上传弹框 */
+.upload_wrap{
+    padding: 0 20px;
+}
+.upload_wrap .default_img{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background-color: #fff;
+    border: solid 1px #eee;
+}
+.upload_wrap .default_img img{
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+.upload_wrap .upload_notice_con{
+    height: 40px;
+    line-height: 40px;
+    margin: 0px auto;
+}
+.upload_wrap .upload_notice_con .icon-i{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    border-radius: 16px;
+    background-color: #50B2F6;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}

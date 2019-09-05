@@ -1,0 +1,529 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>我的订单</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input type="text" class="cjy-input-" name="product_name" placeholder="商品名称">
+            <input type="text" class="cjy-input-" name="order_number" placeholder="订单号">
+            <input type="text" class="cjy-input-" name="seller_name" placeholder="商家名称">
+            <input type="text" class="cjy-input-" name="buyer_name" placeholder="买家名称">
+            <input type="text" class="cjy-calendar-input" name="created_start" placeholder="下单开始时间" calendar readonly>
+            <span class="search_line">-</span>
+            <input type="text" class="cjy-calendar-input" name="created_end" placeholder="结束时间" calendar readonly>
+            <select name="order_status" value="0">
+                <option value="0">订单状态</option>
+                <option value="1">等待确认</option>
+                <option value="2">等待付款</option>
+                <option value="3">等待发货</option>
+                <option value="4">已发货</option>
+                <option value="5">退款中</option>
+                <option value="6">交易关闭</option>
+                <option value="7">交易成功</option>
+            </select>
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div id="orderList">
+            <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li class="active">
+                        <a href="javascript:;" class="back_nav_cell">全部订单</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待确认<span class="back_nav_num">7</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待付款<span class="back_nav_num">1</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待发货<span class="back_nav_num">3</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待收货<span class="back_nav_num">456</span></a>
+                    </li>
+                </ul>
+                <span class="floatR textBlack1">共{{count}}条符合条件的数据</span>
+            </div>
+            <div class="back_main_list">
+                <div class="material_list">
+                    <table>
+                        <colgroup>
+                            <col width="610">
+                            <col width="120">
+                            <col width="180">
+                            <col width="120">
+                            <col width="200">
+                            <col width="200">
+                            <col width="200">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>商品信息</th>
+                                <th>仓库</th>
+                                <th>单价</th>
+                                <th>数量</th>
+                                <th>实付款</th>
+                                <th>交易状态</th>
+                                <th>操作</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-if="loading">
+                                <td colspan="7">
+                                    <div class="page_loading"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <template v-if="list.length>0">
+                        <tbody v-for="item in list">
+                            <tr>
+                                <td colspan="7">
+                                    <div class="body_head">
+                                        <label class="textBlack3">订单号：</label>
+                                        <span class="textBlack1">{{item.order_number}}</span>
+                                        <label class="textBlack3 marginL40">下单时间：{{item.created}}</label>
+                                        <span class="width180 marginL40 textBlack1 ellipsis" style="vertical-align: -4px;">
+                                            <i class="iconfont icon-yonghu marginR6"></i>{{item.buyer_name}}
+                                        </span>
+                                        <span class="marginL40 textBlack1"><i class="iconfont icon-dianpu marginR6"></i>{{item.seller_name}}</span>
+                                        <a target="_blank" href="tencent://message/?Menu=yes&uin=975502845&Site=80fans&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a545b1714f9d45" class="btn_qq"><i class="iconfont icon-QQ"></i>咨询</a>
+                                        <a class="btn_del" v-if="item.order_status==7"><i class="iconfont icon-huishouxiang"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr v-for="(cell,index) in item.product_info">
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img :src="imgPath+cell.main_img">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">{{cell.company_name}}</span>
+                                            <p class="marginT10 textBlack3">{{cell.brand_name}}</p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3" v-for="(spec,key,sIndex) in cell.spec">{{spec.name}}：<span>{{spec.value[1]}}</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>{{cell.warehouse_name}}</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥{{cell.price}}/{{cell.unit}}</td>
+                                <td>23</td>
+                                <td :rowspan="item.product_info.length" style="vertical-align: middle;" v-if="index==0">
+                                    <div class="table_text">
+                                        <p>￥{{item.total_cost}}</p>
+                                        <p class="textGreen">（含运费：￥{{item.transport_cost}}）</p>
+                                        <p>线上支付</p>
+                                    </div>
+                                </td>
+                                <td :rowspan="item.product_info.length" style="vertical-align: middle;" v-if="index==0">
+                                    <div class="table_text">
+                                        <p v-if="item.order_status==1" class="textRed">等待确认</p>
+                                        <p v-if="item.order_status==2" class="textRed">等待付款</p>
+                                        <p v-if="item.order_status==3" class="textRed">已付款-等待发货</p>
+                                        <p v-if="item.order_status==4" class="textRed">已发货-等待签收</p>
+                                        <p v-if="item.order_status==6">交易成功</p>
+                                        <p v-if="item.order_status==7">交易关闭</p>
+                                        <a href="#">订单详情</a>
+                                    </div>
+                                </td>
+                                <td :rowspan="item.product_info.length" style="vertical-align: middle;" v-if="index==0">
+                                    <div class="table_text" v-if="item.order_status==1">
+                                        <div class="tagBox">
+                                            <span class="tagArrow"></span>
+                                            <div class="tagCon">
+                                                <p>请在<span class="textRed">47小时20分12秒</span>完成付款，超时订单自动关闭</p>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:;" class="go_pay">确认订单</a>
+                                        <a href="javascript:;" class="change_cost">修改运费</a>
+                                        <a href="javascript:;">取消订单</a>
+                                    </div>
+                                    <div class="table_text" v-if="item.order_status==3">
+                                        <a href="javascript:;" class="confirm_go">确认发货</a>
+                                    </div>
+                                    <div class="table_text" v-if="item.order_status==6">
+                                        <a href="javascript:;" class="view_comment">查看评论</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!-- <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="body_head">
+                                        <label class="textBlack3">订单号：</label>
+                                        <span class="textBlack1">SCW2018091200001</span>
+                                        <label class="textBlack3 marginL40">下单时间：2018-09-12  09:43</label>
+                                        <span class="width180 marginL40 textBlack1 ellipsis" style="vertical-align: -4px;">
+                                            <i class="iconfont icon-yonghu marginR6"></i>买家名称项目采购名称可能会很长很长很长很长
+                                        </span>
+                                        <span class="marginL40 textBlack1"><i class="iconfont icon-dianpu marginR6"></i>昆山金誉盛钢金属材料有限公司</span>
+                                        <a href="javascript:" class="btn_qq"><i class="iconfont icon-QQ"></i>咨询</a>
+                                        <a class="btn_del"><i class="iconfont icon-huishouxiang"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>￥15.00</p>
+                                        <p class="textGreen">（含运费：￥10.00）</p>
+                                        <p>线上支付</p>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>等待确认</p>
+                                        <a href="#">订单详情</a>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <div class="tagBox">
+                                            <span class="tagArrow"></span>
+                                            <div class="tagCon">
+                                                <p>请在<span class="textRed">47小时20分12秒</span>完成付款，超时订单自动关闭</p>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:;" class="go_pay">确认订单</a>
+                                        <a href="javascript:;">取消订单</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="body_head">
+                                        <label class="textBlack3">订单号：</label>
+                                        <span class="textBlack1">SCW2018091200001</span>
+                                        <label class="textBlack3 marginL40">下单时间：2018-09-12  09:43</label>
+                                        <span class="width180 marginL40 textBlack1 ellipsis" style="vertical-align: -4px;">
+                                            <i class="iconfont icon-yonghu marginR6"></i>买家名称项目采购名称可能会很长很长很长很长
+                                        </span>
+                                        <span class="marginL40 textBlack1"><i class="iconfont icon-dianpu marginR6"></i>昆山金誉盛钢金属材料有限公司</span>
+                                        <a href="javascript:" class="btn_qq"><i class="iconfont icon-QQ"></i>咨询</a>
+                                        <a class="btn_del"><i class="iconfont icon-huishouxiang"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>￥15.00</p>
+                                        <p class="textGreen">（含运费：￥10.00）</p>
+                                        <p>线上支付</p>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>等待确认</p>
+                                        <a href="#">订单详情</a>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <a href="javascript:;" class="confirm_pay">确认收货</a>
+                                        <a href="javascript:;">取消订单</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="body_head">
+                                        <label class="textBlack3">订单号：</label>
+                                        <span class="textBlack1">SCW2018091200001</span>
+                                        <label class="textBlack3 marginL40">下单时间：2018-09-12  09:43</label>
+                                        <span class="width180 marginL40 textBlack1 ellipsis" style="vertical-align: -4px;">
+                                            <i class="iconfont icon-yonghu marginR6"></i>买家名称项目采购名称可能会很长很长很长很长
+                                        </span>
+                                        <span class="marginL40 textBlack1"><i class="iconfont icon-dianpu marginR6"></i>昆山金誉盛钢金属材料有限公司</span>
+                                        <a href="javascript:" class="btn_qq"><i class="iconfont icon-QQ"></i>咨询</a>
+                                        <a class="btn_del"><i class="iconfont icon-huishouxiang"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>￥15.00</p>
+                                        <p class="textGreen">（含运费：￥10.00）</p>
+                                        <p>线上支付</p>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>等待确认</p>
+                                        <a href="#">订单详情</a>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <a href="javascript:;" class="cancel_pay">取消退款</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td colspan="7">
+                                    <div class="body_head">
+                                        <label class="textBlack3">订单号：</label>
+                                        <span class="textBlack1">SCW2018091200001</span>
+                                        <label class="textBlack3 marginL40">下单时间：2018-09-12  09:43</label>
+                                        <span class="width180 marginL40 textBlack1 ellipsis" style="vertical-align: -4px;">
+                                            <i class="iconfont icon-yonghu marginR6"></i>买家名称项目采购名称可能会很长很长很长很长
+                                        </span>
+                                        <span class="marginL40 textBlack1"><i class="iconfont icon-dianpu marginR6"></i>昆山金誉盛钢金属材料有限公司</span>
+                                        <a href="javascript:" class="btn_qq"><i class="iconfont icon-QQ"></i>咨询</a>
+                                        <a class="btn_del"><i class="iconfont icon-huishouxiang"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>￥15.00</p>
+                                        <p class="textGreen">（含运费：￥10.00）</p>
+                                        <p>线上支付</p>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <p>等待确认</p>
+                                        <a href="#">订单详情</a>
+                                    </div>
+                                </td>
+                                <td rowspan="2" style="vertical-align: middle;">
+                                    <div class="table_text">
+                                        <a href="javascript:;" class="cancel_pay">评价</a>
+                                        <a href="javascript:;">投诉商家</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="order_table_detail">
+                                        <img src="/static/img/74a9e10e29a1af7ba894e201baabf100.jpg">
+                                        <div class="order_table_name">
+                                            <span class="textBlack1">易切削钢 12L14 贵钢易切削 钢 12L14</span>
+                                            <p class="marginT10 textBlack3">品牌名
+                                            </p>
+                                        </div>
+                                        <div class="order_table_attr">
+                                            <p class="textBlack3">规格：<span>98M</span></p>
+                                            <p class="textBlack3">颜色：<span>红色</span></p>
+                                            <p class="textBlack3">其他属性：<span>属性值超长就省属性值超长就省</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table_text">
+                                        <p>阳逻库</p>
+                                        <p>商家承运</p>
+                                    </div>
+                                </td>
+                                <td>￥15.00/片</td>
+                                <td>23</td>
+                            </tr>
+                        </tbody> -->
+                        </template>
+                        <tbody v-else>
+                            <tr>
+                                <td colspan="7" v-if="!loading">
+                                    <div class="page_list_noneBg"></div>
+                                    <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+                <div id="pages" class="page_container_wrap">
+                    <vue-page @get-list="getOrder" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

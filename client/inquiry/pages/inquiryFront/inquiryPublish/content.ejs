@@ -1,0 +1,221 @@
+<div class="publish_banner"></div>
+<div class="publish_warp">
+    <form>
+        <div class="publish_container">
+            <div class="publish_step_con">
+                <ul>
+                    <li><a href="javascript:;" data-href="step1" class="active">询价信息<span class="line"></span><span class="circle"></span></a></li>
+                    <li><a href="javascript:;" data-href="step2" class="">采购要求<span class="line"></span><span class="circle"></span></a></li>
+                    <li><a href="javascript:;" data-href="step3" class="">对供应商要求<span class="line"></span><span class="circle"></span></a></li>
+                    <li><a href="javascript:;" data-href="step4" class="">我的联系信息<span class="line"></span><span class="circle"></span></a></li>
+                    <li><a href="javascript:;" data-href="step5" class="">发布询价单<span class="line"></span><span class="circle"></span></a></li>
+                </ul>
+            </div>
+            <div class="shadow_left"></div>
+            <div class="shadow_right"></div>
+            <div class="publish_notice_con"><span class="noticeBg"><i class="iconfont icon-i"></i></span><span class="fontBold">特别提醒：</span>快捷竞价平台适用于20万元以下的采购，预估总价超过20万元的采购，请前往招投标平台进行采购信息发布！</div>
+            <div class="publish_head"><span>////////////</span>发布询价单<span>////////////</span><a href="#">进入我的草稿箱 >></a></div>
+            <div class="publish_nav" id="step1">
+                <div class="publish_title">询价信息</div>
+                <div class="publish_con">
+                    <div class="publish_line">
+                        <label style="width:100px;"><span class="textRed">*</span>询价单标题：</label>
+                        <div class="publish_block"><input type="text" class="cjy-input-" style="width:480px;"></div>
+                    </div>
+                    <div class="publish_line">
+                        <label style="width:100px;"><span class="textRed">*</span>预估总价：</label>
+                        <div class="publish_block"><input type="text" name="inquiry_info[budget_price]" class="cjy-input-" style="width:100px;margin-right: 6px;">元<span class="noticeCon textRed marginL20"><span class="noticeBg"><i class="iconfont icon-i"></i></span>请您如实填写预估总价，虚报预估价格有可能被视为分解工程、化整为零，需要承担审计风险。</span></div>
+                    </div>
+                    <table class="publish_table">
+                        <colgroup>
+                            <col width="80">
+                            <col width="200">
+                            <col width="100">
+                            <col width="100">
+                            <col width="200">
+                            <col width="220">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>操作</th>
+                                <th><span class="textRed">*</span>物资名称<i class="iconfont icon-wenhao"></i></th>
+                                <th>品牌</th>
+                                <th>规格型号</th>
+                                <th><span class="textRed">*</span>采购量（一次性采购量）</th>
+                                <th>备注信息</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="js_show">
+                                <td><select class="js_type" value="1" style="width:80px;"><option value="1">选择</option><option value="2">手动添加</option></select></td>
+                                <td class="js_cata"><div cjy-multi></div></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:140px;"></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:140px;"></td>
+                                <td class="num_unit"><input type="text" class="cjy-input-" placeholder="请输入" style="width:90px;float: left;"><select value="1" style="width:80px;"><option value="1">吨</option></select></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请备注详细信息" style="width:200px;">
+                                <div class="multi_oprate">
+                                    <i class="iconfont icon-jiahao1 add_multi"></i>
+                                    <i class="iconfont icon-huishouxiang del_multi"></i>
+                                </div>
+                                </td>
+                            </tr>
+                            <tr class="js_show">
+                                <td><select class="js_type" value="1" style="width:80px;"><option value="1">选择</option><option value="2">手动添加</option></select></td>
+                                <td class="js_cata"><div cjy-multi></div></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:140px;"></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:140px;"></td>
+                                <td class="num_unit"><input type="text" class="cjy-input-" placeholder="请输入" style="width:90px;float: left;"><select value="1" style="width:80px;"><option value="1">吨</option></select></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请备注详细信息" style="width:200px;">
+                                    <div class="multi_oprate">
+                                        <i class="iconfont icon-jiahao1 add_multi"></i>
+                                        <i class="iconfont icon-huishouxiang del_multi"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="js_show">
+                                <td><select class="js_type" value="1" style="width:80px;"><option value="1">选择</option><option value="2">手动添加</option></select></td>
+                                <td class="js_cata"><div cjy-multi></div></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:140px;"></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请输入" style="width:140px;"></td>
+                                <td class="num_unit"><input type="text" class="cjy-input-" placeholder="请输入" style="width:90px;float: left;"><select value="1" style="width:80px;"><option value="1">吨</option></select></td>
+                                <td><input type="text" class="cjy-input-" placeholder="请备注详细信息" style="width:200px;">
+                                    <div class="multi_oprate">
+                                        <i class="iconfont icon-jiahao1 add_multi"></i>
+                                        <i class="iconfont icon-huishouxiang del_multi"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="row_add"><a href="javascript:;">+</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="publish_nav" id="step2">
+                <div class="publish_title">采购要求</div>
+                <div class="publish_con">
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>报价截止日期：</label>
+                        <div class="publish_block"><input type="text" class="cjy-calendar-input" name="" format="yyyy-MM-dd HH:mm:ss" placeholder="报价截止日期" calendar readonly></div>
+                    </div>
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>最晚到货日期：</label>
+                        <div class="publish_block"><input type="text" class="cjy-calendar-input" name="" format="yyyy-MM-dd HH:mm:ss" placeholder="最晚到货日期" calendar readonly></div>
+                    </div>
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>收货地：</label>
+                        <div class="publish_block"><div class="floatL" cjy-area province="" city="" area=""></div><input type="text" class="cjy-input- floatL" style="width:460px;margin-left: 10px;" placeholder="输入详细地址"></div>
+                    </div>
+                    <div class="publish_line">
+                        <label>补充说明：</label>
+                        <div class="publish_block">
+                            <textarea class="tinymceCon" placeholder="建议填写更多补充说明，如：&#13;&#10;1.供应商资质要求&#13;&#10;2.物资质量要求&#13;&#10;3.技术标准要求&#13;&#10;4.支付结算要求&#13;&#10;5.发票要求等"></textarea>
+                            <span class="noticeCon block marginT10"><span class="noticeBg"><i class="iconfont icon-i"></i></span>采购要求越详细，获得的报价越精准哦</span>
+                        </div>
+                    </div>
+                    <div class="publish_line">
+                        <label>附件：</label>
+                        <div class="publish_block">
+                            <span class="js_upload"></span>
+                            <!-- <a href="javascript:;" class="upload_btn" style="position: relative;">上传文件<input type="file" id="uploadFile" name="uploadFile"  style="position: absolute;width: 100%;height: 100%;padding: 0;top: 0;right: 0;opacity: 0;cursor: pointer;"></a> -->
+                            <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>最多上传8个附件，支持格式：doc .docx .pdf .xls.xlsx.jpg.gif.png.jpeg.bmp.txt</span>
+                            <div id="process-files"></div>
+                        </div>
+                    </div>
+                    <div class="publish_line">
+                        <label></label>
+                        <div class="publish_block">
+                            <ul class="file_con">
+                                <li><i class="iconfont icon-fujian"></i><a href="#">这里放名称，点击可预览</a><a class="file_del">删除</a></li>
+                                <li><i class="iconfont icon-fujian"></i><a href="#">这里放名称，点击可预览</a><a class="file_del">删除</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publish_nav" id="step3">
+                <div class="publish_title">询价信息</div>
+                <div class="publish_con">
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>报价形式：</label>
+                        <div class="publish_block">
+                            <input type="checkbox" title="报价含税">
+                            <input type="checkbox" title="报价含运费" checked>
+                            <span class="noticeCon"><span class="noticeBg"><i class="iconfont icon-i"></i></span>暂不支持对询价单部分报价</span>
+                        </div>
+                    </div>
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>报价形式：</label>
+                        <div class="publish_block">
+                            <span class="publish_text">担保交易</span><i class="iconfont icon-wenhao"></i>
+                        </div>
+                    </div>
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>发票要求：</label>
+                        <div class="publish_block">
+                            <input type="radio" name="radio" title="增值税专用发票">
+                            <input type="radio" name="radio" title="增值税普通发票" checked>
+                            <input type="radio" name="radio" title="不需要发票">
+                        </div>
+                    </div>
+                    <div class="publish_line">
+                        <label>供应商经营区域：</label>
+                        <div class="publish_block js_area">
+                            <div class="multiple-title">
+                                <span>请选择经营区域</span>
+                                <i class="iconfont icon-xiajiantou"></i>
+                            </div>
+                            <div class="multiple-content">
+                                <ul class="area-list floatL js_province"></ul>
+                                <ul class="area-list floatL js_city"></ul>
+                                <div class="clear"></div>
+                                <div class="area-btns"><a class="area-confirm" href="javascript:;">确定</a></div>
+                            </div>
+                            <div class="register_box clearfix" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publish_nav" id="step4">
+                <div class="publish_title">我的联系信息</div>
+                <div class="publish_con">
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>联系人：</label>
+                        <div class="publish_block">
+                            <input type="text" class="cjy-input-" style="width:200px;margin-right:30px;">
+                            <input type="radio" name="sex" title="先生">
+                            <input type="radio" name="sex" title="女士" checked>
+                        </div>
+                    </div>
+                    <div class="publish_line">
+                        <label><span class="textRed">*</span>联系电话：</label>
+                        <div class="publish_block">
+                            <input type="text" class="cjy-input-" style="width:200px;margin-right:30px;">
+                            <input type="radio" name="phone" title="报价后可见">
+                            <input type="radio" name="phone" title="不公开" checked>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="publish_nav" id="step5">
+                <div class="rule_link"><input type="checkbox" title="同意"><a href="#">《生材网询价单发布规则》</a></div>
+                <div class="publish_btns">
+                    <a href="javascript:;" class="publish_none">发布询价单</a>
+                    <a href="javascript:;" class="publish_save">保存到草稿箱</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="multi_box">
+    <div class="multi_oprate">
+        <i class="iconfont icon-jiahao1 add_multi"></i>
+        <i class="iconfont icon-huishouxiang del_multi"></i>
+    </div>
+</div>
+
+<script>
+    var unitList = ['吨', '米', '件'];
+</script>

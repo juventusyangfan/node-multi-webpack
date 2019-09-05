@@ -1,0 +1,198 @@
+.order_warp{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-color: #f4f4f4;
+}
+.order_pay_con{
+    width: 1180px;
+    height: 420px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+.order_pay_top{
+    padding: 0 30px;
+}
+.order_pay_top .icon-i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    background-color: #50B2F6;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+.order_pay_top .pay_detail{
+    width: 700px;
+    line-height: 24px;
+    margin-left: 10px;
+    float: left;
+}
+.order_pay_top .pay_money{
+    display: inline-block;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+    text-align: right;
+    float: right;
+}
+.order_pay_top .pay_money a{
+    display: block;
+    font-size: 12px;
+    color: #2272EA;
+}
+.order_pay_nav{
+    height: 80px;
+    padding: 0 30px;
+    border-bottom: solid 2px #FC6940;
+    background: url(imgs/navBg.png) no-repeat;
+    background-position: bottom right;
+}
+.order_pay_nav .pay_nav_cell{
+    display: inline-block;
+    width: 96px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 42px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #FC6940;
+    color: #fff;
+    text-align: center;
+}
+.order_pay_body{
+    margin: 30px;
+}
+.order_pay_body .pay_body_cell{
+    position: relative;
+    width: 353px;
+    height: 145px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: left;
+    cursor: pointer;
+}
+.order_pay_body .pay_body_bg1{
+    margin-right: 30px;
+    background: url(imgs/bodyBg1.png) no-repeat;
+}
+.order_pay_body .pay_body_bg2{
+    margin-right: 30px;
+    background: url(imgs/bodyBg2.png) no-repeat;
+}
+.order_pay_body .pay_body_bg3{
+    background: url(imgs/bodyBg3.png) no-repeat;
+}
+.order_pay_body .cell_bg{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #333;
+    opacity: .2;
+    z-index: 1;
+}
+.order_pay_body .pay_body_cell .icon-gou{
+    position: absolute;
+    display: none;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    bottom: 10px;
+    right: 10px;
+    background-color: #31C37C;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+.order_pay_body .active .cell_bg{
+    display: block;
+}
+.order_pay_body .active .icon-gou{
+    display: inline-block;
+}
+.order_pay_body .body_cell_con{
+    height: 64px;
+    margin: 40px;
+}
+.order_pay_body .cell_logo_bg{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+    background-color: #fff;
+    overflow: hidden;
+    float: left;
+}
+.order_pay_body .cell_des{
+    position: relative;
+    line-height: 32px;
+    margin-left: 20px;
+    color: #fff;
+    float: left;
+}
+.order_pay_body .showTag{
+    position: relative;
+}
+.order_pay_body .tagBox{
+    display: none;
+    position: absolute;
+    top: -2px;
+    z-index: 3;
+}
+.order_pay_body .tagArrow{
+    margin-left: 60px;
+    margin-bottom: -16px;
+}
+.order_pay_body .tagCon{
+    width: 220px;
+    margin-left: -60px;
+    color: #666;
+}
+.order_pay_body .tagBox .tagCon p{
+    line-height: 1.5;
+    font-size: 12px;
+}
+.order_pay_body .showTag:hover .tagBox{
+    display: block;
+}
+.order_pay_body .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 10px;
+    border-radius: 18px;
+    background-color: #F4C148;
+    font-size: 12px;
+    text-align: center;
+}
+.order_pay_foot{
+    margin: 0 30px;
+    padding: 30px 0;
+    border-top: solid 1px #e5e5e5;
+}
+.order_pay_foot .order_confirm{
+    display: inline-block;
+    width: 125px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    background-color: #FC6940;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    float: right;
+}
+.order_pay_foot .order_confirm:hover{
+    background-color: #F3623A;
+}

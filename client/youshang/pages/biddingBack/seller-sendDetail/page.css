@@ -1,0 +1,326 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_title .back_return{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+}
+.back_main_content{
+    padding: 50px 30px;
+}
+.back_info_item{
+    margin-bottom: 20px;
+}
+.back_info_item label{
+    float: left;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+.back_info_item label.back_info_title{
+    width: 70px;
+    text-align: right;
+    color: #999;
+}
+.back_info_item .back_main_block{
+    margin-left: 70px;
+}
+.back_info_item .back_main_block select{
+    width: 160px;
+}
+
+.back_info_item .itemBtn {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.back_info_item .itemBtn:hover {
+    background-color: #00A776;
+    color: #fff;
+}
+
+.back_nav_head{
+    position: relative;
+    margin-top: 40px;
+    border-bottom: solid 1px #ECECEC;
+}
+.back_nav_title{
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 10px;
+    top: -9px;
+    left: 0;
+    background-color: #fff;
+    border-left: solid 2px #FC6940;
+    font-size: 16px;
+    color: #333;
+}
+.back_nav_body{
+    width: 720px;
+    margin: 40px auto;
+    line-height: 2;
+}
+
+/*附件上传*/
+.affixCon{
+    display: none;
+    padding: 0 10px 10px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+}
+.affixCon .affix_item{
+    height: 28px;
+    margin-top: 10px;
+}
+.affix_item span{
+    display: inline-block;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.affix_item i,.affix_item a{
+    vertical-align: 8px;
+}
+.affix_item i.icon-huishouxiang{
+    cursor: pointer;
+}
+
+.js_none{
+    display: none;
+}
+
+
+/* 邀请弹框 */
+.inviteDialog{
+    width: 986px;
+    height: 600px;
+}
+.inviteDlgLeft{
+    position: fixed;
+    width: 243px;
+    height: 600px;
+    background: url(imgs/inviteLeft.png) no-repeat;
+    transition: all .3s;
+    top: 100px;
+    left: 50%;
+    margin-left: -493px;
+    z-index: 101;
+}
+.inviteDlgRight{
+    position: fixed;
+    width: 243px;
+    height: 600px;
+    background: url(imgs/inviteRight.png) no-repeat;
+    transition: all .3s;
+    top: 100px;
+    right: 50%;
+    margin-right: -493px;
+    z-index: 101;
+}
+.close .inviteDlgLeft {
+    margin-left: -250px;
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    filter:FlipH;
+}
+.close .inviteDlgRight {
+    margin-right: -250px;
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    filter:FlipH;
+}
+.inviteDlgMiddle{
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    background: url(imgs/inviteMiddle.png) no-repeat;
+    top: 100px;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 102;
+}
+.inviteDlgJie{
+    position: fixed;
+    display: none;
+    width: 502px;
+    height: 272px;
+    background: url(imgs/inviteJie.png) no-repeat;
+    top: 300px;
+    left: 50%;
+    margin-left: -252px;
+    transition: all .3s;
+    z-index: 102;
+}
+.inviteDialog .sentTo{
+    margin-top: 190px;
+    color: #999;
+    text-align: center;
+}
+.inviteDialog .sentName{
+    width: 380px;
+    height: 60px;
+    line-height: 1.5;
+    margin: 20px auto;
+    font-size: 20px;
+    color: #31AB9A;
+    text-align: center;
+    overflow: hidden;
+}
+.inviteDialog .includeTo{
+    color: #999;
+    text-align: center; 
+}
+.inviteDialog .includeWarp{
+    width: 320px;
+    height: 110px;
+    margin: 30px auto;
+}
+.inviteDialog .includeCell{
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 110px;
+    text-align: center;
+    float: left;
+}
+.inviteDialog .includeCell > a{
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #B2542F;
+    text-decoration: underline;
+}
+.inviteDialog .joinIcon,.inviteDialog .summaryIcon{
+    display: inline-block;
+    width: 64px;
+    height: 70px;
+}
+.inviteDialog .joinIcon{
+    background: url(imgs/joinIcon.png) no-repeat;
+}
+.inviteDialog .summaryIcon{
+    background: url(imgs/summaryIcon.png) no-repeat;
+}
+.inviteDialog .inviteFooter{
+    height: 90px;
+    line-height: 80px;
+    margin-top: 47px;
+    border-top: solid 1px #ccc;
+    text-align: center;
+}
+.inviteDialog .inviteFooter a{
+    display: inline-block;
+    width: 106px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+.inviteDialog .inviteFooter a.invite_cancel{
+    margin-right: 10px;
+    border: solid 1px #ccc;
+    background-color: #fff;
+}
+.inviteDialog .inviteFooter a.invite_confirm{
+    border: solid 1px #fc6940;
+    background-color: #fc6940;
+    color: #fff;
+}
+.inviteDialog .inviteFooter a.invite_confirm:hover{
+    background-color: #F3623A;
+    border-color: #F3623A;
+}
+
+.inviteDialog .includeTips{
+    position: absolute;
+    display: none;
+    width: 490px;
+    padding: 27px;
+    top: 118px;
+    left: 30px;
+    background-color: #fff;
+}
+.inviteDialog .includeCell:hover .includeTips{
+    display: block;
+}
+.inviteDialog .includeArrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.inviteDialog .includeCon{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+.includeCon .fujianCon{
+    margin-top: 20px;
+}
+.includeCon i.icon-fujian{
+    vertical-align: -2px;
+    color: #999;
+}
+.includeCon .ellipsis{
+    margin: 0 20px 0 6px;
+    vertical-align: -5px;
+}
+.includeCon .down{
+    color: #0084ff;
+    cursor: pointer;
+}
+.includeCon .includeBlock{
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.includeCon .includeBlock label{
+    vertical-align: top;
+    color: #999;
+}
+.includeCon .includeBlock span{
+    display: inline-block;
+    width: 420px;
+}

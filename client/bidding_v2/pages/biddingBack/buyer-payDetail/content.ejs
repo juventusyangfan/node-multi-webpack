@@ -1,0 +1,74 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">资审文件费</span>
+        <span><a href="">标书费</a></span>
+        <span><a href="">保证金</a></span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_list_con" id="tenderList">
+            <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li class="active clearfix">
+                        <a href="javascript:;" class="back_nav_cell">包件1（BJBH-001）<span class="back_nav_num">8</span></a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="javascript:;" class="back_nav_cell">包件1（BJBH-002）<span class="back_nav_num">2</span></a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="javascript:;" class="back_nav_cell">包件1（BJBH-003）</a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="javascript:;" class="back_nav_cell">包件1（BJBH-004）</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="5%">
+                        <col width="20%">
+                        <col width="8%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="12%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>供应商名称</th>
+                            <th>联系人</th>
+                            <th>联系方式</th>
+                            <th>报名状态</th>
+                            <th>资审文件费(应缴)</th>
+                            <th>实际缴纳情况 </th>
+                            <th>支付方式 </th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr>
+                            <td>1</td>
+                            <td>湖北交投物流集团有限公司</td>
+                            <td>张三</td>
+                            <td>13512254444</td>
+                            <td>已报名</td>
+                            <td>1000元</td>
+                            <td class="textRed">待确认</td>
+                            <td>公对公转账</td>
+                            <td>
+                                <a href="javascript:;" class="table_btn">确认资审文件费</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getTenderList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

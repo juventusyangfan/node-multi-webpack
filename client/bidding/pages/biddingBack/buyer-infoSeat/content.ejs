@@ -1,0 +1,119 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>企业采购席位</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_info_item clearfix">
+            <label class="back_info_title textBlack3">当前企业采购席位：</label>
+            <label>独立公司</label>
+        </div>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_notice clearfix">
+            <div class="clearfix"><span class="noticeBg floatL"><i class="iconfont icon-i"></i></span>
+                <p class="floatL">提示：企业采购席位设置后不可修改，请根据企业实际情况进行选择！</p></div>
+        </div>
+        <div class="back_main_item">
+            <label>设置当前企业采购席位：</label>
+            <div class="back_main_block">
+                <input type="radio" name="bCode" value="2" title="集团（母）公司" checked>
+                <input type="radio" name="bCode" value="3" title="分（子）公司">
+                <input type="radio" name="bCode" value="4" title="独立公司">
+            </div>
+        </div>
+    </div>
+    <div class="back_main_btns clearfix">
+        <a class="btn_confirm floatR" href="javascript:;">提交</a>
+    </div>
+    <div class="back_main_title">
+        <span>我的上级单位</span>
+    </div>
+    <div class="back_main_content">
+        <div class="inviteCon">
+            <div class="inviteNotice"><i class="iconfont icon-ling"></i>邀请（<span>2</span>）</div>
+            <ul class="inviteList">
+                <li>
+                    <p class="fontSize16"><span class="textOrange">湖北路桥集团有限公司：</span>邀请您加入、并成为其子（分）公司！</p>
+                    <p class="fontSize16 textBlack3 marginT20">2018-08-08  12:00:00</p>
+                    <a href="javascript:;" class="inviteAgree">同意</a>
+                    <a href="javascript:;" class="inviteRefuse">拒绝</a>
+                </li>
+                <li>
+                    <p class="fontSize16"><span class="textOrange">湖北路桥集团有限公司：</span>邀请您加入、并成为其子（分）公司！</p>
+                    <p class="fontSize16 textBlack3 marginT20">2018-08-08  12:00:00</p>
+                    <a href="javascript:;" class="inviteAgree">同意</a>
+                    <a href="javascript:;" class="inviteRefuse">拒绝</a>
+                </li>
+            </ul>
+        </div>
+        <%= list %>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_bg"></div>
+        <p class="fontSize24">暂无上级单位</p>
+    </div>
+    <div class="back_main_title">
+        <span>分（子）公司席位</span>
+        <span class="textBlack3 fontSize14">（仅针对业务性质为采购类的公司）</span>
+        <a href="javascript:;" class="back_title_btn floatR btn_inviteS">邀请</a>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_noneBg"></div>
+        <p class="fontSize24">快去邀请分（子）公司加入集团吧！</p>
+        <a href="javascript:;" class="btn_inviteB">邀请</a>
+    </div>
+    <div class="back_main_content">
+        <div class="back_list_nav">
+            <span>共计：<span>5</span>家分（子）公司</span>
+        </div>
+        <div class="material_list">
+            <table>
+                <colgroup>
+                    <col width="50">
+                    <col width="300">
+                    <col width="100">
+                    <col width="100">
+                    <col width="200">
+                    <col width="200">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>分（子）公司</th>
+                    <th>发布集采信息次数</th>
+                    <th>企业供应商数量</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>湖北路桥集团有限公司</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>已通过</td>
+                    <td><a href="javascript:;" class="textBlue">移除</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>湖北路桥集团有限公司</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>已邀请，待通过</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>湖北路桥集团有限公司</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>已拒绝</td>
+                    <td><a href="javascript:;" class="textOrange js_reinvite">重新邀请</a>-<a href="javascript:;" class="textBlue js_remove">移除</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

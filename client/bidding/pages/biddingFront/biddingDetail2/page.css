@@ -1,0 +1,109 @@
+/* 面包屑 */
+.breadcrumbs_wrap{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-bottom: 80px;
+}
+.breadcrumbs_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* 中标公示 */
+.bidding_detail_wrap{
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.bidding_detail_wrap .bidding_detail_header{
+    width: 100%;
+    min-height: 110px;
+    background: url(imgs/bg.jpg) center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.bidding_detail_header h1{
+    width: 700px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+}
+.bidding_detail_header .bidding_number_date{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+.bidding_number_date .marginR30{
+    margin-right: 30px;
+}
+.bidding_detail_wrap .bidding_detail_content{
+    position: relative;
+    padding: 60px 0;
+    border: 1px solid #ececec;
+}
+.bidding_detail_content .seal_success{
+    display: inline-block;
+    width: 114px;
+    height: 112px;
+    background: url(imgs/seal_failed.png) no-repeat;
+    position: absolute;
+    right: 102px;
+    top: -60px;
+}
+.bidding_detail_content .bidding_pro{
+    width: 600px;
+    margin: 0 auto;
+}
+.bidding_pro .bidding_pro_li{
+    margin-bottom: 34px;
+}
+.bidding_pro_li .bidding_pro_title{
+    display: inline-block;
+    width: 248px;
+    font-size: 16px;
+    text-align: right;
+    color: #999;
+    line-height: 1.5;
+    vertical-align: top;
+}
+.bidding_pro_li .bidding_pro_name{
+    display: inline-block;
+    width: 346px;
+    font-size: 16px;
+    color: #fc6940;
+    line-height: 1.5;
+}
+.color333{
+    color: #333!important;
+}
+.bidding_detail_content .bidding_pro_foot{
+    text-align: center;
+}
+.bidding_pro_foot a{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #ec5b33;
+    background-color: #fc6940;
+    border-radius: 4px;
+}
+.bidding_pro_foot a:hover{
+    border: 1px solid #e75d36;
+    background-color: #f3623a;
+}
+
+.supplychain_column{
+    display: block;
+    width: 800px;
+    height: 80px;
+    margin: 0 auto;
+}

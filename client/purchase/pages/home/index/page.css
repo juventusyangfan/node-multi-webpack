@@ -1,0 +1,432 @@
+/* 首页下拉默认显示 */
+.top_left_menu .top_service{
+    display: block;
+}
+/* 轮播图 */
+.banner_wrap{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.banner_wrap .banner_bg{
+    height: 500px;
+    margin: 0 auto;
+}
+.banner_bg .slides_cell{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.banner_bg .banner_item{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner_wrap .carousel_dot{
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -55px;
+    z-index: 1;
+}
+.carousel_dot .carousel_dot_span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.carousel_dot a.active{
+    opacity: 1;
+}
+/* 会员 */
+.banner_wrap .menu_member{
+    width: 1180px;
+    margin-left: -590px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.menu_member .member_wrap{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 257px;
+    background-color: #fff;
+    z-index: 1;
+}
+.member_wrap .member_box{
+    width: 100%;
+    height: 188px;
+    background: url('imgs/member_bg.png') no-repeat;
+}
+.member_box .member_photo{
+    position: absolute;
+    top: -25px;
+    left: 104px;
+    width: 50px;
+    height: 50px;
+    background-color: #f6f3ee;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px;
+}
+.member_photo i{
+    font-size: 28px;
+    color: #fc6940;
+}
+.member_photo img{
+    width: 100%;
+}
+.member_oprate p{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    padding-top: 45px;
+}
+.member_oprate .member_btn{
+    font-size: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.member_btn a{
+    display: inline-block;
+    width: 84px;
+    height: 28px;
+    background-color: #fc6940;
+    border: 1px solid #f45b30;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    margin: 0 10px;
+}
+.member_btn .reg_website{
+    color: #fc6940;
+    background-color: #fff;
+}
+.member_btn .enter_center{
+    width: 174px;
+}
+.member_btn .reg_website:hover{
+    background-color: #f7f7f7;
+}
+.member_btn .company_login:hover,.member_btn .enter_center:hover{
+    background-color: #f4623B;
+}
+/* 最新动态 */
+.member_wrap .hot_news{
+    width: 217px;
+    height: 188px;
+    padding: 30px 20px;
+}
+.hotnews_top .hotnews_txt{
+    float: left;
+    width: 75px;
+    height: 17px;
+    background: url('imgs/zuixin.png') no-repeat;
+}
+.hotnews_top .hotnews_btn{
+    float: right;
+    font-size: 0;
+}
+.hotnews_btn i{
+    font-size: 14px;
+    color: #dadada;
+    cursor: pointer;
+}
+.hotnews_btn .hotnews_point{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #dadada;
+    border-radius: 100%;
+    margin: 0 5px;
+    vertical-align: 3px;
+}
+.hotnews_btn span.act_point{
+    background-color: #f45b30;
+}
+.hotnews_item span{
+    font-size: 12px;
+    color: #999;
+}
+.hotnews_item .color_green{
+    color: #00b27e;
+}
+.hot_news .hotnews_content{
+    position: relative;
+    width: 217px;
+    height: 166px;
+    overflow: hidden;
+    margin-top: 14px;
+}
+.hot_news .hotnews_content .hotnews_warp{
+    position: absolute;
+    width: 651px;
+    height: 166px;
+}
+.hot_news .hotnews_content .hotnews_warp ul{
+    width: 217px;
+    height: 166px;
+    float: left;
+}
+.hotnews_list .hotnews_item{
+    width: 217px;
+    height: 16px;
+    margin-bottom: 10px;
+}
+.hotnews_item a{
+    font-size: 12px;
+    color: #333;
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #999;
+}
+.hotnews_item a:hover{
+    color: #fc6940;
+    text-decoration: underline;
+}
+/* 楼层 */
+.floor_wrap{
+    width: 100%;
+}
+.floor_bg{
+    background-color: #f4f4f4;
+}
+.floor_wrap .floor_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.floor_top .floor_name{
+    font-size: 32px;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    padding: 60px 0 40px;
+}
+.floor_top .floor_cate{
+    font-size: 0;
+    text-align: center;
+}
+.floor_cate a{
+    display: inline-block;
+    height: 26px;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #999;
+    line-height: 26px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+.floor_inner .floor_box{
+    width: 100%;
+    height: 460px;
+    padding-bottom: 60px;
+    margin-top: 40px;
+}
+.floor_type{
+    float: left;
+    width: 258px;
+    height: 460px;
+    position: relative;
+}
+.floor_alink{
+    position: absolute;
+    width: 258px;
+    height: 460px;
+}
+.floor_type img{
+    position: absolute;
+    top: 0;
+    left: -22px;
+}
+.floor_alink p{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 24px;
+}
+.floor_alink strong{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.floor_right{
+    float: right;
+    width: 921px;
+    height: 458px;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+    background-color: #fff;
+}
+.floor_right .floor_one{
+    float: left;
+    width: 514px;
+    font-size: 0;
+}
+.floor_right .floor_two{
+    float: left;
+    width: 407px;
+    font-size: 0;
+}
+.floor_right .floor_lnk{
+    display: inline-block;
+    width: 136px;
+    height: 199px;
+    padding: 30px;
+    padding-bottom: 0;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.floor_lnk b,.blnk_txt b{
+    display: block;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+.floor_lnk span,.blnk_txt span{
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fc6940;
+    margin: 10px 0;
+}
+.floor_lnk p,.blnk_txt p{
+    font-size: 12px;
+    color: #999;
+}
+.floor_lnk .photo_box{
+    width: 100%;
+    height: 122px;
+    line-height: 122px;
+    text-align: right;
+    margin-top: 18px;
+}
+.photo_box img{
+    max-height: 122px;
+    transform: translate(0,0);
+    transition: transform .3s linear;
+}
+.floor_lnk:hover img{
+    transform: translate(-10px,0);
+}
+.floor_one .w256{
+    width: 256px;
+}
+.floor_right .no_bottom{
+    border-bottom: none;
+}
+.floor_right .no_right{
+    border-right: none;
+}
+.floor_two .floor_lnk{
+    width: 142px;
+    border-bottom: none;
+}
+.floor_two .floor_blnk{
+    display: inline-block;
+    width: 407px;
+    height: 229px;
+    position: relative;
+}
+.floor_blnk img{
+    width: 407px;
+    height: 229px;
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+.floor_blnk:hover img,.floor_lelnk:hover img{
+    opacity: .75;
+}
+.floor_two .floor_lelnk{
+    display: inline-block;
+    width: 214px;
+    height: 460px;
+    position: relative;
+}
+.floor_lelnk img{
+    width: 214px;
+    height: 460px;
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+.floor_blnk .blnk_box{
+    position: absolute;
+    right: 56px;
+    top: 54px;
+}
+.floor_lelnk .lelnk_box{
+    position: absolute;
+    top: 30px;
+    left: 43px;
+    text-align: center;
+}
+.lelnk_box span{
+    margin: 10px auto;
+}
+.blnk_txt strong{
+    display: block;
+    width: 126px;
+    height: 28px;
+    border: 1px solid #fc6940;
+    border-radius: 28px;
+    font-size: 14px;
+    color: #fc6940;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 40px;
+}
+.floor_two .floor_rbox{
+    display: inline-block;
+    width: 132px;
+    vertical-align: top;
+}
+.floor_rbox .floor_lnk{
+    width: 132px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.floor_rbox a:last-child{
+    border-bottom: none;
+}
+/* 楼层 - 建筑五金 */
+.floor_1 .floor_alink strong{
+    color: #3668d8;
+}
+/* 楼层 - 劳保日杂 */
+.floor_2 .floor_alink strong{
+    color: #ff9b14;
+}
+/* 楼层 - 涂料化工 */
+.floor_3 .floor_alink strong{
+    color: #24b457;
+}
+/* 楼层 - 装饰材料 */
+.floor_4 .floor_alink strong{
+    color: #6d5fd5;
+}
+/* 楼层 - 水暖阀门 */
+.floor_5 .floor_alink strong{
+    color: #ff6232;
+}

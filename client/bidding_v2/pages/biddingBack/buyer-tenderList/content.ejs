@@ -1,0 +1,137 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span class="active">我的招标</span>
+        <span><a href="">公司招标</a></span>
+        <a href="javascript:;" class="back_btn_publish">发布招标</a>
+        <a href="#" class="back_btn_type">草稿箱(4)</a>
+        <a href="#" class="back_btn_type">已归档(99)</a>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <select name="type" value="" style="display: none;">
+                <option value="">招标方式</option>
+                <option value="1">公开招标</option>
+                <option value="2">邀请招标</option>
+                <option value="3">邀请询比价</option>
+                <option value="4">竞争性谈判</option>
+                <option value="5">公开询比价</option>
+            </select><dd class="cjy-select" style="width: 160px;"><div class="cjy-select-title"><input type="text" placeholder="招标方式" value="招标方式" readonly="" class="cjy-select-input" style="width: 120px;background-color: #fff;"><i class="iconfont icon-xiajiantou"></i></div><dl style="width: 160px;"><dd data-value="" class="sel-this " title="招标方式" style="width: 140px;">招标方式</dd><dd data-value="1" class=" " title="公开招标" style="width: 140px;">公开招标</dd><dd data-value="2" class=" " title="邀请招标" style="width: 140px;">邀请招标</dd><dd data-value="3" class=" " title="邀请询比价" style="width: 140px;">邀请询比价</dd><dd data-value="4" class=" " title="竞争性谈判" style="width: 140px;">竞争性谈判</dd><dd data-value="5" class=" " title="公开询比价" style="width: 140px;">公开询比价</dd></dl></dd>
+            <select name="class" value="" style="display: none;">
+                <option value="">招标类型</option>
+                <option value="1">物资/设备采购</option>
+                <option value="2">物资/设备租赁</option>
+                <option value="3">劳务分包</option>
+                <option value="4">专业分包</option>
+                <option value="5">施工总承包</option>
+                <option value="6">设计/咨询/服务</option>
+                <option value="9">其他</option>
+            </select><dd class="cjy-select" style="width: 160px;"><div class="cjy-select-title"><input type="text" placeholder="招标类型" value="招标类型" readonly="" class="cjy-select-input" style="width: 120px;background-color: #fff;"><i class="iconfont icon-xiajiantou"></i></div><dl style="width: 160px;"><dd data-value="" class="sel-this " title="招标类型" style="width: 140px;">招标类型</dd><dd data-value="1" class=" " title="物资/设备采购" style="width: 140px;">物资/设备采购</dd><dd data-value="2" class=" " title="物资/设备租赁" style="width: 140px;">物资/设备租赁</dd><dd data-value="3" class=" " title="劳务分包" style="width: 140px;">劳务分包</dd><dd data-value="4" class=" " title="专业分包" style="width: 140px;">专业分包</dd><dd data-value="5" class=" " title="施工总承包" style="width: 140px;">施工总承包</dd><dd data-value="6" class=" " title="设计/咨询/服务" style="width: 140px;">设计/咨询/服务</dd><dd data-value="9" class=" " title="其他" style="width: 140px;">其他</dd></dl></dd>
+            <input type="text" name="keyWord" placeholder="招标名称/项目名称/经办人" class="cjy-input-" value="">
+            <input type="hidden" name="tab" value="1">
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li class="active">
+                        <a href="javascript:;" class="back_nav_cell">全部订单</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待确认<span class="back_nav_num">7</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待付款<span class="back_nav_num">1</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待发货<span class="back_nav_num">3</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="back_nav_cell">等待收货<span class="back_nav_num">456</span></a>
+                    </li>
+                </ul>
+            <span class="floatR textBlack1">共4条符合条件的数据</span>
+        </div>
+
+        <div class="back_list_con" id="tenderList">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="5%">
+                        <col width="25%">
+                        <col width="15%">
+                        <col width="10%">
+                        <col width="7%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="18%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>采购名称</th>
+                            <th>所属项目</th>
+                            <th>信息发布</th>
+                            <th>状态</th>
+                            <th>报名截止时间 </th>
+                            <th>投标截止时间 </th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="page_list">
+                        <tr v-if="loading">
+                            <td colspan="8" styele="text">
+                                <div class="page_loading"></div>
+                            </td>
+                        </tr>
+                        <tr v-for="(item,index) in list" :supplier-id="item.winSupplierId" :tender-id="item.tender_id">
+                            <td>{{index+1}}</td>
+                            <td>
+                                <p class="tenderName" v-html="item.tenderName"></p>
+                                <div><span class="tenderTipsCell">{{item.collectType}}</span><span
+                                        class="tenderTipsCell">{{item.tenderClass}}</div><span
+                                        class="tenderTipsCell">{{item.bidType}}</span></div>
+                            </td>
+                            <td>
+                                <p style="width:90%;">{{item.itemName}}</p>
+                            </td>
+                            <td>{{item.createTime}}<div>{{item.userName}}&nbsp;&nbsp;<span class="textBlack3">经办</span>
+                                </div>
+                            </td>
+                            <td><span :class="item.colorClass"></span>{{item.tenderStatus}}
+                                <a class="showReason" href="javascript:;" @click="showReason(item.tender_id,index)"
+                                    v-if="item.del==1">查看原因
+                                    <span class="msgCon" v-show="item.reasonShow">
+                                        <div class="tagBox">
+                                            <span class="tagArrow"></span>
+                                            <div class="tagCon">
+                                                <p>{{item.reasonStr}}</p>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+                            </td>
+                            <td>{{item.enrollEndTime}}</td>
+                            <td>{{item.bidEndTime}}</td>
+
+                            <td v-html="item.actHTML"></td>
+                        </tr>
+                        <tr v-if="list.length<=0">
+                            <td colspan="8">
+                                <div class="page_list_noneBg"></div>
+                                <p class="page_list_noneCon"
+                                    style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">
+                                    没有找到相关内容</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getTenderList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

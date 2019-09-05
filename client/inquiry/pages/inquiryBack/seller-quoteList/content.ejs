@@ -1,0 +1,104 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>报价单管理</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input type="text" class="cjy-input-" name="inquiry_name" placeholder="询价单名称">
+            <input type="text" class="cjy-input-" name="inquiry_company_name" placeholder="采购单位">
+            <input type="text" class="cjy-calendar-input" name="start_time" placeholder="报价开始时间" calendar readonly>
+            <span class="search_line">-</span>
+            <input type="text" class="cjy-calendar-input" name="end_time" placeholder="报价结束时间" calendar readonly>
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div id="orderList">
+            <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li :class="status==0?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(9)">全部询价单</a>
+                    </li>
+                    <li :class="status==1?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(4)">报价未截止<span class="back_nav_num" v-if="parseInt(statusNumList.not_end_count)>0">{{statusNumList.not_end_count}}</span></a>
+                    </li>
+                    <li :class="status==2?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(1)">已报价<span class="back_nav_num" v-if="parseInt(statusNumList.quote_count)>0">{{statusNumList.quote_count}}</span></a>
+                    </li>
+                    <li :class="status==3?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(3)">已中选<span class="back_nav_num" v-if="parseInt(statusNumList.selected_count)>0">{{statusNumList.selected_count}}</span></a>
+                    </li>
+                    <li :class="status==4?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(2)">未中选<span class="back_nav_num" v-if="parseInt(statusNumList.not_selected_count)>0">{{statusNumList.not_selected_count}}</span></a>
+                    </li>
+                </ul>
+                <span class="floatR textBlack1">共{{count}}条符合条件的数据</span>
+            </div>
+            <div class="back_main_list">
+                <div class="material_list">
+                    <table>
+                        <colgroup>
+                            <col width="260">
+                            <col width="200">
+                            <col width="120">
+                            <col width="120">
+                            <col width="120">
+                            <col width="100">
+                            <col width="100">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>询价单</th>
+                                <th>采购单位</th>
+                                <th><p>报价总金额</p></th>
+                                <th>报价截止时间</th>
+                                <th>报价时间</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="product_tbody" id="productList">
+                        <tr v-if="list.length>0" v-for="item in list">
+                            <td class="alignL">
+                                <a href="#">{{item.inquiry_title}}</a>
+                            </td>
+                            <td class="alignL">
+                                <p>{{item.inquiry_company_name}}</p>
+                                <span>1346103436</span><span class="marginL20">刘风华</span>
+                            </td>
+                            <td>
+                                <p>￥{{item.total_amount}}</p>
+                            </td>
+                            <td>
+                                <p>{{item.expired}}</p>
+                                <p class="textRed" v-if="item.timeStatus">（剩余{{item.days}}天{{item.hours}}时{{item.min}}）</p>
+                            </td>
+                            <td><p>{{item.update_time}}</p></td>
+                            <td>
+                                <span class="textGreen" v-if="item.status=='1'">已报价</span>
+                                <span class="textRed" v-if="item.status=='2'">未选中</span>
+                                <span class="textBlue" v-if="item.status=='3'">已选中</span>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="table_btn btn_obtained_s">查看报价单</a>
+                                <p><a :href="'/supplier/quote/edit?quote_id='+item.id" target="_blank" class="textOrange" v-if="item.status=='1'&&item.timeStatus">修改报价</a><a :href="'/supplier/quote/show?quote_id='+item.id" target="_blank" class="textBlue" v-if="item.status=='3'">查看订单</a></p>
+                            </td>
+                        </tr>
+                        <tr v-if="list.length<=0">
+                            <td colspan="6" v-if="!loading">
+                                <div class="page_list_noneBg"></div>
+                                <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+                <div id="pages" class="page_container_wrap">
+                    <vue-page @get-list="getOrder" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

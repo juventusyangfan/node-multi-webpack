@@ -1,0 +1,167 @@
+.vip_bg_wrap{
+    width: 100%;
+    height: 2700px;
+    background: url("imgs/vip_bg.png") no-repeat center;
+    background-size: cover;
+}
+.vip_banner{
+    width: 1180px;
+    height: 490px;
+    margin: 0 auto;
+    background: url("imgs/vip_banner.png") no-repeat center;
+}
+.vip_title{
+    width: 1180px;
+    height: 70px;
+    line-height: 70px;
+    margin: 60px auto;
+    background: url("imgs/vip_title.png") no-repeat center;
+    font-size: 24px;
+    color: #ffa140;
+    text-align: center;
+}
+.vip_tips{
+    width: 1102px;
+    margin: 0 auto;
+}
+.vip_tips .num{
+    margin-right: 20px;
+    color: #9F9CE5;
+}
+.vip_notice{
+    color: #ffa140;
+}
+.vip_supplier,.vip_purchaser{
+    width: 550px;
+    float: left;
+}
+.vip_purchaser{
+    margin-left: 2px;
+}
+.vip_supplier_title,.vip_purchaser_title{
+    width: 550px;
+    height: 150px;
+}
+.vip_supplier_title{
+    background: url("imgs/vip_SUPPLIER.png") no-repeat;
+}
+.vip_purchaser_title{
+    background: url("imgs/vip_PURCHASER.png") no-repeat;
+}
+.vip_supplier_con,.vip_purchaser_con{
+    width: 450px;
+    height: 460px;
+    padding: 50px;
+    background-color: #25226A;
+}
+.vip_supplier_con li,.vip_purchaser_con li{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 2;
+    color: #fff;
+}
+.vip_pdfCon{
+    width: 1102px;
+    margin: 60px auto 120px auto;
+    background-color: #25226A;
+}
+.vip_pdf{
+    width: 1102px;
+    height: 202px;
+    background: url("imgs/vip_PDF.png") no-repeat;
+}
+.vip_file{
+    width: 1102px;
+    height: 400px;
+}
+.vip_item{
+    width: 164px;
+    margin-top: 50px;
+    margin-right: 40px;
+    float: left;
+}
+.vip_item img{
+    width: 164px;
+    height: 216px;
+    border: 1px solid #ccc;
+}
+.vip_item p{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.vip_btnCon{
+    width: 1102px;
+    margin: 0 auto 120px auto;
+    text-align: center;
+}
+.vip_btnCon .vip_bg_seller{
+    background: url("imgs/vip_btn_seller.png") no-repeat;
+}
+.vip_btnCon .vip_bg_buyer{
+    margin-left: 2px;
+    background: url("imgs/vip_btn_buyer.png") no-repeat;
+}
+.vip_bg_seller,.vip_bg_buyer{
+    width: 550px;
+    height: 261px;
+    text-align: center;
+    float: left;
+}
+.vip_btnCon a.vip_apply{
+    display: inline-block;
+    width: 302px;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 60px;
+    border-radius: 65px;
+    border-bottom: 5px solid #E88A28;
+    background-color: #FFA140;
+    font-size: 18px;
+    color: #fff;
+}
+.vip_btnCon a.vip_apply:hover{
+    background: #ff911f;
+    color: #fff;
+}
+.vip_btnCon a.vip_none{
+    display: inline-block;
+    width: 302px;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 60px;
+    border-radius: 65px;
+    border-bottom: 5px solid #444199;
+    background-color: #4E4B9E;
+    font-size: 18px;
+    color: #706CC8;
+    cursor: not-allowed;
+}
+.vip_btnCon a.vip_none:hover{
+    color: #706CC8;
+}
+.vip_btnCon p{
+    width: 290px;
+    margin: 20px auto;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.vip_noLogin{
+    width: 1102px;
+    height: 175px;
+    margin: 30px auto;
+    padding-top: 60px;
+    background: url("imgs/vip_noLogin.png") no-repeat;
+}
+.vip_noLogin p{
+    width: 900px;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}

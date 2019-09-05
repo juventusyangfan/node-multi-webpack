@@ -1,0 +1,250 @@
+.sList_banner{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 140px;
+    background-image: url(imgs/bannerBg.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sList_banner_con{
+    width: 1180px;
+    margin: 0 auto;
+}
+.sList_banner .shop_logo{
+    width: 102px;
+    height: 140px;
+    line-height: 140px;
+    vertical-align: middle;
+    float: left;
+}
+.sList_banner .shop_logo img{
+    display: inline-block;
+    width: 102px;
+}
+.sList_banner .shop_name{
+    width: 640px;
+    margin-top: 44px;
+    margin-left: 10px;
+    float: left;
+}
+.sList_banner .shop_tel{
+    width: 400px;
+    margin-top: 38px;
+    float: right;
+}
+.sList_banner .shop_tel .telBg{
+    width: 100%;
+    height: 17px;
+    margin-right: 18px;
+    background: url(imgs/telBg.png) no-repeat right;
+    float: right;
+}
+.sList_banner .shop_tel .telCon{
+    /* width: 245px; */
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+    padding-right: 16px;
+    border-radius: 36px;
+    background-color: #E04745;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+}
+.sList_banner .shop_tel .telCon i{
+    margin-left: 18px;
+    margin-right: 6px;
+    font-size: 22px;
+    vertical-align: -2px;
+}
+.sList_nav{
+    width: 100%;
+    background-color: #E04745;
+}
+.sList_nav_con{
+    width: 1180px;
+    margin: 0 auto;
+}
+.sList_nav_con .sList_nav_cell{
+    display: inline-block;
+    width: 88px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.sList_nav_con a.active{
+    background-color: #333;
+}
+.shop_big_bg{
+    width: 100%;
+    height: 210px;
+    background: url('imgs/shop_bg.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    margin-bottom: -60px;
+}
+.shop_intro_wrap{
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.shop_intro_wrap .shop_intro_inner{
+    width: 1040px;
+    padding: 0 70px;
+}
+.shop_intro_inner .intro_title{
+    font-size: 0;
+    text-align: center;
+    padding: 60px 0 40px;
+    background-color: #fff;
+}
+.intro_title h3{
+    display: inline-block;
+    font-size: 16px;
+    color: #e04745;
+    font-weight: normal;
+    vertical-align: top;
+    margin: 0 30px;
+}
+.intro_title .line_left{
+    display: inline-block;
+    width: 133px;
+    height: 21px;
+    background: url('imgs/line_left.png') no-repeat;
+}
+.intro_title .line_right{
+    display: inline-block;
+    width: 135px;
+    height: 21px;
+    background: url('imgs/line_right.png') no-repeat;
+}
+.shop_intro_inner .intro_article{
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+    text-align: justify;
+    line-height: 1.5em;
+    overflow: hidden;
+    white-space:pre-line;
+    word-break:break-all;
+    word-wrap: break-word;
+}
+.company_info .info_item{
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+.company_info dl{
+    font-size: 0;
+    width: 100%;
+}
+.company_info dt{
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fafafa;
+}
+.company_info dd{
+    display: inline-block;
+    min-height: 50px;
+    font-size: 12px;
+    color: #333;
+    line-height: 50px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 20px;
+    vertical-align: -21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}
+.company_info .pro_dl{
+    border: 1px solid #e5e5e5;
+}
+.pro_dl dt,.pro_dl dd{
+    border: none;
+}
+.pro_dl dd{
+    border-left: 1px solid #e5e5e5;
+}
+.info_item .w240{
+    width: 240px;
+}
+.info_item .w396{
+    width: 395px;
+}
+.info_item .w838{
+    width: 817px;
+    padding-right: 20px;
+    vertical-align: top;
+}
+.shop_intro_inner .cert_box{
+    position: relative;
+    margin-bottom: 80px;
+}
+.cert_box .cert_btn_box{
+    position: absolute;
+    width: 100%;
+}
+.cert_btn_box i{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #eee;
+    border-radius: 100%;
+    font-size: 26px;
+    color: #666;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+.cert_btn_box .cert_left{
+    position: absolute;
+    left: -70px;
+    top: 131px;
+}
+.cert_btn_box .cert_right{
+    position: absolute;
+    right: -70px;
+    top: 131px;
+}
+.cert_box .cert_photo_box{
+    position: relative;
+    width: 1014px;
+    height: 310px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.cert_photo_box .cert_wall{
+    position: absolute;
+    width: 1100px;
+    transform: translateX(0px);
+    transition: transform 0.3s ease-in;
+}
+.cert_wall .cert_item{
+    float: left;
+    width: 240px;
+    height: 310px;
+    overflow: hidden;
+    background-color: #e1e1e1;
+    margin-right: 18px;
+}
+.cert_item img{
+    width: 240px;
+    height: 310px;
+    cursor: pointer;
+}

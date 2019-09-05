@@ -1,0 +1,197 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+.back_list_info{
+    height: 54px;
+    line-height: 54px;
+    border-top: 1px solid #eee;
+}
+
+.back_tender_Item{
+    position: relative;
+    height: 140px;
+    margin-bottom: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.back_tender_Item .back_item_head{
+    height: 42px;
+    line-height: 42px;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #999;
+    background-color: #F7F7F7;
+}
+.back_tender_Item .back_item_body{
+    padding: 20px 20px 0 20px;
+}
+.back_item_body .back_body_title{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.back_item_body .textBlue{
+    position: relative;
+}
+
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #FCFCFC;
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.material_list th{
+    height: 60px;
+    font-weight: 700;
+}
+.material_list td{
+    height: 110px;
+    padding-top: 24px;
+    vertical-align: top;
+}
+.material_list .tenderName{
+    width: 90%;
+    max-height: 42px;
+    margin-bottom: 9px;
+    color: #000;
+    overflow: hidden;
+    word-break: break-all;
+}
+.material_list .tenderTipsCell{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 16px;
+    padding: 0 12px;
+    background-color: #FFFBFA;
+    border-radius: 30px;
+    color: #DA7D63;
+}
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 3px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+.material_list .uploadAct,.material_list .viewAct{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 0 14px;
+    border: solid 1px #FC6940;
+    border-radius: 4px;
+    color: #FC6940;
+    text-align: center;
+}
+.material_list .picAct{
+    display: inline-block;
+    margin-top: 8px;
+    color: #0084FF;
+}
+.material_list th{
+    background-color: #F8F8F8;
+}
+.back_list_con .page_container_wrap{
+    margin: 40px auto;
+}
+
+.back_list_con .back_tips_update{
+    margin-top: 10px;
+}
+
+/*图片上传弹框*/
+.upload-item{
+    margin-bottom: 10px;
+}
+.upload-item label{
+    float: left;
+    display: block;
+    width: 130px;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+.upload-item .upload-block{
+    height: 40px;
+    line-height: 40px;
+    margin-left: 130px;
+}
+.upload-item .uploadBtn{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.upload-item .uploadBtn:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.upload-item .fileCon{
+    padding: 0 20px;
+    border: 1px solid #eee;
+    background-color: #F7F7F7;
+}
+.upload-item .fileCon i{
+    margin-right: 6px;
+    font-size: 18px;
+}
+.upload-item .showImg{
+    width: 280px;
+    height: 16px;
+    line-height: 16px;
+}

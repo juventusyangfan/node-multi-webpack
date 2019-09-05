@@ -1,0 +1,14 @@
+.error_wrap{
+    width: 100%;
+    padding: 80px 0 160px 0;
+    background-color: #F7F7F7;
+}
+.error_wrap .error_img{
+    width: 766px;
+    height: 567px;
+    margin: 0 auto;
+}
+.error_wrap p{
+    font-size: 24px;
+    text-align: center;
+}

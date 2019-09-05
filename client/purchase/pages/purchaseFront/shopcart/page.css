@@ -1,0 +1,342 @@
+.shopcart_wrap{
+    background-color: #f4f4f4;
+    padding-bottom: 60px;
+}
+.shopcart_wrap .shopcart_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+.shopcart_inner .shopcart_top{
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+.shopcart_top p{
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+}
+.shopcart_top strong{
+    color: #fc6940;
+    font-weight: normal;
+}
+.shopcart_top .continue_shop{
+    float: right;
+    width: 122px;
+    height: 30px;
+    font-size: 14px;
+    color: #fc6940;
+    border: 1px solid #fc6940;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+.shopcart_box .goods_box{
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    background-color: #fff;
+}
+.goods_box .goods_top,.goods_box .goods_oprate{
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.goods_top p{
+    font-size: 12px;
+    color: #333;
+    line-height: 50px;
+}
+.goods_top p i{
+    font-size: 16px;
+    color: #333;
+    vertical-align: -1px;
+    margin-right: 6px;
+}
+.shopcart_main_bg{
+    display: inline-block;
+    width: 178px;
+    height: 132px;
+    margin: 80px auto 0;
+    background: url(imgs/indexDefoult.png) no-repeat;
+}
+.cjy-checkbox span{
+    font-size: 12px;
+    color: #666;
+}
+.goods_box .goods_oprate{
+    font-size: 12px;
+    color: #666;
+    line-height: 50px;
+    background-color: #fafafa;
+}
+.goods_oprate li{
+    float: left;
+    font-size: 12px;
+    color: #666;
+}
+.m94{
+    margin-left: 94px;
+    margin-top: -2px;
+}
+.m386{
+    margin-left: 386px;
+    margin-top: -2px;
+}
+.m106{
+    margin-left: 106px;
+    margin-top: -2px;
+}
+.m120{
+    margin-left: 120px;
+    margin-top: -2px;
+}
+.m110{
+    margin-left: 110px;
+    margin-top: -2px;
+}
+.m60{
+    margin-left: 60px;
+    margin-top: -2px;
+}
+.goods_box .goods_info{
+    padding-left: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.goods_box .goods_info:last-of-type{
+    border-bottom: none;
+}
+.goods_info li{
+    float: left;
+    padding: 20px 0;
+}
+.goods_info .goods_checkbox{
+    width: 50px;
+}
+.goods_info .goods_intro_box{
+    width: 424px;
+}
+.goods_intro .goods_photo{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    margin-right: 16px;
+}
+.goods_intro .goods_photo img{
+    width: 80px;
+    height: 80px;
+}
+.goods_intro .goods_name{
+    float: left;
+    width: 140px;
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+    padding-top: 6px;
+}
+.goods_name span{
+    display: inline-block;
+    color: #999;
+    margin-top: 10px;
+}
+.goods_intro .goods_attr{
+    float: left;
+    width: 156px;
+    padding-top: 8px;
+    margin-left: 30px;
+}
+.goods_attr dl{
+    margin-bottom: 10px;
+}
+.goods_attr dt,.goods_attr dd{
+    float: left;
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+.goods_attr dd{
+    max-width: 94px;
+}
+.goods_info .warehouse_li{
+    margin-left: 26px;
+    padding-top: 22px;
+    width: 180px;
+}
+.warehouse_li b{
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+}
+.warehouse_li span{
+    font-size: 12px;
+    color: #999;
+}
+.goods_info .unit_li{
+    padding-top: 25px;
+    width: 100px;
+    font-size: 12px;
+    color: #333;
+}
+.goods_info .num_box{
+    margin-right: 48px;
+    position: relative;
+}
+.num_box .cjy-input-{
+    width: 56px;
+    height: 30px;
+}
+.num_box .num_calc{
+    font-size: 0;
+}
+.num_calc i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: -6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.num_calc .goods_add{
+    border-left: none;
+}
+.num_calc .goods_minus{
+    border-right: none;
+}
+.num_box p{
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 8px;
+}
+.num_calc i.forbid_btn{
+    color: #d9d9d9;
+    background-color: #fcfcfc;
+    cursor: not-allowed;
+}
+.goods_info .subtotal_li{
+    padding-top: 25px;
+    width: 94px;
+    font-size: 12px;
+    color: #333;
+}
+.goods_info .goods_opt{
+    width: 90px;
+    padding-top: 25px;
+    font-size: 12px;
+    color: #333;
+}
+.goods_item{
+    margin-bottom: 20px;
+}
+.goods_item .goods_footer{
+    height: 78px;
+    padding-left: 20px;
+    background-color: #fef9f4;
+    border: 1px solid #fae6ce;
+}
+.goods_footer .goods_footer_left{
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 78px;
+}
+.goods_footer_left .del_all{
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: 1px;
+}
+.goods_footer .goods_footer_right{
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.goods_footer_right .goods_cate{
+    font-size: 12px;
+    color: #333;
+    margin-right: 20px;
+    vertical-align: -10px;
+}
+.goods_cate b{
+    font-weight: normal;
+    color: #df1c1c;
+}
+.goods_footer_right .clac_funds{
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 20px;
+    border-left: 1px solid #e5e5e5;
+    margin-right: 20px;
+}
+.clac_funds .subtotal_funds{
+    display: block;
+    font-size: 14px;
+    color: #df1c1c;
+    text-align: right;
+}
+.subtotal_funds strong{
+    font-size: 22px;
+    font-weight: normal;
+}
+.clac_funds .subtotal_factor{
+    font-size: 12px;
+    color: #333;
+}
+.subtotal_factor b{
+    font-weight: normal;
+    color: #999;
+}
+.goods_footer_right .confirm_order{
+    display: inline-block;
+    width: 124px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    background-color: #fc6940;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.goods_footer_right .confirm_order:hover{
+    background-color: #f3623a;
+}
+/* 下架 */
+.off_shelf .off_state{
+    display: inline-block;
+    width: 34px;
+    height: 16px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+    background-color: #c0c7d3;
+    border-radius: 2px;
+}
+.goods_box .off_shelf{
+    background-color: #fcfcfc;
+}
+.off_shelf img{
+    opacity: .5;
+}
+.off_shelf .goods_name span,.off_shelf .warehouse_li span,.off_shelf .num_box p{
+    color: rgba(153, 153, 153, .5);
+}
+.off_shelf .goods_intro .goods_name,.off_shelf .warehouse_li b,.off_shelf .unit_li,.off_shelf .subtotal_li{
+    color: rgba(51, 51, 51, .5);
+}
+.off_shelf .goods_attr dt,.off_shelf .goods_attr dd{
+    color: rgba(102, 102, 102, 0.5);
+}
+/* 选中 */
+.goods_box .goods_checked{
+    background-color: #fffcf8;
+}
+/* 输入值小于起订量 */
+.num_tooltips{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    color: #fc6940;
+}

@@ -1,0 +1,72 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #FF3600;
+    border: 1px solid #FF3600;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #ec3200;
+    border: 1px solid #ec3200;
+    color: #fff;
+}
+
+.back_main_search .cjy-input-{
+    margin: 0 10px 0 0;
+}
+.back_list_top{
+    height: 54px;
+    line-height: 54px;
+}
+
+.back_list_add{
+    position: absolute;
+    display: none;
+    width: 64px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #00B27E;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: leftbit;
+    animation-name: leftbit;
+}
+.back_list_item:hover .back_list_add{
+    display: inline-block;
+}
+.back_list_add:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.back_list_add i{
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    display: block;
+    margin-top: -20px;
+    font-size: 20px;
+}
+.back_list_add span{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.material_list table{
+    margin-top: 0;
+}

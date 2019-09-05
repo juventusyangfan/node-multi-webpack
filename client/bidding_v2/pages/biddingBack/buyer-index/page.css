@@ -1,0 +1,119 @@
+.back_title_btn{
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 20px;
+    border: solid 1px #FF3600;
+    border-radius: 6px;
+    color: #FF3600;
+    text-align: center;
+}
+
+.icon_list{
+    width: 100%;
+    background-color: #FCFCFC;
+}
+.icon_list li{
+    position: relative;
+    width: 275px;
+    height: 218px;
+    text-align: center;
+    float: left;
+}
+.icon_list li .handler_icon{
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: 50px auto 20px auto;
+    background-color: #FFF4F1;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px #FFF4F1;
+    border-radius: 80px;
+}
+.icon_list li:hover .handler_icon{
+    border-color: #FBEAE5;
+    box-shadow: 0 0 4px 0px #FBEAE5;
+}
+.icon_list li.active .handler_icon{
+    background-color: #fff;
+    border-color: #DC2F00;
+}
+.icon_list li .handler_name{
+    color: #333;
+}
+.icon_list li:hover .handler_name{
+    text-decoration: underline;
+    color: #DC2F00;
+}
+.icon_list li .handler_num{
+    position: absolute;
+    display: none;
+    min-width: 22px;
+    height: 22px;
+    line-height: 22px;
+    top: 50%;
+    left: 50%;
+    margin-left: 18px;
+    background-color: #DC2F00;
+    border-radius: 22px;
+    color: #fff;
+    text-align: center;
+}
+.icon_list li.active .handler_num{
+    display: inline-block;
+}
+
+
+.icon_list li .handlerIcon1{
+    background-image: url(imgs/handlerIcon1.png);
+}
+.icon_list li .handlerIcon2{
+    background-image: url(imgs/handlerIcon2.png);
+}
+.icon_list li .handlerIcon3{
+    background-image: url(imgs/handlerIcon3.png);
+}
+.icon_list li .handlerIcon4{
+    background-image: url(imgs/handlerIcon4.png);
+}
+.icon_list li .handlerIcon5{
+    background-image: url(imgs/handlerIcon5.png);
+}
+.icon_list li .handlerIcon6{
+    background-image: url(imgs/handlerIcon6.png);
+}
+.icon_list li .handlerIcon7{
+    background-image: url(imgs/handlerIcon7.png);
+}
+.icon_list li .handlerIcon8{
+    background-image: url(imgs/handlerIcon8.png);
+}
+.icon_list li .handlerIcon9{
+    background-image: url(imgs/handlerIcon9.png);
+}
+.icon_list li .handlerIcon10{
+    background-image: url(imgs/handlerIcon10.png);
+}
+.icon_list li .handlerIcon11{
+    background-image: url(imgs/handlerIcon11.png);
+}
+.icon_list li .handlerIcon12{
+    background-image: url(imgs/handlerIcon12.png);
+}
+.icon_list li .handlerIcon13{
+    background-image: url(imgs/handlerIcon13.png);
+}
+.icon_list li .handlerIcon14{
+    background-image: url(imgs/handlerIcon14.png);
+}
+.icon_list li .handlerIcon15{
+    background-image: url(imgs/handlerIcon15.png);
+}
+.icon_list li .handlerIcon16{
+    background-image: url(imgs/handlerIcon16.png);
+}
+.icon_list li .handlerIcon17{
+    background-image: url(imgs/handlerIcon17.png);
+}

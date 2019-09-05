@@ -1,0 +1,90 @@
+<input type="hidden" name="tenderId" value="137151">
+<input type="hidden" name="packageId" value="0">
+<script>
+    var expertGroup = {"1":"\u5de5\u7a0b\u7ecf\u6d4e","2":"\u7269\u8d44\u7ba1\u7406","3":"\u623f\u5efa","4":"\u5e02\u653f","5":"\u94c1\u9053\u5de5\u7a0b","6":"\u56db\u7535","7":"\u8d22\u52a1\u7c7b"};
+</script>
+<div class="setting_warp">
+    <div class="crumbs_con"><i class="iconfont icon-ditu"></i><span class="textBlack1">在线评标室</span>  > 设置评标方案</div>
+    <div class="setting_container">
+        <!-- <ul class="setting_step_con">
+            <li class="active">
+                <p class="setting_step_title">评标小组</p>
+                <p class="setting_step_num">1</p>
+            </li>
+            <li>
+                <p class="setting_step_title">评标细则</p>
+                <p class="setting_step_num">2</p>
+            </li>
+            <li>
+                <p class="setting_step_title">完成设置</p>
+                <p class="setting_step_num">3</p>
+            </li>
+        </ul> -->
+        <div class="package_con">
+            <ul>
+                <li class="act">
+                    <a href="javascript:;" class="package_cell">包件1（BJBH-001）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件2（BJBH-002）</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="package_cell">包件3（BJBH-003）</a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="setting_add">新增评标专家</a>
+        </div>
+        <div class="setting_box">
+            <i class="iconfont icon-jiaren"></i>
+            <a href="#" class="setting_add">新增评标专家</a>
+        </div>
+        <div class="setting_table_con" id="zjList">
+            <div class="material_list clearfix">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="80">
+                        <col width="80">
+                        <col width="200">
+                        <col width="80">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>专家姓名</th>
+                            <th>联系方式</th>
+                            <th>备注信息</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-if="loading">
+                            <td colspan="5">
+                                <div class="page_loading"></div>
+                            </td>
+                        </tr><template v-if="list.length>0">
+                            <tr v-for="(item,index) in list">
+                                <td>{{index+1}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.mobile}}</td>
+                                <td>{{item.remarks}}</td>
+                                <td><a href="javascript:;" class="tdPurple" @click="listRemove(item.expert_id)">移除</a></td>
+                            </tr>
+                        </template>
+                        <tr v-else>
+                            <td colspan="5">
+                                <div class="page_list_noneBg"></div>
+                                <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+                <div id="pages" class="page_container_wrap marginT20"><vue-page @get-list="getList" :count="count" :limit="10" v-if="list.length>0"></vue-page></div>
+            </div>
+            <div class="setting_btns">
+                <a href="javascript:;" class="setting_btn_confirm">下一步</a>
+            </div>
+        </div>
+    </div>
+</div>

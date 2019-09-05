@@ -1,0 +1,117 @@
+/* 面包屑 */
+.breadcrumbs_wrap{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-bottom: 80px;
+}
+.breadcrumbs_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* 中标公示 */
+.bidding_detail_wrap{
+    width: 1180px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.bidding_detail_wrap .bidding_detail_header{
+    width: 100%;
+    min-height: 123px;
+    background: url(imgs/bg_zhuangshi.jpg) no-repeat;
+    background-color: #f3b41e;
+    padding-top: 60px;
+
+}
+.bidding_detail_header h1{
+    width: 690px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    line-height: 48px;
+    margin: 0 auto;
+}
+.bidding_detail_header .bidding_number_date{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+.bidding_number_date .marginR30{
+    margin-right: 30px;
+}
+.bidding_detail_wrap .bidding_detail_content{
+    position: relative;
+    padding: 60px 0;
+    border: 1px solid #ececec;
+}
+.bidding_detail_content .seal_success{
+    display: inline-block;
+    width: 114px;
+    height: 112px;
+    background: url(imgs/seal_zhuangzai.png) no-repeat;
+    position: absolute;
+    right: 102px;
+    top: -60px;
+}
+.zhuanzai_box{
+    width: 1058px;
+    margin: 0 auto;
+}
+.zhuanzai_box h3{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.zhuanzai_box p{
+    font-size: 14px;
+    color: #333;
+    text-align: justify;
+    line-height: 2em;
+}
+.zhuanzai_box .color_gray{
+    color: #999;
+}
+.zhuanzai_box .color_red{
+    color: #FF3600;
+}
+.zhuanzai_box table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    margin-bottom: 20px;
+}
+.zhuanzai_box th{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 58px;
+    padding: 0 5px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.zhuanzai_box td{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    height: 58px;
+    padding: 0 5px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.origin_link{
+    width: 1058px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #333;
+}
+.origin_link a{
+    color: #FF3600;
+}
+.origin_link a:hover{
+    text-decoration: underline;
+}

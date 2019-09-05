@@ -1,0 +1,357 @@
+.order_warp{
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #f4f4f4;
+}
+.order_title {
+    width: 1180px;
+    height: 60px;
+    line-height: 72px;
+    margin: 0 auto;
+    color: #333;
+}
+/* 收货信息 */
+.order_address{
+    width: 1100px;
+    padding: 30px 40px 0 40px;
+    margin: 0 auto;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+.order_line{
+    margin-bottom: 20px;
+    /* clear:both;
+    overflow:hidden; */
+}
+.order_line label{
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+    color: #999;
+    float: left;
+}
+.order_line label.lineHeignt{
+    height: 40px;
+    line-height: 40px;
+}
+.order_line .adr_label{
+    height: 30px;
+    line-height: 30px;
+}
+.order_line .line_con{
+    width: 1000px;
+    float: left;
+}
+
+.order_line .line_con select{
+    width: 170px;
+}
+.order_line .adr_list{
+    height: 32px;
+    overflow: hidden;
+}
+.order_line .adr_item{
+    position: relative;
+    display: inline-block;
+    width: 998px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    border: solid 1px #ccc;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+.order_line .adr_item:hover{
+    border: solid 1px #fc6940;
+}
+.order_line .adr_item span{
+    margin-left: 20px;
+}
+.order_line .adr_default{
+    display: none;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 4px;
+    background-color: #FFC000;
+    color: #fff;
+    text-align: center;
+}
+.order_line .default .adr_default{
+    display: inline-block;
+}
+.order_line .adr_btns{
+    display: none;
+    margin-right: 20px;
+    color: #999;
+    float: right;
+}
+.order_line .adr_btns a{
+    display: inline-block;
+    color: #999;
+}
+.order_line .adr_btns a:hover{
+    color: #fc6940;
+}
+.order_line .adr_item:hover .adr_btns{
+    display: inline-block;
+}
+.order_line .adr_more,.order_line .adr_add,.order_line .adr_more i,.order_line .adr_add i{
+    font-size: 12px;
+    color: #999;
+}
+.order_line .adr_more i,.order_line .adr_add i{
+    margin-right: 6px;
+}
+.order_line .adr_more:hover,.order_line .adr_add:hover,.order_line .adr_more:hover i,.order_line .adr_add:hover i{
+    color: #fc6940;
+}
+.order_line .adr_more i{
+    display: inline-block;
+    transition: transform .3s;
+}
+.order_line .goUp i{
+    transform: rotate(180deg);
+}
+
+/* 交货方式 */
+.order_delivery{
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+}
+.order_delivery .delivery_item{
+    position: relative;
+    display: inline-block;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+.order_delivery .delivery_item:hover{
+    border: solid 1px #fc6940;
+}
+.order_delivery .delivery_item .icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 10px;
+    border-radius: 18px;
+    background-color: #7392B5;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.order_delivery .tagBox{
+    display: none;
+    position: absolute;
+    top: 35px;
+}
+.order_delivery .tagArrow{
+    margin-left: 81px;
+    margin-bottom: 137px;
+}
+.order_delivery .tagCon{
+    width: 330px;
+    margin-left: -185px;
+}
+
+/* 商品清单 */
+.order_pList_con{
+    width: 1180px;
+    margin: 0 auto;
+    border: solid 1px #e5e5e5;
+}
+.order_pList_con .order_shop{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-bottom: solid 1px #e5e5e5;
+    background-color: #FDFDFD;
+    font-size: 12px;
+    color: #333;
+}
+.order_list_table table{
+    width: 100%;
+}
+.order_list_table table th{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #e5e5e5;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+.order_list_table table td{
+    padding: 20px;
+    border-bottom: solid 1px #e5e5e5;
+    background-color: #fff;
+    text-align: center;
+}
+.order_list_footer{
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+.order_list_footer .order_comment{
+    width: 500px;
+    float: left;
+}
+.order_list_footer .order_comment p{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #333;
+}
+.order_list_footer .order_comment textarea{
+    width: 450px;
+    height: 50px;
+    padding: 10px;
+    border: solid 1px #e5e5e5;
+}
+.order_money_title{
+    display: inline-block;
+    width: 140px;
+    float: right;
+}
+.order_money_title label{
+    display: inline-block;
+    width: 100%;
+    line-height: 2;
+    font-size: 12px;
+    text-align: right;
+}
+.order_money{
+    display: inline-block;
+    float: right;
+}
+.order_money span{
+    display: block;
+    line-height: 2;
+    font-size: 12px;
+}
+.order_money .order_total,.order_money_title .order_total_title{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.order_money .order_total{
+    font-size: 22px;
+    color: #DF1C1C;
+}
+
+/* 发票信息 */
+.order_invoice{
+    position: relative;
+    width: 1180px;
+    margin: 0 auto;
+}
+.order_invoice .invoice_item{
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+.order_invoice_con{
+    width: 1120px;
+    margin: 20px auto;
+    padding: 30px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+
+/* 订单底部 */
+.order_bottom{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin: 30px auto 0 auto;
+    border-top: solid 1px #FAE6CE;
+    background-color: #FEF9F4;
+}
+.order_bottom_con{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.order_bottom_con a{
+    display: inline-block;
+    width: 123px;
+    height: 48px;
+    line-height: 48px;
+    margin-top: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
+.order_bottom_con .order_goCart{
+    border: solid 1px #ccc;
+    background-color: #fff;
+}
+.order_bottom_con .order_confirm{
+    border: solid 1px #FC6940;
+    background-color: #FC6940;
+    color: #fff;
+}
+.order_bottom_con .order_confirm:hover{
+    background-color: #F3623A;
+    border-color: #F3623A;
+}
+.order_bottom_con .order_bottom_money{
+    margin-right: 20px;
+    font-size: 22px;
+    color: #DF1C1C;
+}
+/* 新增收货地址 */
+.shipping-box .shipping-item,.invoice-box .invoice-item{
+    margin-bottom: 20px;
+}
+.shipping-item .shipping-label,.invoice-item .invoice-label{
+    float: left;
+    display: block;
+    width: 114px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.shipping-label span,.invoice-label span{
+    color: #ca3c3c;
+    margin-right: 6px;
+    vertical-align: -3px;
+}
+.shipping-input .cjy-input-,.invoice-input .cjy-input-{
+    width: 344px;
+}
+.shipping-input select,.invoice-input select{
+    width: 158px;
+}
+.shipping-input .cjy-select,.invoice-input .cjy-select{
+    margin-right: 10px;
+}
+.shipping-box .default_address {
+    font-size: 14px;
+    color: #333;
+    margin-left: 114px;
+}
+/* 新增发票 */
+.invoice-item .invoice-label{
+    width: 146px;
+}
+.invoice-input #receipts-name{
+    width: 78px;
+}
+.invoice-input #receipts-phone{
+    width: 234px;
+    margin-left: 10px;
+}

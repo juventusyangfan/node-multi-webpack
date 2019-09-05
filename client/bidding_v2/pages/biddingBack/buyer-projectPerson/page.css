@@ -1,0 +1,174 @@
+.project_person_prompt {
+    width: 1158px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    padding: 0 10px;
+    background-color: #FCFAE3;
+    border: solid 1px #F7E3A4;
+    color: #666;
+}
+.project_person_prompt > i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background-color: #50B2F6;
+    border-radius: 24px;
+    color: #fff;
+    text-align: center;
+}
+.project_name{
+    width: 1140px;
+    line-height: 26px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+.project_detail_title{
+    width: 1140px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto 0 auto;
+    padding: 0 20px;
+    background-color: #FFFBFA;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.project_detail_title .detail_title_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: -1px;
+    margin-right: 6px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+
+.project_person_warp{
+    width: 1180px;
+    margin: 30px auto;
+    text-align: center;
+}
+.project_admin_cell,.project_operator_cell{
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    line-height: 60px;
+    border-radius: 6px;
+    text-align: center;
+}
+.project_admin_cell{
+    height: 60px;
+    margin-left: 20px;
+    background-color: #F7F7F7;
+    color: #333;
+}
+.project_operator_cell{
+    height: 80px;
+    margin-right: 20px;
+    padding-top: 20px;
+    background-color: #FFF5F3;
+    color: #D86849;
+}
+.project_admin_cell:first-child{
+    margin-left: 0;
+}
+.project_operator_add{
+    display: inline-block;
+    width: 138px;
+    height: 78px;
+    padding-top: 20px;
+    border: dashed 1px #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+.project_operator_add:hover{
+    border: dashed 1px #FF3600;
+}
+.project_admin_cell i,.project_operator_cell i{
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    top: -8px;
+    right: -8px;
+    border-radius: 18px;
+    font-size: 12px;
+    text-align: center;
+}
+.project_admin_cell i{
+    background-color: #fff;
+    color: #999;
+}
+.project_operator_cell i.icon-cha1{
+    background-color: #FD4545;
+    color: #fff;
+    cursor: pointer;
+}
+.project_operator_cell span,.project_operator_add span{
+    display: block;
+    line-height: 30px;
+}
+
+.project_person_btns{
+    margin-top: 40px;
+    text-align: center;
+}
+.project_person_btns a{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 6px;
+    text-align: center;
+}
+.project_person_btns a.project_person_save{
+    margin-right: 10px;
+    background-color: #FF3600;
+    border: solid 1px #FF3600;
+    color: #fff;
+}
+.project_person_btns a.project_person_save:hover{
+    background-color: #ec3200;
+    border: solid 1px #ec3200;
+    color: #fff;
+}
+.project_person_btns a.project_person_cancel{
+    border: solid 1px #ccc;
+}
+.project_person_btns a.project_person_cancel:hover{
+    border: solid 1px #FF3600;
+}
+
+
+.account_dialog{
+    padding: 10px 20px;
+}
+.account_dialog .js_choose{
+    display: inline-block;
+} 
+.account_dialog .js_cancel{
+    display: none;
+}
+.account_dialog .js_select .js_choose{
+    display: none;
+}
+.account_dialog .js_select .js_cancel{
+    display: inline-block;
+}
+
+.remove_dialog{
+    min-height: 200px;
+    padding: 10px 20px;
+}
+.remove_handler{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.remove_handler select{
+    width: 150px;
+}

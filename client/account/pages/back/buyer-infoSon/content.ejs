@@ -1,0 +1,63 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>子账号管理</span>
+        <a href="javascript:;" class="back_title_btn floatR">+ 添加子账号</a>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_list">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="100">
+                        <col width="150">
+                        <col width="150">
+                        <col width="100">
+                        <col width="150">
+                        <col width="50">
+                        <col width="50">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>姓名</th>
+                        <th>登录手机号</th>
+                        <th>邮箱</th>
+                        <th>身份</th>
+                        <th>添加时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="8">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                        <tr v-for="(item,index) in list">
+                            <td>{{item.index}}</td>
+                            <td>{{item.real_name}}</td>
+                            <input type="hidden" name="id" :value="item.id">
+                            <td>{{item.user_mobile}}</td>
+                            <td>{{item.user_email}}</td>
+                            <td>{{item.is_manager_name}}</td>
+                            <td>{{item.add_time}}</td>
+                            <td><span :class="item.role_status_color">{{item.role_status}}</span></td>
+                            <td><a href="javascript:;" class="change_status textBlue " v-if="!item.is_manager">修改</a></td>
+                            <input type="hidden" name="item_data" :value="item.item_data">
+                        </tr>
+                    </template>
+                    <tr v-else><td colspan="8"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+                <div id="pages" class="page_container_wrap">
+                    <vue-page @get-list="getSon" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

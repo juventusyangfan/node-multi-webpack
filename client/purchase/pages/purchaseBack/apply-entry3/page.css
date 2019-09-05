@@ -1,0 +1,117 @@
+/* 商家入驻 */
+.applyentry_wrap{
+    width: 100%;
+    background-color: #fff;
+}
+.applyentry_wrap .applyentry_bg{
+    width: 100%;
+    height: 212px;
+    background: url('imgs/entry_bg.png') center no-repeat;
+    background-size: cover;
+}
+.applyentry_wrap .applyentry_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+/* 时间轴 */
+.applyentry_inner .order_process{
+    position: relative;
+    left: 0;
+    top: -22px;
+}
+.order_process .process_bar_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+.process_bar_box .process_bar{
+    width: 25%;
+    border-top: 2px solid #ccc;
+}
+.process_bar_box .has_bar{
+    border-top: 2px solid #f3564f;
+}
+.order_process .process_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.process_wrap .process_box{
+    width: 90px;
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+}
+.process_circle span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #fff;
+}
+.process_box .process_circle{
+    text-align: center;
+}
+.has_process .process_circle span{
+    background-color: #f3564f;
+}
+.process_box p{
+    width: 90px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+div.has_process p{
+    color: #F3564F;
+}
+/* 商家入驻协议 */
+.applyentry_body{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 60px 0 80px 0;
+}
+.applyentry_body h1{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+.applyentry_body p{
+    margin-bottom: 20px;
+    line-height: 2;
+    text-indent:2em
+}
+.applyentry_btns{
+    margin-top: 60px;
+    text-align: center;
+}
+.applyentry_btns a{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+.applyentry_btns a.applyentry_btn_up{
+    margin-right: 10px;
+    border: solid 1px #ccc;
+}
+.applyentry_btns a.applyentry_btn_go{
+    background-color: #FC6940;
+    border: solid 1px #FC6940;
+    color: #fff;
+}
+.applyentry_btns a.applyentry_btn_go:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}

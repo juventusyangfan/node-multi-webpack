@@ -1,0 +1,86 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>报价单管理</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <input type="text" class="cjy-input-" name="title" placeholder="询价单名称">
+            <input type="text" class="cjy-calendar-input" name="created_start" placeholder="发布开始时间" calendar readonly>
+            <span class="search_line">-</span>
+            <input type="text" class="cjy-calendar-input" name="created_end" placeholder="发布结束时间" calendar readonly>
+            <div class="search_btn_con">
+                <a href="javascript:;" class="back_btn_search marginR10">搜索</a>
+                <a href="javascript:;" class="back_btn_clear">清空</a>
+            </div>
+        </div>
+        <div id="orderList">
+            <div class="back_main_nav clearfix">
+                <ul class="clearfix">
+                    <li v-for="item in statusNumList" :class="status==item.status?'active':''">
+                        <a href="javascript:;" class="back_nav_cell" @click="changeStatus(item.status)">{{item.status_Name}}<span class="back_nav_num" v-if="parseInt(item.status_count)>0">{{item.status_count}}</span></a>
+                    </li>
+                </ul>
+                <span class="floatR textBlack1">共{{count}}条符合条件的数据</span>
+            </div>
+            <div class="back_main_list">
+                <div class="material_list">
+                    <table>
+                        <colgroup>
+                            <col width="240">
+                            <col width="120">
+                            <col width="120">
+                            <col width="100">
+                            <col width="100">
+                            <col width="120">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>询价单</th>
+                                <th>发布时间</th>
+                                <th>报价截止时间</th>
+                                <th>状态</th>
+                                <th>已收到报价</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="product_tbody" id="productList">
+                        <tr v-if="list.length>0" v-for="item in list">
+                            <td class="alignL">
+                                <a :href="'/purchaser/inquiry/detail?inquiry_id='+item.id" target="_blank">{{item.title}}</a>
+                            </td>
+                            <td>
+                                {{item.publish_time}}
+                            </td>
+                            <td>
+                                {{item.expired}}
+                            </td>
+                            <td>
+                                <p class="textBlack3" v-if="item.status=='0'">带发布</p>
+                                <p class="textRed" v-if="item.status=='1'">报价中</p>
+                                <p class="textBlack1" v-if="item.status=='2'">报价已截止<br><span class="textBlack3">（待选供应商）</span></p>
+                                <p class="textGreen" v-if="item.status=='3'">已生成订单</p>
+                            </td>
+                            <td><span class="textRed">{{item.quoted_num}}</span>家已报价</td>
+                            <td>
+                                <p v-if="item.status=='0'"><a :href="'/purchaser/inquiry/edit?inquiry_id='+item.id" target="_blank">编辑</a><a href="javascript:;" @click="delOrder(item.id)" class="marginL20">删除</a></p>
+                                <p v-if="item.status=='1'"><a href="javascript:;" @click="changeOrder(item.id)" class="inquiry_view">查看报价</a></p>
+                                <p v-if="item.status=='2'||item.status=='3'"><a :href="'/purchaser/inquiry/viewQuoteList?inquiry_id='+item.id" target="_blank" class="inquiry_view">查看报价</a><a href="javascript:;" class="marginL20">查看订单</a></p>
+                            </td>
+                        </tr>
+                        <tr v-if="list.length<=0">
+                            <td colspan="6" v-if="!loading">
+                                <div class="page_list_noneBg"></div>
+                                <p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
+                </div>
+                <div id="pages" class="page_container_wrap">
+                    <vue-page @get-list="getOrder" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

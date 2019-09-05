@@ -1,0 +1,31 @@
+.publish_block label{
+    width: 162px;
+}
+.publish_block .publish_block_half input.cjy-calendar-input{
+    width: 380px;
+}
+.publish_block_btn{
+    margin-top: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.publish_block_btn a{
+    color: #FF3600;
+}
+.publish_block_btn i{
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 12px;
+    transition: transform .3s;
+}
+.publish_block_btn .open i{
+    transform: rotate(180deg);
+}
+.date_show{
+    height: 160px;
+    overflow: hidden;
+    transition: height .3s;
+}
+.publish_container .date_open{
+    height: 450px;
+}

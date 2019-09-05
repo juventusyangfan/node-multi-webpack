@@ -1,0 +1,114 @@
+.order_process{
+    position: relative;
+    margin-top: 24px;
+    margin-left: 200px;
+    margin-right: 450px;
+}
+.order_process .process_bar_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    min-width: 680px;
+    display: flex;
+}
+.process_bar_box .process_bar{
+    width: 33.33%;
+    border-top: 2px solid #ccc;
+}
+.process_bar_box .has_bar{
+    border-top: 2px solid #fc9440;
+}
+.order_process .process_wrap{
+    min-width: 680px;
+    display: flex;
+    justify-content: space-around;
+}
+.process_wrap .process_box{
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+}
+.process_circle span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #fff;
+}
+.has_process .process_circle span{
+    background-color: #fc9440;
+}
+.process_box p{
+    width: 60px;
+    margin-top: 10px;
+    margin-left: -11px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+div.has_process p{
+    color: #90b51f;
+}
+.publish_wrap{
+    padding: 0 200px;
+    margin-right: 250px;
+    margin-top: 100px;
+}
+.publish_wrap .publish_complete{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.publish_complete i{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    background-color: #31c37c;
+    border-radius: 100%;
+}
+.publish_complete .complete_state{
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.complete_btn_box{
+    font-size: 0px;
+}
+.complete_btn_box a{
+    display: inline-block;
+    width: 138px;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+}
+.complete_btn_box .publish_new{
+    margin-right: 20px;
+}
+.complete_btn_box .publish_new:hover{
+    background-color: #f3623a;
+    border: 1px solid #f3623a;
+}
+.complete_btn_box .publish_admin{
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.complete_btn_box .publish_admin:hover{
+    background-color: #f7f7f7;
+}

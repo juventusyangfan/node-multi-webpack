@@ -1,0 +1,98 @@
+<div class="tender_wrap">
+    <div class="tender_inner">
+        <div class="tender_container">
+            <div class="tender_list" name="collectType">
+                <a class="active" href="javascript:;">全部</a>
+                <a href="javascript:;">公开招标</a>
+                <a href="javascript:;">邀请招标</a>
+                <a href="javascript:;">询比价</a>
+                <a href="javascript:;">竞争性谈判</a>
+            </div>
+            <div class="tender_list" name="tenderStatus">
+                <a class="active" href="javascript:;">全部</a>
+                <a href="javascript:;">报名中</a>
+                <a href="javascript:;">投标中</a>
+                <a href="javascript:;">已截标</a>
+            </div>
+            <div class="tender_list" name="tenderClass">
+                <a class="active" href="javascript:;">全部</a>
+                <a href="javascript:;">物资招标</a>
+                <a href="javascript:;">劳务分包</a>
+                <a href="javascript:;">专业分包</a>
+                <a href="javascript:;">设备租赁</a>
+            </div>
+            <div class="tender_search">
+                <div class="tender_search_area clearfix">
+                    <select name="wordType">
+                        <option value="">请选择</option>
+                        <option value="1">报告名称</option>
+                        <option value="2">招标单位名称</option>
+                    </select>
+                    <input class="cjy-input-" type="text" name="keyWord" placeholder="输入关键字，如：湖北国际经济技术合作" />
+                </div>
+                <button>搜索</button>
+            </div>
+        </div>
+        <span class="hr_line"></span>
+        <span class="hr_line top136"></span>
+        <span class="hr_line top199"></span>
+    </div>
+</div>
+<div class="tender_main" id="exclusive">
+    <div class="tender_select" name="sort">
+        <span class="active" data-id="ptime">发布时间<i class="iconfont icon-xiajiantou1"></i></span>
+        <span class="marginL20" data-id="etime">截标时间<i class="iconfont icon-xiajiantou1"></i></span>
+    </div>
+    <div class="tender_main_content">
+        <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+        <ul class="exclusive_list" v-if="list.length>0">
+            <li class="exclusive_item clearfix" v-for="item in list">
+                <div class="exclusive_left">
+                    <div class="exclusive_img">
+                        <span class="bg_blue">{{item.tenderStatusTitle}}</span>
+                    </div>
+                </div>
+                <div class="exclusive_right clearfix">
+                    <div class="exclusive_info">
+                        <a target="_blank" class="exclusive_name ellipsis" :href="'/exclusive/details/'+item.tenderId+'.html'">{{item.tenderName}}</a>
+                        <div class="exclusive_brief clearfix">
+                            <p>
+                                <span>采购单位：</span>
+                                <b class="textBlack1 ellipsis">{{item.buyerName}}</b>
+                            </p>
+                            <p>
+                                <span>所属项目：</span>
+                                <b class="textBlack1 ellipsis">{{item.itemName}}</b>
+                            </p>
+                            <p>
+                                <span>采购性质：</span>
+                                <b>{{item.cgxz}}</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exclusive_invitation">
+                        <a href="javascript:;">
+                            <i class="iconfont invite_icon " :class="item.collectTypeClass"></i><span>{{item.collectTypeTitle}}</span>
+                        </a>
+                    </div>
+                    <div class="exclusive_bottom">
+                        <span>集采类型：</span>
+                        <span>物资招标</span>
+                        <span class="marginL40">发布时间：</span>
+                        <span>{{item.createTime}}</span>
+
+                        <span class="marginL40">报名截止：</span>
+                        <span class="colorfc6940">{{item.enrollEndTime}}</span>
+
+                        <span class="marginL40">投标/报价截止：</span>
+                        <span class="colorfc6940">{{item.bidEndTime}}</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+    </div>
+    <div id="pages">
+        <vue-page @get-list="getExclusive" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+    </div>
+</div>

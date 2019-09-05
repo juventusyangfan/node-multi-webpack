@@ -1,0 +1,115 @@
+.other_top_con{
+    height: 116px;
+}
+
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.material_list tr{
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list tbody tr:hover{
+    background-color: #fcfcfc;
+}
+.material_list th,.material_list td{
+    line-height: 1.5;
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    text-align: left;
+}
+.material_list th{
+    height: 60px;
+}
+.material_list td {
+    min-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: top;
+}
+.material_list th{
+    background-color: #F8F8F8;
+    font-weight: 700;
+}
+.material_list td > p{
+    line-height: 2;
+}
+.material_list .bid_table_num{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 8px;
+    border: solid 1px #F5AF9D;
+    border-radius: 18px;
+    color: #DC2F00;
+    text-align: center;
+}
+.material_list .bid_table_name{
+    display: inline-block;
+    width: 280px;
+    vertical-align: -10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}
+.material_list .bid_table_pay{
+    margin-left: 20px;
+    color: #DC2F00;
+}
+.material_list .status1,.material_list .status2,.material_list .status3,.material_list .status4,.material_list .status5{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    border-radius: 6px;
+    vertical-align: 3px;
+}
+.material_list .status1{
+    background-color: #FFC600;
+}
+.material_list .status2{
+    background-color: #0090FF;
+}
+.material_list .status3{
+    background-color: #FF0018;
+}
+.material_list .status4{
+    background-color: #00C800;
+}
+.material_list .status5{
+    background-color: #e5e5e5;
+}
+
+
+.bid_detail_tips{
+    margin-top: 20px;
+}
+.bid_detail_title{
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+    padding-left: 20px;
+    background-color: #FFFBFA;
+    font-weight: 700;
+    color: #DC2F00;
+}
+.bid_detail_title .detail_title_circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    vertical-align: -1px;
+    margin-right: 6px;
+    border: solid 2px #DC2F00;
+    border-radius: 8px;
+}
+.bid_detail_content{
+    padding: 20px 30px;
+    line-height: 1.5;
+    color: #333;
+}

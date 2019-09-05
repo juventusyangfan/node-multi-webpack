@@ -1,0 +1,42 @@
+<div class="com_top_menu clearfix">
+    <div class="top_menu_left">
+        <a class="website_logo" href="javascript:;"></a>
+        <span class="website_location">
+            <i class="iconfont icon-ditu"></i>
+            武汉市            <i class="iconfont icon-xiajiantou"></i>
+            <span class="location_list">
+                <span class="location_national clearfix">
+                    <a class="" city_id="0">全国</a>
+                </span>
+                <a class="" city_id="208">衡水市</a>
+                <a class="act" city_id="1710">武汉市</a>
+                <a class="" city_id="1774">孝感市</a>
+            </span>
+        </span>
+    </div>
+    <div class="top_menu_right">
+        <% if(topItems.length == 0) { %>
+        <div class="top_search_warp">
+            <span class="top_search_sel">
+                <span>招标名称</span><i class="iconfont icon-xiajiantou"></i>
+                <dl>
+                    <dd>招标名称</dd>
+                    <dd>招标单位名称</dd>
+                </dl>
+            </span>
+            <input type="text" class="top_search_input" value="">
+            <a href="javascript:;" class="top_search_btn iconfont icon-sousuo"></a>
+        </div>
+        <span class="top_qrcode">
+            <img src="<%= topcode %>" alt="生材网APP二维码">
+            <span class="top_qrcode_con">
+                <img src="<%= qrcode %>" alt="生材网APP二维码">
+                <p>扫码下载APP</p>
+            </span>
+        </span>
+        <% } %>
+        <% for(var i = 0;i < topItems.length;i++) { %>
+            <a class="<%= topItems[i].act %>" href="javascript:;"><%= topItems[i].name %><i class="newIcon"></i></a>
+        <% } %>
+    </div>
+</div>

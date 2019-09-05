@@ -1,0 +1,369 @@
+.back_main_title .back_title_btn{
+    display: inline-block;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 30px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.back_main_title .back_title_btn:hover{
+    background-color: #F3623A;
+    border: 1px solid #F3623A;
+    color: #fff;
+}
+.back_main_list{
+    padding: 20px 30px;
+    border-top: solid 1px #e5e5e5;
+}
+.back_main_list .material_list{
+    margin-bottom: 30px;
+}
+.back_main_list .material_list_header{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    background-color: #FDFDFD;
+    border-top: solid 1px #e5e5e5;
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+}
+.material_list_header a{
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.material_list_header a.btn_shelf{
+    margin-left: 30px;
+    background-color: #fc6940;
+    border: solid 1px #fc6940;
+    color: #fff;
+}
+.material_list_header a.btn_shelf:hover{
+    background-color: #F3623A;
+    border: solid 1px #F3623A;
+}
+.material_list_header a.btn_obtained{
+    border: solid 1px #fc6940;
+    color: #fc6940;
+}
+.material_list_header a.btn_delete{
+    border: solid 1px #ccc;
+    color: #666;
+}
+
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tbody{
+    position: relative;
+    border-top: solid 1px #e5e5e5;
+}
+.material_list tr{
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+}
+.material_list th,.material_list td{
+    border-left: solid 1px #eee;
+    font-size: 14px;
+    text-align: center;
+}
+.material_list th{
+    height: 50px;
+    line-height: 50px;
+}
+.material_list td{
+    line-height: inherit;
+    padding: 20px;
+    color: #999;
+    vertical-align: top;
+}
+.material_list th:first-child,.material_list td:first-child{
+    border-left: none;
+}
+.material_list th{
+    background-color: #FAFAFA;
+}
+.material_list tbody tr:hover td{
+    background-color: #FDFDFD;
+}
+.material_list td.price_num{
+    padding: 0;
+}
+.material_list td .priceCell,.material_list td .numCell{
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    float: left;
+}
+.material_list .order_table_detail img{
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    border: solid 1px #e5e5e5;
+    float: left;
+}
+.material_list .order_table_name,.material_list .order_table_attr{
+    line-height: 22px;
+    float: left;
+}
+.material_list .order_table_name{
+    width: 120px;
+    margin-left: 20px;
+}
+.material_list .order_table_attr{
+    width: 160px;
+}
+.material_list .order_table_attr > p,.material_list .order_table_attr > span{
+    display: inline-block;
+    width: 150px;
+    vertical-align: -6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+}
+.material_list .table_text{
+    position: relative;
+    text-align: center;
+}
+.table_text a{
+    margin: 0 8px;
+}
+.table_text a.table_btn{
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+.table_text a.btn_shelf_s{
+    background-color: #fc6940;
+    border: solid 1px #fc6940;
+    color: #fff;
+}
+.table_text a.btn_shelf_s:hover{
+    background-color: #F3623A;
+    border: solid 1px #F3623A;
+}
+.table_text a.btn_obtained_s{
+    border: solid 1px #fc6940;
+    color: #fc6940;
+}
+
+
+
+.alignL{
+    text-align: left!important;
+}
+
+/* 修改框样式 */
+.edit_box{
+    position: absolute;
+    width: 100%;
+    height: 118px;
+    display: none;
+    border: dashed 1px #00B27E;
+    z-index: 1;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: upbit;
+    animation-name: upbit;
+}
+.product_tbody tr:hover .edit_box,.product_tbody tr.open .edit_box{
+    display: block;
+}
+.edit_box .edit_icon{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: -32px;
+    background-color: #00B27E;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    float: right;
+}
+.edit_box .edit_container{
+    position: absolute;
+    display: none;
+    width: 1180px;
+    margin-left: 50%;
+    left: -654px;
+}
+.edit_box .edit_con_arrow {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    margin-left: 650px;
+    margin-bottom: -8px;
+    border-width: 1px 0 0 1px;
+    border-color: #00B27E;
+    border-style: solid;
+    background-color: #fff;
+}
+.edit_box .edit_con_table{
+    margin-top: 0;
+    border: solid 1px #00B27E;
+    background-color: #fff;
+}
+.edit_box .edit_con_table form{
+    max-height: 700px;
+    overflow: auto;
+}
+.edit_box .edit_con_table form::-webkit-scrollbar{
+    width: 5px;
+}
+.edit_box .edit_con_table form::-webkit-scrollbar-track{
+    border-radius: 6px;
+    background-color: transparent;
+}
+.edit_box .edit_con_table form::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: #7b6f6f;
+}
+
+.edit_box .edit_con_table table{
+    float: none;
+}
+.edit_box .edit_con_btns{
+    height: 80px;
+    line-height: 80px;
+}
+.edit_con_btns .edit_btn_cancel,.edit_con_btns .edit_btn_canfirm{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+}
+.edit_con_btns .edit_btn_cancel{
+    margin-right: 10px;
+    border: solid 1px #ccc;
+}
+.edit_con_btns .edit_btn_canfirm{
+    margin-right: 20px;
+    border: solid 1px #FC6940;
+    background-color: #FC6940;
+    color: #fff;
+}
+.edit_con_btns .edit_btn_canfirm:hover{
+    background-color: #F3623A;
+    border-color: #F3623A;
+}
+.edit_con_table table input[type=text]{
+    width: 70px;
+    margin: 0 6px;
+}
+.edit_con_table table th{
+    line-height: 20px;
+}
+.edit_con_table table td{
+    vertical-align: middle;
+    color: #666;
+}
+.edit_con_table table td.numTd{
+    width: 180px;
+}
+.edit_con_table table td.priceTd,.edit_con_table table td.totalTd,.edit_con_table table td.warningTd{
+    width: 100px;
+}
+.edit_con_table table td.numTd input,.edit_con_table table td.priceTd input{
+    position: relative;
+    z-index: 10;
+}
+
+.edit_con_table .change_box{
+    position: absolute;
+    display: none;
+    border: dashed 1px #00B27E;
+}
+.edit_con_table td .row_add{
+    margin-top: 20px;
+}
+.edit_con_table td .row_add:first-child{
+    margin-top: 0;
+}
+.change_box .change_add,.change_box .change_del{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: -32px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    float: right;
+}
+.change_box .change_del{
+    margin-top: 42px;
+}
+
+/* 查看全部属性 */
+.show_container{
+    position: absolute;
+    display: none;
+    width: 1180px;
+    margin-top: -4px;
+    margin-left: -543px;
+    z-index: 3;
+}
+.show_con_arrow {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    margin-left: 580px;
+    margin-bottom: -9px;
+    border-width: 1px 0 0 1px;
+    border-color: #00B27E;
+    border-style: solid;
+    background-color: #fff;
+}
+.show_con_table{
+    max-height: 600px;
+    margin-top: -3px;
+    border: solid 1px #00B27E;
+    background-color: #fff;
+    overflow: auto;
+}
+.show_con_table::-webkit-scrollbar{
+    width: 5px;
+}
+.show_con_table::-webkit-scrollbar-track{
+    border-radius: 6px;
+    background-color: transparent;
+}
+.show_con_table::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: #7b6f6f;
+}
+.show_con_table table{
+    float: none;
+}
+.show_con_table table th {
+    line-height: 20px;
+}

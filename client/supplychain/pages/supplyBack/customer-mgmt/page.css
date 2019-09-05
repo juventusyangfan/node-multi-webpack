@@ -1,0 +1,110 @@
+/* 筛选查询 */
+.result_form .result_form_item{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.result_form_item label {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #999;
+}
+.result_form_item .cjy-input-{
+    width: 150px;
+}
+.result_form_item select{
+    width: 170px;
+}
+.result_form_sub .result_btn{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #fc6940;
+    border: 1px solid #fc6940;
+    color: #fff;
+}
+.result_form_sub .result_btn:hover{
+    background-color: #f3623a;
+}
+/* 内容列表 */
+.back_main_content .customer_table{
+    margin-bottom: 20px;
+}
+.customer_table .condition_area{
+    margin-bottom: 20px;
+}
+.condition_area .del_selected{
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 7px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.condition_area .del_selected:hover {
+    background-color: #f7f7f7;
+}
+.customer_table table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #eee;
+    border-bottom: none;
+    border-left:none;
+}
+.customer_table .w30{
+    width: 30px;
+}
+.customer_table .w60{
+    width: 60px;
+}
+.customer_table .w100{
+    width: 100px;
+}
+.customer_table .w150{
+    width: 150px;
+}
+.customer_table th{
+    background-color: #f8f8f8;
+}
+.customer_table td, .customer_table th{
+    height: 60px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 4px;
+}
+.customer_table p,.customer_table .view_bank{
+    width: 150px;
+}
+.customer_table select{
+    width: 130px;
+}
+.customer_table .cjy-select{
+    margin: 0px;
+}
+.customer_table .view_bank{
+    color: #333;
+}
+.customer_table .view_bank:hover{
+    color: #fc6940;
+}
+.customer_table .view_noallow{
+    color: #999;
+    cursor: not-allowed;
+}
+.customer_table .view_noallow:hover{
+    color: #999;
+}
+#productList #pages{
+    margin-top: 20px;
+}

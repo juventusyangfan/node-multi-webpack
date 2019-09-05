@@ -1,0 +1,70 @@
+<div class="tender_wrap">
+    <div class="tender_inner">
+        <div class="tender_container">
+            <div class="tender_list" name="bidStatus">
+                <a class="active" href="javascript:;" data-value="0">全部</a>
+                <a href="javascript:;" data-value="4">已定标</a>
+                <a href="javascript:;" data-value="5">已废标</a>
+            </div>
+            <div class="tender_search" >
+                <div class="tender_search_area clearfix" name="wordType">
+                    <select >
+                        <option value="">请选择</option>
+                        <option value="1">集采名称</option>
+                        <option value="2">集采单位名称</option>
+                        <option value="3">中标单位名称</option>
+                    </select>
+                    <input class="cjy-input-" type="text" name="wordKey" placeholder="输入关键字，如：湖北国际经济技术合作" />
+                </div>
+                <button>搜索</button>
+            </div>
+        </div>
+        <span class="hr_line"></span>
+    </div>
+</div>
+<div class="tender_main" id="bidding">
+    <div class="tender_main_content">
+        <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+        <ul class="exclusive_list" v-if="list.length>0">
+            <li class="exclusive_item clearfix" v-for="item in list">
+                <div class="exclusive_left">
+                    <p class="exclusive_date">
+                        <span class="margintop10">{{item.winBidMonth}}</span>
+                        <span class="font30">{{item.winBidYeat}}</span>
+                    </p>
+                </div>
+                <div class="exclusive_right clearfix">
+                    <div class="exclusive_info">
+                        <div class="exclusive_unit">
+                            <a class="exclusive_name ellipsis" href="javascript:;">{{item.tenderName}}</a>
+                            <span class="bg_red">{{item.tenderStatusTitle}}</span>
+                        </div>
+                        <div class="exclusive_brief clearfix">
+                            <p>
+                                <span>所属项目：</span>
+                                <b class="textBlack1 ellipsis">{{item.itemName}}</b>
+                            </p>
+                            <p>
+                                <span>招标单位：</span>
+                                <b class="textBlack1 ellipsis">{{item.buyerName}}</b>
+                            </p>
+                            <p>
+                                <span>集采方式：</span>
+                                <b>{{item.collectTypeTitle}}</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="exclusive_invitation">
+                        <a href="javascript:;">
+                            <i class="iconfont icon-quanxian-chengyuan invite_icon"></i><span>{{item.collectTypeTitle}}</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+    </div>
+    <div id="pages">
+        <vue-page @get-list="getBidding" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+    </div>
+</div>

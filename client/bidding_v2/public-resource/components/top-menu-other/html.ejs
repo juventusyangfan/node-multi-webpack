@@ -1,0 +1,18 @@
+<div class="com_top_menu clearfix">
+    <div class="top_menu_left">
+        <a class="website_logo" href="javascript:;"></a>
+    </div>
+    <div class="top_menu_right">
+        <% if(layType=='step'){ %>
+        <span class="cart_step1"></span>
+        <% } else if(layType=='merchant'){ %>
+        <span class="top_menu_con">
+            <a class="active" href="javascript:;">商家中心</a>
+        </span>
+        <% } else{ %>
+        <span class="top_menu_con inlineBlock marginT40">
+            <a class="active" href="javascript:;">收银台</a>
+        </span>
+        <% } %>
+    </div>
+</div>

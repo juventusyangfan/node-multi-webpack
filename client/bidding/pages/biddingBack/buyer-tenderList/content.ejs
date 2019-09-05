@@ -1,0 +1,58 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>标书订单管理</span>
+    </div>
+    <div class="back_main_content">
+        <div class="back_main_search">
+            <select name="status" value="0">
+                <option value="0">招标状态</option>
+                <option value="1">报名中</option>
+                <option value="2">投标/报价中</option>
+                <option value="3">已截标/报价已截止</option>
+                <option value="4">已定标</option>
+                <option value="5">已废标</option>
+            </select>
+            <select name="type" value="0">
+                <option value="0">招标方式</option>
+                <option value="1">公开招标</option>
+                <option value="2">邀请招标</option>
+                <option value="3">竞争性谈判</option>
+                <option value="4">询比价</option>
+            </select>
+            <input type="text" name="time" calendar placeholder="请选择日期" class="cjy-calendar-input marginR10" readonly>
+            <input type="text" name="keyWord" placeholder="招标名称/招标编号" class="cjy-input-" style="width: 166px" value="">
+            <a href="javascript:;" class="btn_confirm">确认</a>
+        </div>
+        <div class="back_list_nav">
+            <span class="active" name="sort" value="tdesc">最新招标<i class="iconfont icon-xiajiantou1"></i></span>
+            <span name="sort" value="tasc">最早招标<i class="iconfont icon-xiajiantou1"></i></span>
+            <span class="floatR">共计：11个</span>
+        </div>
+        <div class="back_list_con" id="tenderList">
+            <div style="text-align: center" v-if="loading"><div class="page_loading"></div></div>
+            <div class="page_list" v-if="list.length>0">
+                <div class="back_tender_Item hover_review" v-for="item in list" :supplier-id = "item.winSupplierId" :tender-id="item.tender_id">
+                    <div class="back_item_head">
+                        <span>公告日期：{{item.createTime}}</span>
+                        <span class="marginL40">报名截止日期：{{item.enrollEndTime}}</span>
+                        <span class="floatR"><i :class="'iconfont '+item.collectTypeClass"></i> {{item.collectType}}</span>
+                        <a href="javascript:;" class="floatR pingjia_box" v-if="item.pingjiaBox==1">评价</a>
+                    </div>
+                    <div class="back_item_body">
+                        <div><span class="back_body_title"><a target="_blank" :href="item.tenderUrl">{{item.tenderName}}</a></span><span :class="item.colorClass">{{tenderStatus}}</span>
+                        </div>
+                        <div class="fontSize14 marginT18">
+                            <span class="textBlack3">评标方式：<span class="ellipsis textOrange" style="width: 210px;vertical-align:-3px;">{{item.evaluateBidType}}</span></span>
+                            <span class="textBlack3 marginL30">招标类型：{{item.tenderClass}}</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center" v-else><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></div>
+            <div id="pages" class="page_container_wrap">
+                <vue-page @get-list="getTenderList" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

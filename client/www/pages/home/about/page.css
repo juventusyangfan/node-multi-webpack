@@ -1,0 +1,159 @@
+.about_warp{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.about_bg{
+    height: 357px;
+    background: url('imgs/aboutBg.png') 50% no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.about_title{
+    width: 1180px;
+    margin: 0 auto;
+}
+.about_title{
+    height: 69px;
+    line-height: 69px;
+    margin: 80px auto 40px auto;
+    font-size: 36px;
+    text-align: center;
+}
+.aboutUs{
+    width: 466px;
+    background: url("imgs/aboutus.png") center;
+}
+.aboutBus{
+    width: 450px;
+    margin-top: 0;
+    background: url("imgs/aboutbus.png") center;
+}
+.aboutSys{
+    width: 388px;
+    background: url("imgs/aboutsys.png") center;
+}
+.aboutTeam{
+    width: 248px;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 0;
+    background: url("imgs/aboutteam.png") center;
+}
+.aboutAdv{
+    width: 566px;
+    background: url("imgs/aboutAdv.png") center;
+}
+.aboutTag{
+    width: 366px;
+    height: 67px;
+    line-height: 67px;
+    background: url("imgs/abouttag.png") center;
+}
+.about_line{
+    width: 30px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: #fc6940;
+}
+.about_main{
+    position: relative;
+    width: 1180px;
+    margin: 60px auto 0 auto;
+}
+.aboutUs_img_des{
+    display: inline-block;
+    width: 588px;
+    margin-left: 26px;
+    font-size: 16px;
+    line-height: 2;
+    text-indent:2em;
+    float: left;
+}
+.about_grey{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.about_sys_cell{
+    width: 50%;
+    margin-bottom: 40px;
+    float: left;
+}
+.about_sys_title{
+    font-size: 18px;
+    color: #007dd7;
+}
+.about_sys_tips{
+    font-size: 14px;
+    color: #999;
+}
+.about_sys_con{
+    margin-top: 20px;
+    padding: 0 80px 0 20px;
+    line-height: 1.5;
+    border-left: 1px solid #ccc;
+}
+
+.about_team_con{
+    width: 1180px;
+    margin: 60px auto 0 auto;
+}
+.about_team_img{
+    width: 464px;
+    float: left;
+}
+.about_team_img img{
+    float: left;
+}
+.about_team_des{
+    width: 716px;
+    line-height: 2;
+    font-size: 16px;
+    float: left;
+}
+
+.about_adv_img{
+    height: 518px;
+    background: url('imgs/advantage.png') center center no-repeat;
+    margin: 60px auto 0 auto;
+    border-bottom: 5px solid #5a3f38;
+}
+.about_tg_bg{
+    width: 100%;
+    height: 819px;
+    padding-top: 1px;
+    background: url('imgs/hopeBg.png') 50% no-repeat;
+    background-size: cover;
+}
+.about_tg_con{
+    margin-top: 140px;
+    font-size: 36px;
+    text-align: center;
+}
+.about_tg_con p{
+    margin-bottom: 40px;
+}
+
+/* 视频播放按钮 */
+.video_box{
+    position: absolute;
+    display: none;
+    width: 1200px;
+    height: 680px;
+    top: 100px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 100;
+}
+.videoIcon{
+    position: absolute;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    top: 148px;
+    left: 251px;
+    background: url("imgs/videoIcon.png") no-repeat;
+}

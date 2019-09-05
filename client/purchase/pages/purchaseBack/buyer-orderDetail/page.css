@@ -1,0 +1,412 @@
+.buyer_bread{
+    height: 68px;
+    background-color: #fafafa;
+}
+.buyer_bread .buyer_bread_p{
+    font-size: 14px;
+    color: #333;
+    line-height: 68px;
+    text-indent: 28px;
+}
+.buyer_bread_p b,.buyer_bread_p .order_code{
+    font-weight: normal;
+    color: #999;
+}
+.buyer_bread_p .icon-ditu{
+    margin-right: 6px;
+}
+.order_process{
+    position: relative;
+    margin-top: 24px;
+    margin-left: 200px;
+    margin-right: 450px;
+}
+.order_process .process_bar_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    min-width: 680px;
+    display: flex;
+}
+.process_bar_box .process_bar{
+    width: 25%;
+    border-top: 2px dashed #ccc;
+}
+.process_bar_box .has_bar{
+    border-top: 2px solid #fc9440;
+}
+.order_process .process_wrap{
+    min-width: 680px;
+    display: flex;
+    justify-content: space-between;
+}
+.process_wrap .process_box{
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+}
+.process_box .process_circle,.process_intro .process_txt,.process_intro .process_date{
+    text-align: center;
+}
+.process_box .process_intro{
+    position: absolute;
+    width: 200px;
+    left: -80px;
+    top: 56px;
+}
+.process_intro .process_txt{
+    margin-bottom: 10px;
+}
+.process_circle i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #fff;
+}
+.has_process .process_circle i{
+    background-color: #fc9440;
+}
+.has_process .process_intro .process_txt{
+    color: #fc9440;
+}
+.order_state_wrap{
+    padding: 0 30px;
+    margin-right: 250px;
+    margin-top: 100px;
+}
+.order_state_wrap .order_state_inner{
+    padding: 28px 30px 0 30px;
+    background-color: #fcfae3;
+    border: 1px solid #f7e3a4;
+    position: relative;
+}
+.order_state_inner p{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.order_state_inner li{
+    list-style: disc;
+    margin-left: 18px;
+    font-size: 12px;
+    color: #505050;
+    margin-bottom: 18px;
+}
+.order_state_inner .countdown{
+    color: #df1c1c;
+}
+.order_state_inner .cancel_order{
+    color: #2272ea;
+}
+.order_state_inner .cancel_order:hover{
+    text-decoration: underline;
+}
+.order_state_inner .click_fee,.order_state_inner .buyer_fee{
+    display: inline-block;
+    width: 102px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fc6940;
+    border-radius: 4px;
+    position: absolute;
+    left: 350px;
+    top: 70px;
+}
+.order_state_inner .click_fee{
+    right: 20px;
+    left: auto;
+}
+.order_state_inner .click_fee:hover,.order_state_inner .buyer_fee:hover{
+    background-color: #f3623a;
+}
+.order_detail{
+    padding: 0 40px;
+    margin-right: 250px;
+}
+.order_item .order_top{
+    margin-top: 30px;
+}
+.order_detail .order_item{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.order_detail .order_item:last-child{
+    border-bottom: none;
+}
+.order_top h3{
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;        
+}
+.order_left,.order_right{
+    float: left;
+    width: 50%;
+}
+.order_item dl{
+    font-size: 0;
+    margin-top: 18px;
+}
+.order_item dt{
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+}
+.order_item dd{
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    margin-left: 20px;
+}
+.width84 dt{
+    width: 84px;
+}
+.width48 dt{
+    width: 48px;
+}
+.width60 dt{
+    width: 60px;
+}
+.order_item .connect_qq{
+    display: inline-block;
+    width: 62px;
+    height: 24px;
+    font-size: 12px;
+    color: #5887e6;
+    text-align: center;
+    line-height: 24px;
+    background-color: #f0f5ff;
+    border: 1px solid #aec4f0;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.connect_qq i{
+    margin-right: 4px;
+    vertical-align: -1px;
+}
+.order_item .goods_box{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.goods_box th{
+    height: 50px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e5e5e5;
+}
+.goods_box td{
+    font-size: 12px;
+    color: #999;
+    padding: 20px 0;
+    text-align: center;
+}
+.goods_box .goods_intro_th{
+    text-align: left;
+    text-indent: 120px;
+}
+.goods_box .goods_intro{
+    margin-left: 20px;
+    min-width: 424px;
+}
+.goods_intro .goods_photo{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    margin-right: 16px;
+}
+.goods_photo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.goods_intro .goods_name{
+    float: left;
+    width: 140px;
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+    padding-top: 6px;
+}
+.goods_name span{
+    display: inline-block;
+    color: #999;
+    margin-top: 10px;
+}
+.goods_intro .goods_attr{
+    float: left;
+    width: 156px;
+    padding-top: 8px;
+    margin-left: 30px;
+}
+.goods_attr dl{
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.goods_attr dt,.goods_attr dd{
+    float: left;
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+.goods_attr dd{
+    margin-left: 0px;
+    max-width: 94px;
+}
+.goods_item .goods_footer{
+    padding: 20px 20px 16px;
+    background-color: #fef9f4;
+    border: 1px solid #fae6ce;
+}
+.goods_footer .goods_footer_left{
+    float: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 18px;
+}
+.goods_footer_left span{
+    color: #999;
+}
+.goods_footer_left p{
+    display: inline-block;
+    vertical-align: top;
+    width: 410px;
+}
+.goods_footer .goods_footer_right{
+    float: right;
+}
+.goods_footer_right .goods_cate{
+    font-size: 12px;
+    color: #333;
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+.goods_footer_right .clac_funds{
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    text-align: right;
+    padding-left: 20px;
+    border-left: 1px solid #e5e5e5;
+}
+.clac_funds p{
+    margin-bottom: 10px;
+}
+.clac_funds .goods_shiji{
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+.goods_shiji .shuoming_txt{
+    color: #999;
+}
+.goods_shiji .money_sysbol{
+    color: #df1c1c;
+}
+.money_sysbol b{
+    font-size: 22px;
+    font-weight: normal;
+}
+/* 修改运费 */
+.fare-box .fare-label{
+    float: left;
+    display: block;
+    width: 94px;
+    height: 40px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+    line-height: 40px;
+}
+.fare-box .fare-input{
+    float: left;
+}
+.fare-input input[type=text]{
+    width: 140px;
+}
+/* 上传付款凭证 */
+.payment-box .payment-title{
+    float: left;
+    display: block;
+    width: 130px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+}
+.payment-box .payment-content{
+    float: left;
+}
+.payment-region .payment-area{
+    float: left;
+    margin-top: -12px;
+}
+.payment-region p{
+    float: left;
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+}
+.payment-region p i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #50b2f6;
+    border-radius: 100%;
+    margin-right: 6px;
+}
+.payment-area input{
+    display: none;
+}
+.payment-area .upload-payment{
+    display: block;
+    width: 98px;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    background-color: #00b27e;
+    border: 1px solid #019a6d;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.payment-area .upload-payment:hover{
+    background-color: #00a776;
+}
+.payment-content .payment-list{
+    width: 336px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    padding: 20px 20px 0;
+    margin-top: 10px;
+}
+.payment-list .payment-item{
+    margin-bottom: 20px;
+}
+.payment-item .payment-link{
+    max-width: 300px;
+    vertical-align: -2px;
+    margin-left: 6px;
+}

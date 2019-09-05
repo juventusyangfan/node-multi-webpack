@@ -1,0 +1,727 @@
+.module_item_wrap{
+    width: 100%;
+}
+.module_item_wrap .module_item{
+    width: 1180px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.module_item_wrap .module_item h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 独家招标 - 供应商 */
+.zhaobiao-pop{
+    padding: 0 30px;
+}
+.zhaobiao-pop p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+}
+.zhaobiao-pop p span{
+    color: #333;
+}
+
+/* 申请成为会员 */
+.sqhy-box{
+    display: block;
+    /* display: none; */
+    width: 866px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+}
+.sqhy-box .sqhy-bg{
+    width: 100%;
+    height: 300px;
+    background: url(imgs/member_tipbg.jpg) no-repeat;
+}
+.sqhy-box .sqhy-inner{
+    padding: 48px 58px 60px 58px;
+    background-color: #fff;
+}
+.sqhy-inner .sqhy-head{
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 40px;
+}
+.sqhy-inner .sqhy-right{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.sqhy-inner .sqhy-right strong{
+    font-weight: normal;
+    color: #fc6940;
+}
+.sqhy-inner .sqhy-description{
+    width: 630px;
+    background-color: #f7f7f7;
+    border: 1px dashed #ccc;
+    padding: 16px 30px 8px 20px;
+}
+.sqhy-description p{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+}
+.sqhy-description .sqhy-span{
+    color: #999;
+}
+.sqhy-description .sqhy-span i{
+    font-size: 20px;
+    color: #fc6940;
+    margin-right: 6px;
+}
+.sqhy-description p b{
+    display: inline-block;
+    width: 474px;
+    font-weight: normal;
+    vertical-align: top;
+}
+.sqhy-inner .sqhy-xy{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+    margin-top: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.sqhy-inner .sqhy-foot{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+}
+.sqhy-foot strong{
+    font-weight: normal;
+    color: #fc6940;
+    word-break: break-all;
+}
+.sqhy-inner .sqhy-btn{
+    min-width: 152px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+    margin-top: 30px;
+}
+.sqhy-inner .sqhy-btn:hover{
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+
+
+/* 物资分类升级 */
+.cataUp-box{
+    display: block;
+    width: 650px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+}
+.cataUp-box .cataUp-bg{
+    width: 100%;
+    height: 176px;
+    background: url(imgs/cata_banner.png) no-repeat;
+}
+.cataUp-box .cataUp-inner{
+    padding: 40px 0;
+    background-color: #fff;
+}
+.cataUp-box .cataUp-inner p,.cataUp-box .cataUp-inner a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #999;
+}
+.cataUp-box .cataUp-inner p{
+    width: 400px;
+    line-height: 2;
+    font-size: 18px;
+    color: #333;
+}
+.cataUp-box .cataUp-inner .cataUp-go{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 30px auto 20px auto;
+    background-color: #fc6940;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+}
+.cataUp-box .cataUp-inner a:hover{
+    color: #fc6940;
+}
+.cataUp-box .cataUp-inner .cataUp-go:hover{
+    background-color: #f3623a;
+    color: #fff;
+}
+.cataUp-box .cjy-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #999;
+}
+
+/* 独家招标 - 采购商 */
+.cgs-content{
+    padding: 0 30px;
+}
+.cgs-p p{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.cgs-p .marginR25{
+    color: #333;
+    margin-right: 25px;
+}
+.cgs-p select{
+    width: 160px;
+}
+.cgs-table table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+}
+.cgs-table th{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 58px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.cgs-table td{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    height: 58px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.w300{
+    width: 300px;
+}
+.cgs-table p{
+    width: 300px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.cgs-table .cjy-input-{
+    width: 100px;
+}
+.color_green{
+    color: #00b27e;  
+}
+.color_red{
+    color: #fc6940;  
+}
+
+/* 在线开标 */
+.openbid-box{
+    padding: 0 30px;
+}
+.openbid-box .openbid-fisrt{
+    font-size: 16px;
+    color: #666;
+}
+.openbid-fisrt i{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    background-color: #ffba00;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.openbid-fisrt span{
+    color: #00b27e;
+}
+.openbid-box .openbid-snd{
+    font-size: 16px;
+    color: #666;
+    text-indent: 36px;
+    margin-top: 16px;
+}
+.openbid-box .openbid-third{
+    font-size: 16px;
+    color: #00b27e;
+    text-indent: 36px;
+    margin-top: 16px;
+}
+.openbid-box button{
+    min-width: 288px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+    margin-top: 30px;
+    margin-left: 34px;
+}
+.openbid-box button:hover{
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+.openbid-box .openbid-forth{
+    font-size: 14px;
+    color: #999;
+    margin-top: 30px;
+}
+.openbid-forth span{
+    color: #333;
+}
+.openBid_form .openBid_item{
+    margin-top: 20px;
+}
+.openBid_item label{
+    float: left;
+    display: block;
+    width: 106px;
+    padding: 10px 0;
+    line-height: 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+#uploadFile{
+    display: none;
+}
+.openBid_item .upfile_btn{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    border-radius: 4px;
+    background-color: #00B27E;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+.openBid_item .upfile_btn:hover{
+    background-color: #00A776;
+    color: #fff;
+}
+.openBid_item .showFileCon{
+    display: none;
+    width: 400px;
+    padding: 20px 20px 6px 20px;
+    background-color: #F7F7F7;
+    border: 1px solid #eee;
+    margin-left: 106px;
+}
+.showFileCon li{
+    margin-bottom: 10px;
+}
+.showFileCon i{
+    font-size: 20px;
+    color: #999;
+}
+.showFileCon span{
+    display: inline-block;
+    width: 280px;
+    margin-right: 40px;
+}
+.openbid-box .openbid-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    margin-top: 20px;
+}
+.openbid-table th{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 58px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.openbid-table td{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    height: 58px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.w300{
+    width: 300px;
+}
+.openbid-table p{
+    width: 300px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.openbid-table .download-link{
+    font-size: 14px;
+    color: #0084ff;
+    margin-right: 4px;
+}
+.openbid-table .view-link{
+    font-size: 14px;
+    color: #fc6940;
+    margin-left: 4px;
+}
+.download-link:hover,.view-link:hover{
+    text-decoration: underline;
+}
+#pages{
+    margin-top: 30px;
+}
+
+/* 邀请招标 - 挑选供应商 */
+.txgys-box{
+    padding: 0 30px;
+}
+.txgys-form select{
+    width: 160px;
+}
+.txgys-form .cjy-input-{
+    vertical-align: -1px;
+}
+.txgys-form button{
+    min-width: 102px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+}
+.txgys-form button:hover{
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+.txgys-form p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+}
+.txgys-form p span{
+    color: #fc6940;
+}
+.txgys-table table{
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    margin-top: 20px;
+}
+.txgys-table th{
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    height: 58px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.txgys-table td{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    height: 58px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.w300{
+    width: 300px;
+}
+.txgys-table p{
+    width: 300px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+#pages{
+    margin-top: 30px;
+}
+
+/* 企业供应商 - 审核/修改供应商 */
+.gys-basic .gys-basic-title{
+    padding-top: 20px;
+    position: relative;
+}
+.gys-basic-title h2{
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fc6940;
+    position: relative;
+    z-index: 1;
+}
+.gys-basic-title .gys-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+.qygys-box .gys-basic{
+    background-color: #f7f7f7;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.gys-basic .gysbasic-list{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.gysbasic-list .gys-item{
+    float: left;
+    width: 240px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.gys-item .color_red{
+    color: #fc6940!important;
+}
+.gysbasic-list .gys-item-title{
+    font-size: 14px;
+    color: #999;
+}
+.gysbasic-list .gys-item-name{
+    font-size: 14px;
+    color: #333;
+}
+.gysbasic-list .ellipsis{
+    width: 170px;
+    vertical-align: top;
+}
+.qygys-box .gys-sel-area{
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.gys-sel-area p{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.gys-sel-area .font_normal{
+    font-weight: normal;
+    color: #333;
+}
+.gys-sel-area select{
+    width: 160px;
+}
+
+/* 收款管理 - 审核支付凭证 */
+.gys-sel-area .block_title{
+    display: inline-block;
+    width: 98px;
+    text-align: right;
+}
+.gys-sel-area .color_blue{
+    color: #0084ff;
+}
+.gys-sel-area .color_blue:hover{
+    text-decoration: underline;
+}
+
+/* 供应商评价 */
+.company_project{
+    padding: 20px 30px;
+    background-color: #f7f7f7;
+}
+.company_project span{
+    font-size: 16px;
+    color: #999;
+}
+.company_project a{
+    font-size: 16px;
+    color: #333;
+    margin-right: 20px;
+}
+.company_project a:hover{
+    color: #fc6940;
+    text-decoration: underline;
+}
+.gys_comment .gys_comment_item{
+    padding: 20px 30px 0;
+    position: relative;
+}
+.gys_comment_item h2{
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fc6940;
+    position: relative;
+    z-index: 1;
+}
+.gys_comment_item .gys_comment_line{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: block;
+    width: 1048px;
+    height: 1px;
+    margin: 0 30px;
+    background-color: #eee;
+}
+.gys_comment_item b{
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+}
+.gys_comment_btn{
+    width: 1048px;
+    text-align: right;
+    margin: 0 30px;
+}
+.gys_comment_btn button{
+    min-width: 102px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #fc6940;
+    border: 1px solid #ec5b33;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.gys_comment_btn button:hover {
+    background-color: #f3623a;
+    border: 1px solid #e75d36;
+}
+.gys_comment .textCon{
+    margin: 0 30px;
+}
+/* 星星 */
+.evaluate_box{
+    margin-top: 30px;
+}
+.evaluate_box .evaluate_item{
+    float: left;
+    margin-bottom: 28px;
+    margin-right: 120px;
+}
+.evaluate_item .evaluate_type{
+    display: inline-block;
+    width: 160px;
+    font-size: 16px;
+    color: #333;
+    text-align: right;
+}
+.evaluate_item .evaluate_star_box{
+    display: inline-block;
+    vertical-align: -40px;
+    cursor: pointer;
+}
+.evaluate_star_box .evaluate_star{
+    float: left;
+    text-align: center;
+}
+.evaluate_star .evaluate_txt{
+    display: inline;
+    font-size: 12px;
+    color: #999;
+}
+.evaluate_star .evaluate_cell{
+    display: block;
+    width: 26px;
+    height: 25px;
+    margin: 0 auto 4px;
+}
+.evaluate_star .evaluate_red{
+    background: url(imgs/single_hover.png) no-repeat;
+}
+.evaluate_star .evaluate_gray{
+    background: url(imgs/single_unhover.png) no-repeat;
+}
+
+/* 上传付款凭证 */
+.payment-box .payment-title{
+    float: left;
+    display: block;
+    width: 130px;
+    font-size: 14px;
+    color: #999;
+    text-align: right;
+}
+.payment-box .payment-content{
+    float: left;
+}
+.payment-region .payment-area{
+    float: left;
+    margin-top: -12px;
+}
+.payment-region p{
+    float: left;
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+}
+.payment-region p i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #50b2f6;
+    border-radius: 100%;
+    margin-right: 6px;
+}
+.payment-area input{
+    display: none;
+}
+.payment-area .upload-payment{
+    display: block;
+    width: 98px;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    background-color: #00b27e;
+    border: 1px solid #019a6d;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.payment-area .upload-payment:hover{
+    background-color: #00a776;
+}
+.payment-content .payment-list{
+    width: 336px;
+    background-color: #f7f7f7;
+    border: 1px solid #eee;
+    padding: 20px 20px 0;
+    margin-top: 10px;
+}
+.payment-list .payment-item{
+    margin-bottom: 20px;
+}
+.payment-item .payment-link{
+    max-width: 300px;
+    vertical-align: -2px;
+    margin-left: 6px;
+}

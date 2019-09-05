@@ -1,0 +1,127 @@
+/* 商家入驻 */
+.applyentry_wrap{
+    width: 100%;
+    background-color: #fff;
+}
+.applyentry_wrap .applyentry_bg{
+    width: 100%;
+    height: 212px;
+    background: url('imgs/entry_bg.png') center no-repeat;
+    background-size: cover;
+}
+.applyentry_wrap .applyentry_inner{
+    width: 1180px;
+    margin: 0 auto;
+}
+/* 时间轴 */
+.applyentry_inner .order_process{
+    position: relative;
+    left: 0;
+    top: -22px;
+}
+.order_process .process_bar_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+.process_bar_box .process_bar{
+    width: 25%;
+    border-top: 2px solid #ccc;
+}
+.process_bar_box .has_bar{
+    border-top: 2px solid #f3564f;
+}
+.order_process .process_wrap{
+    display: flex;
+    justify-content: space-around;
+}
+.process_wrap .process_box{
+    width: 90px;
+    font-size: 14px;
+    color: #aaa;
+    position: relative;
+}
+.process_circle span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+    border-radius: 100%;
+    box-shadow: 0 0 0 4px #fff;
+}
+.process_box .process_circle{
+    text-align: center;
+}
+.has_process .process_circle span{
+    background-color: #f3564f;
+}
+.process_box p{
+    width: 90px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+div.has_process p{
+    color: #f3564f;
+}
+/* 审核中 */
+.verify_default{
+    width: 168px;
+    height: 198px;
+    background: url('imgs/apply_wait.png') no-repeat;
+    margin: 62px auto 0;
+}
+.verify_box h2{
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+.verify_box .verify_ing{
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.verify_box strong{
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #dd3232;
+    text-align: center;
+    padding-bottom: 520px;
+}
+/* 审核失败 */
+.verify_defeat{
+    width: 168px;
+    height: 198px;
+    background: url('imgs/apply_rerturn.png') no-repeat;
+    margin: 62px auto 0;
+}
+.verify_box .verify_reson{
+    width: 600px;
+    font-size: 14px;
+    color: #333;
+    text-align: justify;
+    background-color: #fcfae3;
+    border: 1px solid #f7e3a4;
+    padding: 28px 30px;
+    margin: 0 auto 10px;
+}
+.verify_reson a{
+    color: #fc6840;
+}
+.verify_reson a:hover{
+    text-decoration: underline;
+}
+.verify_reson span{
+    color: #999;
+}

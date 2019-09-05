@@ -1,0 +1,24 @@
+/*material_content*/
+.material_list table{
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    border: solid 1px #eee;
+}
+.material_list tbody tr{
+    border-top: solid 1px #e5e5e5;
+}
+.material_list th,.material_list td{
+    height: 60px;
+    line-height: 1.5;
+    border-left: solid 1px #eee;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+/* .material_list th:first-child,.material_list td:first-child{
+    border-left: none;
+} */
+.material_list th{
+    background-color: #F8F8F8;
+}

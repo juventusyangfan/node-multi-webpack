@@ -1,0 +1,527 @@
+.publish_banner{
+    width: 100%;
+    height: 229px;
+    background: url(imgs/banner.png) 50% no-repeat;
+    background-size: cover;
+}
+.publish_warp{
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #F2F2F2;
+}
+.publish_container{
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+    border-left: solid 2px #5FB76A;
+}
+.publish_container .publish_step_con{
+    position: absolute;
+    top: 100px;
+    left: -142px;
+}
+.publish_container .publish_step_con li a{
+    display: inline-block;
+    width: 150px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    color: #5FB76A;
+    text-align: right;
+}
+.publish_container .publish_step_con .line{
+    display: inline-block;
+    width: 22px;
+    margin: 4px 6px;
+    border-bottom: dashed 1px #5FB76A;
+}
+.publish_container .publish_step_con .circle{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: solid 2px #5FB76A;
+    border-radius: 14px;
+    vertical-align: -4px;
+}
+.publish_container .publish_step_con a.active .circle{
+    background-color: #5FB76A;
+}
+.shadow_left,.shadow_right{
+    position: absolute;
+    display: inline-block;
+    width: 34px;
+    height: 207px;
+    top: 0px;
+}
+.shadow_left{
+    background: url(imgs/shadowLeft.png) no-repeat;
+    left: -34px;
+    margin-left: 0;
+}
+.shadow_right{
+    background: url(imgs/shadowRight.png) no-repeat;
+    right: -34px;
+    margin-right: 0;
+}
+
+.publish_head{
+    padding: 40px 93px 0 93px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #fff;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.publish_head span{
+    margin: 0 20px;
+    font-size: 12px;
+    color: #333;
+    vertical-align: 4px;
+}
+.publish_head a{
+    position: absolute;
+    right: 93px;
+    font-size: 14px;
+    color: #EC7C52;
+    vertical-align: 4px;
+}
+.publish_nav{
+    margin-bottom: 20px;
+    padding: 40px 93px;
+    background-color: #fff;
+}
+.publish_nav .publish_title{
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #5FB76A;
+}
+.publish_nav .publish_line{
+    margin-bottom: 20px;
+}
+.publish_nav .publish_line:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.publish_nav .publish_line label{
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    text-align: right;
+    float: left;
+}
+.publish_nav .publish_line .publish_text{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+.publish_nav .publish_line .publish_block{
+    position: relative;
+    float: left;
+}
+.publish_nav .publish_line .cjy-area-title{
+    min-width: 170px;
+    height: 38px;
+    border: 1px solid #ccc;
+}
+.publish_nav .publish_line .upload_btn{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #5FB76A;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.publish_nav .publish_line .upload_btn:hover{
+    background-color: #4fa15a;
+}
+.publish_nav .publish_line .file_con{
+    width: 620px;
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+    border: solid 1px #e5e5e5;
+}
+.publish_line .file_con li{
+    height: 28px;
+    line-height: 28px;
+}
+.publish_line .file_con li i.icon-fujian{
+    margin-right: 6px;
+    color: #999;
+    vertical-align: -1px;
+}
+.publish_line .file_con li a.file_del{
+    margin-left: 20px;
+    color: #9e6b49;
+}
+.publish_line .cjy-checkbox,.publish_line .cjy-radio{
+    margin-top: 6px;
+    margin-right: 30px;
+}
+.publish_line select{
+    width: 170px;
+}
+.publish_line .cjy-area-title i{
+    top: 12px;
+}
+.publish_line .cjy-calendar .cjy-calendar-input{
+    width: 180px;
+}
+.publish_nav .rule_link{
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+.publish_nav .rule_link a{
+    display: inline-block;
+    color: #9e6b49;
+    vertical-align: 2px;
+}
+.publish_nav .publish_btns{
+    margin-top: 20px;
+    text-align: center;
+}
+.publish_nav .publish_btns a{
+    display: inline-block;
+    width: 212px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.publish_nav .publish_btns a.publish_done{
+    background-color: #EC7C52;
+    border: solid 1px #EC7C52;
+    color: #fff;
+}
+.publish_nav .publish_btns a.publish_none{
+    background-color: #ccc;
+    border: solid 1px #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+.publish_nav .publish_btns a.publish_save{
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+.publish_nav .publish_btns a.publish_done:hover{
+    background-color: #E96A3A;
+    border: solid 1px #E96A3A;
+}
+.icon-wenhao{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    background-color: #7392b5;
+    border-radius: 100%;
+    margin-left: 6px;
+    vertical-align: 1px;
+}
+
+
+.publish_con{
+    position: relative;
+}
+.publish_table{
+    width: 100%;
+    border-top: solid 1px #e5e5e5;
+    border-collapse: collapse;
+}
+.publish_table th{
+    height: 60px;
+    line-height: 60px;
+    background-color: #FDF7F3;
+    font-size: 14px;
+    color: #9E6B49;
+    text-align: center;
+}
+.publish_table td{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.publish_table td select{
+    width: 200px;
+}
+.publish_table td.num_unit select{
+    width: 80px;
+}
+.publish_table td .cjy-select{
+    margin-right: 0;
+    vertical-align: 10px;
+    float: left;
+}
+.publish_table td .cjy-select-title i,.publish_table td .cjy-multi-title i{
+    top: -4px;
+}
+.publish_table td .cjy-multi{
+    height: 25px;
+}
+.publish_table td .cjy-multi .cjy-multi-input{
+    font-size: 14px;
+}
+.publish_table td.row_add{
+    padding: 0;
+}
+.publish_table td.row_add a{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #EC7C52;
+    font-size: 30px;
+    color: #fff;
+}
+.publish_table td.row_add a:hover{
+    background-color: #E96A3A;
+}
+.publish_table tr{
+    border-left: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+}
+.publish_table tbody tr.js_show{
+    height: 71px;
+}
+.publish_table tbody tr.js_show:hover{
+    height: 69px;
+    border: dashed 1px #EC7C52;
+}
+
+
+.multi_oprate{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.multi_oprate i{
+    position: absolute;
+    display: none;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    background-color: #EC7C52;
+    cursor: pointer;
+}
+.publish_table tbody tr.js_show:hover i{
+    display: block;
+}
+.multi_oprate .add_multi{
+    top: -40px;
+    left: 100%;
+}
+.multi_oprate .del_multi{
+    bottom: -30px;
+    left: 100%;
+}
+
+
+
+
+.multiple-title{
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+.multiple-title i{
+    position: absolute;
+    right: 10px;
+}
+.multiple-content{
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 0;
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+.js_selected .multiple-title,.js_selected .multiple-content{
+    display: inline-block;
+    border: 1px solid #66AFE9;
+    box-shadow: 0 0 5px #66AFE9;
+    border-top: none;
+    background-color: #F7F7F7;
+}
+.area-list{
+    display: none;
+    height: 320px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+.area-list::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+/* 设置滚动条的滑轨 */
+.area-list::-webkit-scrollbar-track {
+    background-color: #F7F7F7;
+}
+/* 滑块 */
+.area-list::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 5px;
+}
+/* 滑轨两头的监听按钮 */
+.area-list::-webkit-scrollbar-button {
+    background-color: #888;
+    display: none;
+}
+.area-list{
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.area-list li{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.area-list li{
+    width: 180px;
+}
+.area-list li.act,.area-list li:hover{
+    background-color: #D2EBFF;
+}
+.area-list li i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #E0E4EC;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.area-list li i.act,.area-list li i:hover{
+    background-color: #46C88D;
+}
+.multiple-content .area-btns{
+    height: 60px;
+    line-height: 60px;
+    background-color: #F7F7F7;
+}
+.multiple-content .area-confirm{
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    text-align: center;
+    float: right;
+}
+.register_box{
+    display: none;
+    width: 620px;
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.register_box .register_box_cell{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 0 10px 10px;
+    padding: 0 10px;
+    border: 1px solid #B5D8F4;
+    border-radius: 2px;
+    background-color: #D2EBFF;
+    font-size: 14px;
+    color: #666;
+    float: left;
+}
+.register_box .register_box_cell i{
+    margin-left: 10px;
+    font-size: 10px;
+    color: #9FCCF1;
+    cursor: pointer;
+}
+.js_area{
+    min-width: 780px;
+}
+
+/* 风险弹框 */
+.risk_con{
+    padding: 20px;
+}
+.risk_con .risk_title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+.risk_con .risk_tips{
+    margin-top: 20px;
+}
+.risk_con .risk_title i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    background-color: #50B2F6;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+}
+.risk_con .risk_btn{
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    margin: 40px auto 0 auto;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+.risk_con .risk_btn:hover{
+    border: solid 1px #fc6940;
+    color: #fc6940;
+}
+
+/* 风险提示 */
+.publish_notice_con{
+    width: 1306px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: #fcfae3;
+    border: 1px solid #f7e3a4;
+    color: #fc6940;
+}

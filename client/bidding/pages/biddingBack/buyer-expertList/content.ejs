@@ -1,0 +1,65 @@
+<div class="back_main">
+    <div class="back_main_title">
+        <span>企业供应商</span>
+        <a href="javascript:;" class="back_title_btn floatR" name="expert_add">+ 添加专家</a>
+    </div>
+    <div class="back_main_content" id="supplier">
+        <div class="back_main_search">
+            <input name="company_name" type="text" placeholder="输入关键字：专家名称" class="cjy-input-">
+            <a href="javascript:;" class="btn_confirm">搜索</a>
+            <a href="javascript:;" class="btn_clear">清除</a>
+        </div>
+        <div class="back_list_nav">
+            <span class="floatR">共计：{{count}}个</span>
+        </div>
+        <div class="back_main_list">
+            <div class="material_list">
+                <table>
+                    <colgroup>
+                        <col width="50">
+                        <col width="50">
+                        <col width="80">
+                        <col width="80">
+                        <col width="150">
+                        <col width="100">
+
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>专家名称</th>
+                        <th>联系方式</th>
+                        <th>来源</th>
+                        <th>备注信息</th>
+                        <th>操作</th>
+
+                    </tr>
+                    </thead>
+                    <tbody class="page_list">
+                    <tr v-if="loading">
+                        <td colspan="6">
+                            <div class="page_loading"></div>
+                        </td>
+                    </tr>
+                    <template v-if="list.length>0">
+                    <tr v-for="(item,index) in list">
+                        <td>{{index+1}}</td>
+                        <td>{{item.user.real_name}}</td>
+                        <td>{{item.user.user_mobile}}</td>
+                        <td>{{item.expert_source=="1"?"公司内部":"外聘"}}</td>
+                        <td>{{item.remarks}}</td>
+                        <td><a href="javascript:;" class="textBlue" @click="expertEdit(index)">编辑</a><a href="javascript:;" class="textRed marginL20" @click="expertDel(item.expert_user_id)">移除</a></td>
+                    </tr>
+                    </template>
+                    <tr v-else><td colspan="6"><div class="page_list_noneBg"></div><p class="page_list_noneCon" style="width: 100%;margin-bottom: 60px;font-size: 24px;color: #999;text-align: center;">没有找到相关内容</p></td></tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </div>
+            <input type="hidden" name="role_type" value="1">
+            <div id="pages">
+                <vue-page @get-list="getSupplier" :count="count" :limit="10" v-if="list.length>0"></vue-page>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+.template_warp{
+    padding: 30px 50px;
+}
+.template_cell{
+    position: relative;
+    width: 226px;
+    height: 160px;
+    margin-right: 40px;
+    padding: 7px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+    float: left;
+}
+.template_cell img{
+    display: inline-block;
+    width: 226px;
+    height: 160px;
+    object-fit: scale-down;
+}
+.template_cell .template_bg{
+    display: none;
+    position: absolute;
+    width: 240px;
+    height: 174px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+}
+.template_cell:hover .template_bg,.active .template_bg{
+    display: block;
+}
+.template_cell .template_used{
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 64px;
+    top: 56px;
+    left: 50%;
+    margin-left: -25px;
+    text-align: center;
+}
+.active .template_used{
+    display: block;
+}
+.template_cell .template_used i{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 32px;
+    background-color: #31C37C;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.template_cell .template_used p{
+    margin-top: 14px;
+    color: #fff;
+}
+.template_cell .template_using{
+    display: none;
+    position: absolute;
+    width: 102px;
+    height: 30px;
+    line-height: 30px;
+    top:72px;
+    left: 69px;
+    border-radius: 4px;
+    background-color: #FC6940;
+    color: #fff;
+    text-align: center;
+}
+.active .template_using{
+    display: none;
+}
+.template_cell:hover .template_using{
+    display: inline-block;
+}
+.active:hover .template_using{
+    display: none;
+}
+.template_cell .template_using:hover{
+    background-color: #F3623A;
+}

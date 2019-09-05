@@ -1,0 +1,167 @@
+.other_top_con{
+    height: 176px;
+}
+.bid_head_con{
+    padding-bottom: 50px;
+}
+.bid_head_con .bid_head_title,.bid_head_con .bid_head_tips,.bid_head_con .bid_head_cells{
+    margin: 14px auto;
+    text-align: center;
+    float: none!important;
+}
+
+.bid_body_con .bid_multi_title{
+    padding-left: 30px;
+    border-bottom: solid 1px #e5e5e5;
+}
+.bid_body_con .bid_multi_title span{
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: #666;
+}
+.bid_body_con .bid_multi_title span.act{
+    height: 52px;
+    line-height: 52px;
+    border-bottom: solid 2px #FF3600;
+    font-weight: 700;
+    color: #333;
+}
+
+.bid_head_btns{
+    text-align: right;
+}
+.bid_head_btns a{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 14px;
+    border: solid 1px #ff3600;
+    border-radius: 6px;
+    text-align: center;
+}
+.bid_head_btns a.bid_export_btn{
+    background-color: #ff3600;
+    color: #fff;
+}
+.bid_head_btns a.bid_export_btn:hover{
+    background-color: #ec3200;
+    color: #fff;
+}
+
+.bid_question_warp{
+    margin-top: 20px;
+}
+.bid_question_warp .bid_question_block{
+    position: relative;
+    border-bottom: solid 1px #e5e5e5;
+}
+.bid_question_warp .bid_question_block:first-child{
+    border-top: solid 1px #e5e5e5;
+}
+.bid_question_cell{
+    position: relative;
+    width: 669px;
+    min-height: 294px;
+    float: left;
+}
+.bid_question_line{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    border-left: solid 1px #e5e5e5;
+    float: left;
+}
+.bid_question_cell .bid_question_num{
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    top: 0;
+    left: 30px;
+    background-color: #DC2F00;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+.bid_question_cell h1{
+    margin-top: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+.bid_question_cell .bid_question_tips{
+    margin-top: 16px;
+    text-align: center;
+}
+.bid_question_cell .bid_question_tips span{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: solid 1px #e5e5e5;
+    border-radius: 28px;
+    margin-left: 8px;
+    padding: 0 16px;
+    color: #999;
+    text-align: center;
+}
+.bid_question_cell .bid_question_tips span:first-child{
+    margin-left: 0;
+}
+.bid_question_cell .bid_question_tips span.act{
+    border: solid 1px #F5AF9D;
+    color: #DC2F00;
+}
+.bid_question_cell .bid_question_con{
+    width: 580px;
+    max-height: 66px;
+    line-height: 1.5;
+    margin: 16px auto;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s;
+}
+.question_up .bid_question_con{
+    max-height: 200px;
+}
+.bid_question_cell i.icon-xiajiantou{
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 12px;
+    transition: transform .3s;
+}
+.question_up i.icon-xiajiantou{
+    vertical-align: 2px;
+    transform: rotate(180deg);
+}
+.bid_question_cell .bid_question_files{
+    display: block;
+    width: 540px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #F7F7F7;
+}
+.bid_question_cell .bid_question_files li{
+    height: 24px;
+    line-height: 24px;
+}
+.bid_question_cell .bid_question_files .icon-fujian{
+    color: #999;
+    margin-right: 4px;
+}
+.bid_question_cell .bid_question_files span{
+    max-width: 400px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    vertical-align: -6px;
+}

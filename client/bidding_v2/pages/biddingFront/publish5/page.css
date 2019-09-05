@@ -1,0 +1,36 @@
+.material_list{
+    width: 1160px;
+}
+.material_list table{
+    margin-top: 0;
+}
+.publish_block label{
+    width: 120px;
+}
+.material_list .cjy-input-{
+    width: 180px;
+}
+.material_list textarea{
+    position: absolute;
+    width: 170px;
+    top: 20px;
+    bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+/* 重写上传按钮样式 */
+.uppy-FileInput-btn{
+    height: 30px!important;
+    line-height: 30px!important;
+    padding: 0px!important;
+    background: #fff!important;
+    border: solid 1px #FF3600!important;
+    font-size: 14px!important;
+    color: #FF3600!important;
+}
+.uppy-FileInput-btn:hover {
+    background-color: #fff!important;
+    color: #FF3600!important;
+}
