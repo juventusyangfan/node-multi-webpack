@@ -56,7 +56,7 @@
     "memcached": "^2.2.2",
     "methods": "^1.1.2",
     "minimatch": "^3.0.3",
-    "mongoose": "^4.6.3",
+    "mongoose": "^5.7.8",
     "nunjucks": "^3.0.0",
     "path-to-regexp": "^1.6.0",
     "pedding": "^1.1.0",
